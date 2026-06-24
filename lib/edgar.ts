@@ -18,11 +18,9 @@ const REVENUE_CONCEPTS = [
  * Fetch a financial metric for a ticker from SEC EDGAR XBRL API.
  * No API key required — just a User-Agent header per SEC guidelines.
  *
- * metric: 'revenue' tries common revenue concepts;
- *         any other string is used as the exact us-gaap concept name.
- *
- * Returns the most recent standalone quarterly value (CY20xxQx frame),
- * or null if not found / not a supported ticker.
+ * Uses 10-Q form + end date to find the most recent standalone quarter.
+ * Duration filter (50–120 days) excludes YTD cumulative values.
+ * Falls back to CY frame pattern for calendar-aligned fiscal years.
  */
 export async function fetchEdgarMetric(
   ticker: string,
@@ -45,13 +43,34 @@ export async function fetchEdgarMetric(
 
     const concepts = metric === "revenue" ? REVENUE_CONCEPTS : [metric];
 
+    // Primary: 10-Q filings with standalone quarter duration (50–120 days)
+    for (const concept of concepts) {
+      const usd = (usgaap[concept]?.units?.USD ?? []) as Array<{
+        start?: string;
+        end: string;
+        val: number;
+        form: string;
+      }>;
+
+      const quarterly = usd
+        .filter((e) => {
+          if (e.form !== "10-Q" || !e.start || !e.end) return false;
+          const days =
+            (new Date(e.end).getTime() - new Date(e.start).getTime()) / 86_400_000;
+          return days >= 50 && days <= 120;
+        })
+        .sort((a, b) => b.end.localeCompare(a.end));
+
+      if (quarterly.length > 0) return quarterly[0].val;
+    }
+
+    // Fallback: CY frame pattern (works for calendar-aligned fiscal years)
     for (const concept of concepts) {
       const usd = (usgaap[concept]?.units?.USD ?? []) as Array<{
         frame?: string;
         val: number;
       }>;
 
-      // CY2024Q1 = standalone single-quarter value (not YTD cumulative)
       const quarterly = usd
         .filter((e) => e.frame && /^CY\d{4}Q\d$/.test(e.frame))
         .sort((a, b) => (b.frame ?? "").localeCompare(a.frame ?? ""));
