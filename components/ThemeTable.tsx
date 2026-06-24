@@ -8,9 +8,9 @@ interface Props {
 }
 
 function scoreTier(value: number) {
-  if (value >= 70) return { text: "text-green-400", bar: "bg-green-500", label: "핵" };
-  if (value >= 40) return { text: "text-yellow-400", bar: "bg-yellow-500", label: "활성" };
-  return { text: "text-zinc-500", bar: "bg-zinc-600", label: "조용" };
+  if (value >= 70) return { text: "text-green-400", bar: "bg-green-500", label: "인기" };
+  if (value >= 40) return { text: "text-yellow-400", bar: "bg-yellow-500", label: "관심" };
+  return { text: "text-zinc-500", bar: "bg-zinc-600", label: "평범" };
 }
 
 function ScoreBar({ value }: { value: number }) {
