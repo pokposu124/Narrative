@@ -11,6 +11,7 @@ export interface KpiValue {
   ticker: string;
   value: number | null;
   format: "financial_pct" | "change_pct" | "price_usd" | "price_rate" | "price_number" | "price_billions";
+  period?: string;  // e.g. "2025 Q1", "TTM"
 }
 
 export interface ThemeDefinition {

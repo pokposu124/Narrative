@@ -56,7 +56,9 @@ function KpiCard({ kpi }: { kpi: KpiValue }) {
       <div className={`text-lg font-mono ${kpiColor(kpi)}`}>
         {formatKpiValue(kpi)}
       </div>
-      <div className="text-[10px] text-zinc-700 mt-0.5 font-mono">{kpi.ticker}</div>
+      <div className="text-[10px] text-zinc-700 mt-0.5 font-mono">
+        {kpi.ticker}{kpi.period ? ` · ${kpi.period}` : ""}
+      </div>
     </div>
   );
 }

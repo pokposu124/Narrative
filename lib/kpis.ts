@@ -51,12 +51,19 @@ export async function fetchThemeKpis(
 
   for (const cfg of configs) {
     let value: number | null = null;
+    let period: string | undefined;
+
     if (cfg.source === "yahoo_financial") {
       value = await fetchFinancial(cfg.ticker, cfg.metric);
+      if (value !== null) period = "TTM";
     } else if (cfg.source === "yahoo_price") {
       value = await fetchPrice(cfg.ticker, cfg.metric);
     } else if (cfg.source === "edgar") {
-      value = await fetchEdgarMetric(cfg.ticker, cfg.metric);
+      const result = await fetchEdgarMetric(cfg.ticker, cfg.metric);
+      if (result !== null) {
+        value = result.val;
+        period = result.period;
+      }
     }
 
     results.push({
@@ -64,6 +71,7 @@ export async function fetchThemeKpis(
       ticker: cfg.ticker,
       value,
       format: cfg.format,
+      period,
     });
 
     await sleep(delayMs);

@@ -14,18 +14,24 @@ const REVENUE_CONCEPTS = [
   "SalesRevenueNet",
 ];
 
+function endDateToCalendarQuarter(endDate: string): string {
+  const d = new Date(endDate);
+  const year = d.getUTCFullYear();
+  const q = Math.ceil((d.getUTCMonth() + 1) / 3);
+  return `${year} Q${q}`;
+}
+
 /**
  * Fetch a financial metric for a ticker from SEC EDGAR XBRL API.
  * No API key required — just a User-Agent header per SEC guidelines.
  *
- * Uses 10-Q form + end date to find the most recent standalone quarter.
- * Duration filter (50–120 days) excludes YTD cumulative values.
- * Falls back to CY frame pattern for calendar-aligned fiscal years.
+ * Returns { val, period } where period is the calendar quarter of the data
+ * (e.g. "2025 Q1"), or null if not found.
  */
 export async function fetchEdgarMetric(
   ticker: string,
   metric: string
-): Promise<number | null> {
+): Promise<{ val: number; period: string } | null> {
   const cik = TICKER_CIK[ticker];
   if (!cik) return null;
 
@@ -61,13 +67,19 @@ export async function fetchEdgarMetric(
         })
         .sort((a, b) => b.end.localeCompare(a.end));
 
-      if (quarterly.length > 0) return quarterly[0].val;
+      if (quarterly.length > 0) {
+        return {
+          val: quarterly[0].val,
+          period: endDateToCalendarQuarter(quarterly[0].end),
+        };
+      }
     }
 
-    // Fallback: CY frame pattern (works for calendar-aligned fiscal years)
+    // Fallback: CY frame pattern (for calendar-aligned fiscal years)
     for (const concept of concepts) {
       const usd = (usgaap[concept]?.units?.USD ?? []) as Array<{
         frame?: string;
+        end?: string;
         val: number;
       }>;
 
@@ -75,7 +87,13 @@ export async function fetchEdgarMetric(
         .filter((e) => e.frame && /^CY\d{4}Q\d$/.test(e.frame))
         .sort((a, b) => (b.frame ?? "").localeCompare(a.frame ?? ""));
 
-      if (quarterly.length > 0) return quarterly[0].val;
+      if (quarterly.length > 0) {
+        const item = quarterly[0];
+        const period = item.end
+          ? endDateToCalendarQuarter(item.end)
+          : (item.frame?.replace("CY", "").replace("Q", " Q") ?? "");
+        return { val: item.val, period };
+      }
     }
 
     return null;
