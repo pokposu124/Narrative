@@ -8,9 +8,9 @@ interface Props {
 }
 
 function scoreTier(value: number) {
-  if (value >= 70) return { text: "text-green-400", bar: "bg-green-500", label: "HOT" };
-  if (value >= 40) return { text: "text-yellow-400", bar: "bg-yellow-500", label: "ACTIVE" };
-  return { text: "text-zinc-500", bar: "bg-zinc-600", label: "QUIET" };
+  if (value >= 70) return { text: "text-green-400", bar: "bg-green-500", label: "핵" };
+  if (value >= 40) return { text: "text-yellow-400", bar: "bg-yellow-500", label: "활성" };
+  return { text: "text-zinc-500", bar: "bg-zinc-600", label: "조용" };
 }
 
 function ScoreBar({ value }: { value: number }) {
@@ -52,10 +52,10 @@ export default function ThemeTable({ themes }: Props) {
         <thead>
           <tr className="border-b border-zinc-700 text-zinc-500 uppercase tracking-wider">
             <th className="px-3 py-2 text-right w-8">#</th>
-            <th className="px-3 py-2 text-left">THEME</th>
-            <th className="px-3 py-2 text-right">SCORE</th>
-            <th className="px-3 py-2 text-right">CHG</th>
-            <th className="px-3 py-2 text-left hidden md:table-cell">TICKERS</th>
+            <th className="px-3 py-2 text-left">테마</th>
+            <th className="px-3 py-2 text-right">점수</th>
+            <th className="px-3 py-2 text-right">변동</th>
+            <th className="px-3 py-2 text-left hidden md:table-cell">종목</th>
           </tr>
         </thead>
         <tbody>
