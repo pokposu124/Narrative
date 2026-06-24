@@ -14,7 +14,7 @@ export default function ScoreChart({ history }: Props) {
   if (history.length < 2) {
     return (
       <div className="border border-zinc-800 p-4 text-zinc-600 font-mono text-xs text-center">
-        NOT ENOUGH HISTORY DATA (need ≥2 snapshots)
+        히스토리 데이터 부족 (스냅샷 2개 이상 필요)
       </div>
     );
   }
@@ -43,10 +43,9 @@ export default function ScoreChart({ history }: Props) {
   const points = history.map((h) => `${toX(h.timestamp)},${toY(h.score)}`).join(" ");
 
   const yTicks = [minScore, (minScore + maxScore) / 2, maxScore].map(Math.round);
-  const xTickIndices =
-    history.length <= 8
-      ? history.map((_, i) => i)
-      : [0, Math.floor(history.length / 2), history.length - 1];
+  const xTickIndices = history.length <= 8
+    ? history.map((_, i) => i)
+    : [0, Math.floor(history.length / 2), history.length - 1];
 
   function fmtDate(ts: string) {
     const d = new Date(ts);
@@ -58,7 +57,11 @@ export default function ScoreChart({ history }: Props) {
 
   return (
     <div className="border border-zinc-800 bg-zinc-950 p-2 overflow-x-auto">
-      <svg viewBox={`0 0 ${W} ${H}`} className="w-full max-w-full" style={{ minWidth: "300px" }}>
+      <svg
+        viewBox={`0 0 ${W} ${H}`}
+        className="w-full max-w-full"
+        style={{ minWidth: "300px" }}
+      >
         {yTicks.map((v) => (
           <line
             key={v}
@@ -70,6 +73,7 @@ export default function ScoreChart({ history }: Props) {
             strokeWidth="1"
           />
         ))}
+
         {yTicks.map((v) => (
           <text
             key={v}
@@ -83,6 +87,7 @@ export default function ScoreChart({ history }: Props) {
             {v}
           </text>
         ))}
+
         {xTickIndices.map((idx) => (
           <text
             key={idx}
@@ -96,6 +101,7 @@ export default function ScoreChart({ history }: Props) {
             {fmtDate(history[idx].timestamp)}
           </text>
         ))}
+
         <polyline
           points={points}
           fill="none"
@@ -103,6 +109,7 @@ export default function ScoreChart({ history }: Props) {
           strokeWidth="1.5"
           strokeLinejoin="round"
         />
+
         {history.map((h, i) => (
           <circle
             key={i}

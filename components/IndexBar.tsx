@@ -70,7 +70,7 @@ export default function IndexBar() {
         return (
           <span key={sym} className="flex items-baseline gap-1.5">
             <span className="text-zinc-400 uppercase tracking-wide">{LABEL[sym]}</span>
-            <span className="text-zinc-100">{fmt(q.price, 2)}</span>
+            <span className="text-zinc-100">{fmt(q.price, isVix ? 2 : 2)}</span>
             <span className={color}>
               {sign(q.change)}{fmt(q.change, 2)} ({sign(q.changePct)}{fmt(q.changePct, 2)}%)
             </span>
@@ -79,7 +79,7 @@ export default function IndexBar() {
       })}
 
       <span className="ml-auto text-zinc-600 text-[10px]">
-        {error ? "DATA ERROR" : "Quotes delayed ~15 min"}
+        {error ? "데이터 오류" : "시세 약 15분 지연"}
       </span>
     </div>
   );
