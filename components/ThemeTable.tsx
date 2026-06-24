@@ -48,9 +48,6 @@ export default function ThemeTable({ themes }: Props) {
             <th className="px-3 py-2 text-right w-8">#</th>
             <th className="px-3 py-2 text-left">THEME</th>
             <th className="px-3 py-2 text-right">SCORE</th>
-            <th className="px-3 py-2 text-right">NEWS</th>
-            <th className="px-3 py-2 text-right">VOL</th>
-            <th className="px-3 py-2 text-right">PRICE</th>
             <th className="px-3 py-2 text-right">CHG</th>
             <th className="px-3 py-2 text-left hidden md:table-cell">TICKERS</th>
           </tr>
@@ -73,9 +70,6 @@ export default function ThemeTable({ themes }: Props) {
               <td className="px-3 py-2.5 text-right">
                 <ScoreBar value={t.totalScore} />
               </td>
-              <td className="px-3 py-2.5 text-right text-zinc-300">{t.newsScore.toFixed(1)}</td>
-              <td className="px-3 py-2.5 text-right text-zinc-300">{t.volumeScore.toFixed(1)}</td>
-              <td className="px-3 py-2.5 text-right text-zinc-300">{t.priceScore.toFixed(1)}</td>
               <td className="px-3 py-2.5 text-right"><Delta score={t} /></td>
               <td className="px-3 py-2.5 hidden md:table-cell">
                 <span className="text-zinc-500">
