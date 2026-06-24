@@ -3,6 +3,39 @@
 import { useState, useEffect } from "react";
 import type { Headline } from "@/types";
 
+interface MergedHeadline {
+  tickers: string[];
+  headline: string;
+  source: string;
+  url: string;
+  datetime: number;
+}
+
+function mergeHeadlines(headlines: Headline[]): MergedHeadline[] {
+  const map = new Map<string, MergedHeadline>();
+
+  for (const h of headlines) {
+    // Deduplicate key: prefer URL, fall back to headline text
+    const key = h.url || h.headline;
+    const existing = map.get(key);
+    if (existing) {
+      if (!existing.tickers.includes(h.ticker)) {
+        existing.tickers.push(h.ticker);
+      }
+    } else {
+      map.set(key, {
+        tickers: [h.ticker],
+        headline: h.headline,
+        source: h.source,
+        url: h.url,
+        datetime: h.datetime,
+      });
+    }
+  }
+
+  return [...map.values()].sort((a, b) => b.datetime - a.datetime);
+}
+
 export default function HeadlineLoader({
   themeId,
   initial,
@@ -28,27 +61,19 @@ export default function HeadlineLoader({
       });
   }, [themeId, initial.length]);
 
-  if (loading) {
-    return (
-      <p className="text-zinc-600 text-xs font-mono animate-pulse">
-        FETCHING HEADLINES...
-      </p>
-    );
-  }
-
-  if (error) {
+  if (loading)
+    return <p className="text-zinc-600 text-xs font-mono animate-pulse">FETCHING HEADLINES...</p>;
+  if (error)
     return <p className="text-red-600 text-xs font-mono">{error}</p>;
-  }
 
-  if (headlines.length === 0) {
-    return (
-      <p className="text-zinc-600 text-xs">No recent headlines available.</p>
-    );
-  }
+  const merged = mergeHeadlines(headlines);
+
+  if (merged.length === 0)
+    return <p className="text-zinc-600 text-xs">No recent headlines available.</p>;
 
   return (
     <ul className="space-y-3">
-      {headlines.slice(0, 20).map((h, i) => (
+      {merged.slice(0, 20).map((h, i) => (
         <li key={i} className="border-b border-zinc-900 pb-3">
           <a
             href={h.url}
@@ -58,11 +83,15 @@ export default function HeadlineLoader({
           >
             {h.headline}
           </a>
-          <div className="flex gap-2 mt-1 text-[10px] text-zinc-600">
-            <span className="text-zinc-500 font-mono">[{h.ticker}]</span>
-            <span>{h.source}</span>
-            <span>·</span>
-            <span>
+          <div className="flex flex-wrap items-center gap-1 mt-1">
+            {h.tickers.map((t) => (
+              <span key={t} className="text-[10px] font-mono text-zinc-500 bg-zinc-900 px-1">
+                [{t}]
+              </span>
+            ))}
+            <span className="text-[10px] text-zinc-600">{h.source}</span>
+            <span className="text-[10px] text-zinc-700">·</span>
+            <span className="text-[10px] text-zinc-600">
               {new Date(h.datetime * 1000).toLocaleString("en-US", {
                 month: "short",
                 day: "numeric",
