@@ -6,7 +6,7 @@ import type { TickerData } from "@/types";
 type SortKey = "marketCap" | "price" | "change1d" | "change5d" | "volume" | "relativeVolume" | "newsCount48h";
 
 const COLS: { key: SortKey; label: string }[] = [
-  { key: "marketCap",      label: "시가엁액"  },
+  { key: "marketCap",      label: "시가총액"  },
   { key: "price",          label: "가격"    },
   { key: "change1d",       label: "1D"       },
   { key: "change5d",       label: "5D"       },
