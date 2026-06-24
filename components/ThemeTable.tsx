@@ -7,16 +7,22 @@ interface Props {
   themes: ThemeScore[];
 }
 
+function scoreTier(value: number) {
+  if (value >= 70) return { text: "text-green-400", bar: "bg-green-500", label: "HOT" };
+  if (value >= 40) return { text: "text-yellow-400", bar: "bg-yellow-500", label: "ACTIVE" };
+  return { text: "text-zinc-500", bar: "bg-zinc-600", label: "QUIET" };
+}
+
 function ScoreBar({ value }: { value: number }) {
   const pct = Math.min(100, Math.max(0, value));
-  const color =
-    pct >= 70 ? "bg-green-500" : pct >= 40 ? "bg-yellow-500" : "bg-zinc-600";
+  const tier = scoreTier(value);
   return (
     <span className="inline-flex items-center gap-1.5">
-      <span className="font-mono text-zinc-100 w-10 text-right">{value.toFixed(1)}</span>
+      <span className={`font-mono w-10 text-right ${tier.text}`}>{value.toFixed(1)}</span>
       <span className="hidden sm:block w-16 h-1.5 bg-zinc-800 rounded-none overflow-hidden">
-        <span className={`block h-full ${color}`} style={{ width: `${pct}%` }} />
+        <span className={`block h-full ${tier.bar}`} style={{ width: `${pct}%` }} />
       </span>
+      <span className={`hidden sm:inline text-[9px] w-10 ${tier.text} opacity-60`}>{tier.label}</span>
     </span>
   );
 }
@@ -53,34 +59,37 @@ export default function ThemeTable({ themes }: Props) {
           </tr>
         </thead>
         <tbody>
-          {themes.map((t, i) => (
-            <tr
-              key={t.id}
-              className="border-b border-zinc-800 hover:bg-zinc-900 transition-colors cursor-pointer group"
-            >
-              <td className="px-3 py-2.5 text-right text-zinc-500">{i + 1}</td>
-              <td className="px-3 py-2.5">
-                <Link
-                  href={`/theme/${t.id}`}
-                  className="text-zinc-100 hover:text-green-400 transition-colors"
-                >
-                  {t.name}
-                </Link>
-              </td>
-              <td className="px-3 py-2.5 text-right">
-                <ScoreBar value={t.totalScore} />
-              </td>
-              <td className="px-3 py-2.5 text-right"><Delta score={t} /></td>
-              <td className="px-3 py-2.5 hidden md:table-cell">
-                <span className="text-zinc-500">
-                  {t.tickers.slice(0, 4).join(" · ")}
-                  {t.tickers.length > 4 && (
-                    <span className="text-zinc-700"> +{t.tickers.length - 4}</span>
-                  )}
-                </span>
-              </td>
-            </tr>
-          ))}
+          {themes.map((t, i) => {
+            const tier = scoreTier(t.totalScore);
+            return (
+              <tr
+                key={t.id}
+                className="border-b border-zinc-800 hover:bg-zinc-900 transition-colors cursor-pointer group"
+              >
+                <td className="px-3 py-2.5 text-right text-zinc-500">{i + 1}</td>
+                <td className="px-3 py-2.5">
+                  <Link
+                    href={`/theme/${t.id}`}
+                    className={`${tier.text} hover:brightness-125 transition-all`}
+                  >
+                    {t.name}
+                  </Link>
+                </td>
+                <td className="px-3 py-2.5 text-right">
+                  <ScoreBar value={t.totalScore} />
+                </td>
+                <td className="px-3 py-2.5 text-right"><Delta score={t} /></td>
+                <td className="px-3 py-2.5 hidden md:table-cell">
+                  <span className="text-zinc-500">
+                    {t.tickers.slice(0, 4).join(" · ")}
+                    {t.tickers.length > 4 && (
+                      <span className="text-zinc-700"> +{t.tickers.length - 4}</span>
+                    )}
+                  </span>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
