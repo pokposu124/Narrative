@@ -1,13 +1,6 @@
-/**
- * Fetches theme-specific KPIs from Yahoo Finance.
- *
- * Two sources:
- *   yahoo_financial — quoteSummary financialData (margins, revenue growth, EPS growth)
- *   yahoo_price     — quote (real-time price/change for commodities, crypto, FX, indices)
- */
-
 import YahooFinance from "yahoo-finance2";
 import type { KpiConfig, KpiValue } from "@/types";
+import { fetchEdgarMetric } from "@/lib/edgar";
 
 const yf = new YahooFinance();
 
@@ -57,10 +50,14 @@ export async function fetchThemeKpis(
   const results: KpiValue[] = [];
 
   for (const cfg of configs) {
-    const value =
-      cfg.source === "yahoo_financial"
-        ? await fetchFinancial(cfg.ticker, cfg.metric)
-        : await fetchPrice(cfg.ticker, cfg.metric);
+    let value: number | null = null;
+    if (cfg.source === "yahoo_financial") {
+      value = await fetchFinancial(cfg.ticker, cfg.metric);
+    } else if (cfg.source === "yahoo_price") {
+      value = await fetchPrice(cfg.ticker, cfg.metric);
+    } else if (cfg.source === "edgar") {
+      value = await fetchEdgarMetric(cfg.ticker, cfg.metric);
+    }
 
     results.push({
       label: cfg.label,

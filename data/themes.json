@@ -5,9 +5,9 @@
     "description": "AI 학습/추론용 반도체·서버·전력 공급망. GPU 수요, 데이터센터 확장, HBM 메모리 등이 핵심 드라이버.",
     "tickers": ["NVDA", "AMD", "AVGO", "MU", "SMCI", "VRT", "DELL"],
     "kpis": [
+      { "source": "edgar",           "ticker": "NVDA", "metric": "revenue",         "label": "NVDA 분기 매출 (SEC)",   "format": "price_billions" },
       { "source": "yahoo_financial", "ticker": "NVDA", "metric": "revenueGrowth",    "label": "NVDA 매출 성장 YoY",   "format": "financial_pct" },
-      { "source": "yahoo_financial", "ticker": "NVDA", "metric": "operatingMargins", "label": "NVDA 영업이익률",      "format": "financial_pct" },
-      { "source": "yahoo_financial", "ticker": "AMD",  "metric": "revenueGrowth",    "label": "AMD 매출 성장 YoY",    "format": "financial_pct" }
+      { "source": "yahoo_financial", "ticker": "NVDA", "metric": "operatingMargins", "label": "NVDA 영업이익률",      "format": "financial_pct" }
     ]
   },
   {
@@ -38,9 +38,9 @@
     "description": "연준 통화정책, 국채 금리 변동, 은행주 수익성. 금·채권·금융주 복합 내러티브.",
     "tickers": ["TLT", "GLD", "XLF", "JPM", "KRE"],
     "kpis": [
-      { "source": "yahoo_price",     "ticker": "^TNX",     "metric": "price",         "label": "미국 10Y 국채금리",    "format": "price_rate"    },
-      { "source": "yahoo_price",     "ticker": "^IRX",     "metric": "price",         "label": "미국 3M 국채금리",    "format": "price_rate"    },
-      { "source": "yahoo_price",     "ticker": "GC=F",     "metric": "price",         "label": "금 현물가 ($/oz)",   "format": "price_usd"     }
+      { "source": "yahoo_price", "ticker": "^TNX", "metric": "price", "label": "미국 10Y 국채금리", "format": "price_rate" },
+      { "source": "yahoo_price", "ticker": "^IRX", "metric": "price", "label": "미국 3M 국채금리", "format": "price_rate" },
+      { "source": "yahoo_price", "ticker": "GC=F", "metric": "price", "label": "금 현물가 ($/oz)",  "format": "price_usd"  }
     ]
   },
   {
@@ -60,9 +60,9 @@
     "description": "세마글루타이드·티르제파타이드 등 GLP-1 계열 비만·당뇨 치료제 시장 급성장. 차세대 파이프라인 경쟁.",
     "tickers": ["LLY", "NVO", "VKTX", "AMGN"],
     "kpis": [
-      { "source": "yahoo_financial", "ticker": "LLY", "metric": "revenueGrowth",    "label": "LLY 매출 성장 YoY",  "format": "financial_pct" },
-      { "source": "yahoo_financial", "ticker": "LLY", "metric": "operatingMargins", "label": "LLY 영업이익률",     "format": "financial_pct" },
-      { "source": "yahoo_financial", "ticker": "NVO", "metric": "revenueGrowth",    "label": "NVO 매출 성장 YoY",  "format": "financial_pct" }
+      { "source": "edgar",           "ticker": "LLY", "metric": "revenue",      "label": "LLY 분기 매출 (SEC)",   "format": "price_billions" },
+      { "source": "yahoo_financial", "ticker": "LLY", "metric": "revenueGrowth", "label": "LLY 매출 성장 YoY",   "format": "financial_pct" },
+      { "source": "yahoo_financial", "ticker": "NVO", "metric": "revenueGrowth", "label": "NVO 매출 성장 YoY",   "format": "financial_pct" }
     ]
   },
   {

@@ -1,7 +1,3 @@
-/**
- * Batch orchestrator: fetch market data → score themes → persist snapshot.
- */
-
 import { fetchTickersBatch } from "@/lib/yahoo";
 import { fetchNewsCountsBatch, fetchThemeHeadlines } from "@/lib/finnhub";
 import { computeScores } from "@/lib/scoring";
@@ -22,7 +18,7 @@ export async function runBatch(): Promise<Snapshot & { githubStatus: string }> {
   const themes = themesRaw as RawTheme[];
   const allTickers = [...new Set(themes.flatMap((t) => t.tickers))];
 
-  // 1. Fetch price/volume/marketcap data
+  // 1. Fetch price / volume / market cap
   const priceDataMap = await fetchTickersBatch(allTickers, 350);
 
   // 2. Fetch news counts
@@ -64,12 +60,14 @@ export async function runBatch(): Promise<Snapshot & { githubStatus: string }> {
     theme.headlines = await fetchThemeHeadlines(topTickers, 400);
   }
 
+  // 7. Sort by composite score so snapshot order matches ranking
+  scored.sort((a, b) => b.totalScore - a.totalScore);
+
   const snapshot: Snapshot = {
     timestamp: new Date().toISOString(),
     themes: scored,
   };
 
-  // 7. Persist
   const githubStatus = await writeSnapshot(snapshot);
   return { ...snapshot, githubStatus };
 }

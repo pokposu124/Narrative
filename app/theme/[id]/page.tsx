@@ -30,6 +30,8 @@ function formatKpiValue(kpi: KpiValue): string {
       return `${v.toFixed(2)}%`;
     case "price_number":
       return v.toFixed(4);
+    case "price_billions":
+      return `$${(v / 1e9).toFixed(1)}B`;
     default:
       return v.toFixed(2);
   }
@@ -100,7 +102,7 @@ export default async function ThemeDetailPage({
   function fmtMktCap(v: number) {
     if (!v) return "—";
     if (v >= 1e12) return `$${(v / 1e12).toFixed(2)}T`;
-    if (v >= 1e9) return `$${(v / 1e9).toFixed(1)}B`;
+    if (v >= 1e9)  return `$${(v / 1e9).toFixed(1)}B`;
     return `$${(v / 1e6).toFixed(0)}M`;
   }
 
@@ -155,7 +157,7 @@ export default async function ThemeDetailPage({
         </div>
       </div>
 
-      {/* Theme-specific KPIs */}
+      {/* Theme KPIs */}
       <div>
         <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">
           THEME KPIs

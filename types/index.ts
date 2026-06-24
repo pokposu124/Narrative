@@ -1,18 +1,16 @@
-// Theme definitions (loaded from /data/themes.json)
 export interface KpiConfig {
-  source: "yahoo_financial" | "yahoo_price";
+  source: "yahoo_financial" | "yahoo_price" | "edgar";
   ticker: string;
-  metric: string;   // financial: revenueGrowth | operatingMargins | grossMargins …
-                    // price: price | change1d
+  metric: string;
   label: string;
-  format: "financial_pct" | "change_pct" | "price_usd" | "price_rate" | "price_number";
+  format: "financial_pct" | "change_pct" | "price_usd" | "price_rate" | "price_number" | "price_billions";
 }
 
 export interface KpiValue {
   label: string;
   ticker: string;
   value: number | null;
-  format: "financial_pct" | "change_pct" | "price_usd" | "price_rate" | "price_number";
+  format: "financial_pct" | "change_pct" | "price_usd" | "price_rate" | "price_number" | "price_billions";
 }
 
 export interface ThemeDefinition {
@@ -23,7 +21,6 @@ export interface ThemeDefinition {
   kpis?: KpiConfig[];
 }
 
-// Per-ticker raw data collected each batch run
 export interface TickerData {
   ticker: string;
   price: number;
@@ -37,7 +34,6 @@ export interface TickerData {
   marketCap?: number;
 }
 
-// Theme-level scored result
 export interface ThemeScore {
   id: string;
   name: string;
