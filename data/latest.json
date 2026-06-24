@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-24T11:31:38.066Z",
+  "timestamp": "2026-06-24T11:33:46.828Z",
   "themes": [
     {
       "id": "ai-infra",
@@ -532,7 +532,7 @@
         {
           "label": "금 현물가 ($/oz)",
           "ticker": "GC=F",
-          "value": 4058.5,
+          "value": 4059.4,
           "format": "price_usd"
         }
       ]
@@ -661,13 +661,13 @@
         {
           "label": "WTI 원유 현재가 ($/bbl)",
           "ticker": "CL=F",
-          "value": 71.79,
+          "value": 71.81,
           "format": "price_usd"
         },
         {
           "label": "WTI 1일 변동",
           "ticker": "CL=F",
-          "value": -1.9396257341893013,
+          "value": -1.9123070618767815,
           "format": "change_pct"
         },
         {
@@ -763,13 +763,13 @@
         {
           "label": "천연가스 현재가 ($/MMBtu)",
           "ticker": "NG=F",
-          "value": 3.221,
+          "value": 3.223,
           "format": "price_usd"
         },
         {
           "label": "천연가스 1일 변동",
           "ticker": "NG=F",
-          "value": 1.1620603015075353,
+          "value": 1.224874371859287,
           "format": "change_pct"
         },
         {
@@ -1213,46 +1213,24 @@
           "newsPrev48h": 0
         }
       ],
-      "headlines": [
-        {
-          "ticker": "MARA",
-          "headline": "Bitcoin Has Been Cut In Half, But MARA And HIVE Just Flashed Golden Crosses",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=15bcbfd6a09a1c1dc0e034cae0e95bab8028e22e34cfb8dd356eba0082c78102",
-          "datetime": 1782216977
-        },
-        {
-          "ticker": "MARA",
-          "headline": "Why Is MARA Holdings Stock Surging On Monday?",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=5f456f7dc4af07ae9a6f7fd9ddb12745f69632e0bd8e0f5f9d0d25891265b56e",
-          "datetime": 1782134370
-        },
-        {
-          "ticker": "MARA",
-          "headline": "Apogee Therapeutics, Definium Therapeutics, Baldwin Insurance And Other Big Stocks Moving Higher On Monday",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=813db00faa2e838687517ca9cba35454efa3d99ad387205d335296cc5855fac2",
-          "datetime": 1782130120
-        }
-      ],
+      "headlines": [],
       "customKpis": [
         {
           "label": "비트코인 현재가 (USD)",
           "ticker": "BTC-USD",
-          "value": 62344.01,
+          "value": 62366.02,
           "format": "price_usd"
         },
         {
           "label": "BTC 1일 변동",
           "ticker": "BTC-USD",
-          "value": -0.5044676748891735,
+          "value": -0.46934165931084987,
           "format": "change_pct"
         },
         {
           "label": "이더리움 현재가 (USD)",
           "ticker": "ETH-USD",
-          "value": 1657.34,
+          "value": 1658.5,
           "format": "price_usd"
         }
       ]
