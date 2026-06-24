@@ -6,13 +6,13 @@ import type { TickerData } from "@/types";
 type SortKey = "marketCap" | "price" | "change1d" | "change5d" | "volume" | "relativeVolume" | "newsCount48h";
 
 const COLS: { key: SortKey; label: string }[] = [
-  { key: "marketCap",      label: "MKT CAP"  },
-  { key: "price",          label: "PRICE"    },
+  { key: "marketCap",      label: "시가엁액"  },
+  { key: "price",          label: "가격"    },
   { key: "change1d",       label: "1D"       },
   { key: "change5d",       label: "5D"       },
-  { key: "volume",         label: "VOLUME"   },
-  { key: "relativeVolume", label: "REL VOL"  },
-  { key: "newsCount48h",   label: "NEWS 48H" },
+  { key: "volume",         label: "거래량"   },
+  { key: "relativeVolume", label: "상대거래량"  },
+  { key: "newsCount48h",   label: "뉴스 48H" },
 ];
 
 function fmtMktCap(v?: number): string {
@@ -71,7 +71,7 @@ export default function TickerTable({ tickers }: { tickers: TickerData[] }) {
       <table className="w-full text-xs font-mono border-collapse">
         <thead>
           <tr className="border-b border-zinc-700 uppercase text-[10px] tracking-wider">
-            <th className="px-3 py-2 text-left text-zinc-600">TICKER</th>
+            <th className="px-3 py-2 text-left text-zinc-600">종목코드</th>
             {COLS.map((c) => (
               <th key={c.key} className={thCls(c.key)} onClick={() => handleSort(c.key)}>
                 {c.label}
@@ -99,7 +99,7 @@ export default function TickerTable({ tickers }: { tickers: TickerData[] }) {
           ))}
           {tickers.length === 0 && (
             <tr>
-              <td colSpan={8} className="px-3 py-4 text-center text-zinc-600">No data</td>
+              <td colSpan={8} className="px-3 py-4 text-center text-zinc-600">데이터 없음</td>
             </tr>
           )}
         </tbody>

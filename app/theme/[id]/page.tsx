@@ -116,10 +116,9 @@ export default async function ThemeDetailPage({
   return (
     <div className="space-y-6">
       <div className="text-xs text-zinc-600 font-mono">
-        <Link href="/" className="hover:text-zinc-400 transition-colors">← BACK TO RANKING</Link>
+        <Link href="/" className="hover:text-zinc-400 transition-colors">← 순위로 돌아가기</Link>
       </div>
 
-      {/* Header */}
       <div className="border border-zinc-800 p-4">
         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
           <div>
@@ -130,7 +129,7 @@ export default async function ThemeDetailPage({
           </div>
           <div className="text-right font-mono shrink-0">
             <div className="text-3xl text-zinc-100">{fmt(theme.totalScore)}</div>
-            <div className="text-[10px] text-zinc-600">COMPOSITE SCORE</div>
+            <div className="text-[10px] text-zinc-600">종합 점수</div>
             {theme.scoreDelta !== null && (
               <div className={`text-xs mt-0.5 ${
                 theme.deltaDirection === "▲" ? "text-green-400" :
@@ -144,9 +143,9 @@ export default async function ThemeDetailPage({
 
         <div className="grid grid-cols-3 gap-4 mt-4 border-t border-zinc-800 pt-4">
           {[
-            { label: "NEWS (40%)",   value: theme.newsScore   },
-            { label: "VOLUME (35%)", value: theme.volumeScore },
-            { label: "PRICE (25%)",  value: theme.priceScore  },
+            { label: "뉴스 (40%)",   value: theme.newsScore   },
+            { label: "거래량 (35%)", value: theme.volumeScore },
+            { label: "가격 (25%)",  value: theme.priceScore  },
           ].map(({ label, value }) => (
             <div key={label}>
               <div className="text-[10px] text-zinc-600 mb-1">{label}</div>
@@ -159,10 +158,9 @@ export default async function ThemeDetailPage({
         </div>
       </div>
 
-      {/* Theme KPIs */}
       <div>
         <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">
-          THEME KPIs
+          테마 KPI
         </h2>
         {theme.customKpis?.length ? (
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -172,37 +170,34 @@ export default async function ThemeDetailPage({
           </div>
         ) : (
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-            <GenericKpiCard label="AVG 1D RETURN" value={`${avg1d >= 0 ? "+" : ""}${fmt(avg1d)}%`}
-              sub="equal-weighted" color={avg1d >= 0 ? "text-green-400" : "text-red-400"} />
-            <GenericKpiCard label="AVG 5D RETURN" value={`${avg5d >= 0 ? "+" : ""}${fmt(avg5d)}%`}
-              sub="equal-weighted" color={avg5d >= 0 ? "text-green-400" : "text-red-400"} />
-            <GenericKpiCard label="AVG REL VOL" value={`${fmt(avgRelVol, 2)}x`} sub="vs 20d avg"
+            <GenericKpiCard label="평균 1일 수익률" value={`${avg1d >= 0 ? "+" : ""}${fmt(avg1d)}%`}
+              sub="동일 가중" color={avg1d >= 0 ? "text-green-400" : "text-red-400"} />
+            <GenericKpiCard label="평균 5일 수익률" value={`${avg5d >= 0 ? "+" : ""}${fmt(avg5d)}%`}
+              sub="동일 가중" color={avg5d >= 0 ? "text-green-400" : "text-red-400"} />
+            <GenericKpiCard label="평균 상대 거래량" value={`${fmt(avgRelVol, 2)}x`} sub="20일 평균 대비"
               color={avgRelVol >= 1.5 ? "text-green-400" : "text-zinc-100"} />
-            <GenericKpiCard label="NEWS 48H" value={totalNews.toString()} sub={`${td.length} tickers`}
+            <GenericKpiCard label="뉴스 48H" value={totalNews.toString()} sub={`${td.length}개 종목`}
               color={totalNews > 50 ? "text-green-400" : "text-zinc-100"} />
-            <GenericKpiCard label="THEME MKT CAP" value={fmtMktCap(totalMktCap)} sub="sum" />
+            <GenericKpiCard label="테마 시충" value={fmtMktCap(totalMktCap)} sub="합계" />
           </div>
         )}
       </div>
 
-      {/* Score history */}
       <div>
-        <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">SCORE HISTORY</h2>
+        <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">점수 이력</h2>
         <ScoreChart history={chartData} themeId={id} />
       </div>
 
-      {/* Sortable ticker table */}
       <div>
         <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">
-          CONSTITUENTS
-          <span className="ml-2 text-zinc-700 normal-case">— click column header to sort</span>
+          구성 종목
+          <span className="ml-2 text-zinc-700 normal-case">— 열 헤더 클릭하면 정렬</span>
         </h2>
         <TickerTable tickers={theme.tickerData} />
       </div>
 
-      {/* Headlines */}
       <div>
-        <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">RECENT HEADLINES</h2>
+        <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">최근 헤드라인</h2>
         <div className="border border-zinc-800 p-4">
           <HeadlineLoader themeId={id} initial={theme.headlines} />
         </div>

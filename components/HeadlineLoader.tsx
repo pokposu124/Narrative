@@ -15,7 +15,6 @@ function mergeHeadlines(headlines: Headline[]): MergedHeadline[] {
   const map = new Map<string, MergedHeadline>();
 
   for (const h of headlines) {
-    // Deduplicate key: prefer URL, fall back to headline text
     const key = h.url || h.headline;
     const existing = map.get(key);
     if (existing) {
@@ -62,14 +61,14 @@ export default function HeadlineLoader({
   }, [themeId, initial.length]);
 
   if (loading)
-    return <p className="text-zinc-600 text-xs font-mono animate-pulse">FETCHING HEADLINES...</p>;
+    return <p className="text-zinc-600 text-xs font-mono animate-pulse">헤드라인 로딩 중...</p>;
   if (error)
     return <p className="text-red-600 text-xs font-mono">{error}</p>;
 
   const merged = mergeHeadlines(headlines);
 
   if (merged.length === 0)
-    return <p className="text-zinc-600 text-xs">No recent headlines available.</p>;
+    return <p className="text-zinc-600 text-xs">최근 헤드라인이 없습니다.</p>;
 
   return (
     <ul className="space-y-3">
@@ -92,7 +91,7 @@ export default function HeadlineLoader({
             <span className="text-[10px] text-zinc-600">{h.source}</span>
             <span className="text-[10px] text-zinc-700">·</span>
             <span className="text-[10px] text-zinc-600">
-              {new Date(h.datetime * 1000).toLocaleString("en-US", {
+              {new Date(h.datetime * 1000).toLocaleString("ko-KR", {
                 month: "short",
                 day: "numeric",
                 hour: "2-digit",
