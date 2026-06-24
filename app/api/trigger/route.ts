@@ -1,7 +1,7 @@
 /**
- * Manual batch trigger for local development / testing.
- * POST /api/trigger — runs the full data collection and scoring pipeline.
- * GET  /api/trigger?secret=CRON_SECRET — same, for browser/phone access.
+ * Manual batch trigger.
+ * GET  /api/trigger?secret=CRON_SECRET — for browser/phone access.
+ * POST /api/trigger with Authorization: Bearer <secret> — for scripts.
  */
 
 import { NextResponse } from "next/server";
@@ -14,11 +14,9 @@ function isAuthorized(request: Request): boolean {
   const cronSecret = process.env.CRON_SECRET;
   if (!cronSecret) return true;
 
-  // POST: Authorization header
   const authHeader = request.headers.get("authorization");
   if (authHeader === `Bearer ${cronSecret}`) return true;
 
-  // GET: ?secret= query param
   const url = new URL(request.url);
   if (url.searchParams.get("secret") === cronSecret) return true;
 
@@ -31,11 +29,12 @@ async function handle(request: Request) {
   }
 
   try {
-    const snapshot = await runBatch();
+    const result = await runBatch();
     return NextResponse.json({
       ok: true,
-      timestamp: snapshot.timestamp,
-      themeCount: snapshot.themes.length,
+      timestamp: result.timestamp,
+      themeCount: result.themes.length,
+      github: result.githubStatus,
     });
   } catch (err) {
     console.error("[trigger] Batch failed:", err);

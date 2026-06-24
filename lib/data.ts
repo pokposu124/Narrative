@@ -1,11 +1,9 @@
 /**
  * Reads and writes snapshot JSON files.
  *
- * Vercel serverless: process.cwd() (/var/task) is read-only and /tmp is
- * wiped between invocations. To persist data we write latest.json back to
- * the GitHub repo via the Contents API so Vercel redeploys with fresh data.
- *
- * Set GITHUB_PAT (repo scope) in Vercel environment variables.
+ * Vercel serverless: /tmp is wiped between invocations.
+ * We persist data by writing latest.json back to GitHub via the Contents API.
+ * Set GITHUB_PAT (classic token, repo scope) in Vercel environment variables.
  */
 
 import fs from "fs/promises";
@@ -26,12 +24,14 @@ async function ensureSnapshotsDir() {
   await fs.mkdir(TMP_SNAPSHOTS_DIR, { recursive: true });
 }
 
-/** Push latest.json to GitHub so Vercel redeploys with fresh bundled data. */
-async function writeToGitHub(content: string): Promise<void> {
+/**
+ * Push latest.json to GitHub so Vercel redeploys with fresh bundled data.
+ * Returns a status string for diagnostics.
+ */
+export async function writeToGitHub(content: string): Promise<string> {
   const token = process.env.GITHUB_PAT;
   if (!token) {
-    console.warn("[data] GITHUB_PAT not set — skipping GitHub write-back");
-    return;
+    return "GITHUB_PAT not set";
   }
 
   try {
@@ -43,13 +43,13 @@ async function writeToGitHub(content: string): Promise<void> {
 
     // Get current file SHA (required by GitHub API for updates)
     let sha: string | undefined;
-    const getRes = await fetch(GH_API, {
-      headers,
-      cache: "no-store",
-    });
+    const getRes = await fetch(GH_API, { headers, cache: "no-store" });
     if (getRes.ok) {
       const json = (await getRes.json()) as { sha: string };
       sha = json.sha;
+    } else {
+      const errText = await getRes.text();
+      return `GET failed: ${getRes.status} ${errText.slice(0, 200)}`;
     }
 
     const body: Record<string, string> = {
@@ -67,13 +67,13 @@ async function writeToGitHub(content: string): Promise<void> {
     });
 
     if (putRes.ok) {
-      console.log("[data] latest.json pushed to GitHub — Vercel will redeploy");
+      return "ok";
     } else {
       const err = await putRes.text();
-      console.error("[data] GitHub write-back failed:", putRes.status, err);
+      return `PUT failed: ${putRes.status} ${err.slice(0, 200)}`;
     }
   } catch (err) {
-    console.error("[data] GitHub write-back error:", err);
+    return `error: ${String(err)}`;
   }
 }
 
@@ -90,7 +90,7 @@ export async function readLatest(): Promise<Snapshot | null> {
   return null;
 }
 
-export async function writeSnapshot(snapshot: Snapshot): Promise<void> {
+export async function writeSnapshot(snapshot: Snapshot): Promise<string> {
   await ensureSnapshotsDir();
 
   const json = JSON.stringify(snapshot, null, 2);
@@ -99,9 +99,10 @@ export async function writeSnapshot(snapshot: Snapshot): Promise<void> {
 
   await fs.writeFile(snapPath, json, "utf-8");
   await fs.writeFile(TMP_LATEST_PATH, json, "utf-8");
-  console.log(`[data] Snapshot written to /tmp: ${safeTs}.json`);
 
-  await writeToGitHub(json);
+  const ghStatus = await writeToGitHub(json);
+  console.log("[data] GitHub write-back:", ghStatus);
+  return ghStatus;
 }
 
 export async function readAllSnapshots(): Promise<Snapshot[]> {
@@ -122,7 +123,7 @@ export async function readAllSnapshots(): Promise<Snapshot[]> {
       );
       snapshots.push(JSON.parse(raw));
     } catch {
-      // skip corrupted file
+      // skip
     }
   }
 
