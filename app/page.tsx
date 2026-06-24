@@ -19,7 +19,8 @@ function formatTimestamp(iso: string) {
 
 export default async function HomePage() {
   const snapshot = await readLatest();
-  const themes: ThemeScore[] = snapshot?.themes ?? [];
+  // Sort defensively in case snapshot was written by an older batch without sorting
+  const themes: ThemeScore[] = (snapshot?.themes ?? []).slice().sort((a, b) => b.totalScore - a.totalScore);
   const lastUpdated = snapshot?.timestamp ?? "";
 
   return (

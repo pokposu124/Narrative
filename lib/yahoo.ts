@@ -3,8 +3,6 @@
  *
  * NOTE: yahoo-finance2 uses Yahoo Finance's *unofficial* API.
  * Yahoo may change the schema or block requests without notice.
- * If this module starts throwing, check for a newer package version
- * or implement a fallback data source.
  *
  * API change (v3+): Must instantiate with `new YahooFinance()` rather than
  * calling the default export directly (static methods are deprecated).
@@ -12,7 +10,6 @@
 
 import YahooFinance from "yahoo-finance2";
 
-// Shared instance — reuse across requests to avoid repeated initialisation.
 const yf = new YahooFinance();
 
 export interface PriceData {
@@ -23,6 +20,7 @@ export interface PriceData {
   volume: number;
   avgVolume20d: number;
   relativeVolume: number;
+  marketCap: number;
 }
 
 function sleep(ms: number) {
@@ -37,6 +35,7 @@ async function fetchOneTicker(ticker: string): Promise<PriceData | null> {
     const prevClose = quote.regularMarketPreviousClose ?? price;
     const change1d = prevClose !== 0 ? ((price - prevClose) / prevClose) * 100 : 0;
     const volume = quote.regularMarketVolume ?? 0;
+    const marketCap = quote.marketCap ?? 0;
 
     const avgVolume20d =
       quote.averageDailyVolume10Day ??
@@ -62,7 +61,7 @@ async function fetchOneTicker(ticker: string): Promise<PriceData | null> {
       change5d = oldest !== 0 ? ((latest - oldest) / oldest) * 100 : 0;
     }
 
-    return { ticker, price, change1d, change5d, volume, avgVolume20d, relativeVolume };
+    return { ticker, price, change1d, change5d, volume, avgVolume20d, relativeVolume, marketCap };
   } catch (err) {
     console.warn(`[yahoo] Failed to fetch ${ticker}:`, err);
     return null;

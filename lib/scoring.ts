@@ -1,22 +1,23 @@
-/**
- * Theme scoring engine.
- *
- * Composite score = 0.40 × news + 0.35 × volume + 0.25 × price
- *
- * Each raw metric is first aggregated to a theme-level scalar,
- * then percentile-normalised to [0, 100] across all themes.
- */
-
 import type { ThemeDefinition, TickerData, ThemeScore, Snapshot } from "@/types";
-import type { PriceData } from "@/lib/yahoo";
 
 const WEIGHTS = { news: 0.40, volume: 0.35, price: 0.25 };
 
 function newsRaw(tickers: TickerData[]): number {
-  const recent = tickers.reduce((s, t) => s + t.newsCount48h, 0);
-  const prev = tickers.reduce((s, t) => s + t.newsPrev48h, 0);
-  const acceleration = (recent - prev) / Math.max(prev, 1);
-  return recent + acceleration * recent;
+  if (tickers.length === 0) return 0;
+  // Divide each ticker's news count by log10(marketCap_billions + 1)
+  // so large-caps (NVDA, MSFT) don't dominate purely by volume of coverage.
+  const weightedRecent = tickers.reduce((s, t) => {
+    const mcapB = (t.marketCap ?? 0) / 1e9;
+    const w = Math.max(1, Math.log10(mcapB + 1));
+    return s + t.newsCount48h / w;
+  }, 0);
+  const weightedPrev = tickers.reduce((s, t) => {
+    const mcapB = (t.marketCap ?? 0) / 1e9;
+    const w = Math.max(1, Math.log10(mcapB + 1));
+    return s + t.newsPrev48h / w;
+  }, 0);
+  const accel = (weightedRecent - weightedPrev) / Math.max(weightedPrev, 1);
+  return weightedRecent * (1 + accel);
 }
 
 function volumeRaw(tickers: TickerData[]): number {
@@ -52,11 +53,12 @@ export function computeScores(
   );
 
   const newsRaws = themeTickerData.map(newsRaw);
-  const volRaws = themeTickerData.map(volumeRaw);
+  const volRaws  = themeTickerData.map(volumeRaw);
   const priceRaws = themeTickerData.map(priceRaw);
 
-  const newsNorm = normaliseArray(newsRaws);
-  const volNorm = normaliseArray(volRaws);
+  // Apply floor of 5 so Finnhub free-tier coverage gaps don't zero out a theme
+  const newsNorm  = normaliseArray(newsRaws).map((v) => Math.max(5, v));
+  const volNorm   = normaliseArray(volRaws);
   const priceNorm = normaliseArray(priceRaws);
 
   const prevMap = new Map<string, number>();
@@ -67,9 +69,9 @@ export function computeScores(
   }
 
   return themes.map((theme, i) => {
-    const newsScore = Math.round(newsNorm[i] * 10) / 10;
-    const volumeScore = Math.round(volNorm[i] * 10) / 10;
-    const priceScore = Math.round(priceNorm[i] * 10) / 10;
+    const newsScore   = Math.round(newsNorm[i]  * 10) / 10;
+    const volumeScore = Math.round(volNorm[i]   * 10) / 10;
+    const priceScore  = Math.round(priceNorm[i] * 10) / 10;
 
     const totalScore = Math.round(
       (WEIGHTS.news * newsScore + WEIGHTS.volume * volumeScore + WEIGHTS.price * priceScore) * 10

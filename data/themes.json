@@ -3,72 +3,132 @@
     "id": "ai-infra",
     "name": "AI 인프라",
     "description": "AI 학습/추론용 반도체·서버·전력 공급망. GPU 수요, 데이터센터 확장, HBM 메모리 등이 핵심 드라이버.",
-    "tickers": ["NVDA", "AMD", "AVGO", "MU", "SMCI", "VRT", "DELL"]
+    "tickers": ["NVDA", "AMD", "AVGO", "MU", "SMCI", "VRT", "DELL"],
+    "kpis": [
+      { "source": "edgar",           "ticker": "NVDA", "metric": "revenue",         "label": "NVDA 분기 매출 (SEC)",   "format": "price_billions" },
+      { "source": "yahoo_financial", "ticker": "NVDA", "metric": "revenueGrowth",    "label": "NVDA 매출 성장 YoY",   "format": "financial_pct" },
+      { "source": "yahoo_financial", "ticker": "NVDA", "metric": "operatingMargins", "label": "NVDA 영업이익률",      "format": "financial_pct" }
+    ]
   },
   {
     "id": "ai-software",
     "name": "AI 소프트웨어",
     "description": "AI 모델 개발 및 기업용 AI 솔루션. 클라우드 AI 서비스, 에이전트형 AI, 데이터 분석 플랫폼.",
-    "tickers": ["MSFT", "GOOGL", "PLTR", "NOW", "CRM"]
+    "tickers": ["MSFT", "GOOGL", "PLTR", "NOW", "CRM"],
+    "kpis": [
+      { "source": "yahoo_financial", "ticker": "MSFT",  "metric": "revenueGrowth",    "label": "MSFT 매출 성장 YoY",   "format": "financial_pct" },
+      { "source": "yahoo_financial", "ticker": "MSFT",  "metric": "operatingMargins", "label": "MSFT 영업이익률",      "format": "financial_pct" },
+      { "source": "yahoo_financial", "ticker": "GOOGL", "metric": "revenueGrowth",    "label": "GOOGL 매출 성장 YoY",  "format": "financial_pct" }
+    ]
   },
   {
     "id": "geopolitics-hormuz",
     "name": "호르무즈/지정학 리스크",
     "description": "중동 긴장, 원유 공급 차질 우려, 방산 수요 증가. 에너지 가격 상승 시 수혜 섹터.",
-    "tickers": ["XOM", "CVX", "OXY", "LMT", "RTX", "NOC", "FRO", "STNG"]
+    "tickers": ["XOM", "CVX", "OXY", "LMT", "RTX", "NOC", "FRO", "STNG"],
+    "kpis": [
+      { "source": "yahoo_price",     "ticker": "CL=F", "metric": "price",            "label": "WTI 원유 현재가 ($/bbl)", "format": "price_usd"      },
+      { "source": "yahoo_price",     "ticker": "CL=F", "metric": "change1d",         "label": "WTI 1일 변동",          "format": "change_pct"    },
+      { "source": "yahoo_financial", "ticker": "LMT",  "metric": "operatingMargins", "label": "LMT 영업이익률",        "format": "financial_pct" }
+    ]
   },
   {
     "id": "inflation-rates",
     "name": "인플레이션/금리",
     "description": "연준 통화정책, 국채 금리 변동, 은행주 수익성. 금·채권·금융주 복합 내러티브.",
-    "tickers": ["TLT", "GLD", "XLF", "JPM", "KRE"]
+    "tickers": ["TLT", "GLD", "XLF", "JPM", "KRE"],
+    "kpis": [
+      { "source": "yahoo_price", "ticker": "^TNX", "metric": "price", "label": "미국 10Y 국채금리", "format": "price_rate" },
+      { "source": "yahoo_price", "ticker": "^IRX", "metric": "price", "label": "미국 3M 국채금리", "format": "price_rate" },
+      { "source": "yahoo_price", "ticker": "GC=F", "metric": "price", "label": "금 현물가 ($/oz)",  "format": "price_usd"  }
+    ]
   },
   {
     "id": "nuclear-uranium",
     "name": "원자력/우라늄",
     "description": "AI 데이터센터 전력 수요 + 탈탄소 정책으로 재조명받는 원자력. SMR, 우라늄 채굴, 유틸리티.",
-    "tickers": ["CCJ", "LEU", "SMR", "OKLO", "VST", "CEG"]
+    "tickers": ["CCJ", "LEU", "SMR", "OKLO", "VST", "CEG"],
+    "kpis": [
+      { "source": "yahoo_price",     "ticker": "URA", "metric": "price",         "label": "우라늄 ETF (URA) 가격",  "format": "price_usd"     },
+      { "source": "yahoo_price",     "ticker": "URA", "metric": "change1d",      "label": "URA 1일 변동",           "format": "change_pct"    },
+      { "source": "yahoo_financial", "ticker": "CCJ", "metric": "revenueGrowth", "label": "CCJ 매출 성장 YoY",      "format": "financial_pct" }
+    ]
   },
   {
     "id": "glp1",
     "name": "비만치료제 (GLP-1)",
     "description": "세마글루타이드·티르제파타이드 등 GLP-1 계열 비만·당뇨 치료제 시장 급성장. 차세대 파이프라인 경쟁.",
-    "tickers": ["LLY", "NVO", "VKTX", "AMGN"]
+    "tickers": ["LLY", "NVO", "VKTX", "AMGN"],
+    "kpis": [
+      { "source": "edgar",           "ticker": "LLY", "metric": "revenue",      "label": "LLY 분기 매출 (SEC)",   "format": "price_billions" },
+      { "source": "yahoo_financial", "ticker": "LLY", "metric": "revenueGrowth", "label": "LLY 매출 성장 YoY",   "format": "financial_pct" },
+      { "source": "yahoo_financial", "ticker": "NVO", "metric": "revenueGrowth", "label": "NVO 매출 성장 YoY",   "format": "financial_pct" }
+    ]
   },
   {
     "id": "quantum",
     "name": "양자컴퓨팅",
     "description": "양자 우위 달성 기대감과 정부·빅테크 투자 확대. 소형 순수 플레이 종목 중심의 투기적 테마.",
-    "tickers": ["IONQ", "RGTI", "QBTS", "QUBT"]
+    "tickers": ["IONQ", "RGTI", "QBTS", "QUBT"],
+    "kpis": [
+      { "source": "yahoo_price",     "ticker": "QTUM", "metric": "price",         "label": "양자컴퓨팅 ETF (QTUM)",  "format": "price_usd"     },
+      { "source": "yahoo_price",     "ticker": "QTUM", "metric": "change1d",      "label": "QTUM 1일 변동",          "format": "change_pct"    },
+      { "source": "yahoo_financial", "ticker": "IONQ", "metric": "revenueGrowth", "label": "IONQ 매출 성장 YoY",     "format": "financial_pct" }
+    ]
   },
   {
     "id": "semicap",
     "name": "반도체 장비",
     "description": "첨단 노드 팹 투자 싸이클. EUV 리소그래피, 식각·증착 장비. 온쇼어링 및 중국 수출 규제 영향.",
-    "tickers": ["ASML", "AMAT", "LRCX", "KLAC"]
+    "tickers": ["ASML", "AMAT", "LRCX", "KLAC"],
+    "kpis": [
+      { "source": "yahoo_financial", "ticker": "ASML", "metric": "revenueGrowth",    "label": "ASML 매출 성장 YoY",  "format": "financial_pct" },
+      { "source": "yahoo_financial", "ticker": "ASML", "metric": "operatingMargins", "label": "ASML 영업이익률",     "format": "financial_pct" },
+      { "source": "yahoo_financial", "ticker": "AMAT", "metric": "revenueGrowth",    "label": "AMAT 매출 성장 YoY",  "format": "financial_pct" }
+    ]
   },
   {
     "id": "cybersecurity",
     "name": "사이버보안",
     "description": "AI 기반 위협 증가로 보안 지출 확대. 제로트러스트, SASE, 클라우드 네이티브 보안 플랫폼.",
-    "tickers": ["CRWD", "PANW", "ZS", "FTNT", "S"]
+    "tickers": ["CRWD", "PANW", "ZS", "FTNT", "S"],
+    "kpis": [
+      { "source": "yahoo_financial", "ticker": "CRWD", "metric": "revenueGrowth",    "label": "CRWD 매출 성장 YoY",  "format": "financial_pct" },
+      { "source": "yahoo_financial", "ticker": "CRWD", "metric": "operatingMargins", "label": "CRWD 영업이익률",     "format": "financial_pct" },
+      { "source": "yahoo_financial", "ticker": "PANW", "metric": "revenueGrowth",    "label": "PANW 매출 성장 YoY",  "format": "financial_pct" }
+    ]
   },
   {
     "id": "power-datacenter",
     "name": "전력/데이터센터",
     "description": "AI 데이터센터의 폭발적 전력 소비 증가. 전력망 인프라, 변압기, IPP(독립발전사업자) 수혜.",
-    "tickers": ["GEV", "ETN", "PWR", "NRG", "TLN"]
+    "tickers": ["GEV", "ETN", "PWR", "NRG", "TLN"],
+    "kpis": [
+      { "source": "yahoo_price",     "ticker": "NG=F", "metric": "price",         "label": "천연가스 현재가 ($/MMBtu)", "format": "price_usd"     },
+      { "source": "yahoo_price",     "ticker": "NG=F", "metric": "change1d",      "label": "천연가스 1일 변동",         "format": "change_pct"    },
+      { "source": "yahoo_financial", "ticker": "GEV",  "metric": "revenueGrowth", "label": "GEV 매출 성장 YoY",        "format": "financial_pct" }
+    ]
   },
   {
     "id": "crypto",
     "name": "비트코인/디지털자산",
     "description": "비트코인 기관 채택, ETF 승인 효과, 규제 환경 변화. 채굴사 및 거래소 상장사.",
-    "tickers": ["MSTR", "COIN", "MARA", "RIOT"]
+    "tickers": ["MSTR", "COIN", "MARA", "RIOT"],
+    "kpis": [
+      { "source": "yahoo_price", "ticker": "BTC-USD", "metric": "price",    "label": "비트코인 현재가 (USD)",  "format": "price_usd"  },
+      { "source": "yahoo_price", "ticker": "BTC-USD", "metric": "change1d", "label": "BTC 1일 변동",          "format": "change_pct" },
+      { "source": "yahoo_price", "ticker": "ETH-USD", "metric": "price",    "label": "이더리움 현재가 (USD)", "format": "price_usd"  }
+    ]
   },
   {
     "id": "china-adr",
     "name": "중국 ADR",
     "description": "미·중 관계, 중국 경기부양책, 규제 리스크. 저밸류에이션 vs 지정학 할인 사이 줄다리기.",
-    "tickers": ["BABA", "PDD", "JD", "BIDU"]
+    "tickers": ["BABA", "PDD", "JD", "BIDU"],
+    "kpis": [
+      { "source": "yahoo_price",     "ticker": "CNY=X", "metric": "price",         "label": "USD/CNY 환율",         "format": "price_number"  },
+      { "source": "yahoo_price",     "ticker": "^HSI",  "metric": "change1d",      "label": "항셍지수 1일 변동",    "format": "change_pct"    },
+      { "source": "yahoo_financial", "ticker": "BABA",  "metric": "revenueGrowth", "label": "BABA 매출 성장 YoY",  "format": "financial_pct" }
+    ]
   }
 ]
