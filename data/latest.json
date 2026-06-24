@@ -1,4 +1,941 @@
 {
-  "timestamp": "",
-  "themes": []
+  "timestamp": "2026-06-24T09:00:32.566Z",
+  "themes": [
+    {
+      "id": "ai-infra",
+      "name": "AI 인프라",
+      "description": "AI 학습/추론용 반도체·서버·전력 공급망. GPU 수요, 데이터센터 확장, HBM 메모리 등이 핵심 드라이버.",
+      "tickers": [
+        "NVDA",
+        "AMD",
+        "AVGO",
+        "MU",
+        "SMCI",
+        "VRT",
+        "DELL"
+      ],
+      "newsScore": 91.7,
+      "volumeScore": 41.7,
+      "priceScore": 58.3,
+      "totalScore": 65.9,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "NVDA",
+          "price": 200.04,
+          "change1d": -4.126527677929554,
+          "change5d": -5.841376248705122,
+          "volume": 152123958,
+          "avgVolume20d": 151903460,
+          "relativeVolume": 1.0014515666726749,
+          "newsCount48h": 250,
+          "newsPrev48h": 250
+        },
+        {
+          "ticker": "AMD",
+          "price": 519.85,
+          "change1d": -5.761107989050627,
+          "change5d": -5.008594395820443,
+          "volume": 27057184,
+          "avgVolume20d": 31152040,
+          "relativeVolume": 0.8685525570717038,
+          "newsCount48h": 74,
+          "newsPrev48h": 36
+        },
+        {
+          "ticker": "AVGO",
+          "price": 380.15,
+          "change1d": -3.055109274985341,
+          "change5d": -3.500535223500936,
+          "volume": 28722131,
+          "avgVolume20d": 35056110,
+          "relativeVolume": 0.8193188291570286,
+          "newsCount48h": 60,
+          "newsPrev48h": 34
+        },
+        {
+          "ticker": "MU",
+          "price": 1051.77,
+          "change1d": -13.17588205187473,
+          "change5d": -3.3290720528892446,
+          "volume": 58149691,
+          "avgVolume20d": 53789000,
+          "relativeVolume": 1.0810703117737828,
+          "newsCount48h": 249,
+          "newsPrev48h": 141
+        },
+        {
+          "ticker": "SMCI",
+          "price": 33.32,
+          "change1d": -6.034968979131417,
+          "change5d": 8.006480657413913,
+          "volume": 55640924,
+          "avgVolume20d": 97692060,
+          "relativeVolume": 0.569554209420909,
+          "newsCount48h": 58,
+          "newsPrev48h": 35
+        },
+        {
+          "ticker": "VRT",
+          "price": 318.32,
+          "change1d": -11.073863001452674,
+          "change5d": 2.0485412747979175,
+          "volume": 10250377,
+          "avgVolume20d": 6383540,
+          "relativeVolume": 1.6057511976113568,
+          "newsCount48h": 18,
+          "newsPrev48h": 11
+        },
+        {
+          "ticker": "DELL",
+          "price": 427.78,
+          "change1d": 2.166177067660193,
+          "change5d": 4.573787156252951,
+          "volume": 5675982,
+          "avgVolume20d": 8706620,
+          "relativeVolume": 0.6519156687669843,
+          "newsCount48h": 43,
+          "newsPrev48h": 27
+        }
+      ],
+      "headlines": []
+    },
+    {
+      "id": "ai-software",
+      "name": "AI 소프트웨어",
+      "description": "AI 모델 개발 및 기업용 AI 솔루션. 클라우드 AI 서비스, 에이전트형 AI, 데이터 분석 플랫폼.",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "PLTR",
+        "NOW",
+        "CRM"
+      ],
+      "newsScore": 83.3,
+      "volumeScore": 58.3,
+      "priceScore": 0,
+      "totalScore": 53.7,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "MSFT",
+          "price": 373.94,
+          "change1d": 1.796700604344755,
+          "change5d": -6.458876999567001,
+          "volume": 39415431,
+          "avgVolume20d": 39271620,
+          "relativeVolume": 1.0036619574135215,
+          "newsCount48h": 218,
+          "newsPrev48h": 141
+        },
+        {
+          "ticker": "GOOGL",
+          "price": 346.13,
+          "change1d": -0.9818000812445336,
+          "change5d": -6.286720139973516,
+          "volume": 30469525,
+          "avgVolume20d": 32450960,
+          "relativeVolume": 0.9389406353463812,
+          "newsCount48h": 250,
+          "newsPrev48h": 161
+        },
+        {
+          "ticker": "PLTR",
+          "price": 116.7,
+          "change1d": -2.343096234309621,
+          "change5d": -13.369466905216203,
+          "volume": 41783658,
+          "avgVolume20d": 37591540,
+          "relativeVolume": 1.1115175914580782,
+          "newsCount48h": 63,
+          "newsPrev48h": 32
+        },
+        {
+          "ticker": "NOW",
+          "price": 95.94,
+          "change1d": 3.1501989033437185,
+          "change5d": -7.882860263264287,
+          "volume": 28523524,
+          "avgVolume20d": 26364620,
+          "relativeVolume": 1.081886406858889,
+          "newsCount48h": 28,
+          "newsPrev48h": 12
+        },
+        {
+          "ticker": "CRM",
+          "price": 153.42,
+          "change1d": 2.198241406874489,
+          "change5d": -6.76390439161016,
+          "volume": 20007367,
+          "avgVolume20d": 19603840,
+          "relativeVolume": 1.0205840794456595,
+          "newsCount48h": 54,
+          "newsPrev48h": 30
+        }
+      ],
+      "headlines": []
+    },
+    {
+      "id": "geopolitics-hormuz",
+      "name": "호르무즈/지정학 리스크",
+      "description": "중동 긴장, 원유 공급 차질 우려, 방산 수요 증가. 에너지 가격 상승 시 수혜 섹터.",
+      "tickers": [
+        "XOM",
+        "CVX",
+        "OXY",
+        "LMT",
+        "RTX",
+        "NOC",
+        "FRO",
+        "STNG"
+      ],
+      "newsScore": 75,
+      "volumeScore": 8.3,
+      "priceScore": 50,
+      "totalScore": 45.4,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "XOM",
+          "price": 139.73,
+          "change1d": 0.9099443922871314,
+          "change5d": -0.844452495649047,
+          "volume": 13682255,
+          "avgVolume20d": 20469650,
+          "relativeVolume": 0.668416655878337,
+          "newsCount48h": 32,
+          "newsPrev48h": 24
+        },
+        {
+          "ticker": "CVX",
+          "price": 175.98,
+          "change1d": 0.5255341025933894,
+          "change5d": -2.4501099326431017,
+          "volume": 6510816,
+          "avgVolume20d": 9813560,
+          "relativeVolume": 0.6634509800724712,
+          "newsCount48h": 70,
+          "newsPrev48h": 50
+        },
+        {
+          "ticker": "OXY",
+          "price": 52.23,
+          "change1d": 0.4423076923076863,
+          "change5d": -4.094747667508011,
+          "volume": 9508414,
+          "avgVolume20d": 10316040,
+          "relativeVolume": 0.9217116257788841,
+          "newsCount48h": 7,
+          "newsPrev48h": 5
+        },
+        {
+          "ticker": "LMT",
+          "price": 503.67,
+          "change1d": 2.040113452188005,
+          "change5d": -5.032425646919045,
+          "volume": 823787,
+          "avgVolume20d": 1408070,
+          "relativeVolume": 0.5850469081792808,
+          "newsCount48h": 16,
+          "newsPrev48h": 12
+        },
+        {
+          "ticker": "RTX",
+          "price": 186.39,
+          "change1d": 2.507836990595597,
+          "change5d": 1.4974951040840692,
+          "volume": 2848547,
+          "avgVolume20d": 6194080,
+          "relativeVolume": 0.45988217782140367,
+          "newsCount48h": 12,
+          "newsPrev48h": 12
+        },
+        {
+          "ticker": "NOC",
+          "price": 513.22,
+          "change1d": 1.1609800327203288,
+          "change5d": -5.7845191003641965,
+          "volume": 604325,
+          "avgVolume20d": 1050000,
+          "relativeVolume": 0.5755476190476191,
+          "newsCount48h": 9,
+          "newsPrev48h": 5
+        },
+        {
+          "ticker": "FRO",
+          "price": 42.88,
+          "change1d": 3.126503126503137,
+          "change5d": 8.74968484970209,
+          "volume": 3291452,
+          "avgVolume20d": 3878690,
+          "relativeVolume": 0.8485988826124284,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "STNG",
+          "price": 81.7,
+          "change1d": -0.9096422073984232,
+          "change5d": 3.7460278707837302,
+          "volume": 936320,
+          "avgVolume20d": 677610,
+          "relativeVolume": 1.381797789288824,
+          "newsCount48h": 3,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": []
+    },
+    {
+      "id": "inflation-rates",
+      "name": "인플레이션/금리",
+      "description": "연준 통화정책, 국채 금리 변동, 은행주 수익성. 금·채권·금융주 복합 내러티브.",
+      "tickers": [
+        "TLT",
+        "GLD",
+        "XLF",
+        "JPM",
+        "KRE"
+      ],
+      "newsScore": 66.7,
+      "volumeScore": 16.7,
+      "priceScore": 66.7,
+      "totalScore": 49.2,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "TLT",
+          "price": 86.2,
+          "change1d": 0.12777326054129332,
+          "change5d": 0.5599576769757835,
+          "volume": 18806784,
+          "avgVolume20d": 26464050,
+          "relativeVolume": 0.7106540382141056,
+          "newsCount48h": 14,
+          "newsPrev48h": 9
+        },
+        {
+          "ticker": "GLD",
+          "price": 377.32,
+          "change1d": -1.8903247614342502,
+          "change5d": -4.849320655833587,
+          "volume": 6999067,
+          "avgVolume20d": 9702240,
+          "relativeVolume": 0.7213867106977357,
+          "newsCount48h": 7,
+          "newsPrev48h": 5
+        },
+        {
+          "ticker": "XLF",
+          "price": 53.88,
+          "change1d": 0.33519553072625646,
+          "change5d": 0.5974602065335164,
+          "volume": 31106411,
+          "avgVolume20d": 39456730,
+          "relativeVolume": 0.7883676878443804,
+          "newsCount48h": 6,
+          "newsPrev48h": 2
+        },
+        {
+          "ticker": "JPM",
+          "price": 334.14,
+          "change1d": 0.802461686979597,
+          "change5d": 4.614909528373466,
+          "volume": 7544744,
+          "avgVolume20d": 10403430,
+          "relativeVolume": 0.7252169717102916,
+          "newsCount48h": 42,
+          "newsPrev48h": 29
+        },
+        {
+          "ticker": "KRE",
+          "price": 73.12,
+          "change1d": 1.5696624531185022,
+          "change5d": 1.2321740942616244,
+          "volume": 16749239,
+          "avgVolume20d": 17533760,
+          "relativeVolume": 0.9552565450878762,
+          "newsCount48h": 1,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": []
+    },
+    {
+      "id": "nuclear-uranium",
+      "name": "원자력/우라늄",
+      "description": "AI 데이터센터 전력 수요 + 탈탄소 정책으로 재조명받는 원자력. SMR, 우라늄 채굴, 유틸리티.",
+      "tickers": [
+        "CCJ",
+        "LEU",
+        "SMR",
+        "OKLO",
+        "VST",
+        "CEG"
+      ],
+      "newsScore": 58.3,
+      "volumeScore": 25,
+      "priceScore": 75,
+      "totalScore": 50.8,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "CCJ",
+          "price": 108.89,
+          "change1d": 1.6998225459979521,
+          "change5d": 1.747339567593964,
+          "volume": 3707313,
+          "avgVolume20d": 3505860,
+          "relativeVolume": 1.0574617925416303,
+          "newsCount48h": 2,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "LEU",
+          "price": 177.5,
+          "change1d": -3.3645470383275295,
+          "change5d": 0.48118094134422806,
+          "volume": 938008,
+          "avgVolume20d": 960700,
+          "relativeVolume": 0.9763797231185594,
+          "newsCount48h": 2,
+          "newsPrev48h": 1
+        },
+        {
+          "ticker": "SMR",
+          "price": 10.86,
+          "change1d": -3.3807829181494733,
+          "change5d": 2.067662652779472,
+          "volume": 28043121,
+          "avgVolume20d": 37664970,
+          "relativeVolume": 0.7445411744652923,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "OKLO",
+          "price": 57.19,
+          "change1d": -2.0719178082191796,
+          "change5d": -5.844588333319621,
+          "volume": 9253422,
+          "avgVolume20d": 10048010,
+          "relativeVolume": 0.9209208589561515,
+          "newsCount48h": 3,
+          "newsPrev48h": 2
+        },
+        {
+          "ticker": "VST",
+          "price": 162.39,
+          "change1d": -2.911634580892027,
+          "change5d": 5.777745486148763,
+          "volume": 3049062,
+          "avgVolume20d": 4911860,
+          "relativeVolume": 0.6207550703806705,
+          "newsCount48h": 6,
+          "newsPrev48h": 9
+        },
+        {
+          "ticker": "CEG",
+          "price": 270.26,
+          "change1d": -1.912677385402672,
+          "change5d": 3.0150575483456703,
+          "volume": 3354163,
+          "avgVolume20d": 4048340,
+          "relativeVolume": 0.8285279892499148,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": []
+    },
+    {
+      "id": "glp1",
+      "name": "비만치료제 (GLP-1)",
+      "description": "세마글루타이드·티르제파타이드 등 GLP-1 계열 비만·당뇨 치료제 시장 급성장. 차세대 파이프라인 경쟁.",
+      "tickers": [
+        "LLY",
+        "NVO",
+        "VKTX",
+        "AMGN"
+      ],
+      "newsScore": 0,
+      "volumeScore": 91.7,
+      "priceScore": 91.7,
+      "totalScore": 55,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "LLY",
+          "price": 1107.08,
+          "change1d": 0.45368757259001163,
+          "change5d": -1.9719325286827678,
+          "volume": 3300189,
+          "avgVolume20d": 3152700,
+          "relativeVolume": 1.0467818060709868,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "NVO",
+          "price": 47.42,
+          "change1d": 3.356582388840451,
+          "change5d": 7.96903494061336,
+          "volume": 17637347,
+          "avgVolume20d": 13286390,
+          "relativeVolume": 1.3274747316614972,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "VKTX",
+          "price": 34.81,
+          "change1d": 7.537843682422012,
+          "change5d": 17.482289433822565,
+          "volume": 6212949,
+          "avgVolume20d": 2209000,
+          "relativeVolume": 2.812561792666365,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "AMGN",
+          "price": 347.01,
+          "change1d": 0.6643072638663157,
+          "change5d": -1.004190518908527,
+          "volume": 1958415,
+          "avgVolume20d": 3836420,
+          "relativeVolume": 0.5104798223343638,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": []
+    },
+    {
+      "id": "quantum",
+      "name": "양자컴퓨팅",
+      "description": "양자 우위 달성 기대감과 정부·빅테크 투자 확대. 소형 순수 플레이 종목 중심의 투기적 테마.",
+      "tickers": [
+        "IONQ",
+        "RGTI",
+        "QBTS",
+        "QUBT"
+      ],
+      "newsScore": 0,
+      "volumeScore": 83.3,
+      "priceScore": 25,
+      "totalScore": 35.4,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "IONQ",
+          "price": 57.85,
+          "change1d": -0.8058984910836743,
+          "change5d": -5.442958179869398,
+          "volume": 26722849,
+          "avgVolume20d": 25261640,
+          "relativeVolume": 1.0578429983168156,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "RGTI",
+          "price": 21.28,
+          "change1d": -0.4677268475210377,
+          "change5d": -6.255506733780688,
+          "volume": 45806426,
+          "avgVolume20d": 37671700,
+          "relativeVolume": 1.2159373216499387,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "QBTS",
+          "price": 25.03,
+          "change1d": 2.2885165508786365,
+          "change5d": -4.683928147432092,
+          "volume": 46483561,
+          "avgVolume20d": 30343830,
+          "relativeVolume": 1.5318949849112653,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "QUBT",
+          "price": 10.49,
+          "change1d": -0.4743833017077698,
+          "change5d": -5.495500805296312,
+          "volume": 22606655,
+          "avgVolume20d": 16218950,
+          "relativeVolume": 1.3938420797893822,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": []
+    },
+    {
+      "id": "semicap",
+      "name": "반도체 장비",
+      "description": "첨단 노드 팹 투자 싸이클. EUV 리소그래피, 식각·증착 장비. 온쇼어링 및 중국 수출 규제 영향.",
+      "tickers": [
+        "ASML",
+        "AMAT",
+        "LRCX",
+        "KLAC"
+      ],
+      "newsScore": 0,
+      "volumeScore": 66.7,
+      "priceScore": 33.3,
+      "totalScore": 31.7,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "ASML",
+          "price": 1778.46,
+          "change1d": -7.815990669949461,
+          "change5d": -6.03383973771517,
+          "volume": 2408845,
+          "avgVolume20d": 2395410,
+          "relativeVolume": 1.0056086431967806,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "AMAT",
+          "price": 585.88,
+          "change1d": -8.481989440469862,
+          "change5d": 0.01706708677957201,
+          "volume": 12008490,
+          "avgVolume20d": 11447040,
+          "relativeVolume": 1.049047614055686,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "LRCX",
+          "price": 371.33,
+          "change1d": -9.32997997753578,
+          "change5d": -4.522787783647233,
+          "volume": 15758700,
+          "avgVolume20d": 13799840,
+          "relativeVolume": 1.1419480225857692,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "KLAC",
+          "price": 244.49,
+          "change1d": -9.165552087977415,
+          "change5d": -4.65252605484809,
+          "volume": 18037842,
+          "avgVolume20d": 15532300,
+          "relativeVolume": 1.1613117181615087,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": []
+    },
+    {
+      "id": "cybersecurity",
+      "name": "사이버보안",
+      "description": "AI 기반 위협 증가로 보안 지출 확대. 제로트러스트, SASE, 클라우드 네이티브 보안 플랫폼.",
+      "tickers": [
+        "CRWD",
+        "PANW",
+        "ZS",
+        "FTNT",
+        "S"
+      ],
+      "newsScore": 0,
+      "volumeScore": 0,
+      "priceScore": 41.7,
+      "totalScore": 10.4,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "CRWD",
+          "price": 680.92,
+          "change1d": 0.811322989458709,
+          "change5d": -1.7303821129839703,
+          "volume": 2328103,
+          "avgVolume20d": 3105380,
+          "relativeVolume": 0.7496998756995923,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "PANW",
+          "price": 290.915,
+          "change1d": 1.5764664804469426,
+          "change5d": 2.2422171544305884,
+          "volume": 5422376,
+          "avgVolume20d": 7378870,
+          "relativeVolume": 0.7348518133535351,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "ZS",
+          "price": 126.17,
+          "change1d": 1.7007899403514424,
+          "change5d": -3.25870269871847,
+          "volume": 2237299,
+          "avgVolume20d": 5102370,
+          "relativeVolume": 0.43848231312115743,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "FTNT",
+          "price": 148,
+          "change1d": 1.7951716074007937,
+          "change5d": -0.9967258267524768,
+          "volume": 5641763,
+          "avgVolume20d": 7401100,
+          "relativeVolume": 0.762287092459229,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "S",
+          "price": 15.13,
+          "change1d": 2.6458616010854854,
+          "change5d": -0.3949932034222532,
+          "volume": 5631905,
+          "avgVolume20d": 6253490,
+          "relativeVolume": 0.900601903896864,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": []
+    },
+    {
+      "id": "power-datacenter",
+      "name": "전력/데이터센터",
+      "description": "AI 데이터센터의 폭발적 전력 소비 증가. 전력망 인프라, 변압기, IPP(독립발전사업자) 수혜.",
+      "tickers": [
+        "GEV",
+        "ETN",
+        "PWR",
+        "NRG",
+        "TLN"
+      ],
+      "newsScore": 0,
+      "volumeScore": 50,
+      "priceScore": 83.3,
+      "totalScore": 38.3,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "GEV",
+          "price": 1034.98,
+          "change1d": -8.21309163791803,
+          "change5d": 5.710518423226162,
+          "volume": 3360720,
+          "avgVolume20d": 3648290,
+          "relativeVolume": 0.9211767704869953,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "ETN",
+          "price": 405.28,
+          "change1d": -6.998944421497086,
+          "change5d": -0.43728167591330447,
+          "volume": 2445833,
+          "avgVolume20d": 2546170,
+          "relativeVolume": 0.9605929690476284,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "PWR",
+          "price": 702.29,
+          "change1d": -5.113897370767695,
+          "change5d": -3.0454888247561667,
+          "volume": 1648514,
+          "avgVolume20d": 1244990,
+          "relativeVolume": 1.3241182660101687,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "NRG",
+          "price": 137.66,
+          "change1d": -0.8998632207904398,
+          "change5d": 5.567492412145528,
+          "volume": 2232177,
+          "avgVolume20d": 2655460,
+          "relativeVolume": 0.8405989922649937,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "TLN",
+          "price": 411.92,
+          "change1d": -5.98009677713868,
+          "change5d": 6.657005914267421,
+          "volume": 1062572,
+          "avgVolume20d": 974410,
+          "relativeVolume": 1.0904773144774786,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": []
+    },
+    {
+      "id": "crypto",
+      "name": "비트코인/디지털자산",
+      "description": "비트코인 기관 채택, ETF 승인 효과, 규제 환경 변화. 채굴사 및 거래소 상장사.",
+      "tickers": [
+        "MSTR",
+        "COIN",
+        "MARA",
+        "RIOT"
+      ],
+      "newsScore": 0,
+      "volumeScore": 33.3,
+      "priceScore": 16.7,
+      "totalScore": 15.8,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "MSTR",
+          "price": 103.84,
+          "change1d": -5.1342956331079765,
+          "change5d": -20.81744942719036,
+          "volume": 22126461,
+          "avgVolume20d": 21069390,
+          "relativeVolume": 1.0501709351813222,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "COIN",
+          "price": 158.18,
+          "change1d": -4.040281485076436,
+          "change5d": -6.7444893118305735,
+          "volume": 7017557,
+          "avgVolume20d": 7942340,
+          "relativeVolume": 0.8835629046351579,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "MARA",
+          "price": 14.7,
+          "change1d": -1.0101010101010124,
+          "change5d": 0.4098324080282439,
+          "volume": 41924468,
+          "avgVolume20d": 39830080,
+          "relativeVolume": 1.0525830728936523,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "RIOT",
+          "price": 28.69,
+          "change1d": 0.20957038071953293,
+          "change5d": 4.7845194062976635,
+          "volume": 10297283,
+          "avgVolume20d": 13952200,
+          "relativeVolume": 0.7380400940353493,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": []
+    },
+    {
+      "id": "china-adr",
+      "name": "중국 ADR",
+      "description": "미·중 관계, 중국 경기부양책, 규제 리스크. 저밸류에이션 vs 지정학 할인 사이 줄다리기.",
+      "tickers": [
+        "BABA",
+        "PDD",
+        "JD",
+        "BIDU"
+      ],
+      "newsScore": 0,
+      "volumeScore": 75,
+      "priceScore": 8.3,
+      "totalScore": 28.3,
+      "prevTotalScore": null,
+      "scoreDelta": null,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "BABA",
+          "price": 102.6,
+          "change1d": -2.2577879394112648,
+          "change5d": -8.840519154016423,
+          "volume": 11288493,
+          "avgVolume20d": 12246540,
+          "relativeVolume": 0.921769985644925,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "PDD",
+          "price": 76.56,
+          "change1d": -1.9843810011522176,
+          "change5d": -8.36625402495063,
+          "volume": 8884699,
+          "avgVolume20d": 7902900,
+          "relativeVolume": 1.1242327500031635,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "JD",
+          "price": 26.12,
+          "change1d": -3.330866025166538,
+          "change5d": -8.926078935502622,
+          "volume": 11904013,
+          "avgVolume20d": 7062650,
+          "relativeVolume": 1.6854881666230097,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "BIDU",
+          "price": 110.14,
+          "change1d": -1.4318954716305659,
+          "change5d": -5.661670758331103,
+          "volume": 1651421,
+          "avgVolume20d": 2201140,
+          "relativeVolume": 0.7502571394822682,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": []
+    }
+  ]
 }
