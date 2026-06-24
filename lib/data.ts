@@ -3,10 +3,9 @@
  *
  * Vercel serverless: process.cwd() (/var/task) is read-only and /tmp is
  * wiped between invocations. To persist data we write latest.json back to
- * the GitHub repo via the Contents API so it is bundled into the next deploy.
+ * the GitHub repo via the Contents API so Vercel redeploys with fresh data.
  *
- * Set GITHUB_PAT (repo scope) in Vercel environment variables to enable
- * GitHub write-back. Without it the batch still runs but data won't persist.
+ * Set GITHUB_PAT (repo scope) in Vercel environment variables.
  */
 
 import fs from "fs/promises";
@@ -27,7 +26,7 @@ async function ensureSnapshotsDir() {
   await fs.mkdir(TMP_SNAPSHOTS_DIR, { recursive: true });
 }
 
-/** Push latest.json to the GitHub repo so it survives across invocations. */
+/** Push latest.json to GitHub so Vercel redeploys with fresh bundled data. */
 async function writeToGitHub(content: string): Promise<void> {
   const token = process.env.GITHUB_PAT;
   if (!token) {
@@ -35,42 +34,46 @@ async function writeToGitHub(content: string): Promise<void> {
     return;
   }
 
-  const headers = {
-    Authorization: `token ${token}`,
-    Accept: "application/vnd.github.v3+json",
-    "Content-Type": "application/json",
-  };
-
-  // Need current file SHA to update (GitHub API requirement)
-  let sha: string | undefined;
   try {
-    const res = await fetch(GH_API, { headers });
-    if (res.ok) {
-      const json = await res.json() as { sha: string };
+    const headers = {
+      Authorization: `token ${token}`,
+      Accept: "application/vnd.github.v3+json",
+      "Content-Type": "application/json",
+    };
+
+    // Get current file SHA (required by GitHub API for updates)
+    let sha: string | undefined;
+    const getRes = await fetch(GH_API, {
+      headers,
+      cache: "no-store",
+    });
+    if (getRes.ok) {
+      const json = (await getRes.json()) as { sha: string };
       sha = json.sha;
     }
-  } catch {
-    // ignore — PUT without SHA will create the file
-  }
 
-  const body: Record<string, string> = {
-    message: "chore: update latest snapshot [skip ci]",
-    content: Buffer.from(content).toString("base64"),
-    branch: "main",
-  };
-  if (sha) body.sha = sha;
+    const body: Record<string, string> = {
+      message: "chore: update latest snapshot",
+      content: Buffer.from(content).toString("base64"),
+      branch: "main",
+    };
+    if (sha) body.sha = sha;
 
-  const putRes = await fetch(GH_API, {
-    method: "PUT",
-    headers,
-    body: JSON.stringify(body),
-  });
+    const putRes = await fetch(GH_API, {
+      method: "PUT",
+      headers,
+      body: JSON.stringify(body),
+      cache: "no-store",
+    });
 
-  if (putRes.ok) {
-    console.log("[data] latest.json pushed to GitHub");
-  } else {
-    const err = await putRes.text();
-    console.error("[data] GitHub write-back failed:", putRes.status, err);
+    if (putRes.ok) {
+      console.log("[data] latest.json pushed to GitHub — Vercel will redeploy");
+    } else {
+      const err = await putRes.text();
+      console.error("[data] GitHub write-back failed:", putRes.status, err);
+    }
+  } catch (err) {
+    console.error("[data] GitHub write-back error:", err);
   }
 }
 
@@ -98,7 +101,6 @@ export async function writeSnapshot(snapshot: Snapshot): Promise<void> {
   await fs.writeFile(TMP_LATEST_PATH, json, "utf-8");
   console.log(`[data] Snapshot written to /tmp: ${safeTs}.json`);
 
-  // Persist to GitHub so it survives across invocations
   await writeToGitHub(json);
 }
 
@@ -114,7 +116,10 @@ export async function readAllSnapshots(): Promise<Snapshot[]> {
   const snapshots: Snapshot[] = [];
   for (const file of files.filter((f) => f.endsWith(".json"))) {
     try {
-      const raw = await fs.readFile(path.join(TMP_SNAPSHOTS_DIR, file), "utf-8");
+      const raw = await fs.readFile(
+        path.join(TMP_SNAPSHOTS_DIR, file),
+        "utf-8"
+      );
       snapshots.push(JSON.parse(raw));
     } catch {
       // skip corrupted file
