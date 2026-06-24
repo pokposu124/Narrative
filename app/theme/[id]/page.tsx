@@ -4,7 +4,7 @@ import { readLatest, readScoreHistory } from "@/lib/data";
 import ScoreChart from "@/components/ScoreChart";
 import TickerTable from "@/components/TickerTable";
 import HeadlineLoader from "@/components/HeadlineLoader";
-import type { ThemeScore } from "@/types";
+import type { ThemeScore, KpiValue } from "@/types";
 
 export const revalidate = 600;
 
@@ -15,26 +15,58 @@ function fmt(n: number, d = 1) {
   });
 }
 
-function sign(n: number) {
-  return n >= 0 ? "+" : "";
+function formatKpiValue(kpi: KpiValue): string {
+  const v = kpi.value;
+  if (v === null) return "N/A";
+  switch (kpi.format) {
+    case "financial_pct":
+      return `${v >= 0 ? "+" : ""}${(v * 100).toFixed(1)}%`;
+    case "change_pct":
+      return `${v >= 0 ? "+" : ""}${v.toFixed(2)}%`;
+    case "price_usd":
+      if (v >= 1_000) return `$${v.toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
+      return `$${v.toFixed(2)}`;
+    case "price_rate":
+      return `${v.toFixed(2)}%`;
+    case "price_number":
+      return v.toFixed(4);
+    default:
+      return v.toFixed(2);
+  }
 }
 
-function KpiCard({
-  label,
-  value,
-  sub,
-  color,
+function kpiColor(kpi: KpiValue): string {
+  const v = kpi.value;
+  if (v === null) return "text-zinc-600";
+  if (kpi.format === "financial_pct" || kpi.format === "change_pct") {
+    const n = kpi.format === "financial_pct" ? v * 100 : v;
+    return n >= 0 ? "text-green-400" : "text-red-400";
+  }
+  return "text-zinc-100";
+}
+
+function KpiCard({ kpi }: { kpi: KpiValue }) {
+  return (
+    <div className="border border-zinc-800 p-3">
+      <div className="text-[10px] text-zinc-600 uppercase tracking-wider font-mono mb-1 leading-tight">
+        {kpi.label}
+      </div>
+      <div className={`text-lg font-mono ${kpiColor(kpi)}`}>
+        {formatKpiValue(kpi)}
+      </div>
+      <div className="text-[10px] text-zinc-700 mt-0.5 font-mono">{kpi.ticker}</div>
+    </div>
+  );
+}
+
+function GenericKpiCard({
+  label, value, sub, color,
 }: {
-  label: string;
-  value: string;
-  sub?: string;
-  color?: string;
+  label: string; value: string; sub?: string; color?: string;
 }) {
   return (
     <div className="border border-zinc-800 p-3">
-      <div className="text-[10px] text-zinc-600 uppercase tracking-wider font-mono mb-1">
-        {label}
-      </div>
+      <div className="text-[10px] text-zinc-600 uppercase tracking-wider font-mono mb-1">{label}</div>
       <div className={`text-lg font-mono ${color ?? "text-zinc-100"}`}>{value}</div>
       {sub && <div className="text-[10px] text-zinc-600 mt-0.5">{sub}</div>}
     </div>
@@ -58,18 +90,11 @@ export default async function ThemeDetailPage({
     .map((h) => ({ timestamp: h.timestamp, score: h.scores[id] ?? 0 }))
     .filter((h) => h.score > 0);
 
-  // Compute theme-level aggregates
   const td = theme.tickerData;
-  const avg1d = td.length
-    ? td.reduce((s, t) => s + t.change1d, 0) / td.length
-    : 0;
-  const avg5d = td.length
-    ? td.reduce((s, t) => s + t.change5d, 0) / td.length
-    : 0;
+  const avg1d = td.length ? td.reduce((s, t) => s + t.change1d, 0) / td.length : 0;
+  const avg5d = td.length ? td.reduce((s, t) => s + t.change5d, 0) / td.length : 0;
   const totalNews = td.reduce((s, t) => s + t.newsCount48h, 0);
-  const avgRelVol = td.length
-    ? td.reduce((s, t) => s + t.relativeVolume, 0) / td.length
-    : 0;
+  const avgRelVol = td.length ? td.reduce((s, t) => s + t.relativeVolume, 0) / td.length : 0;
   const totalMktCap = td.reduce((s, t) => s + (t.marketCap ?? 0), 0);
 
   function fmtMktCap(v: number) {
@@ -86,11 +111,8 @@ export default async function ThemeDetailPage({
 
   return (
     <div className="space-y-6">
-      {/* Back */}
       <div className="text-xs text-zinc-600 font-mono">
-        <Link href="/" className="hover:text-zinc-400 transition-colors">
-          ← BACK TO RANKING
-        </Link>
+        <Link href="/" className="hover:text-zinc-400 transition-colors">← BACK TO RANKING</Link>
       </div>
 
       {/* Header */}
@@ -106,22 +128,16 @@ export default async function ThemeDetailPage({
             <div className="text-3xl text-zinc-100">{fmt(theme.totalScore)}</div>
             <div className="text-[10px] text-zinc-600">COMPOSITE SCORE</div>
             {theme.scoreDelta !== null && (
-              <div
-                className={`text-xs mt-0.5 ${
-                  theme.deltaDirection === "▲"
-                    ? "text-green-400"
-                    : theme.deltaDirection === "▼"
-                    ? "text-red-400"
-                    : "text-zinc-600"
-                }`}
-              >
+              <div className={`text-xs mt-0.5 ${
+                theme.deltaDirection === "▲" ? "text-green-400" :
+                theme.deltaDirection === "▼" ? "text-red-400" : "text-zinc-600"
+              }`}>
                 {theme.deltaDirection} {Math.abs(theme.scoreDelta!).toFixed(1)} pts
               </div>
             )}
           </div>
         </div>
 
-        {/* Score bars */}
         <div className="grid grid-cols-3 gap-4 mt-4 border-t border-zinc-800 pt-4">
           {[
             { label: "NEWS (40%)",   value: theme.newsScore   },
@@ -132,59 +148,42 @@ export default async function ThemeDetailPage({
               <div className="text-[10px] text-zinc-600 mb-1">{label}</div>
               <div className="text-lg text-zinc-100 font-mono">{fmt(value)}</div>
               <div className="w-full h-1 bg-zinc-800 mt-1">
-                <div
-                  className="h-full bg-green-600"
-                  style={{ width: `${Math.min(100, value)}%` }}
-                />
+                <div className="h-full bg-green-600" style={{ width: `${Math.min(100, value)}%` }} />
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* KPI cards */}
+      {/* Theme-specific KPIs */}
       <div>
         <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">
           THEME KPIs
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-          <KpiCard
-            label="AVG 1D RETURN"
-            value={`${sign(avg1d)}${fmt(avg1d)}%`}
-            sub="equal-weighted"
-            color={avg1d >= 0 ? "text-green-400" : "text-red-400"}
-          />
-          <KpiCard
-            label="AVG 5D RETURN"
-            value={`${sign(avg5d)}${fmt(avg5d)}%`}
-            sub="equal-weighted"
-            color={avg5d >= 0 ? "text-green-400" : "text-red-400"}
-          />
-          <KpiCard
-            label="AVG REL VOL"
-            value={`${fmt(avgRelVol, 2)}x`}
-            sub="vs 20d avg"
-            color={avgRelVol >= 1.5 ? "text-green-400" : "text-zinc-100"}
-          />
-          <KpiCard
-            label="NEWS 48H"
-            value={totalNews.toString()}
-            sub={`${td.length} tickers`}
-            color={totalNews > 50 ? "text-green-400" : "text-zinc-100"}
-          />
-          <KpiCard
-            label="THEME MKT CAP"
-            value={fmtMktCap(totalMktCap)}
-            sub="sum of constituents"
-          />
-        </div>
+        {theme.customKpis?.length ? (
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {theme.customKpis.map((kpi, i) => (
+              <KpiCard key={i} kpi={kpi} />
+            ))}
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            <GenericKpiCard label="AVG 1D RETURN" value={`${avg1d >= 0 ? "+" : ""}${fmt(avg1d)}%`}
+              sub="equal-weighted" color={avg1d >= 0 ? "text-green-400" : "text-red-400"} />
+            <GenericKpiCard label="AVG 5D RETURN" value={`${avg5d >= 0 ? "+" : ""}${fmt(avg5d)}%`}
+              sub="equal-weighted" color={avg5d >= 0 ? "text-green-400" : "text-red-400"} />
+            <GenericKpiCard label="AVG REL VOL" value={`${fmt(avgRelVol, 2)}x`} sub="vs 20d avg"
+              color={avgRelVol >= 1.5 ? "text-green-400" : "text-zinc-100"} />
+            <GenericKpiCard label="NEWS 48H" value={totalNews.toString()} sub={`${td.length} tickers`}
+              color={totalNews > 50 ? "text-green-400" : "text-zinc-100"} />
+            <GenericKpiCard label="THEME MKT CAP" value={fmtMktCap(totalMktCap)} sub="sum" />
+          </div>
+        )}
       </div>
 
       {/* Score history */}
       <div>
-        <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">
-          SCORE HISTORY
-        </h2>
+        <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">SCORE HISTORY</h2>
         <ScoreChart history={chartData} themeId={id} />
       </div>
 
@@ -199,9 +198,7 @@ export default async function ThemeDetailPage({
 
       {/* Headlines */}
       <div>
-        <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">
-          RECENT HEADLINES
-        </h2>
+        <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">RECENT HEADLINES</h2>
         <div className="border border-zinc-800 p-4">
           <HeadlineLoader themeId={id} initial={theme.headlines} />
         </div>

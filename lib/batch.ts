@@ -6,7 +6,8 @@ import { fetchTickersBatch } from "@/lib/yahoo";
 import { fetchNewsCountsBatch, fetchThemeHeadlines } from "@/lib/finnhub";
 import { computeScores } from "@/lib/scoring";
 import { readLatest, writeSnapshot } from "@/lib/data";
-import type { Snapshot, TickerData } from "@/types";
+import { fetchThemeKpis } from "@/lib/kpis";
+import type { Snapshot, TickerData, KpiConfig } from "@/types";
 import themesRaw from "@/data/themes.json";
 
 interface RawTheme {
@@ -14,6 +15,7 @@ interface RawTheme {
   name: string;
   description: string;
   tickers: string[];
+  kpis?: KpiConfig[];
 }
 
 export async function runBatch(): Promise<Snapshot & { githubStatus: string }> {
@@ -48,7 +50,15 @@ export async function runBatch(): Promise<Snapshot & { githubStatus: string }> {
   const prevSnapshot = await readLatest();
   const scored = computeScores(themes, tickerDataMap, prevSnapshot);
 
-  // 5. Fetch headlines for top 3 tickers per theme
+  // 5. Fetch theme-specific KPIs
+  for (const theme of scored) {
+    const config = themes.find((t) => t.id === theme.id);
+    if (config?.kpis?.length) {
+      theme.customKpis = await fetchThemeKpis(config.kpis, 250);
+    }
+  }
+
+  // 6. Fetch headlines for top 3 tickers per theme
   for (const theme of scored) {
     const topTickers = theme.tickers.slice(0, 3);
     theme.headlines = await fetchThemeHeadlines(topTickers, 400);
@@ -59,8 +69,7 @@ export async function runBatch(): Promise<Snapshot & { githubStatus: string }> {
     themes: scored,
   };
 
-  // 6. Persist and return github write-back status for diagnostics
+  // 7. Persist
   const githubStatus = await writeSnapshot(snapshot);
-
   return { ...snapshot, githubStatus };
 }

@@ -1,23 +1,40 @@
 // Theme definitions (loaded from /data/themes.json)
+export interface KpiConfig {
+  source: "yahoo_financial" | "yahoo_price";
+  ticker: string;
+  metric: string;   // financial: revenueGrowth | operatingMargins | grossMargins …
+                    // price: price | change1d
+  label: string;
+  format: "financial_pct" | "change_pct" | "price_usd" | "price_rate" | "price_number";
+}
+
+export interface KpiValue {
+  label: string;
+  ticker: string;
+  value: number | null;
+  format: "financial_pct" | "change_pct" | "price_usd" | "price_rate" | "price_number";
+}
+
 export interface ThemeDefinition {
   id: string;
   name: string;
   description: string;
   tickers: string[];
+  kpis?: KpiConfig[];
 }
 
 // Per-ticker raw data collected each batch run
 export interface TickerData {
   ticker: string;
   price: number;
-  change1d: number;        // % change vs previous close
-  change5d: number;        // % change over last 5 trading days
-  volume: number;          // today's volume
-  avgVolume20d: number;    // 20-day average volume
-  relativeVolume: number;  // volume / avgVolume20d
-  newsCount48h: number;    // Finnhub news articles in last 48h
-  newsPrev48h: number;     // Finnhub news articles in previous 48h window
-  marketCap?: number;      // market capitalisation in USD (optional — populated from v2 batch)
+  change1d: number;
+  change5d: number;
+  volume: number;
+  avgVolume20d: number;
+  relativeVolume: number;
+  newsCount48h: number;
+  newsPrev48h: number;
+  marketCap?: number;
 }
 
 // Theme-level scored result
@@ -27,43 +44,34 @@ export interface ThemeScore {
   description: string;
   tickers: string[];
 
-  // Raw component scores (0-100 after percentile normalisation)
   newsScore: number;
   volumeScore: number;
   priceScore: number;
-
-  // Weighted composite (0-100)
   totalScore: number;
 
-  // Delta vs previous snapshot
   prevTotalScore: number | null;
   scoreDelta: number | null;
   deltaDirection: '▲' | '▼' | '–';
 
-  // Per-ticker breakdown for detail page
   tickerData: TickerData[];
-
-  // Recent Finnhub headlines for detail page
   headlines: Headline[];
+  customKpis?: KpiValue[];
 }
 
-// News headline from Finnhub
 export interface Headline {
   ticker: string;
   headline: string;
   source: string;
   url: string;
-  datetime: number;  // Unix timestamp (seconds)
+  datetime: number;
 }
 
-// A single snapshot persisted to disk
 export interface Snapshot {
-  timestamp: string;       // ISO-8601
+  timestamp: string;
   themes: ThemeScore[];
 }
 
-// Minimal record kept in snapshot history for chart
 export interface HistoryPoint {
   timestamp: string;
-  scores: Record<string, number>;  // themeId → totalScore
+  scores: Record<string, number>;
 }
