@@ -1,6 +1,7 @@
 /**
  * Manual batch trigger for local development / testing.
  * POST /api/trigger — runs the full data collection and scoring pipeline.
+ * GET  /api/trigger?secret=CRON_SECRET — same, for browser/phone access.
  */
 
 import { NextResponse } from "next/server";
@@ -9,11 +10,23 @@ import { runBatch } from "@/lib/batch";
 export const runtime = "nodejs";
 export const maxDuration = 300;
 
-export async function POST(request: Request) {
-  const authHeader = request.headers.get("authorization");
+function isAuthorized(request: Request): boolean {
   const cronSecret = process.env.CRON_SECRET;
+  if (!cronSecret) return true;
 
-  if (cronSecret && authHeader !== `Bearer ${cronSecret}`) {
+  // POST: Authorization header
+  const authHeader = request.headers.get("authorization");
+  if (authHeader === `Bearer ${cronSecret}`) return true;
+
+  // GET: ?secret= query param
+  const url = new URL(request.url);
+  if (url.searchParams.get("secret") === cronSecret) return true;
+
+  return false;
+}
+
+async function handle(request: Request) {
+  if (!isAuthorized(request)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
@@ -29,3 +42,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, error: String(err) }, { status: 500 });
   }
 }
+
+export const GET = handle;
+export const POST = handle;
