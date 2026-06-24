@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ai-infra",
+    "name": "AI 인프라",
+    "description": "AI 학습/추론용 반도체·서버·전력 공급망. GPU 수요, 데이터센터 확장, HBM 메모리 등이 핵심 드라이버.",
+    "tickers": ["NVDA", "AMD", "AVGO", "MU", "SMCI", "VRT", "DELL"]
+  },
+  {
+    "id": "ai-software",
+    "name": "AI 소프트웨어",
+    "description": "AI 모델 개발 및 기업용 AI 솔루션. 클라우드 AI 서비스, 에이전트형 AI, 데이터 분석 플랫폼.",
+    "tickers": ["MSFT", "GOOGL", "PLTR", "NOW", "CRM"]
+  },
+  {
+    "id": "geopolitics-hormuz",
+    "name": "호르무즈/지정학 리스크",
+    "description": "중동 긴장, 원유 공급 차질 우려, 방산 수요 증가. 에너지 가격 상승 시 수혜 섹터.",
+    "tickers": ["XOM", "CVX", "OXY", "LMT", "RTX", "NOC", "FRO", "STNG"]
+  },
+  {
+    "id": "inflation-rates",
+    "name": "인플레이션/금리",
+    "description": "연준 통화정책, 국채 금리 변동, 은행주 수익성. 금·채권·금융주 복합 내러티브.",
+    "tickers": ["TLT", "GLD", "XLF", "JPM", "KRE"]
+  },
+  {
+    "id": "nuclear-uranium",
+    "name": "원자력/우라늄",
+    "description": "AI 데이터센터 전력 수요 + 탈탄소 정책으로 재조명받는 원자력. SMR, 우라늄 채굴, 유틸리티.",
+    "tickers": ["CCJ", "LEU", "SMR", "OKLO", "VST", "CEG"]
+  },
+  {
+    "id": "glp1",
+    "name": "비만치료제 (GLP-1)",
+    "description": "세마글루타이드·티르제파타이드 등 GLP-1 계열 비만·당뇨 치료제 시장 급성장. 차세대 파이프라인 경쟁.",
+    "tickers": ["LLY", "NVO", "VKTX", "AMGN"]
+  },
+  {
+    "id": "quantum",
+    "name": "양자컴퓨팅",
+    "description": "양자 우위 달성 기대감과 정부·빅테크 투자 확대. 소형 순수 플레이 종목 중심의 투기적 테마.",
+    "tickers": ["IONQ", "RGTI", "QBTS", "QUBT"]
+  },
+  {
+    "id": "semicap",
+    "name": "반도체 장비",
+    "description": "첨단 노드 팹 투자 싸이클. EUV 리소그래피, 식각·증착 장비. 온쇼어링 및 중국 수출 규제 영향.",
+    "tickers": ["ASML", "AMAT", "LRCX", "KLAC"]
+  },
+  {
+    "id": "cybersecurity",
+    "name": "사이버보안",
+    "description": "AI 기반 위협 증가로 보안 지출 확대. 제로트러스트, SASE, 클라우드 네이티브 보안 플랫폼.",
+    "tickers": ["CRWD", "PANW", "ZS", "FTNT", "S"]
+  },
+  {
+    "id": "power-datacenter",
+    "name": "전력/데이터센터",
+    "description": "AI 데이터센터의 폭발적 전력 소비 증가. 전력망 인프라, 변압기, IPP(독립발전사업자) 수혜.",
+    "tickers": ["GEV", "ETN", "PWR", "NRG", "TLN"]
+  },
+  {
+    "id": "crypto",
+    "name": "비트코인/디지털자산",
+    "description": "비트코인 기관 채택, ETF 승인 효과, 규제 환경 변화. 채굴사 및 거래소 상장사.",
+    "tickers": ["MSTR", "COIN", "MARA", "RIOT"]
+  },
+  {
+    "id": "china-adr",
+    "name": "중국 ADR",
+    "description": "미·중 관계, 중국 경기부양책, 규제 리스크. 저밸류에이션 vs 지정학 할인 사이 줄다리기.",
+    "tickers": ["BABA", "PDD", "JD", "BIDU"]
+  }
+]
