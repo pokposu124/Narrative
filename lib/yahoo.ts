@@ -3,8 +3,6 @@
  *
  * NOTE: yahoo-finance2 uses Yahoo Finance's *unofficial* API.
  * Yahoo may change the schema or block requests without notice.
- * If this module starts throwing, check for a newer package version
- * or implement a fallback data source.
  *
  * API change (v3+): Must instantiate with `new YahooFinance()` rather than
  * calling the default export directly (static methods are deprecated).
@@ -18,17 +16,19 @@ const yf = new YahooFinance();
 export interface PriceData {
   ticker: string;
   price: number;
-  change1d: number;
-  change5d: number;
+  change1d: number;     // % change vs previous close
+  change5d: number;     // % change over last 5 trading days
   volume: number;
   avgVolume20d: number;
   relativeVolume: number;
+  marketCap: number;
 }
 
 function sleep(ms: number) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
+/** Fetch quote + historical for a single ticker. */
 async function fetchOneTicker(ticker: string): Promise<PriceData | null> {
   try {
     const quote = await yf.quote(ticker);
@@ -37,6 +37,7 @@ async function fetchOneTicker(ticker: string): Promise<PriceData | null> {
     const prevClose = quote.regularMarketPreviousClose ?? price;
     const change1d = prevClose !== 0 ? ((price - prevClose) / prevClose) * 100 : 0;
     const volume = quote.regularMarketVolume ?? 0;
+    const marketCap = quote.marketCap ?? 0;
 
     const avgVolume20d =
       quote.averageDailyVolume10Day ??
@@ -45,6 +46,7 @@ async function fetchOneTicker(ticker: string): Promise<PriceData | null> {
 
     const relativeVolume = avgVolume20d > 0 ? volume / avgVolume20d : 1;
 
+    // 5-day price change via historical (fetch 10 calendar days to ensure 5 trading days)
     const to = new Date();
     const from = new Date();
     from.setDate(from.getDate() - 10);
@@ -62,13 +64,17 @@ async function fetchOneTicker(ticker: string): Promise<PriceData | null> {
       change5d = oldest !== 0 ? ((latest - oldest) / oldest) * 100 : 0;
     }
 
-    return { ticker, price, change1d, change5d, volume, avgVolume20d, relativeVolume };
+    return { ticker, price, change1d, change5d, volume, avgVolume20d, relativeVolume, marketCap };
   } catch (err) {
     console.warn(`[yahoo] Failed to fetch ${ticker}:`, err);
     return null;
   }
 }
 
+/**
+ * Fetch price/volume data for multiple tickers with throttling.
+ * Waits `delayMs` between requests to avoid rate-limiting.
+ */
 export async function fetchTickersBatch(
   tickers: string[],
   delayMs = 400
@@ -85,6 +91,7 @@ export async function fetchTickersBatch(
   return result;
 }
 
+/** Fetch current values for market indices (used by /api/indices). */
 export async function fetchIndices() {
   const symbols = ["^IXIC", "^GSPC", "^RUT", "^VIX"];
   const results: Record<

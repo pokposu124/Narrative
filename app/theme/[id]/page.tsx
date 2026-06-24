@@ -2,11 +2,13 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { readLatest, readScoreHistory } from "@/lib/data";
 import ScoreChart from "@/components/ScoreChart";
-import type { ThemeScore, TickerData, Headline } from "@/types";
+import TickerTable from "@/components/TickerTable";
+import HeadlineLoader from "@/components/HeadlineLoader";
+import type { ThemeScore } from "@/types";
 
 export const revalidate = 600;
 
-function fmt(n: number, d = 2) {
+function fmt(n: number, d = 1) {
   return n.toLocaleString("en-US", {
     minimumFractionDigits: d,
     maximumFractionDigits: d,
@@ -17,49 +19,25 @@ function sign(n: number) {
   return n >= 0 ? "+" : "";
 }
 
-function ChangeCell({ v }: { v: number }) {
-  const color = v >= 0 ? "text-green-400" : "text-red-400";
+function KpiCard({
+  label,
+  value,
+  sub,
+  color,
+}: {
+  label: string;
+  value: string;
+  sub?: string;
+  color?: string;
+}) {
   return (
-    <span className={color}>
-      {sign(v)}{fmt(v, 2)}%
-    </span>
-  );
-}
-
-function RelVolCell({ v }: { v: number }) {
-  const color = v >= 2 ? "text-green-400" : v >= 1.3 ? "text-yellow-400" : "text-zinc-400";
-  return <span className={color}>{fmt(v, 2)}x</span>;
-}
-
-function HeadlineList({ headlines }: { headlines: Headline[] }) {
-  if (headlines.length === 0) {
-    return <p className="text-zinc-600 text-xs">No recent headlines available.</p>;
-  }
-  return (
-    <ul className="space-y-2">
-      {headlines.slice(0, 15).map((h, i) => (
-        <li key={i} className="border-b border-zinc-900 pb-2">
-          <a
-            href={h.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-zinc-200 hover:text-green-400 transition-colors text-xs leading-relaxed"
-          >
-            {h.headline}
-          </a>
-          <div className="text-zinc-600 text-[10px] mt-0.5">
-            <span className="text-zinc-500">[{h.ticker}]</span>{" "}
-            {h.source} ·{" "}
-            {new Date(h.datetime * 1000).toLocaleString("en-US", {
-              month: "short",
-              day: "numeric",
-              hour: "2-digit",
-              minute: "2-digit",
-            })}
-          </div>
-        </li>
-      ))}
-    </ul>
+    <div className="border border-zinc-800 p-3">
+      <div className="text-[10px] text-zinc-600 uppercase tracking-wider font-mono mb-1">
+        {label}
+      </div>
+      <div className={`text-lg font-mono ${color ?? "text-zinc-100"}`}>{value}</div>
+      {sub && <div className="text-[10px] text-zinc-600 mt-0.5">{sub}</div>}
+    </div>
   );
 }
 
@@ -80,16 +58,42 @@ export default async function ThemeDetailPage({
     .map((h) => ({ timestamp: h.timestamp, score: h.scores[id] ?? 0 }))
     .filter((h) => h.score > 0);
 
-  const rank = snapshot.themes.findIndex((t) => t.id === id) + 1;
+  // Compute theme-level aggregates
+  const td = theme.tickerData;
+  const avg1d = td.length
+    ? td.reduce((s, t) => s + t.change1d, 0) / td.length
+    : 0;
+  const avg5d = td.length
+    ? td.reduce((s, t) => s + t.change5d, 0) / td.length
+    : 0;
+  const totalNews = td.reduce((s, t) => s + t.newsCount48h, 0);
+  const avgRelVol = td.length
+    ? td.reduce((s, t) => s + t.relativeVolume, 0) / td.length
+    : 0;
+  const totalMktCap = td.reduce((s, t) => s + (t.marketCap ?? 0), 0);
+
+  function fmtMktCap(v: number) {
+    if (!v) return "—";
+    if (v >= 1e12) return `$${(v / 1e12).toFixed(2)}T`;
+    if (v >= 1e9) return `$${(v / 1e9).toFixed(1)}B`;
+    return `$${(v / 1e6).toFixed(0)}M`;
+  }
+
+  const rank =
+    [...snapshot.themes]
+      .sort((a, b) => b.totalScore - a.totalScore)
+      .findIndex((t) => t.id === id) + 1;
 
   return (
     <div className="space-y-6">
+      {/* Back */}
       <div className="text-xs text-zinc-600 font-mono">
         <Link href="/" className="hover:text-zinc-400 transition-colors">
           ← BACK TO RANKING
         </Link>
       </div>
 
+      {/* Header */}
       <div className="border border-zinc-800 p-4">
         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
           <div>
@@ -99,20 +103,34 @@ export default async function ThemeDetailPage({
             <p className="text-zinc-500 text-xs mt-1 max-w-xl">{theme.description}</p>
           </div>
           <div className="text-right font-mono shrink-0">
-            <div className="text-2xl text-zinc-100">{fmt(theme.totalScore)}</div>
+            <div className="text-3xl text-zinc-100">{fmt(theme.totalScore)}</div>
             <div className="text-[10px] text-zinc-600">COMPOSITE SCORE</div>
+            {theme.scoreDelta !== null && (
+              <div
+                className={`text-xs mt-0.5 ${
+                  theme.deltaDirection === "▲"
+                    ? "text-green-400"
+                    : theme.deltaDirection === "▼"
+                    ? "text-red-400"
+                    : "text-zinc-600"
+                }`}
+              >
+                {theme.deltaDirection} {Math.abs(theme.scoreDelta!).toFixed(1)} pts
+              </div>
+            )}
           </div>
         </div>
 
+        {/* Score bars */}
         <div className="grid grid-cols-3 gap-4 mt-4 border-t border-zinc-800 pt-4">
           {[
-            { label: "NEWS (40%)", value: theme.newsScore },
+            { label: "NEWS (40%)",   value: theme.newsScore   },
             { label: "VOLUME (35%)", value: theme.volumeScore },
-            { label: "PRICE (25%)", value: theme.priceScore },
+            { label: "PRICE (25%)",  value: theme.priceScore  },
           ].map(({ label, value }) => (
             <div key={label}>
               <div className="text-[10px] text-zinc-600 mb-1">{label}</div>
-              <div className="text-lg text-zinc-100">{fmt(value)}</div>
+              <div className="text-lg text-zinc-100 font-mono">{fmt(value)}</div>
               <div className="w-full h-1 bg-zinc-800 mt-1">
                 <div
                   className="h-full bg-green-600"
@@ -122,25 +140,47 @@ export default async function ThemeDetailPage({
             </div>
           ))}
         </div>
-
-        {theme.scoreDelta !== null && (
-          <p className="text-[11px] mt-3 font-mono text-zinc-500">
-            PREV SCORE: {fmt(theme.prevTotalScore ?? 0)} ·{" "}
-            <span
-              className={
-                theme.deltaDirection === "▲"
-                  ? "text-green-400"
-                  : theme.deltaDirection === "▼"
-                  ? "text-red-400"
-                  : "text-zinc-500"
-              }
-            >
-              {theme.deltaDirection} {Math.abs(theme.scoreDelta).toFixed(1)} pts
-            </span>
-          </p>
-        )}
       </div>
 
+      {/* KPI cards */}
+      <div>
+        <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">
+          THEME KPIs
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+          <KpiCard
+            label="AVG 1D RETURN"
+            value={`${sign(avg1d)}${fmt(avg1d)}%`}
+            sub="equal-weighted"
+            color={avg1d >= 0 ? "text-green-400" : "text-red-400"}
+          />
+          <KpiCard
+            label="AVG 5D RETURN"
+            value={`${sign(avg5d)}${fmt(avg5d)}%`}
+            sub="equal-weighted"
+            color={avg5d >= 0 ? "text-green-400" : "text-red-400"}
+          />
+          <KpiCard
+            label="AVG REL VOL"
+            value={`${fmt(avgRelVol, 2)}x`}
+            sub="vs 20d avg"
+            color={avgRelVol >= 1.5 ? "text-green-400" : "text-zinc-100"}
+          />
+          <KpiCard
+            label="NEWS 48H"
+            value={totalNews.toString()}
+            sub={`${td.length} tickers`}
+            color={totalNews > 50 ? "text-green-400" : "text-zinc-100"}
+          />
+          <KpiCard
+            label="THEME MKT CAP"
+            value={fmtMktCap(totalMktCap)}
+            sub="sum of constituents"
+          />
+        </div>
+      </div>
+
+      {/* Score history */}
       <div>
         <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">
           SCORE HISTORY
@@ -148,51 +188,22 @@ export default async function ThemeDetailPage({
         <ScoreChart history={chartData} themeId={id} />
       </div>
 
+      {/* Sortable ticker table */}
       <div>
         <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">
           CONSTITUENTS
+          <span className="ml-2 text-zinc-700 normal-case">— click column header to sort</span>
         </h2>
-        <div className="overflow-x-auto border border-zinc-800">
-          <table className="w-full text-xs font-mono border-collapse">
-            <thead>
-              <tr className="border-b border-zinc-700 text-zinc-600 uppercase text-[10px] tracking-wider">
-                <th className="px-3 py-2 text-left">TICKER</th>
-                <th className="px-3 py-2 text-right">PRICE</th>
-                <th className="px-3 py-2 text-right">1D</th>
-                <th className="px-3 py-2 text-right">5D</th>
-                <th className="px-3 py-2 text-right">REL VOL</th>
-                <th className="px-3 py-2 text-right">NEWS 48H</th>
-              </tr>
-            </thead>
-            <tbody>
-              {theme.tickerData.map((t: TickerData) => (
-                <tr key={t.ticker} className="border-b border-zinc-900 hover:bg-zinc-900">
-                  <td className="px-3 py-2 text-zinc-100 font-bold">{t.ticker}</td>
-                  <td className="px-3 py-2 text-right text-zinc-200">${fmt(t.price)}</td>
-                  <td className="px-3 py-2 text-right"><ChangeCell v={t.change1d} /></td>
-                  <td className="px-3 py-2 text-right"><ChangeCell v={t.change5d} /></td>
-                  <td className="px-3 py-2 text-right"><RelVolCell v={t.relativeVolume} /></td>
-                  <td className="px-3 py-2 text-right text-zinc-400">{t.newsCount48h}</td>
-                </tr>
-              ))}
-              {theme.tickerData.length === 0 && (
-                <tr>
-                  <td colSpan={6} className="px-3 py-4 text-center text-zinc-600">
-                    No ticker data available
-                  </td>
-                </tr>
-              )}
-            </tbody>
-          </table>
-        </div>
+        <TickerTable tickers={theme.tickerData} />
       </div>
 
+      {/* Headlines */}
       <div>
         <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">
           RECENT HEADLINES
         </h2>
         <div className="border border-zinc-800 p-4">
-          <HeadlineList headlines={theme.headlines} />
+          <HeadlineLoader themeId={id} initial={theme.headlines} />
         </div>
       </div>
     </div>

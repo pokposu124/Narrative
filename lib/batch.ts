@@ -20,7 +20,7 @@ export async function runBatch(): Promise<Snapshot & { githubStatus: string }> {
   const themes = themesRaw as RawTheme[];
   const allTickers = [...new Set(themes.flatMap((t) => t.tickers))];
 
-  // 1. Fetch price/volume data
+  // 1. Fetch price/volume/marketcap data
   const priceDataMap = await fetchTickersBatch(allTickers, 350);
 
   // 2. Fetch news counts
@@ -38,6 +38,7 @@ export async function runBatch(): Promise<Snapshot & { githubStatus: string }> {
       volume: price.volume,
       avgVolume20d: price.avgVolume20d,
       relativeVolume: price.relativeVolume,
+      marketCap: price.marketCap,
       newsCount48h: news.newsCount48h,
       newsPrev48h: news.newsPrev48h,
     });
@@ -47,10 +48,10 @@ export async function runBatch(): Promise<Snapshot & { githubStatus: string }> {
   const prevSnapshot = await readLatest();
   const scored = computeScores(themes, tickerDataMap, prevSnapshot);
 
-  // 5. Fetch headlines per theme (top 3 tickers each)
+  // 5. Fetch headlines for top 3 tickers per theme
   for (const theme of scored) {
     const topTickers = theme.tickers.slice(0, 3);
-    theme.headlines = await fetchThemeHeadlines(topTickers, 550);
+    theme.headlines = await fetchThemeHeadlines(topTickers, 400);
   }
 
   const snapshot: Snapshot = {

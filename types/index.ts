@@ -17,6 +17,7 @@ export interface TickerData {
   relativeVolume: number;  // volume / avgVolume20d
   newsCount48h: number;    // Finnhub news articles in last 48h
   newsPrev48h: number;     // Finnhub news articles in previous 48h window
+  marketCap?: number;      // market capitalisation in USD (optional — populated from v2 batch)
 }
 
 // Theme-level scored result
