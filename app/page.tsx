@@ -44,7 +44,7 @@ export default async function HomePage() {
 
       <div className="border border-zinc-800 px-4 py-2 mb-4 text-[11px] text-zinc-600 font-mono flex flex-wrap gap-x-6 gap-y-1">
         <span>점수 = <span className="text-zinc-400">0.40×뉴스 + 0.35×거래량 + 0.25×가격</span></span>
-        <span>0–100 백분위 철도</span>
+        <span>0–100 백분위 척도</span>
         <span className="text-green-600">≥70 인기</span>
         <span className="text-yellow-600">40–70 관심</span>
         <span className="text-zinc-600">&lt;40 평범</span>
