@@ -12,11 +12,6 @@ function fmt(n: number, d = 1) {
   return n.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
 }
 
-function fmtRelNews(v: number) {
-  if (!v) return "—";
-  return (v >= 10 ? v.toFixed(1) : v.toFixed(2)) + "/B";
-}
-
 function formatKpiValue(kpi: KpiValue): string {
   const v = kpi.value;
   if (v === null) return "N/A";
@@ -82,7 +77,13 @@ export default async function ThemeDetailPage({ params }: { params: Promise<{ id
   const totalNews = td.reduce((s, t) => s + t.newsCount48h, 0);
   const avgRelVol = td.length ? td.reduce((s, t) => s + t.relativeVolume, 0) / td.length : 0;
   const totalMktCap = td.reduce((s, t) => s + (t.marketCap ?? 0), 0);
-  const relNewsVol = totalMktCap > 0 ? totalNews / (totalMktCap / 1e9) : 0;
+
+  // log-normalized: same formula as scoring.ts newsRaw, identifies buzz relative to size
+  const relNewsVol = td.reduce((s, t) => {
+    const mcapB = (t.marketCap ?? 0) / 1e9;
+    const logMcap = Math.max(1, Math.log10(mcapB + 1));
+    return s + t.newsCount48h / logMcap;
+  }, 0);
 
   function fmtMktCap(v: number) {
     if (!v) return "—";
@@ -159,7 +160,8 @@ export default async function ThemeDetailPage({ params }: { params: Promise<{ id
               color={avgRelVol >= 1.5 ? "text-green-400" : "text-zinc-100"} />
             <GenericKpiCard label="뉴스 48H" value={totalNews.toString()} sub={`${td.length}개 종목`}
               color={totalNews > 50 ? "text-green-400" : "text-zinc-100"} />
-            <GenericKpiCard label="상대 뉴스량" value={fmtRelNews(relNewsVol)} sub="48H 뉴스 ÷ 시총($B)" />
+            <GenericKpiCard label="상대 뉴스량" value={relNewsVol.toFixed(1)}
+              sub="뉴스 ÷ log(시총)" />
             <GenericKpiCard label="테마 시총" value={fmtMktCap(totalMktCap)} sub="구성 종목 합계" />
           </div>
         )}

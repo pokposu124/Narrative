@@ -31,11 +31,14 @@ function fmtVol(v: number): string {
   return v.toLocaleString();
 }
 
+function relNewsVal(t: TickerData): number {
+  const mcapB = (t.marketCap ?? 0) / 1e9;
+  const logMcap = Math.max(1, Math.log10(mcapB + 1));
+  return t.newsCount48h / logMcap;
+}
+
 function getVal(t: TickerData, key: SortKey): number {
-  if (key === "relNewsVol") {
-    const mcapB = (t.marketCap ?? 0) / 1e9;
-    return mcapB > 0 ? t.newsCount48h / mcapB : 0;
-  }
+  if (key === "relNewsVol") return relNewsVal(t);
   return ((t[key as keyof TickerData] ?? 0) as number);
 }
 
@@ -50,11 +53,9 @@ function RelVolCell({ v }: { v: number }) {
 }
 
 function RelNewsCell({ t }: { t: TickerData }) {
-  const mcapB = (t.marketCap ?? 0) / 1e9;
-  if (mcapB === 0) return <span className="text-zinc-600">—</span>;
-  const v = t.newsCount48h / mcapB;
-  const cls = v >= 1.0 ? "text-green-400" : v >= 0.3 ? "text-yellow-400" : "text-zinc-400";
-  return <span className={cls}>{v >= 10 ? v.toFixed(1) : v.toFixed(2)}/B</span>;
+  const v = relNewsVal(t);
+  const cls = v >= 15 ? "text-green-400" : v >= 7 ? "text-yellow-400" : "text-zinc-400";
+  return <span className={cls}>{v.toFixed(1)}</span>;
 }
 
 export default function TickerTable({ tickers }: { tickers: TickerData[] }) {
@@ -125,7 +126,7 @@ export default function TickerTable({ tickers }: { tickers: TickerData[] }) {
         </table>
       </div>
       <p className="text-[10px] text-zinc-600 font-mono mt-1.5">
-        상대거래량: 오늘 거래량 ÷ 최근 20일 평균 거래량. 1.0 = 평소 수준, 2.0 = 평소의 2배. · 상대뉴스: 48H 뉴스 수 ÷ 시총($B). 높을수록 규모 대비 뉴스 집중도가 높음.
+        상대거래량: 오늘 거래량 ÷ 20일 평균. · 상대뉴스: 뉴스 ÷ log(시총). 시총 대비 화제성—생략 나오면 높음.
       </p>
     </div>
   );
