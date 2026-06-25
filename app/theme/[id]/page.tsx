@@ -145,15 +145,7 @@ export default async function ThemeDetailPage({ params }: { params: Promise<{ id
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {theme.customKpis.map((kpi, i) => <KpiCard key={i} kpi={kpi} />)}
             </div>
-            {/* Summary row always visible */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mt-3 pt-3 border-t border-zinc-800">
-              <GenericKpiCard label="평균 1일 수익률" value={`${avg1d >= 0 ? "+" : ""}${fmt(avg1d)}%`}
-                sub="동일 가중" color={avg1d >= 0 ? "text-green-400" : "text-red-400"} />
-              <GenericKpiCard label="평균 상대 거래량" value={`${fmt(avgRelVol, 2)}x`} sub="20일 평균 대비"
-                color={avgRelVol >= 1.5 ? "text-green-400" : "text-zinc-100"} />
-              <GenericKpiCard label="뉴스 48H" value={totalNews.toString()} sub={`${td.length}개 종목`}
-                color={totalNews > 50 ? "text-green-400" : "text-zinc-100"} />
-              <GenericKpiCard label="상대 뉴스량" value={fmtRelNews(relNewsVol)} sub="48H 뉴스 ÷ 시총($B)" />
+            <div className="mt-3 pt-3 border-t border-zinc-800">
               <GenericKpiCard label="테마 시총" value={fmtMktCap(totalMktCap)} sub="구성 종목 합계" />
             </div>
           </>
