@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { TickerData } from "@/types";
 
-type SortKey = "marketCap" | "price" | "relativeVolume" | "change1d" | "change5d" | "volume" | "newsCount48h";
+type SortKey = "marketCap" | "price" | "relativeVolume" | "change1d" | "change5d" | "volume" | "newsCount48h" | "relNewsVol";
 
 const COLS: { key: SortKey; label: string }[] = [
   { key: "marketCap",      label: "시총"      },
@@ -13,6 +13,7 @@ const COLS: { key: SortKey; label: string }[] = [
   { key: "change5d",       label: "5D"        },
   { key: "volume",         label: "거래량"    },
   { key: "newsCount48h",   label: "뉴스 48H"  },
+  { key: "relNewsVol",     label: "상대뉴스"  },
 ];
 
 function fmtMktCap(v?: number): string {
@@ -30,6 +31,14 @@ function fmtVol(v: number): string {
   return v.toLocaleString();
 }
 
+function getVal(t: TickerData, key: SortKey): number {
+  if (key === "relNewsVol") {
+    const mcapB = (t.marketCap ?? 0) / 1e9;
+    return mcapB > 0 ? t.newsCount48h / mcapB : 0;
+  }
+  return ((t[key as keyof TickerData] ?? 0) as number);
+}
+
 function ChangeCell({ v }: { v: number }) {
   const cls = v >= 0 ? "text-green-400" : "text-red-400";
   return <span className={cls}>{v >= 0 ? "+" : ""}{v.toFixed(2)}%</span>;
@@ -38,6 +47,14 @@ function ChangeCell({ v }: { v: number }) {
 function RelVolCell({ v }: { v: number }) {
   const cls = v >= 2 ? "text-green-400" : v >= 1.3 ? "text-yellow-400" : "text-zinc-400";
   return <span className={cls}>{v.toFixed(2)}x</span>;
+}
+
+function RelNewsCell({ t }: { t: TickerData }) {
+  const mcapB = (t.marketCap ?? 0) / 1e9;
+  if (mcapB === 0) return <span className="text-zinc-600">—</span>;
+  const v = t.newsCount48h / mcapB;
+  const cls = v >= 1.0 ? "text-green-400" : v >= 0.3 ? "text-yellow-400" : "text-zinc-400";
+  return <span className={cls}>{v >= 10 ? v.toFixed(1) : v.toFixed(2)}/B</span>;
 }
 
 export default function TickerTable({ tickers }: { tickers: TickerData[] }) {
@@ -54,8 +71,8 @@ export default function TickerTable({ tickers }: { tickers: TickerData[] }) {
   }
 
   const sorted = [...tickers].sort((a, b) => {
-    const av = ((a[sortKey] ?? 0) as number);
-    const bv = ((b[sortKey] ?? 0) as number);
+    const av = getVal(a, sortKey);
+    const bv = getVal(b, sortKey);
     return sortDir === "desc" ? bv - av : av - bv;
   });
 
@@ -96,18 +113,19 @@ export default function TickerTable({ tickers }: { tickers: TickerData[] }) {
                 <td className="px-3 py-2 text-right"><ChangeCell v={t.change5d} /></td>
                 <td className="px-3 py-2 text-right text-zinc-400">{fmtVol(t.volume)}</td>
                 <td className="px-3 py-2 text-right text-zinc-400">{t.newsCount48h}</td>
+                <td className="px-3 py-2 text-right"><RelNewsCell t={t} /></td>
               </tr>
             ))}
             {tickers.length === 0 && (
               <tr>
-                <td colSpan={8} className="px-3 py-4 text-center text-zinc-600">데이터 없음</td>
+                <td colSpan={9} className="px-3 py-4 text-center text-zinc-600">데이터 없음</td>
               </tr>
             )}
           </tbody>
         </table>
       </div>
       <p className="text-[10px] text-zinc-600 font-mono mt-1.5">
-        상대거래량: 오늘 거래량 ÷ 최근 20일 평균 거래량. 1.0 = 평소 수준, 2.0 = 평소의 2배. 높을수록 거래 몰림이 폙발됨.
+        상대거래량: 오늘 거래량 ÷ 최근 20일 평균 거래량. 1.0 = 평소 수준, 2.0 = 평소의 2배. · 상대뉴스: 48H 뉴스 수 ÷ 시총($B). 높을수록 규모 대비 뉴스 집중도가 높음.
       </p>
     </div>
   );
