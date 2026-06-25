@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-25T09:41:14.209Z",
+  "timestamp": "2026-06-25T12:10:37.010Z",
   "themes": [
     {
       "id": "inflation-rates",
@@ -98,7 +98,7 @@
         {
           "label": "금 현물가 ($/oz)",
           "ticker": "GC=F",
-          "value": 4011.2,
+          "value": 3996,
           "format": "price_usd"
         }
       ]
@@ -130,8 +130,8 @@
           "change1d": -0.5,
           "change5d": -4.054772437982341,
           "volume": 149005898,
-          "avgVolume20d": 153349060,
-          "relativeVolume": 0.9716779352935062,
+          "avgVolume20d": 150401980,
+          "relativeVolume": 0.9907176620946081,
           "marketCap": 4819978813440,
           "newsCount48h": 250,
           "newsPrev48h": 250
@@ -145,7 +145,7 @@
           "avgVolume20d": 30521480,
           "relativeVolume": 0.7790916430002739,
           "marketCap": 847488352256,
-          "newsCount48h": 94,
+          "newsCount48h": 95,
           "newsPrev48h": 76
         },
         {
@@ -157,7 +157,7 @@
           "avgVolume20d": 33937890,
           "relativeVolume": 0.8314599110315933,
           "marketCap": 1817728778240,
-          "newsCount48h": 83,
+          "newsCount48h": 85,
           "newsPrev48h": 60
         },
         {
@@ -181,7 +181,7 @@
           "avgVolume20d": 100551120,
           "relativeVolume": 0.4943574870175489,
           "marketCap": 20991029248,
-          "newsCount48h": 35,
+          "newsCount48h": 37,
           "newsPrev48h": 57
         },
         {
@@ -205,7 +205,7 @@
           "avgVolume20d": 8095280,
           "relativeVolume": 0.7119074324791731,
           "marketCap": 280464556032,
-          "newsCount48h": 33,
+          "newsCount48h": 34,
           "newsPrev48h": 44
         }
       ],
@@ -393,7 +393,7 @@
           "avgVolume20d": 1432250,
           "relativeVolume": 0.8736191307383487,
           "marketCap": 113354301440,
-          "newsCount48h": 17,
+          "newsCount48h": 18,
           "newsPrev48h": 16
         },
         {
@@ -450,13 +450,13 @@
         {
           "label": "WTI 원유 현재가 ($/bbl)",
           "ticker": "CL=F",
-          "value": 69.45,
+          "value": 69.81,
           "format": "price_usd"
         },
         {
           "label": "WTI 1일 변동",
           "ticker": "CL=F",
-          "value": -1.2652829115723636,
+          "value": -0.7534830821723075,
           "format": "change_pct"
         },
         {
@@ -496,7 +496,7 @@
           "avgVolume20d": 41026700,
           "relativeVolume": 0.939071092727419,
           "marketCap": 2714795769856,
-          "newsCount48h": 195,
+          "newsCount48h": 200,
           "newsPrev48h": 231
         },
         {
@@ -638,8 +638,8 @@
           "avgVolume20d": 9784920,
           "relativeVolume": 0.9505181442464528,
           "marketCap": 9405953024,
-          "newsCount48h": 2,
-          "newsPrev48h": 3
+          "newsCount48h": 0,
+          "newsPrev48h": 0
         },
         {
           "ticker": "VST",
@@ -650,8 +650,8 @@
           "avgVolume20d": 4930470,
           "relativeVolume": 0.6263303498449437,
           "marketCap": 54916907008,
-          "newsCount48h": 3,
-          "newsPrev48h": 7
+          "newsCount48h": 0,
+          "newsPrev48h": 0
         },
         {
           "ticker": "CEG",
@@ -738,8 +738,8 @@
           "change1d": -0.058380441128304296,
           "change5d": -2.4204387210118217,
           "volume": 755041,
-          "avgVolume20d": 1329120,
-          "relativeVolume": 0.568075869748405,
+          "avgVolume20d": 1302250,
+          "relativeVolume": 0.5797972739489345,
           "marketCap": 105324216320,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -774,13 +774,13 @@
         {
           "label": "천연가스 현재가 ($/MMBtu)",
           "ticker": "NG=F",
-          "value": 3.329,
+          "value": 3.313,
           "format": "price_usd"
         },
         {
           "label": "천연가스 1일 변동",
           "ticker": "NG=F",
-          "value": 2.0852499233364017,
+          "value": 1.5946028825513658,
           "format": "change_pct"
         },
         {
@@ -859,24 +859,137 @@
           "newsPrev48h": 0
         }
       ],
-      "headlines": [],
+      "headlines": [
+        {
+          "ticker": "COIN",
+          "headline": "Coinbase Establishes EU-Wide MiCA Crypto Hub in Luxembourg After Ripple",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=4572da4e1d9175cb588195ba1eb8d56b651fb2b4d3c23f0edc18edd9eac72865",
+          "datetime": 1782363408
+        },
+        {
+          "ticker": "COIN",
+          "headline": "Coinbase Opens Luxembourg MiCA Hub as Binance Races EU Deadline",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=395b77fca433f2a2efae56ddc39970a51a4ffb044a5f3b060736d9122d7d97f9",
+          "datetime": 1782345365
+        },
+        {
+          "ticker": "COIN",
+          "headline": "The CBOE moves into prediction market space",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=9ef56c1b97431348cadacbbd98c2d6e5385b8c3a59eac4a5676fdb4832f71cfd",
+          "datetime": 1782333000
+        },
+        {
+          "ticker": "COIN",
+          "headline": "Coinbase Could Jump 65% as Crypto Recovery Unfolds",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=87b4b328ae45212c6d9acf318bd780c7fac699694288e1265ef41e6a2c2be8e5",
+          "datetime": 1782332921
+        },
+        {
+          "ticker": "COIN",
+          "headline": "Coinbase vs. Strategy: Which Bitcoin-Related Stock is Worth the Risk?",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=4b80099b8457a6b6534dab73ebf6635be1b18a79911672af63ed301603302f85",
+          "datetime": 1782330660
+        },
+        {
+          "ticker": "COIN",
+          "headline": "Bitcoin Is In Freefall, and It’s Taking Strategy, Other Crypto Stocks With It",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=cddbc730973ca626c1dd154d091607e6376a22b97b8a7ff9deb8dfed6ec38440",
+          "datetime": 1782328380
+        },
+        {
+          "ticker": "COIN",
+          "headline": "Dear Coinbase Stock Fans, Mark Your Calendars for July 17",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=d99e203d93d81253d3b1d2e90b22ea7c980def2c130d9ee94f3d183e4660490d",
+          "datetime": 1782325196
+        },
+        {
+          "ticker": "COIN",
+          "headline": "SpaceX rockets downward on day 1 of short trading",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=ba2843790b86b26fa5caf632e4fe066b349f595ad61f413bc30296d5eb69105a",
+          "datetime": 1782319863
+        },
+        {
+          "ticker": "COIN",
+          "headline": "How Galaxy Digital Turned A $65 Million Bitcoin Mining Rescue Into A $4.5 Billion AI Infrastructure Deal",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=d05520c12d98112bd7f9d1fb8c1988d07682fcc93231c35d00182b2d9ac0a86c",
+          "datetime": 1782318910
+        },
+        {
+          "ticker": "MARA",
+          "headline": "How Galaxy Digital Turned A $65 Million Bitcoin Mining Rescue Into A $4.5 Billion AI Infrastructure Deal",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=d05520c12d98112bd7f9d1fb8c1988d07682fcc93231c35d00182b2d9ac0a86c",
+          "datetime": 1782318910
+        },
+        {
+          "ticker": "COIN",
+          "headline": "Cboe Launches S&P 500 Prediction Market",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=82b4b64a824b0c8b0332d516a6c51489698acf8bcb56d9661d9f30f8c55dd786",
+          "datetime": 1782317700
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Bitcoin's 4-Year Cycle Remains Intact, 21Shares Says: This Is The 2026 Price Target",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=71c6c695707b9b71baf09812944a2485b73946080255f204b09efd9b9faf198c",
+          "datetime": 1782315087
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Citizens Initiates Coverage On MARA Holdings with Market Outperform Rating, Announces Price Target of $24",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=f21d33d9ebf76cc69dfe0da0a3560c5a62a6839869076d8c80fc633268458e4a",
+          "datetime": 1782292778
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Bitcoin Has Been Cut In Half, But MARA And HIVE Just Flashed Golden Crosses",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=15bcbfd6a09a1c1dc0e034cae0e95bab8028e22e34cfb8dd356eba0082c78102",
+          "datetime": 1782216977
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Why Is MARA Holdings Stock Surging On Monday?",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=5f456f7dc4af07ae9a6f7fd9ddb12745f69632e0bd8e0f5f9d0d25891265b56e",
+          "datetime": 1782134370
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Apogee Therapeutics, Definium Therapeutics, Baldwin Insurance And Other Big Stocks Moving Higher On Monday",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=813db00faa2e838687517ca9cba35454efa3d99ad387205d335296cc5855fac2",
+          "datetime": 1782130120
+        }
+      ],
       "customKpis": [
         {
           "label": "비트코인 현재가 (USD)",
           "ticker": "BTC-USD",
-          "value": 61637.91,
+          "value": 61139.11,
           "format": "price_usd"
         },
         {
           "label": "BTC 1일 변동",
           "ticker": "BTC-USD",
-          "value": 1.0732029291758192,
+          "value": 0.25527588361127623,
           "format": "change_pct"
         },
         {
           "label": "이더리움 현재가 (USD)",
           "ticker": "ETH-USD",
-          "value": 1646.37,
+          "value": 1629.54,
           "format": "price_usd"
         }
       ]
@@ -949,6 +1062,13 @@
         }
       ],
       "headlines": [
+        {
+          "ticker": "BABA",
+          "headline": "Wall Street Breakfast Podcast: Memory Lane Runs Higher",
+          "source": "SeekingAlpha",
+          "url": "https://finnhub.io/api/news?id=a3b8e6da57aadee2f400aac1fbcab1e9721f117879d10c315ffff4274babfb19",
+          "datetime": 1782370992
+        },
         {
           "ticker": "BABA",
           "headline": "'Anthropic Accuses Alibaba of ‘Illicitly’ Accessing Its AI Models' - Bloomberg",
@@ -1060,20 +1180,13 @@
           "source": "SeekingAlpha",
           "url": "https://finnhub.io/api/news?id=e9c57e1142d440353338eff73a73c14af10d1308549e277aefc19d92f494a096",
           "datetime": 1782153263
-        },
-        {
-          "ticker": "BABA",
-          "headline": "Alibaba Stock Pulls Back: Why Chairman Joe Tsai’s Bold New AI Gambit Has Wall Street Hesitant",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=30741ab62009a79ce2a43f865312c535d32a9ddf344f9493b45420f0916473f0",
-          "datetime": 1782134364
         }
       ],
       "customKpis": [
         {
           "label": "USD/CNY 환율",
           "ticker": "CNY=X",
-          "value": 6.787,
+          "value": 6.7896,
           "format": "price_number"
         },
         {
