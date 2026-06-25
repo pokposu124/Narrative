@@ -178,7 +178,7 @@ export default async function ThemeDetailPage({
               color={avgRelVol >= 1.5 ? "text-green-400" : "text-zinc-100"} />
             <GenericKpiCard label="뉴스 48H" value={totalNews.toString()} sub={`${td.length}개 종목`}
               color={totalNews > 50 ? "text-green-400" : "text-zinc-100"} />
-            <GenericKpiCard label="테마 시충" value={fmtMktCap(totalMktCap)} sub="합계" />
+            <GenericKpiCard label="테마 시총" value={fmtMktCap(totalMktCap)} sub="합계" />
           </div>
         )}
       </div>
