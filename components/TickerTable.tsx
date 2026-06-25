@@ -3,14 +3,14 @@
 import { useState } from "react";
 import type { TickerData } from "@/types";
 
-type SortKey = "marketCap" | "price" | "change1d" | "change5d" | "volume" | "relativeVolume" | "newsCount48h";
+type SortKey = "marketCap" | "price" | "relativeVolume" | "change1d" | "change5d" | "volume" | "newsCount48h";
 
 const COLS: { key: SortKey; label: string }[] = [
-  { key: "marketCap",      label: "시가총액"   },
+  { key: "marketCap",      label: "시총"      },
   { key: "price",          label: "가격"      },
+  { key: "relativeVolume", label: "상대거래량" },
   { key: "change1d",       label: "1D"        },
   { key: "change5d",       label: "5D"        },
-  { key: "relativeVolume", label: "상대거래량" },
   { key: "volume",         label: "거래량"    },
   { key: "newsCount48h",   label: "뉴스 48H"  },
 ];
@@ -67,43 +67,48 @@ export default function TickerTable({ tickers }: { tickers: TickerData[] }) {
   }
 
   return (
-    <div className="overflow-x-auto border border-zinc-800">
-      <table className="w-full text-xs font-mono border-collapse">
-        <thead>
-          <tr className="border-b border-zinc-700 uppercase text-[10px] tracking-wider">
-            <th className="px-3 py-2 text-left text-zinc-600">종목코드</th>
-            {COLS.map((c) => (
-              <th key={c.key} className={thCls(c.key)} onClick={() => handleSort(c.key)}>
-                {c.label}
-                {sortKey === c.key && (
-                  <span className="ml-0.5">{sortDir === "desc" ? " ↓" : " ↑"}</span>
-                )}
-              </th>
+    <div>
+      <div className="overflow-x-auto border border-zinc-800">
+        <table className="w-full text-xs font-mono border-collapse">
+          <thead>
+            <tr className="border-b border-zinc-700 uppercase text-[10px] tracking-wider">
+              <th className="px-3 py-2 text-left text-zinc-600">종목코드</th>
+              {COLS.map((c) => (
+                <th key={c.key} className={thCls(c.key)} onClick={() => handleSort(c.key)}>
+                  {c.label}
+                  {sortKey === c.key && (
+                    <span className="ml-0.5">{sortDir === "desc" ? " ↓" : " ↑"}</span>
+                  )}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {sorted.map((t) => (
+              <tr key={t.ticker} className="border-b border-zinc-900 hover:bg-zinc-900/60 transition-colors">
+                <td className="px-3 py-2 text-zinc-100 font-bold tracking-wide">{t.ticker}</td>
+                <td className="px-3 py-2 text-right text-zinc-400">{fmtMktCap(t.marketCap)}</td>
+                <td className="px-3 py-2 text-right text-zinc-200">
+                  ${t.price.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                </td>
+                <td className="px-3 py-2 text-right"><RelVolCell v={t.relativeVolume} /></td>
+                <td className="px-3 py-2 text-right"><ChangeCell v={t.change1d} /></td>
+                <td className="px-3 py-2 text-right"><ChangeCell v={t.change5d} /></td>
+                <td className="px-3 py-2 text-right text-zinc-400">{fmtVol(t.volume)}</td>
+                <td className="px-3 py-2 text-right text-zinc-400">{t.newsCount48h}</td>
+              </tr>
             ))}
-          </tr>
-        </thead>
-        <tbody>
-          {sorted.map((t) => (
-            <tr key={t.ticker} className="border-b border-zinc-900 hover:bg-zinc-900/60 transition-colors">
-              <td className="px-3 py-2 text-zinc-100 font-bold tracking-wide">{t.ticker}</td>
-              <td className="px-3 py-2 text-right text-zinc-400">{fmtMktCap(t.marketCap)}</td>
-              <td className="px-3 py-2 text-right text-zinc-200">
-                ${t.price.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-              </td>
-              <td className="px-3 py-2 text-right"><ChangeCell v={t.change1d} /></td>
-              <td className="px-3 py-2 text-right"><ChangeCell v={t.change5d} /></td>
-              <td className="px-3 py-2 text-right"><RelVolCell v={t.relativeVolume} /></td>
-              <td className="px-3 py-2 text-right text-zinc-400">{fmtVol(t.volume)}</td>
-              <td className="px-3 py-2 text-right text-zinc-400">{t.newsCount48h}</td>
-            </tr>
-          ))}
-          {tickers.length === 0 && (
-            <tr>
-              <td colSpan={8} className="px-3 py-4 text-center text-zinc-600">데이터 없음</td>
-            </tr>
-          )}
-        </tbody>
-      </table>
+            {tickers.length === 0 && (
+              <tr>
+                <td colSpan={8} className="px-3 py-4 text-center text-zinc-600">데이터 없음</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+      <p className="text-[10px] text-zinc-600 font-mono mt-1.5">
+        상대거래량: 오늘 거래량 ÷ 최근 20일 평균 거래량. 1.0 = 평소 수준, 2.0 = 평소의 2배. 높을수록 거래 몰림이 폙발됨.
+      </p>
     </div>
   );
 }
