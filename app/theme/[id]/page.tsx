@@ -9,31 +9,20 @@ import type { ThemeScore, KpiValue } from "@/types";
 export const revalidate = 600;
 
 function fmt(n: number, d = 1) {
-  return n.toLocaleString("en-US", {
-    minimumFractionDigits: d,
-    maximumFractionDigits: d,
-  });
+  return n.toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
 }
 
 function formatKpiValue(kpi: KpiValue): string {
   const v = kpi.value;
   if (v === null) return "N/A";
   switch (kpi.format) {
-    case "financial_pct":
-      return `${v >= 0 ? "+" : ""}${(v * 100).toFixed(1)}%`;
-    case "change_pct":
-      return `${v >= 0 ? "+" : ""}${v.toFixed(2)}%`;
-    case "price_usd":
-      if (v >= 1_000) return `$${v.toLocaleString("en-US", { maximumFractionDigits: 0 })}`;
-      return `$${v.toFixed(2)}`;
-    case "price_rate":
-      return `${v.toFixed(2)}%`;
-    case "price_number":
-      return v.toFixed(4);
-    case "price_billions":
-      return `$${(v / 1e9).toFixed(1)}B`;
-    default:
-      return v.toFixed(2);
+    case "financial_pct":  return `${v >= 0 ? "+" : ""}${(v * 100).toFixed(1)}%`;
+    case "change_pct":     return `${v >= 0 ? "+" : ""}${v.toFixed(2)}%`;
+    case "price_usd":      return v >= 1_000 ? `$${v.toLocaleString("en-US", { maximumFractionDigits: 0 })}` : `$${v.toFixed(2)}`;
+    case "price_rate":     return `${v.toFixed(2)}%`;
+    case "price_number":   return v.toFixed(4);
+    case "price_billions": return `$${(v / 1e9).toFixed(1)}B`;
+    default:               return v.toFixed(2);
   }
 }
 
@@ -50,12 +39,8 @@ function kpiColor(kpi: KpiValue): string {
 function KpiCard({ kpi }: { kpi: KpiValue }) {
   return (
     <div className="border border-zinc-800 p-3">
-      <div className="text-[10px] text-zinc-600 uppercase tracking-wider font-mono mb-1 leading-tight">
-        {kpi.label}
-      </div>
-      <div className={`text-lg font-mono ${kpiColor(kpi)}`}>
-        {formatKpiValue(kpi)}
-      </div>
+      <div className="text-[10px] text-zinc-600 uppercase tracking-wider font-mono mb-1 leading-tight">{kpi.label}</div>
+      <div className={`text-lg font-mono ${kpiColor(kpi)}`}>{formatKpiValue(kpi)}</div>
       <div className="text-[10px] text-zinc-700 mt-0.5 font-mono">
         {kpi.ticker}{kpi.period ? ` · ${kpi.period}` : ""}
       </div>
@@ -63,11 +48,7 @@ function KpiCard({ kpi }: { kpi: KpiValue }) {
   );
 }
 
-function GenericKpiCard({
-  label, value, sub, color,
-}: {
-  label: string; value: string; sub?: string; color?: string;
-}) {
+function GenericKpiCard({ label, value, sub, color }: { label: string; value: string; sub?: string; color?: string }) {
   return (
     <div className="border border-zinc-800 p-3">
       <div className="text-[10px] text-zinc-600 uppercase tracking-wider font-mono mb-1">{label}</div>
@@ -77,11 +58,7 @@ function GenericKpiCard({
   );
 }
 
-export default async function ThemeDetailPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+export default async function ThemeDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const snapshot = await readLatest();
   if (!snapshot) notFound();
@@ -108,10 +85,9 @@ export default async function ThemeDetailPage({
     return `$${(v / 1e6).toFixed(0)}M`;
   }
 
-  const rank =
-    [...snapshot.themes]
-      .sort((a, b) => b.totalScore - a.totalScore)
-      .findIndex((t) => t.id === id) + 1;
+  const rank = [...snapshot.themes]
+    .sort((a, b) => b.totalScore - a.totalScore)
+    .findIndex((t) => t.id === id) + 1;
 
   return (
     <div className="space-y-6">
@@ -122,9 +98,7 @@ export default async function ThemeDetailPage({
       <div className="border border-zinc-800 p-4">
         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
           <div>
-            <h1 className="text-sm font-bold text-zinc-100 uppercase tracking-wider">
-              #{rank} · {theme.name}
-            </h1>
+            <h1 className="text-sm font-bold text-zinc-100 uppercase tracking-wider">#{rank} · {theme.name}</h1>
             <p className="text-zinc-500 text-xs mt-1 max-w-xl">{theme.description}</p>
           </div>
           <div className="text-right font-mono shrink-0">
@@ -140,12 +114,11 @@ export default async function ThemeDetailPage({
             )}
           </div>
         </div>
-
         <div className="grid grid-cols-3 gap-4 mt-4 border-t border-zinc-800 pt-4">
           {[
             { label: "뉴스 (40%)",   value: theme.newsScore   },
             { label: "거래량 (35%)", value: theme.volumeScore },
-            { label: "가격 (25%)",  value: theme.priceScore  },
+            { label: "가격 (25%)",   value: theme.priceScore  },
           ].map(({ label, value }) => (
             <div key={label}>
               <div className="text-[10px] text-zinc-600 mb-1">{label}</div>
@@ -158,16 +131,25 @@ export default async function ThemeDetailPage({
         </div>
       </div>
 
+      {/* Theme KPIs */}
       <div>
-        <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">
-          테마 KPI
-        </h2>
+        <h2 className="text-[11px] text-zinc-500 uppercase tracking-wider mb-2 font-mono">테마 KPI</h2>
         {theme.customKpis?.length ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {theme.customKpis.map((kpi, i) => (
-              <KpiCard key={i} kpi={kpi} />
-            ))}
-          </div>
+          <>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              {theme.customKpis.map((kpi, i) => <KpiCard key={i} kpi={kpi} />)}
+            </div>
+            {/* Summary row always visible */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-3 pt-3 border-t border-zinc-800">
+              <GenericKpiCard label="평균 1일 수익률" value={`${avg1d >= 0 ? "+" : ""}${fmt(avg1d)}%`}
+                sub="동일 가중" color={avg1d >= 0 ? "text-green-400" : "text-red-400"} />
+              <GenericKpiCard label="평균 상대 거래량" value={`${fmt(avgRelVol, 2)}x`} sub="20일 평균 대비"
+                color={avgRelVol >= 1.5 ? "text-green-400" : "text-zinc-100"} />
+              <GenericKpiCard label="뉴스 48H" value={totalNews.toString()} sub={`${td.length}개 종목`}
+                color={totalNews > 50 ? "text-green-400" : "text-zinc-100"} />
+              <GenericKpiCard label="테마 시총" value={fmtMktCap(totalMktCap)} sub="구성 종목 합계" />
+            </div>
+          </>
         ) : (
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             <GenericKpiCard label="평균 1일 수익률" value={`${avg1d >= 0 ? "+" : ""}${fmt(avg1d)}%`}
@@ -178,7 +160,7 @@ export default async function ThemeDetailPage({
               color={avgRelVol >= 1.5 ? "text-green-400" : "text-zinc-100"} />
             <GenericKpiCard label="뉴스 48H" value={totalNews.toString()} sub={`${td.length}개 종목`}
               color={totalNews > 50 ? "text-green-400" : "text-zinc-100"} />
-            <GenericKpiCard label="테마 시총" value={fmtMktCap(totalMktCap)} sub="합계" />
+            <GenericKpiCard label="테마 시총" value={fmtMktCap(totalMktCap)} sub="구성 종목 합계" />
           </div>
         )}
       </div>
