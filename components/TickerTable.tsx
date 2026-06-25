@@ -3,17 +3,17 @@
 import { useState } from "react";
 import type { TickerData } from "@/types";
 
-type SortKey = "marketCap" | "price" | "relativeVolume" | "change1d" | "change5d" | "volume" | "newsCount48h" | "relNewsVol";
+type SortKey = "marketCap" | "price" | "relativeVolume" | "relNewsVol" | "change1d" | "change5d" | "volume" | "newsCount48h";
 
 const COLS: { key: SortKey; label: string }[] = [
   { key: "marketCap",      label: "시총"      },
   { key: "price",          label: "가격"      },
   { key: "relativeVolume", label: "상대거래량" },
+  { key: "relNewsVol",     label: "상대뉴스"  },
   { key: "change1d",       label: "1D"        },
   { key: "change5d",       label: "5D"        },
   { key: "volume",         label: "거래량"    },
   { key: "newsCount48h",   label: "뉴스 48H"  },
-  { key: "relNewsVol",     label: "상대뉴스"  },
 ];
 
 function fmtMktCap(v?: number): string {
@@ -110,11 +110,11 @@ export default function TickerTable({ tickers }: { tickers: TickerData[] }) {
                   ${t.price.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                 </td>
                 <td className="px-3 py-2 text-right"><RelVolCell v={t.relativeVolume} /></td>
+                <td className="px-3 py-2 text-right"><RelNewsCell t={t} /></td>
                 <td className="px-3 py-2 text-right"><ChangeCell v={t.change1d} /></td>
                 <td className="px-3 py-2 text-right"><ChangeCell v={t.change5d} /></td>
                 <td className="px-3 py-2 text-right text-zinc-400">{fmtVol(t.volume)}</td>
                 <td className="px-3 py-2 text-right text-zinc-400">{t.newsCount48h}</td>
-                <td className="px-3 py-2 text-right"><RelNewsCell t={t} /></td>
               </tr>
             ))}
             {tickers.length === 0 && (
@@ -125,9 +125,10 @@ export default function TickerTable({ tickers }: { tickers: TickerData[] }) {
           </tbody>
         </table>
       </div>
-      <p className="text-[10px] text-zinc-600 font-mono mt-1.5">
-        상대거래량: 오늘 거래량 ÷ 20일 평균. · 상대뉴스: 뉴스 ÷ log(시총). 시총 대비 화제성—생략 나오면 높음.
-      </p>
+      <div className="text-[10px] text-zinc-600 font-mono mt-2 space-y-0.5">
+        <p>상대거래량: 오늘 거래량 ÷ 최근 20일 평균 거래량. 1.0 = 평소 수준, 2.0 = 평소의 2배.</p>
+        <p>상대뉴스: 뉴스 수 ÷ log(시총). 시총이 작아도 뉴스가 많으면 높게 나탐—화제성 지표.</p>
+      </div>
     </div>
   );
 }
