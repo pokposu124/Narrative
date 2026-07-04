@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-03T15:41:41.118Z",
+  "timestamp": "2026-07-04T09:27:11.257Z",
   "themes": [
     {
       "id": "inflation-rates",
@@ -26,11 +26,11 @@
           "change1d": -0.011693171188015558,
           "change5d": -2.1064640755955537,
           "volume": 20724677,
-          "avgVolume20d": 27142210,
-          "relativeVolume": 0.7635589364314844,
+          "avgVolume20d": 27156300,
+          "relativeVolume": 0.7631627651778777,
           "marketCap": 0,
-          "newsCount48h": 13,
-          "newsPrev48h": 13
+          "newsCount48h": 6,
+          "newsPrev48h": 12
         },
         {
           "ticker": "GLD",
@@ -38,11 +38,11 @@
           "change1d": 2.031840259039388,
           "change5d": 2.346671798910747,
           "volume": 7226008,
-          "avgVolume20d": 7729370,
-          "relativeVolume": 0.9348767105210386,
+          "avgVolume20d": 7730880,
+          "relativeVolume": 0.9346941098555404,
           "marketCap": 0,
-          "newsCount48h": 16,
-          "newsPrev48h": 22
+          "newsCount48h": 6,
+          "newsPrev48h": 21
         },
         {
           "ticker": "XLF",
@@ -50,11 +50,11 @@
           "change1d": 1.5334063526834543,
           "change5d": 4.059865552798871,
           "volume": 46234687,
-          "avgVolume20d": 34165150,
-          "relativeVolume": 1.353270423223665,
+          "avgVolume20d": 34169060,
+          "relativeVolume": 1.3531155671241761,
           "marketCap": 0,
-          "newsCount48h": 5,
-          "newsPrev48h": 9
+          "newsCount48h": 3,
+          "newsPrev48h": 8
         },
         {
           "ticker": "JPM",
@@ -62,11 +62,11 @@
           "change1d": 0.11973538479960312,
           "change5d": -0.1939585539373978,
           "volume": 4545984,
-          "avgVolume20d": 11315310,
-          "relativeVolume": 0.4017551441365725,
+          "avgVolume20d": 11315460,
+          "relativeVolume": 0.401749818390061,
           "marketCap": 896216137728,
-          "newsCount48h": 67,
-          "newsPrev48h": 89
+          "newsCount48h": 50,
+          "newsPrev48h": 96
         },
         {
           "ticker": "KRE",
@@ -74,10 +74,10 @@
           "change1d": -1.5227093725387382,
           "change5d": 0.3343587150250101,
           "volume": 17482471,
-          "avgVolume20d": 14591050,
-          "relativeVolume": 1.1981640115002004,
+          "avgVolume20d": 14591120,
+          "relativeVolume": 1.198158263382112,
           "marketCap": 0,
-          "newsCount48h": 0,
+          "newsCount48h": 1,
           "newsPrev48h": 1
         }
       ],
@@ -98,113 +98,8 @@
         {
           "label": "금 현물가 ($/oz)",
           "ticker": "GC=F",
-          "value": 4180.9,
+          "value": 4187.3,
           "format": "price_usd"
-        }
-      ]
-    },
-    {
-      "id": "ai-software",
-      "name": "AI 소프트웨어",
-      "description": "AI 모델 개발 및 기업용 AI 솔루션. 클라우드 AI 서비스, 에이전트형 AI, 데이터 분석 플랫폼.",
-      "tickers": [
-        "MSFT",
-        "GOOGL",
-        "PLTR",
-        "NOW",
-        "CRM"
-      ],
-      "newsScore": 91.7,
-      "volumeScore": 8.3,
-      "priceScore": 83.3,
-      "totalScore": 60.4,
-      "prevTotalScore": 60.4,
-      "scoreDelta": 0,
-      "deltaDirection": "–",
-      "tickerData": [
-        {
-          "ticker": "MSFT",
-          "price": 390.49,
-          "change1d": 1.6160091599875186,
-          "change5d": 10.673696991566777,
-          "volume": 40690198,
-          "avgVolume20d": 62879370,
-          "relativeVolume": 0.6471152303211689,
-          "marketCap": 2900729528320,
-          "newsCount48h": 243,
-          "newsPrev48h": 246
-        },
-        {
-          "ticker": "GOOGL",
-          "price": 359.91,
-          "change1d": -0.3599014423742296,
-          "change5d": 4.713279395355762,
-          "volume": 25430462,
-          "avgVolume20d": 45764990,
-          "relativeVolume": 0.5556750258221405,
-          "marketCap": 4391827931136,
-          "newsCount48h": 250,
-          "newsPrev48h": 248
-        },
-        {
-          "ticker": "PLTR",
-          "price": 129.3,
-          "change1d": 2.839417800047727,
-          "change5d": 20.53696942118377,
-          "volume": 60316506,
-          "avgVolume20d": 52893510,
-          "relativeVolume": 1.1403385027766166,
-          "marketCap": 309972434944,
-          "newsCount48h": 111,
-          "newsPrev48h": 121
-        },
-        {
-          "ticker": "NOW",
-          "price": 106.32,
-          "change1d": 0.4914933837429074,
-          "change5d": 18.76676014493464,
-          "volume": 19378144,
-          "avgVolume20d": 25327720,
-          "relativeVolume": 0.765096266067376,
-          "marketCap": 109648666624,
-          "newsCount48h": 83,
-          "newsPrev48h": 70
-        },
-        {
-          "ticker": "CRM",
-          "price": 166.11,
-          "change1d": 1.7643815475096636,
-          "change5d": 10.599905393274225,
-          "volume": 10313624,
-          "avgVolume20d": 19590920,
-          "relativeVolume": 0.5264491917684315,
-          "marketCap": 136044093440,
-          "newsCount48h": 83,
-          "newsPrev48h": 84
-        }
-      ],
-      "headlines": [],
-      "customKpis": [
-        {
-          "label": "MSFT 매출 성장 YoY",
-          "ticker": "MSFT",
-          "value": 0.183,
-          "format": "financial_pct",
-          "period": "TTM"
-        },
-        {
-          "label": "MSFT 영업이익률",
-          "ticker": "MSFT",
-          "value": 0.46326,
-          "format": "financial_pct",
-          "period": "TTM"
-        },
-        {
-          "label": "GOOGL 매출 성장 YoY",
-          "ticker": "GOOGL",
-          "value": 0.218,
-          "format": "financial_pct",
-          "period": "TTM"
         }
       ]
     },
@@ -236,11 +131,11 @@
           "change1d": 0.5943645435867349,
           "change5d": -0.3344287194919905,
           "volume": 13667789,
-          "avgVolume20d": 19662540,
-          "relativeVolume": 0.6951181790348551,
+          "avgVolume20d": 19663010,
+          "relativeVolume": 0.6951015637992353,
           "marketCap": 568230805504,
-          "newsCount48h": 25,
-          "newsPrev48h": 37
+          "newsCount48h": 12,
+          "newsPrev48h": 36
         },
         {
           "ticker": "CVX",
@@ -248,11 +143,11 @@
           "change1d": 2.1184139054861433,
           "change5d": -1.7649840036974034,
           "volume": 7117353,
-          "avgVolume20d": 11548110,
-          "relativeVolume": 0.6163218916342155,
+          "avgVolume20d": 11548300,
+          "relativeVolume": 0.6163117515132097,
           "marketCap": 336978313216,
-          "newsCount48h": 33,
-          "newsPrev48h": 42
+          "newsCount48h": 21,
+          "newsPrev48h": 45
         },
         {
           "ticker": "OXY",
@@ -260,11 +155,11 @@
           "change1d": 2.023362536503961,
           "change5d": -4.4913088814288376,
           "volume": 8496330,
-          "avgVolume20d": 9791980,
-          "relativeVolume": 0.8676825320313154,
+          "avgVolume20d": 9792470,
+          "relativeVolume": 0.8676391145441344,
           "marketCap": 48647581696,
-          "newsCount48h": 4,
-          "newsPrev48h": 9
+          "newsCount48h": 1,
+          "newsPrev48h": 7
         },
         {
           "ticker": "LMT",
@@ -272,11 +167,11 @@
           "change1d": 4.6165344371622234,
           "change5d": 8.09670607508417,
           "volume": 1162927,
-          "avgVolume20d": 1767960,
-          "relativeVolume": 0.6577790221498224,
+          "avgVolume20d": 1768060,
+          "relativeVolume": 0.6577418187165593,
           "marketCap": 125866975232,
-          "newsCount48h": 28,
-          "newsPrev48h": 26
+          "newsCount48h": 18,
+          "newsPrev48h": 31
         },
         {
           "ticker": "RTX",
@@ -284,11 +179,11 @@
           "change1d": 3.895088121806236,
           "change5d": 6.78493162044107,
           "volume": 3947249,
-          "avgVolume20d": 5183980,
-          "relativeVolume": 0.7614321428709215,
+          "avgVolume20d": 5184170,
+          "relativeVolume": 0.7614042363579898,
           "marketCap": 268326666240,
-          "newsCount48h": 10,
-          "newsPrev48h": 18
+          "newsCount48h": 14,
+          "newsPrev48h": 15
         },
         {
           "ticker": "NOC",
@@ -299,8 +194,8 @@
           "avgVolume20d": 1298520,
           "relativeVolume": 1.3385223177155532,
           "marketCap": 77977796608,
-          "newsCount48h": 13,
-          "newsPrev48h": 16
+          "newsCount48h": 9,
+          "newsPrev48h": 18
         },
         {
           "ticker": "FRO",
@@ -308,11 +203,11 @@
           "change1d": 5.907780979827081,
           "change5d": -4.4710194076559695,
           "volume": 2034911,
-          "avgVolume20d": 3824160,
-          "relativeVolume": 0.5321197334839547,
+          "avgVolume20d": 3824320,
+          "relativeVolume": 0.5320974709229354,
           "marketCap": 8181391360,
           "newsCount48h": 2,
-          "newsPrev48h": 0
+          "newsPrev48h": 1
         },
         {
           "ticker": "STNG",
@@ -320,11 +215,11 @@
           "change1d": 5.005033798360426,
           "change5d": -3.246749241938861,
           "volume": 761081,
-          "avgVolume20d": 1246330,
-          "relativeVolume": 0.6106576909807194,
+          "avgVolume20d": 1246400,
+          "relativeVolume": 0.6106233953786906,
           "marketCap": 3633602048,
-          "newsCount48h": 3,
-          "newsPrev48h": 3
+          "newsCount48h": 2,
+          "newsPrev48h": 5
         }
       ],
       "headlines": [],
@@ -332,19 +227,124 @@
         {
           "label": "WTI 원유 현재가 ($/bbl)",
           "ticker": "CL=F",
-          "value": 68.44,
+          "value": 68.78,
           "format": "price_usd"
         },
         {
           "label": "WTI 1일 변동",
           "ticker": "CL=F",
-          "value": -0.36395399621487845,
+          "value": 0.1310234386373612,
           "format": "change_pct"
         },
         {
           "label": "LMT 영업이익률",
           "ticker": "LMT",
           "value": 0.110039994,
+          "format": "financial_pct",
+          "period": "TTM"
+        }
+      ]
+    },
+    {
+      "id": "ai-software",
+      "name": "AI 소프트웨어",
+      "description": "AI 모델 개발 및 기업용 AI 솔루션. 클라우드 AI 서비스, 에이전트형 AI, 데이터 분석 플랫폼.",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "PLTR",
+        "NOW",
+        "CRM"
+      ],
+      "newsScore": 83.3,
+      "volumeScore": 8.3,
+      "priceScore": 83.3,
+      "totalScore": 57.1,
+      "prevTotalScore": 60.4,
+      "scoreDelta": -3.3,
+      "deltaDirection": "▼",
+      "tickerData": [
+        {
+          "ticker": "MSFT",
+          "price": 390.49,
+          "change1d": 1.6160091599875186,
+          "change5d": 10.673696991566777,
+          "volume": 40690198,
+          "avgVolume20d": 62885920,
+          "relativeVolume": 0.6470478288303646,
+          "marketCap": 2900729528320,
+          "newsCount48h": 152,
+          "newsPrev48h": 247
+        },
+        {
+          "ticker": "GOOGL",
+          "price": 359.91,
+          "change1d": -0.3599014423742296,
+          "change5d": 4.713279395355762,
+          "volume": 25430462,
+          "avgVolume20d": 45767440,
+          "relativeVolume": 0.5556452797010276,
+          "marketCap": 4391827931136,
+          "newsCount48h": 160,
+          "newsPrev48h": 250
+        },
+        {
+          "ticker": "PLTR",
+          "price": 129.3,
+          "change1d": 2.839417800047727,
+          "change5d": 20.53696942118377,
+          "volume": 60316506,
+          "avgVolume20d": 52908350,
+          "relativeVolume": 1.1400186549004079,
+          "marketCap": 309972434944,
+          "newsCount48h": 76,
+          "newsPrev48h": 138
+        },
+        {
+          "ticker": "NOW",
+          "price": 106.32,
+          "change1d": 0.4914933837429074,
+          "change5d": 18.76676014493464,
+          "volume": 19378144,
+          "avgVolume20d": 25332630,
+          "relativeVolume": 0.7649479742134946,
+          "marketCap": 109648666624,
+          "newsCount48h": 33,
+          "newsPrev48h": 89
+        },
+        {
+          "ticker": "CRM",
+          "price": 166.11,
+          "change1d": 1.7643815475096636,
+          "change5d": 10.599905393274225,
+          "volume": 10313624,
+          "avgVolume20d": 19591610,
+          "relativeVolume": 0.5264306506713843,
+          "marketCap": 136044093440,
+          "newsCount48h": 36,
+          "newsPrev48h": 96
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "MSFT 매출 성장 YoY",
+          "ticker": "MSFT",
+          "value": 0.183,
+          "format": "financial_pct",
+          "period": "TTM"
+        },
+        {
+          "label": "MSFT 영업이익률",
+          "ticker": "MSFT",
+          "value": 0.46326,
+          "format": "financial_pct",
+          "period": "TTM"
+        },
+        {
+          "label": "GOOGL 매출 성장 YoY",
+          "ticker": "GOOGL",
+          "value": 0.218,
           "format": "financial_pct",
           "period": "TTM"
         }
@@ -363,13 +363,13 @@
         "VRT",
         "DELL"
       ],
-      "newsScore": 83.3,
+      "newsScore": 91.7,
       "volumeScore": 50,
       "priceScore": 8.3,
-      "totalScore": 52.9,
+      "totalScore": 56.3,
       "prevTotalScore": 52.9,
-      "scoreDelta": 0,
-      "deltaDirection": "–",
+      "scoreDelta": 3.4,
+      "deltaDirection": "▲",
       "tickerData": [
         {
           "ticker": "NVDA",
@@ -377,11 +377,11 @@
           "change1d": -1.3918412794817288,
           "change5d": -0.4649042794377338,
           "volume": 129909675,
-          "avgVolume20d": 160100310,
-          "relativeVolume": 0.8114267548888568,
+          "avgVolume20d": 160131990,
+          "relativeVolume": 0.8112662248186636,
           "marketCap": 4718977351680,
           "newsCount48h": 250,
-          "newsPrev48h": 249
+          "newsPrev48h": 250
         },
         {
           "ticker": "AMD",
@@ -389,10 +389,10 @@
           "change1d": -4.263422570625637,
           "change5d": -2.7695889361303205,
           "volume": 27272794,
-          "avgVolume20d": 32389910,
-          "relativeVolume": 0.8420151213757617,
+          "avgVolume20d": 32398550,
+          "relativeVolume": 0.8417905739608718,
           "marketCap": 844357632000,
-          "newsCount48h": 91,
+          "newsCount48h": 40,
           "newsPrev48h": 142
         },
         {
@@ -401,11 +401,11 @@
           "change1d": -2.406996263605347,
           "change5d": -4.871867007116473,
           "volume": 26423042,
-          "avgVolume20d": 29599840,
-          "relativeVolume": 0.8926751631089898,
+          "avgVolume20d": 29603780,
+          "relativeVolume": 0.8925563559788648,
           "marketCap": 1714869895168,
-          "newsCount48h": 73,
-          "newsPrev48h": 89
+          "newsCount48h": 50,
+          "newsPrev48h": 93
         },
         {
           "ticker": "MU",
@@ -413,11 +413,11 @@
           "change1d": -5.494633239043673,
           "change5d": -19.611724969833478,
           "volume": 60943570,
-          "avgVolume20d": 63100320,
-          "relativeVolume": 0.9658203001189217,
+          "avgVolume20d": 63153070,
+          "relativeVolume": 0.9650135773288614,
           "marketCap": 1101790838784,
-          "newsCount48h": 216,
-          "newsPrev48h": 249
+          "newsCount48h": 141,
+          "newsPrev48h": 250
         },
         {
           "ticker": "SMCI",
@@ -425,11 +425,11 @@
           "change1d": -1.5551537070524404,
           "change5d": -14.07828582341468,
           "volume": 42319018,
-          "avgVolume20d": 64616040,
-          "relativeVolume": 0.6549305404664229,
+          "avgVolume20d": 64628550,
+          "relativeVolume": 0.6548037670657937,
           "marketCap": 17607882752,
-          "newsCount48h": 28,
-          "newsPrev48h": 50
+          "newsCount48h": 19,
+          "newsPrev48h": 48
         },
         {
           "ticker": "VRT",
@@ -437,11 +437,11 @@
           "change1d": -3.496885235373464,
           "change5d": -7.691128783858088,
           "volume": 5868595,
-          "avgVolume20d": 8583350,
-          "relativeVolume": 0.6837184782165472,
+          "avgVolume20d": 8584170,
+          "relativeVolume": 0.6836531662350582,
           "marketCap": 115436216320,
-          "newsCount48h": 21,
-          "newsPrev48h": 26
+          "newsCount48h": 12,
+          "newsPrev48h": 32
         },
         {
           "ticker": "DELL",
@@ -449,11 +449,11 @@
           "change1d": -7.273368606701941,
           "change5d": -3.695201961591902,
           "volume": 6576537,
-          "avgVolume20d": 8603230,
-          "relativeVolume": 0.7644265002795462,
+          "avgVolume20d": 8603910,
+          "relativeVolume": 0.7643660847219462,
           "marketCap": 254786879488,
-          "newsCount48h": 28,
-          "newsPrev48h": 44
+          "newsCount48h": 21,
+          "newsPrev48h": 46
         }
       ],
       "headlines": [],
@@ -507,11 +507,11 @@
           "change1d": -0.8727795461546302,
           "change5d": -6.796679659274399,
           "volume": 3752514,
-          "avgVolume20d": 3140860,
-          "relativeVolume": 1.1947409308278625,
+          "avgVolume20d": 3141010,
+          "relativeVolume": 1.1946838755686866,
           "marketCap": 42046353408,
-          "newsCount48h": 1,
-          "newsPrev48h": 4
+          "newsCount48h": 0,
+          "newsPrev48h": 1
         },
         {
           "ticker": "LEU",
@@ -519,11 +519,11 @@
           "change1d": -2.5309606829385642,
           "change5d": -4.842117480671723,
           "volume": 579257,
-          "avgVolume20d": 917260,
-          "relativeVolume": 0.6315079693870876,
+          "avgVolume20d": 917950,
+          "relativeVolume": 0.6310332806797756,
           "marketCap": 3189550080,
-          "newsCount48h": 2,
-          "newsPrev48h": 2
+          "newsCount48h": 1,
+          "newsPrev48h": 3
         },
         {
           "ticker": "SMR",
@@ -531,11 +531,11 @@
           "change1d": -3.84236453201971,
           "change5d": -3.0784456339330024,
           "volume": 25140885,
-          "avgVolume20d": 33153120,
-          "relativeVolume": 0.7583263656633222,
+          "avgVolume20d": 33168960,
+          "relativeVolume": 0.757964223177332,
           "marketCap": 3377992704,
           "newsCount48h": 1,
-          "newsPrev48h": 0
+          "newsPrev48h": 1
         },
         {
           "ticker": "OKLO",
@@ -543,10 +543,10 @@
           "change1d": -0.1715919923736957,
           "change5d": 2.646544468221387,
           "volume": 9620170,
-          "avgVolume20d": 10981840,
-          "relativeVolume": 0.8760071172044029,
+          "avgVolume20d": 10983680,
+          "relativeVolume": 0.875860367381424,
           "marketCap": 9110168576,
-          "newsCount48h": 3,
+          "newsCount48h": 1,
           "newsPrev48h": 5
         },
         {
@@ -555,10 +555,10 @@
           "change1d": -1.37764429354922,
           "change5d": -9.966025388870825,
           "volume": 4208737,
-          "avgVolume20d": 4598710,
-          "relativeVolume": 0.915199479854133,
+          "avgVolume20d": 4598890,
+          "relativeVolume": 0.9151636590568594,
           "marketCap": 50931412992,
-          "newsCount48h": 2,
+          "newsCount48h": 3,
           "newsPrev48h": 7
         },
         {
@@ -567,8 +567,8 @@
           "change1d": 1.1627906976744187,
           "change5d": -10.956865597493264,
           "volume": 4117423,
-          "avgVolume20d": 4435940,
-          "relativeVolume": 0.9281962785790611,
+          "avgVolume20d": 4436340,
+          "relativeVolume": 0.9281125883047737,
           "marketCap": 85436653568,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -621,8 +621,8 @@
           "change1d": 7.902345004818498,
           "change5d": 18.094450346528113,
           "volume": 34298028,
-          "avgVolume20d": 36410960,
-          "relativeVolume": 0.9419698903846534,
+          "avgVolume20d": 36424140,
+          "relativeVolume": 0.9416290405209292,
           "marketCap": 36052332544,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -633,8 +633,8 @@
           "change1d": 3.9186134137151343,
           "change5d": 16.110013167824942,
           "volume": 9610354,
-          "avgVolume20d": 9181540,
-          "relativeVolume": 1.0467039298418348,
+          "avgVolume20d": 9185320,
+          "relativeVolume": 1.0462731837323034,
           "marketCap": 43597488128,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -645,8 +645,8 @@
           "change1d": -7.255048616305153,
           "change5d": -10.662827692420796,
           "volume": 50361720,
-          "avgVolume20d": 48259520,
-          "relativeVolume": 1.04356031721824,
+          "avgVolume20d": 48266380,
+          "relativeVolume": 1.0434119981651824,
           "marketCap": 4727754240,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -657,84 +657,14 @@
           "change1d": -7.721202003338903,
           "change5d": -20.353024394617787,
           "volume": 18723814,
-          "avgVolume20d": 17729950,
-          "relativeVolume": 1.056055657235356,
+          "avgVolume20d": 17733520,
+          "relativeVolume": 1.0558430587948697,
           "marketCap": 8360924160,
           "newsCount48h": 0,
           "newsPrev48h": 0
         }
       ],
       "headlines": [
-        {
-          "ticker": "COIN",
-          "headline": "COIN Vs. MSTR: Buy Coinbase for Pure Exchange Fees and Structural Infrastructure Moats",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=81d6cdf92ba4f0e5a4f0519723467e8080ad556bdb585773a73c2866c1c2f603",
-          "datetime": 1783085478
-        },
-        {
-          "ticker": "COIN",
-          "headline": "From Contrarian Bets to Steady Income: Ranking 3 Miller-Style Stocks for Retirees",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5aeeaf5e3f7c0b457cc5afeb0abb791e6d4ccf04db8b87050974be7891e8ddb3",
-          "datetime": 1783083920
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Coinbase (COIN) Stock Is Up, What You Need To Know",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=98e7ab45067d041306c92e0aa4de09d52deb63b69f645649b993eda48137d7a7",
-          "datetime": 1783033704
-        },
-        {
-          "ticker": "COIN",
-          "headline": "eToro Leads $12.5M Round for Onchain Perps Platform Extended",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=f300dc855754a10a90a61b016a22d9aa98ba9b4428b369939e1b6142c1987006",
-          "datetime": 1783018797
-        },
-        {
-          "ticker": "COIN",
-          "headline": "What a weak jobs report means for crypto",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=53d8e8391c760740ce1a7b166c9b6efbb50d219ca0f412e0081687668d8f47f6",
-          "datetime": 1783013622
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Tesla, Rivian, Strategy, Moderna, Sandisk, Blue Owl, and More Stocks That Explain Today’s Market",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e573ed15d365fa27ecc51d79658582f21c9e6fd32b7581b3896cb4c010a66615",
-          "datetime": 1783009020
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Europe Had 3,167 Crypto Firms, Now It Has 244: What The MiCA Deadline Means For Coinbase, Robinhood And Circle",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=5c8d6a460fbe26dee494a3e3435c5868adf12ca014f676b2744406c1148e85dc",
-          "datetime": 1783004596
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Robinhood Jumps 6% on Bullish Analyst Initiations as Coinbase, Strategy Ride a Crypto-Stock Bounce",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=95f8abd47a061706df1f6ae4cdd48b6f63db72305d20c2c01b36b033bddf2203",
-          "datetime": 1783002585
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Robinhood, Strategy, Micron, Tesla, Palantir, Bending Spoons, and More Stocks That Explain Today’s Market",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=51b406063975351d1c97b018281d158fafd0437db2742ba7644265086a9cc62c",
-          "datetime": 1783000980
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Here’s How Trump Made Over $1.4 Billion On Crypto Last Year, While Bitcoin Went Nowhere",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4a51a3ac844fa79aa1eab63b393b2ae1e2c241fd170f84e7e8f5282a258ad153",
-          "datetime": 1782999449
-        },
         {
           "ticker": "MARA",
           "headline": "Bitcoin Miners Show Relative Strength as Broader Crypto-Exposed Stocks Sink",
@@ -747,19 +677,19 @@
         {
           "label": "비트코인 현재가 (USD)",
           "ticker": "BTC-USD",
-          "value": 61865.2,
+          "value": 62399.13,
           "format": "price_usd"
         },
         {
           "label": "BTC 1일 변동",
           "ticker": "BTC-USD",
-          "value": 0.6052885052426288,
+          "value": -0.23896299002577284,
           "format": "change_pct"
         },
         {
           "label": "이더리움 현재가 (USD)",
           "ticker": "ETH-USD",
-          "value": 1731.41,
+          "value": 1758.12,
           "format": "price_usd"
         }
       ]
@@ -788,8 +718,8 @@
           "change1d": -1.887947749770379,
           "change5d": 1.125486166255317,
           "volume": 10816201,
-          "avgVolume20d": 14957780,
-          "relativeVolume": 0.7231153954664395,
+          "avgVolume20d": 14959740,
+          "relativeVolume": 0.7230206541022772,
           "marketCap": 230698188800,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -800,8 +730,8 @@
           "change1d": -0.15753756665050347,
           "change5d": 12.401085892823351,
           "volume": 8039611,
-          "avgVolume20d": 9462060,
-          "relativeVolume": 0.8496681483736099,
+          "avgVolume20d": 9462730,
+          "relativeVolume": 0.8496079883923561,
           "marketCap": 117273632768,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -812,8 +742,8 @@
           "change1d": 1.1782592170277548,
           "change5d": 5.6768569863362215,
           "volume": 7726213,
-          "avgVolume20d": 10246700,
-          "relativeVolume": 0.7540196355899949,
+          "avgVolume20d": 10246870,
+          "relativeVolume": 0.7540071260785001,
           "marketCap": 35950309376,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -824,8 +754,8 @@
           "change1d": -3.9342038324571824,
           "change5d": 8.95278909437493,
           "volume": 3054116,
-          "avgVolume20d": 2607520,
-          "relativeVolume": 1.1712723200589066,
+          "avgVolume20d": 2607620,
+          "relativeVolume": 1.1712274027657403,
           "marketCap": 38550630400,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -838,6 +768,13 @@
           "source": "SeekingAlpha",
           "url": "https://finnhub.io/api/news?id=a664584e5b6adf36e0eaa214a5dafa0688eff43291c95b5f263e62c564f7c44f",
           "datetime": 1783049384
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Cathie Wood Buys the Tesla Dip, Keeps Dumping Alibaba Stock: What You Should Know About Ark's $38 Million Bet",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=5c4d2de1dda7f1781c01f7fc37b797d4c62c5ddb1b8a3315a0b637990fda245e",
+          "datetime": 1783032167
         },
         {
           "ticker": "BABA",
@@ -922,20 +859,13 @@
           "source": "SeekingAlpha",
           "url": "https://finnhub.io/api/news?id=3197d728962d644aab69876b1556fefec7a67071e8f2509717bb03542990361f",
           "datetime": 1782894947
-        },
-        {
-          "ticker": "BABA",
-          "headline": "What's Going on With Alibaba Stock Wednesday?",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=80911696d7a4ddd852cea9279a5587299d0372f0e1cd3cd4a983f0e327da1545",
-          "datetime": 1782893285
         }
       ],
       "customKpis": [
         {
           "label": "USD/CNY 환율",
           "ticker": "CNY=X",
-          "value": 6.7692,
+          "value": 6.7702,
           "format": "price_number"
         },
         {
@@ -977,8 +907,8 @@
           "change1d": -3.999913186908587,
           "change5d": -3.9029375360133534,
           "volume": 2667040,
-          "avgVolume20d": 2343720,
-          "relativeVolume": 1.137951632447562,
+          "avgVolume20d": 2343910,
+          "relativeVolume": 1.137859388799058,
           "marketCap": 681927180288,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -989,8 +919,8 @@
           "change1d": -7.354319337542825,
           "change5d": -9.72455418752339,
           "volume": 15057181,
-          "avgVolume20d": 15668410,
-          "relativeVolume": 0.9609897239094458,
+          "avgVolume20d": 15670850,
+          "relativeVolume": 0.9608400948257433,
           "marketCap": 478789271552,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1001,8 +931,8 @@
           "change1d": -10.185043193784175,
           "change5d": -12.545419029230862,
           "volume": 18873415,
-          "avgVolume20d": 17055350,
-          "relativeVolume": 1.1065979296818886,
+          "avgVolume20d": 17057220,
+          "relativeVolume": 1.1064766122498273,
           "marketCap": 439463149568,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1013,8 +943,8 @@
           "change1d": -11.510575153086137,
           "change5d": -8.983765779699395,
           "volume": 23573075,
-          "avgVolume20d": 18381640,
-          "relativeVolume": 1.2824250175718814,
+          "avgVolume20d": 18384280,
+          "relativeVolume": 1.2822408601261512,
           "marketCap": 307693125632,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1070,8 +1000,8 @@
           "change1d": 0.4115226337448495,
           "change5d": 14.332860089421695,
           "volume": 8781012,
-          "avgVolume20d": 13280030,
-          "relativeVolume": 0.6612192894142559,
+          "avgVolume20d": 13280860,
+          "relativeVolume": 0.6611779658847394,
           "marketCap": 197521932288,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1082,8 +1012,8 @@
           "change1d": -1.130553346210663,
           "change5d": 18.755331777796545,
           "volume": 7504082,
-          "avgVolume20d": 8053950,
-          "relativeVolume": 0.9317269166061374,
+          "avgVolume20d": 8054140,
+          "relativeVolume": 0.9317049368399357,
           "marketCap": 283668905984,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1094,8 +1024,8 @@
           "change1d": 0.6008876749744103,
           "change5d": 19.00646058099009,
           "volume": 2566967,
-          "avgVolume20d": 4285390,
-          "relativeVolume": 0.5990042913247102,
+          "avgVolume20d": 4285560,
+          "relativeVolume": 0.5989805299657455,
           "marketCap": 23824664576,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1106,8 +1036,8 @@
           "change1d": -1.7171971317146748,
           "change5d": 4.215305564568099,
           "volume": 4449081,
-          "avgVolume20d": 7313450,
-          "relativeVolume": 0.608342300829294,
+          "avgVolume20d": 7313520,
+          "relativeVolume": 0.6083364781938109,
           "marketCap": 114476310528,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1118,8 +1048,8 @@
           "change1d": -0.45480386583284993,
           "change5d": 17.045455776955468,
           "volume": 5282881,
-          "avgVolume20d": 6327700,
-          "relativeVolume": 0.8348817105741423,
+          "avgVolume20d": 6327890,
+          "relativeVolume": 0.8348566425775417,
           "marketCap": 6002492928,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1174,8 +1104,8 @@
           "change1d": -4.435797665369652,
           "change5d": -2.8481060171943553,
           "volume": 16927210,
-          "avgVolume20d": 25919660,
-          "relativeVolume": 0.6530645077906114,
+          "avgVolume20d": 25924250,
+          "relativeVolume": 0.652948879909737,
           "marketCap": 18335019008,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1186,8 +1116,8 @@
           "change1d": -3.9614561027837176,
           "change5d": -2.5529566390548335,
           "volume": 25227944,
-          "avgVolume20d": 31770830,
-          "relativeVolume": 0.7940599600325204,
+          "avgVolume20d": 31774140,
+          "relativeVolume": 0.7939772406113903,
           "marketCap": 5963234816,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1198,8 +1128,8 @@
           "change1d": -4.127659574468081,
           "change5d": 2.8297619513978667,
           "volume": 21334952,
-          "avgVolume20d": 28129440,
-          "relativeVolume": 0.7584563361375128,
+          "avgVolume20d": 28133980,
+          "relativeVolume": 0.7583339435088814,
           "marketCap": 8346130432,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1210,8 +1140,8 @@
           "change1d": -4.029692470837742,
           "change5d": -0.44004357735505095,
           "volume": 12043913,
-          "avgVolume20d": 16409600,
-          "relativeVolume": 0.7339553066497659,
+          "avgVolume20d": 16412530,
+          "relativeVolume": 0.7338242793767932,
           "marketCap": 2041091712,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1264,8 +1194,8 @@
           "change1d": 1.8603051001057338,
           "change5d": 7.645726862289777,
           "volume": 2256142,
-          "avgVolume20d": 3761780,
-          "relativeVolume": 0.5997538399374764,
+          "avgVolume20d": 3761910,
+          "relativeVolume": 0.5997331142956637,
           "marketCap": 1082493829120,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1276,8 +1206,8 @@
           "change1d": 3.403731802337495,
           "change5d": 5.8564251705964026,
           "volume": 11774681,
-          "avgVolume20d": 13271900,
-          "relativeVolume": 0.8871887973839465,
+          "avgVolume20d": 13273010,
+          "relativeVolume": 0.8871146032437254,
           "marketCap": 223193366528,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1288,8 +1218,8 @@
           "change1d": -0.10672358591248439,
           "change5d": 1.216536706739721,
           "volume": 2466825,
-          "avgVolume20d": 3823310,
-          "relativeVolume": 0.6452066403195137,
+          "avgVolume20d": 3823400,
+          "relativeVolume": 0.6451914526337814,
           "marketCap": 4346995200,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1357,8 +1287,8 @@
           "change1d": -1.8724379600652363,
           "change5d": 2.5463638234536674,
           "volume": 2127066,
-          "avgVolume20d": 3253000,
-          "relativeVolume": 0.6538782662158008,
+          "avgVolume20d": 3253270,
+          "relativeVolume": 0.6538239986229241,
           "marketCap": 299114921984,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1369,8 +1299,8 @@
           "change1d": -3.344570832625942,
           "change5d": -5.084908745993328,
           "volume": 2590819,
-          "avgVolume20d": 2803230,
-          "relativeVolume": 0.9242263389019095,
+          "avgVolume20d": 2803290,
+          "relativeVolume": 0.9242065572951782,
           "marketCap": 154745307136,
           "newsCount48h": 0,
           "newsPrev48h": 0
@@ -1417,13 +1347,13 @@
         {
           "label": "천연가스 현재가 ($/MMBtu)",
           "ticker": "NG=F",
-          "value": 3.233,
+          "value": 3.245,
           "format": "price_usd"
         },
         {
           "label": "천연가스 1일 변동",
           "ticker": "NG=F",
-          "value": 1.1576971214017497,
+          "value": 1.5331664580725886,
           "format": "change_pct"
         },
         {
