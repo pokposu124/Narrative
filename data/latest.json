@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-18T09:06:39.315Z",
+  "timestamp": "2026-07-18T15:54:13.804Z",
   "themes": [
     {
       "id": "ai-infra",
@@ -18,9 +18,9 @@
       "volumeScore": 83.3,
       "priceScore": 8.3,
       "totalScore": 67.9,
-      "prevTotalScore": 73,
-      "scoreDelta": -5.1,
-      "deltaDirection": "▼",
+      "prevTotalScore": 67.9,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "NVDA",
@@ -43,7 +43,7 @@
           "avgVolume20d": 26237270,
           "relativeVolume": 1.1493585270113849,
           "marketCap": 0,
-          "newsCount48h": 89,
+          "newsCount48h": 92,
           "newsPrev48h": 140
         },
         {
@@ -55,7 +55,7 @@
           "avgVolume20d": 22733570,
           "relativeVolume": 1.0035525436612023,
           "marketCap": 1764229775360,
-          "newsCount48h": 56,
+          "newsCount48h": 58,
           "newsPrev48h": 92
         },
         {
@@ -67,7 +67,7 @@
           "avgVolume20d": 43618290,
           "relativeVolume": 1.4398770103092073,
           "marketCap": 0,
-          "newsCount48h": 152,
+          "newsCount48h": 155,
           "newsPrev48h": 238
         },
         {
@@ -103,7 +103,7 @@
           "avgVolume20d": 7570290,
           "relativeVolume": 0.8455115986309639,
           "marketCap": 256092078080,
-          "newsCount48h": 24,
+          "newsCount48h": 25,
           "newsPrev48h": 72
         }
       ],
@@ -133,6 +133,111 @@
       ]
     },
     {
+      "id": "ai-software",
+      "name": "AI 소프트웨어",
+      "description": "AI 모델 개발 및 기업용 AI 솔루션. 클라우드 AI 서비스, 에이전트형 AI, 데이터 분석 플랫폼.",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "PLTR",
+        "NOW",
+        "CRM"
+      ],
+      "newsScore": 83.3,
+      "volumeScore": 16.7,
+      "priceScore": 83.3,
+      "totalScore": 60,
+      "prevTotalScore": 60,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "MSFT",
+          "price": 393.82,
+          "change1d": -1.8150087260034975,
+          "change5d": 2.264347203972563,
+          "volume": 32987687,
+          "avgVolume20d": 30824830,
+          "relativeVolume": 1.0701660641761852,
+          "marketCap": 2925466222592,
+          "newsCount48h": 171,
+          "newsPrev48h": 248
+        },
+        {
+          "ticker": "GOOGL",
+          "price": 346.77,
+          "change1d": -2.169497263442983,
+          "change5d": -2.9144979773709565,
+          "volume": 29853865,
+          "avgVolume20d": 24946490,
+          "relativeVolume": 1.1967160510356367,
+          "marketCap": 4231485980672,
+          "newsCount48h": 216,
+          "newsPrev48h": 247
+        },
+        {
+          "ticker": "PLTR",
+          "price": 132.38,
+          "change1d": -1.53228205891104,
+          "change5d": 4.408868149633854,
+          "volume": 31565729,
+          "avgVolume20d": 37357470,
+          "relativeVolume": 0.8449643136968322,
+          "marketCap": 317356179456,
+          "newsCount48h": 20,
+          "newsPrev48h": 51
+        },
+        {
+          "ticker": "NOW",
+          "price": 103.24,
+          "change1d": -0.7403134314008366,
+          "change5d": -4.150033663260438,
+          "volume": 13002785,
+          "avgVolume20d": 16937600,
+          "relativeVolume": 0.7676875708482902,
+          "marketCap": 106472235008,
+          "newsCount48h": 17,
+          "newsPrev48h": 59
+        },
+        {
+          "ticker": "CRM",
+          "price": 170.77,
+          "change1d": -1.1060921936529977,
+          "change5d": 4.561594791906078,
+          "volume": 7913287,
+          "avgVolume20d": 11872510,
+          "relativeVolume": 0.6665218222599939,
+          "marketCap": 0,
+          "newsCount48h": 27,
+          "newsPrev48h": 57
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "MSFT 매출 성장 YoY",
+          "ticker": "MSFT",
+          "value": 0.183,
+          "format": "financial_pct",
+          "period": "TTM"
+        },
+        {
+          "label": "MSFT 영업이익률",
+          "ticker": "MSFT",
+          "value": 0.46326,
+          "format": "financial_pct",
+          "period": "TTM"
+        },
+        {
+          "label": "GOOGL 매출 성장 YoY",
+          "ticker": "GOOGL",
+          "value": 0.218,
+          "format": "financial_pct",
+          "period": "TTM"
+        }
+      ]
+    },
+    {
       "id": "inflation-rates",
       "name": "인플레이션/금리",
       "description": "연준 통화정책, 국채 금리 변동, 은행주 수익성. 금·채권·금융주 복합 내러티브.",
@@ -143,12 +248,12 @@
         "JPM",
         "KRE"
       ],
-      "newsScore": 75,
+      "newsScore": 66.7,
       "volumeScore": 41.7,
       "priceScore": 75,
-      "totalScore": 63.3,
-      "prevTotalScore": 65,
-      "scoreDelta": -1.7,
+      "totalScore": 60,
+      "prevTotalScore": 63.3,
+      "scoreDelta": -3.3,
       "deltaDirection": "▼",
       "tickerData": [
         {
@@ -172,7 +277,7 @@
           "avgVolume20d": 6330790,
           "relativeVolume": 0.899455834106012,
           "marketCap": 0,
-          "newsCount48h": 10,
+          "newsCount48h": 13,
           "newsPrev48h": 13
         },
         {
@@ -196,7 +301,7 @@
           "avgVolume20d": 11025380,
           "relativeVolume": 0.6420841730625158,
           "marketCap": 0,
-          "newsCount48h": 66,
+          "newsCount48h": 68,
           "newsPrev48h": 209
         },
         {
@@ -235,214 +340,6 @@
       ]
     },
     {
-      "id": "ai-software",
-      "name": "AI 소프트웨어",
-      "description": "AI 모델 개발 및 기업용 AI 솔루션. 클라우드 AI 서비스, 에이전트형 AI, 데이터 분석 플랫폼.",
-      "tickers": [
-        "MSFT",
-        "GOOGL",
-        "PLTR",
-        "NOW",
-        "CRM"
-      ],
-      "newsScore": 83.3,
-      "volumeScore": 16.7,
-      "priceScore": 83.3,
-      "totalScore": 60,
-      "prevTotalScore": 60.8,
-      "scoreDelta": -0.8,
-      "deltaDirection": "▼",
-      "tickerData": [
-        {
-          "ticker": "MSFT",
-          "price": 393.82,
-          "change1d": -1.8150087260034975,
-          "change5d": 2.264347203972563,
-          "volume": 32987687,
-          "avgVolume20d": 30824830,
-          "relativeVolume": 1.0701660641761852,
-          "marketCap": 2925466222592,
-          "newsCount48h": 168,
-          "newsPrev48h": 248
-        },
-        {
-          "ticker": "GOOGL",
-          "price": 346.77,
-          "change1d": -2.169497263442983,
-          "change5d": -2.9144979773709565,
-          "volume": 29853865,
-          "avgVolume20d": 24946490,
-          "relativeVolume": 1.1967160510356367,
-          "marketCap": 4231485980672,
-          "newsCount48h": 210,
-          "newsPrev48h": 247
-        },
-        {
-          "ticker": "PLTR",
-          "price": 132.38,
-          "change1d": -1.53228205891104,
-          "change5d": 4.408868149633854,
-          "volume": 31565729,
-          "avgVolume20d": 37357470,
-          "relativeVolume": 0.8449643136968322,
-          "marketCap": 317356179456,
-          "newsCount48h": 17,
-          "newsPrev48h": 51
-        },
-        {
-          "ticker": "NOW",
-          "price": 103.24,
-          "change1d": -0.7403134314008366,
-          "change5d": -4.150033663260438,
-          "volume": 13002785,
-          "avgVolume20d": 16937600,
-          "relativeVolume": 0.7676875708482902,
-          "marketCap": 106472235008,
-          "newsCount48h": 17,
-          "newsPrev48h": 59
-        },
-        {
-          "ticker": "CRM",
-          "price": 170.77,
-          "change1d": -1.1060921936529977,
-          "change5d": 4.561594791906078,
-          "volume": 7913287,
-          "avgVolume20d": 11872510,
-          "relativeVolume": 0.6665218222599939,
-          "marketCap": 0,
-          "newsCount48h": 26,
-          "newsPrev48h": 57
-        }
-      ],
-      "headlines": [],
-      "customKpis": [
-        {
-          "label": "MSFT 매출 성장 YoY",
-          "ticker": "MSFT",
-          "value": 0.183,
-          "format": "financial_pct",
-          "period": "TTM"
-        },
-        {
-          "label": "MSFT 영업이익률",
-          "ticker": "MSFT",
-          "value": 0.46326,
-          "format": "financial_pct",
-          "period": "TTM"
-        },
-        {
-          "label": "GOOGL 매출 성장 YoY",
-          "ticker": "GOOGL",
-          "value": 0.218,
-          "format": "financial_pct",
-          "period": "TTM"
-        }
-      ]
-    },
-    {
-      "id": "power-datacenter",
-      "name": "전력/데이터센터",
-      "description": "AI 데이터센터의 폭발적 전력 소비 증가. 전력망 인프라, 변압기, IPP(독립발전사업자) 수혜.",
-      "tickers": [
-        "GEV",
-        "ETN",
-        "PWR",
-        "NRG",
-        "TLN"
-      ],
-      "newsScore": 5,
-      "volumeScore": 91.7,
-      "priceScore": 41.7,
-      "totalScore": 44.5,
-      "prevTotalScore": 24.1,
-      "scoreDelta": 20.4,
-      "deltaDirection": "▲",
-      "tickerData": [
-        {
-          "ticker": "GEV",
-          "price": 1057.84,
-          "change1d": 2.0864295226882215,
-          "change5d": -3.0900429774032863,
-          "volume": 3281343,
-          "avgVolume20d": 2681330,
-          "relativeVolume": 1.2237743955425107,
-          "marketCap": 284262760448,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "ETN",
-          "price": 399.99,
-          "change1d": 0.9387538799303574,
-          "change5d": -1.7899254976359142,
-          "volume": 2212122,
-          "avgVolume20d": 2039420,
-          "relativeVolume": 1.0846819193692325,
-          "marketCap": 0,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "PWR",
-          "price": 628.53,
-          "change1d": -0.3945992203099758,
-          "change5d": -4.5599441771509825,
-          "volume": 1214865,
-          "avgVolume20d": 994770,
-          "relativeVolume": 1.2212521487378991,
-          "marketCap": 94317305856,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "NRG",
-          "price": 129.11,
-          "change1d": -2.741996233521647,
-          "change5d": -8.054406570342074,
-          "volume": 2385132,
-          "avgVolume20d": 1993910,
-          "relativeVolume": 1.1962084547446976,
-          "marketCap": 0,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "TLN",
-          "price": 372.37,
-          "change1d": 1.1078226397675701,
-          "change5d": -3.4810764905954756,
-          "volume": 555775,
-          "avgVolume20d": 620640,
-          "relativeVolume": 0.8954869167311162,
-          "marketCap": 17797425152,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        }
-      ],
-      "headlines": [],
-      "customKpis": [
-        {
-          "label": "천연가스 현재가 ($/MMBtu)",
-          "ticker": "NG=F",
-          "value": 2.911,
-          "format": "price_usd"
-        },
-        {
-          "label": "천연가스 1일 변동",
-          "ticker": "NG=F",
-          "value": 1.8544436668999278,
-          "format": "change_pct"
-        },
-        {
-          "label": "GEV 매출 성장 YoY",
-          "ticker": "GEV",
-          "value": 0.163,
-          "format": "financial_pct",
-          "period": "TTM"
-        }
-      ]
-    },
-    {
       "id": "geopolitics-hormuz",
       "name": "호르무즈/지정학 리스크",
       "description": "중동 긴장, 원유 공급 차질 우려, 방산 수요 증가. 에너지 가격 상승 시 수혜 섹터.",
@@ -456,13 +353,13 @@
         "FRO",
         "STNG"
       ],
-      "newsScore": 66.7,
+      "newsScore": 75,
       "volumeScore": 0,
       "priceScore": 66.7,
-      "totalScore": 43.4,
+      "totalScore": 46.7,
       "prevTotalScore": 43.4,
-      "scoreDelta": 0,
-      "deltaDirection": "–",
+      "scoreDelta": 3.3,
+      "deltaDirection": "▲",
       "tickerData": [
         {
           "ticker": "XOM",
@@ -473,7 +370,7 @@
           "avgVolume20d": 15153720,
           "relativeVolume": 1.2544122499293904,
           "marketCap": 0,
-          "newsCount48h": 13,
+          "newsCount48h": 15,
           "newsPrev48h": 17
         },
         {
@@ -485,7 +382,7 @@
           "avgVolume20d": 7670950,
           "relativeVolume": 0.9189110866320338,
           "marketCap": 373185576960,
-          "newsCount48h": 22,
+          "newsCount48h": 26,
           "newsPrev48h": 33
         },
         {
@@ -497,7 +394,7 @@
           "avgVolume20d": 10126160,
           "relativeVolume": 0.6794523294121365,
           "marketCap": 54565658624,
-          "newsCount48h": 5,
+          "newsCount48h": 6,
           "newsPrev48h": 6
         },
         {
@@ -585,6 +482,109 @@
       ]
     },
     {
+      "id": "power-datacenter",
+      "name": "전력/데이터센터",
+      "description": "AI 데이터센터의 폭발적 전력 소비 증가. 전력망 인프라, 변압기, IPP(독립발전사업자) 수혜.",
+      "tickers": [
+        "GEV",
+        "ETN",
+        "PWR",
+        "NRG",
+        "TLN"
+      ],
+      "newsScore": 5,
+      "volumeScore": 91.7,
+      "priceScore": 41.7,
+      "totalScore": 44.5,
+      "prevTotalScore": 44.5,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
+      "tickerData": [
+        {
+          "ticker": "GEV",
+          "price": 1057.84,
+          "change1d": 2.0864295226882215,
+          "change5d": -3.0900429774032863,
+          "volume": 3281343,
+          "avgVolume20d": 2681330,
+          "relativeVolume": 1.2237743955425107,
+          "marketCap": 284262760448,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "ETN",
+          "price": 399.99,
+          "change1d": 0.9387538799303574,
+          "change5d": -1.7899254976359142,
+          "volume": 2212122,
+          "avgVolume20d": 2039420,
+          "relativeVolume": 1.0846819193692325,
+          "marketCap": 0,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "PWR",
+          "price": 628.53,
+          "change1d": -0.3945992203099758,
+          "change5d": -4.5599441771509825,
+          "volume": 1214865,
+          "avgVolume20d": 994770,
+          "relativeVolume": 1.2212521487378991,
+          "marketCap": 94317305856,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "NRG",
+          "price": 129.11,
+          "change1d": -2.741996233521647,
+          "change5d": -8.054406570342074,
+          "volume": 2385132,
+          "avgVolume20d": 1993910,
+          "relativeVolume": 1.1962084547446976,
+          "marketCap": 0,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "TLN",
+          "price": 372.37,
+          "change1d": 1.1078226397675701,
+          "change5d": -3.4810764905954756,
+          "volume": 555775,
+          "avgVolume20d": 620640,
+          "relativeVolume": 0.8954869167311162,
+          "marketCap": 17797425152,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "천연가스 현재가 ($/MMBtu)",
+          "ticker": "NG=F",
+          "value": 2.911,
+          "format": "price_usd"
+        },
+        {
+          "label": "천연가스 1일 변동",
+          "ticker": "NG=F",
+          "value": 1.8544436668999278,
+          "format": "change_pct"
+        },
+        {
+          "label": "GEV 매출 성장 YoY",
+          "ticker": "GEV",
+          "value": 0.163,
+          "format": "financial_pct",
+          "period": "TTM"
+        }
+      ]
+    },
+    {
       "id": "nuclear-uranium",
       "name": "원자력/우라늄",
       "description": "AI 데이터센터 전력 수요 + 탈탄소 정책으로 재조명받는 원자력. SMR, 우라늄 채굴, 유틸리티.",
@@ -600,9 +600,9 @@
       "volumeScore": 25,
       "priceScore": 16.7,
       "totalScore": 36.2,
-      "prevTotalScore": 51.6,
-      "scoreDelta": -15.4,
-      "deltaDirection": "▼",
+      "prevTotalScore": 36.2,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "CCJ",
@@ -637,8 +637,8 @@
           "avgVolume20d": 25228330,
           "relativeVolume": 0.8039113964340882,
           "marketCap": 2671936768,
-          "newsCount48h": 1,
-          "newsPrev48h": 2
+          "newsCount48h": 7,
+          "newsPrev48h": 6
         },
         {
           "ticker": "OKLO",
@@ -714,9 +714,9 @@
       "volumeScore": 58.3,
       "priceScore": 50,
       "totalScore": 34.9,
-      "prevTotalScore": 32,
-      "scoreDelta": 2.9,
-      "deltaDirection": "▲",
+      "prevTotalScore": 34.9,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "LLY",
@@ -806,9 +806,9 @@
       "volumeScore": 75,
       "priceScore": 25,
       "totalScore": 34.5,
-      "prevTotalScore": 33.7,
-      "scoreDelta": 0.8,
-      "deltaDirection": "▲",
+      "prevTotalScore": 34.5,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "ASML",
@@ -898,9 +898,9 @@
       "volumeScore": 50,
       "priceScore": 58.3,
       "totalScore": 34.1,
-      "prevTotalScore": 30.8,
-      "scoreDelta": 3.3,
-      "deltaDirection": "▲",
+      "prevTotalScore": 34.1,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "BABA",
@@ -967,11 +967,81 @@
           "datetime": 1784282847
         },
         {
+          "ticker": "BABA",
+          "headline": "Korea Drives Semi Stocks Lower Despite Solid Taiwan Semi Earnings; Apple Boosts China AI Models",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=c44a54e68a11aa7e1cc92edf0a125464642478926263eb1b4a8dffac95f11a71",
+          "datetime": 1784211511
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Apple's AI Catch-Up Plan May Include Buying Chip Companies",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=7863e5dc0f33b93ed1a82f4c25d8528cf5ce4d229777ccb121419bafdacce1b5",
+          "datetime": 1784182077
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Gene Munster Says New Siri AI Makes It Feel 'Like Having a New Phone,' Ming-Chi Kuo Says Stock Rally Was Expected as Apple Stock Touches Record High",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=e9bab187d570647b1cee7cc231fe33355b57fd067f3c0eea25199c52148d7eb4",
+          "datetime": 1784172853
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Apple Intelligence's China Win Sparks Rally in Alibaba, Baidu Shares in Hong Kong",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=1ec360368b15daaea11fb9946f5192d975d23eb03a747821d270c55da38e8abb",
+          "datetime": 1784164586
+        },
+        {
           "ticker": "PDD",
           "headline": "PDD Holdings Inc. Sponsored ADR (PDD) Outperforms Broader Market: What You Need to Know",
           "source": "Yahoo",
           "url": "https://finnhub.io/api/news?id=c055f6b7b71ff6760414ab9a99bdccef00a24d174f42ea9127a097e1f5891ecb",
           "datetime": 1784151903
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Bill Ackman Warns of China ‘Super Intelligence’ Threat — 'Our Country And Democracy Will Be at Risk'",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=2048ea17963d22521f86f93d72c4368377853092be4692e72a6f6a0ea6b994df",
+          "datetime": 1784132986
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Apple Stock Hits 52-Week High - Here's Why",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=be37f2c34d187b01af5fc0d5547b2a6ca31fdbc9e3c04728ce27dadfc5d7576b",
+          "datetime": 1784116728
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Apple Intelligence Finally Cleared for China: Here's Which Stocks Are Popping on the News",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=bdaf64764d0e09b7f3d95175164040cd3ff4415c03c23cc73e4ce040b19dc4c6",
+          "datetime": 1784110111
+        },
+        {
+          "ticker": "BABA",
+          "headline": "PayPal, Veradermics, Alibaba And Other Big Stocks Moving Higher On Wednesday",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=24542b4ad5b03a2375e71d2db508710087abff5d48dd7574d0666897eb5e2eac",
+          "datetime": 1784109392
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Why Is Twin Vee Powercats Stock Surging on Wednesday?",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=969e2b53c32049007796b958feca2c05fcbf685860d6cc73991ebfeee0976fed",
+          "datetime": 1784106841
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Why Is Alibaba Stock Surging Wednesday?",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=309799a134e5e2c050f3dccb38a52fd9f4bc9c91fbca3ee91fb028cd9d288583",
+          "datetime": 1784104801
         },
         {
           "ticker": "JD",
@@ -1025,9 +1095,9 @@
       "volumeScore": 8.3,
       "priceScore": 91.7,
       "totalScore": 27.8,
-      "prevTotalScore": 25.7,
-      "scoreDelta": 2.1,
-      "deltaDirection": "▲",
+      "prevTotalScore": 27.8,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "CRWD",
@@ -1129,9 +1199,9 @@
       "volumeScore": 66.7,
       "priceScore": 0,
       "totalScore": 25.3,
-      "prevTotalScore": 31.2,
-      "scoreDelta": -5.9,
-      "deltaDirection": "▼",
+      "prevTotalScore": 25.3,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "IONQ",
@@ -1219,9 +1289,9 @@
       "volumeScore": 33.3,
       "priceScore": 33.3,
       "totalScore": 22,
-      "prevTotalScore": 22.8,
-      "scoreDelta": -0.8,
-      "deltaDirection": "▼",
+      "prevTotalScore": 22,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "MSTR",
@@ -1277,19 +1347,19 @@
         {
           "label": "비트코인 현재가 (USD)",
           "ticker": "BTC-USD",
-          "value": 63934.42,
+          "value": 64068.8,
           "format": "price_usd"
         },
         {
           "label": "BTC 1일 변동",
           "ticker": "BTC-USD",
-          "value": 0.07234512789529392,
+          "value": 0.2826813089115139,
           "format": "change_pct"
         },
         {
           "label": "이더리움 현재가 (USD)",
           "ticker": "ETH-USD",
-          "value": 1845.83,
+          "value": 1842.89,
           "format": "price_usd"
         }
       ]
