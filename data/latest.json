@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-16T09:08:12.868Z",
+  "timestamp": "2026-08-16T15:36:22.826Z",
   "themes": [
     {
       "id": "ai-infra",
@@ -18,9 +18,9 @@
       "volumeScore": 66.7,
       "priceScore": 91.7,
       "totalScore": 79.6,
-      "prevTotalScore": 83,
-      "scoreDelta": -3.4,
-      "deltaDirection": "▼",
+      "prevTotalScore": 79.6,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "NVDA",
@@ -55,7 +55,7 @@
           "avgVolume20d": 17757490,
           "relativeVolume": 1.6445645752862594,
           "marketCap": 1869681393664,
-          "newsCount48h": 15,
+          "newsCount48h": 16,
           "newsPrev48h": 49
         },
         {
@@ -67,7 +67,7 @@
           "avgVolume20d": 34369730,
           "relativeVolume": 0.8032975237221823,
           "marketCap": 0,
-          "newsCount48h": 21,
+          "newsCount48h": 24,
           "newsPrev48h": 106
         },
         {
@@ -147,9 +147,9 @@
       "volumeScore": 58.3,
       "priceScore": 41.7,
       "totalScore": 67.5,
-      "prevTotalScore": 60.8,
-      "scoreDelta": 6.7,
-      "deltaDirection": "▲",
+      "prevTotalScore": 67.5,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "TLT",
@@ -208,7 +208,7 @@
           "avgVolume20d": 9884760,
           "relativeVolume": 0.7166642386866247,
           "marketCap": 0,
-          "newsCount48h": 0,
+          "newsCount48h": 1,
           "newsPrev48h": 0
         }
       ],
@@ -289,7 +289,7 @@
           "avgVolume20d": 9031490,
           "relativeVolume": 0.6122111633850007,
           "marketCap": 58338836480,
-          "newsCount48h": 2,
+          "newsCount48h": 3,
           "newsPrev48h": 8
         },
         {
@@ -704,9 +704,9 @@
       "volumeScore": 0,
       "priceScore": 33.3,
       "totalScore": 38.3,
-      "prevTotalScore": 41.6,
-      "scoreDelta": -3.3,
-      "deltaDirection": "▼",
+      "prevTotalScore": 38.3,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "MSFT",
@@ -729,7 +729,7 @@
           "avgVolume20d": 27510210,
           "relativeVolume": 0.6140162870439738,
           "marketCap": 4230334382080,
-          "newsCount48h": 38,
+          "newsCount48h": 39,
           "newsPrev48h": 143
         },
         {
@@ -862,6 +862,13 @@
         }
       ],
       "headlines": [
+        {
+          "ticker": "BABA",
+          "headline": "Wall Street Week Ahead",
+          "source": "SeekingAlpha",
+          "url": "https://finnhub.io/api/news?id=f27678b5a5ecd46e15edc0e77302ec2996e442f4cec8d95c252a55f426f58c84",
+          "datetime": 1786861929
+        },
         {
           "ticker": "BABA",
           "headline": "Alibaba, Walmart To Headline Earnings Next Week, FOMC Minutes Of Meeting In Focus",
@@ -1021,7 +1028,7 @@
         {
           "label": "USD/CNY 환율",
           "ticker": "CNY=X",
-          "value": 6.7419,
+          "value": 6.7407,
           "format": "price_number"
         },
         {
@@ -1106,24 +1113,39 @@
           "newsPrev48h": 0
         }
       ],
-      "headlines": [],
+      "headlines": [
+        {
+          "ticker": "MARA",
+          "headline": "What's Going On With the Fall in MARA Shares?",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=cab24cd33da47101fcb28e1d0e792448f8bbe11b01ebeaa99edc5cea6fd994d2",
+          "datetime": 1786632508
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Morgan Stanley Maintains Underweight on MARA Holdings, Raises Price Target to $6",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=cec187c613cb9841fffb3cb45abddba1bf5178c8acd9004386d425ed6f78441a",
+          "datetime": 1786617629
+        }
+      ],
       "customKpis": [
         {
           "label": "비트코인 현재가 (USD)",
           "ticker": "BTC-USD",
-          "value": 62999.95,
+          "value": 63052.27,
           "format": "price_usd"
         },
         {
           "label": "BTC 1일 변동",
           "ticker": "BTC-USD",
-          "value": -0.039170396173809546,
+          "value": 0.04384475867745871,
           "format": "change_pct"
         },
         {
           "label": "이더리움 현재가 (USD)",
           "ticker": "ETH-USD",
-          "value": 1878.76,
+          "value": 1882.39,
           "format": "price_usd"
         }
       ]
