@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-19T09:19:46.933Z",
+  "timestamp": "2026-08-19T15:33:28.556Z",
   "themes": [
     {
       "id": "ai-infra",
@@ -18,92 +18,92 @@
       "volumeScore": 66.7,
       "priceScore": 83.3,
       "totalScore": 80.9,
-      "prevTotalScore": 2,
-      "scoreDelta": 78.9,
-      "deltaDirection": "▲",
+      "prevTotalScore": 80.9,
+      "scoreDelta": 0,
+      "deltaDirection": "–",
       "tickerData": [
         {
           "ticker": "NVDA",
-          "price": 219.74,
-          "change1d": -2.3421181280831886,
+          "price": 219.05,
+          "change1d": -0.31400746336579494,
           "change5d": 1.0298875830639367,
-          "volume": 102376166,
+          "volume": 37752840,
           "avgVolume20d": 107469740,
-          "relativeVolume": 0.952604575018047,
-          "marketCap": 5322322739200,
-          "newsCount48h": 83,
+          "relativeVolume": 0.35128809281570794,
+          "marketCap": 5305610010624,
+          "newsCount48h": 94,
           "newsPrev48h": 67
         },
         {
           "ticker": "AMD",
-          "price": 484.39,
-          "change1d": -4.270750988142296,
+          "price": 466.245,
+          "change1d": -3.745948512562188,
           "change5d": 2.123040809732374,
-          "volume": 23516128,
+          "volume": 9251925,
           "avgVolume20d": 24528310,
-          "relativeVolume": 0.9587341321110179,
-          "marketCap": 790754623488,
-          "newsCount48h": 17,
+          "relativeVolume": 0.37719374062053196,
+          "marketCap": 761133334528,
+          "newsCount48h": 20,
           "newsPrev48h": 15
         },
         {
           "ticker": "AVGO",
-          "price": 380,
-          "change1d": -3.1674438753408265,
+          "price": 362.16,
+          "change1d": -4.6520811942184555,
           "change5d": -8.671406397000347,
-          "volume": 22808949,
+          "volume": 15385403,
           "avgVolume20d": 17365440,
-          "relativeVolume": 1.3134679570457184,
-          "marketCap": 1807880552448,
-          "newsCount48h": 16,
+          "relativeVolume": 0.8859782994269076,
+          "marketCap": 1723005272064,
+          "newsCount48h": 19,
           "newsPrev48h": 15
         },
         {
           "ticker": "MU",
-          "price": 940.76,
-          "change1d": -7.016555473190018,
+          "price": 935.06,
+          "change1d": -0.6058931077001621,
           "change5d": 8.317596441054258,
-          "volume": 36640946,
+          "volume": 14928388,
           "avgVolume20d": 33409840,
-          "relativeVolume": 1.0967112084344013,
+          "relativeVolume": 0.44682608477023533,
           "marketCap": 0,
-          "newsCount48h": 43,
+          "newsCount48h": 49,
           "newsPrev48h": 33
         },
         {
           "ticker": "SMCI",
-          "price": 37.41,
-          "change1d": -2.2727272727272845,
+          "price": 37.44,
+          "change1d": 0.08019246190858365,
           "change5d": 18.386074037357837,
-          "volume": 49300276,
+          "volume": 17661400,
           "avgVolume20d": 70463770,
-          "relativeVolume": 0.6996542478496396,
-          "marketCap": 24199520256,
+          "relativeVolume": 0.2506451187610314,
+          "marketCap": 24218925056,
           "newsCount48h": 11,
           "newsPrev48h": 10
         },
         {
           "ticker": "VRT",
-          "price": 272.54,
-          "change1d": -6.801627739971955,
+          "price": 262.305,
+          "change1d": -3.755412049607402,
           "change5d": -3.2894464688906098,
-          "volume": 5073745,
+          "volume": 2258513,
           "avgVolume20d": 4092870,
-          "relativeVolume": 1.239654570020548,
-          "marketCap": 104924676096,
-          "newsCount48h": 2,
+          "relativeVolume": 0.5518164515364524,
+          "marketCap": 100984315904,
+          "newsCount48h": 3,
           "newsPrev48h": 1
         },
         {
           "ticker": "DELL",
-          "price": 468.65,
-          "change1d": -2.3259206769346252,
+          "price": 438.6,
+          "change1d": -6.412034567374364,
           "change5d": 6.277069324252641,
-          "volume": 4730040,
+          "volume": 3065055,
           "avgVolume20d": 5715850,
-          "relativeVolume": 0.8275304635356071,
-          "marketCap": 302814625792,
-          "newsCount48h": 3,
+          "relativeVolume": 0.5362378298940665,
+          "marketCap": 283398045696,
+          "newsCount48h": 6,
           "newsPrev48h": 2
         }
       ],
@@ -133,6 +133,108 @@
       ]
     },
     {
+      "id": "inflation-rates",
+      "name": "인플레이션/금리",
+      "description": "연준 통화정책, 국채 금리 변동, 은행주 수익성. 금·채권·금융주 복합 내러티브.",
+      "tickers": [
+        "TLT",
+        "GLD",
+        "XLF",
+        "JPM",
+        "KRE"
+      ],
+      "newsScore": 83.3,
+      "volumeScore": 83.3,
+      "priceScore": 66.7,
+      "totalScore": 79.1,
+      "prevTotalScore": 61.3,
+      "scoreDelta": 17.8,
+      "deltaDirection": "▲",
+      "tickerData": [
+        {
+          "ticker": "TLT",
+          "price": 82.8,
+          "change1d": 1.396032329169729,
+          "change5d": -0.6448458006491901,
+          "volume": 22211042,
+          "avgVolume20d": 34948850,
+          "relativeVolume": 0.6355299816732167,
+          "marketCap": 0,
+          "newsCount48h": 25,
+          "newsPrev48h": 12
+        },
+        {
+          "ticker": "GLD",
+          "price": 411.19,
+          "change1d": 3.171496675448497,
+          "change5d": -0.6010583882355708,
+          "volume": 8208565,
+          "avgVolume20d": 10358400,
+          "relativeVolume": 0.7924549158171146,
+          "marketCap": 0,
+          "newsCount48h": 14,
+          "newsPrev48h": 12
+        },
+        {
+          "ticker": "XLF",
+          "price": 57.9295,
+          "change1d": 0.1547372060857433,
+          "change5d": 0.0692057371199682,
+          "volume": 14361712,
+          "avgVolume20d": 26933680,
+          "relativeVolume": 0.5332250178958092,
+          "marketCap": 0,
+          "newsCount48h": 4,
+          "newsPrev48h": 1
+        },
+        {
+          "ticker": "JPM",
+          "price": 358.2,
+          "change1d": -1.3902271163110835,
+          "change5d": 0.3342148454645143,
+          "volume": 2117133,
+          "avgVolume20d": 5089130,
+          "relativeVolume": 0.4160107916284316,
+          "marketCap": 952162320384,
+          "newsCount48h": 9,
+          "newsPrev48h": 10
+        },
+        {
+          "ticker": "KRE",
+          "price": 76.09,
+          "change1d": -0.9889394925178803,
+          "change5d": 0.05207774612520908,
+          "volume": 6379314,
+          "avgVolume20d": 9598420,
+          "relativeVolume": 0.6646212605824708,
+          "marketCap": 0,
+          "newsCount48h": 1,
+          "newsPrev48h": 1
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "미국 10Y 국채금리",
+          "ticker": "^TNX",
+          "value": 4.6540003,
+          "format": "price_rate"
+        },
+        {
+          "label": "미국 3M 국채금리",
+          "ticker": "^IRX",
+          "value": 3.705,
+          "format": "price_rate"
+        },
+        {
+          "label": "금 현물가 ($/oz)",
+          "ticker": "GC=F",
+          "value": 4543.6,
+          "format": "price_usd"
+        }
+      ]
+    },
+    {
       "id": "geopolitics-hormuz",
       "name": "호르무즈/지정학 리스크",
       "description": "중동 긴장, 원유 공급 차질 우려, 방산 수요 증가. 에너지 가격 상승 시 수혜 섹터.",
@@ -147,106 +249,106 @@
         "STNG"
       ],
       "newsScore": 58.3,
-      "volumeScore": 58.3,
+      "volumeScore": 8.3,
       "priceScore": 91.7,
-      "totalScore": 66.6,
-      "prevTotalScore": 2,
-      "scoreDelta": 64.6,
-      "deltaDirection": "▲",
+      "totalScore": 49.2,
+      "prevTotalScore": 66.6,
+      "scoreDelta": -17.4,
+      "deltaDirection": "▼",
       "tickerData": [
         {
           "ticker": "XOM",
-          "price": 165.56,
-          "change1d": 2.5393286262851444,
+          "price": 167.425,
+          "change1d": 1.126479826044944,
           "change5d": 3.6045021256791374,
-          "volume": 18936474,
+          "volume": 3746477,
           "avgVolume20d": 14186570,
-          "relativeVolume": 1.3348169430665764,
-          "marketCap": 680768110592,
+          "relativeVolume": 0.26408617445936544,
+          "marketCap": 688436871168,
           "newsCount48h": 8,
           "newsPrev48h": 5
         },
         {
           "ticker": "CVX",
-          "price": 205.74,
-          "change1d": 1.4997533300444108,
+          "price": 206.966,
+          "change1d": 1.4738183957638753,
           "change5d": 4.617106509697547,
-          "volume": 6116056,
+          "volume": 2886257,
           "avgVolume20d": 7949770,
-          "relativeVolume": 0.7693374776880337,
-          "marketCap": 403580289024,
+          "relativeVolume": 0.36306169864033805,
+          "marketCap": 405985198080,
           "newsCount48h": 8,
           "newsPrev48h": 6
         },
         {
           "ticker": "OXY",
-          "price": 59.8,
-          "change1d": 1.287262872628723,
+          "price": 60.405,
+          "change1d": 1.0117056856187359,
           "change5d": 1.252959442199038,
-          "volume": 7644632,
+          "volume": 3134859,
           "avgVolume20d": 8712260,
-          "relativeVolume": 0.8774568252095323,
-          "marketCap": 59778314240,
+          "relativeVolume": 0.35982156179911984,
+          "marketCap": 60383092736,
           "newsCount48h": 1,
           "newsPrev48h": 2
         },
         {
           "ticker": "LMT",
-          "price": 607.17,
-          "change1d": 2.2619328325529606,
+          "price": 596.375,
+          "change1d": -1.7779205164945502,
           "change5d": 1.572504988837909,
-          "volume": 903034,
+          "volume": 234898,
           "avgVolume20d": 915460,
-          "relativeVolume": 0.9864264959692395,
-          "marketCap": 140129222656,
+          "relativeVolume": 0.2565901295523562,
+          "marketCap": 137637838848,
           "newsCount48h": 6,
           "newsPrev48h": 5
         },
         {
           "ticker": "RTX",
-          "price": 225.49,
-          "change1d": 1.7370510738134015,
+          "price": 223.27,
+          "change1d": -0.9845225952370388,
           "change5d": 0.7281358341679226,
-          "volume": 3731598,
+          "volume": 1787981,
           "avgVolume20d": 4262600,
-          "relativeVolume": 0.8754276732510674,
-          "marketCap": 303905964032,
+          "relativeVolume": 0.4194578426312579,
+          "marketCap": 300913950720,
           "newsCount48h": 5,
           "newsPrev48h": 4
         },
         {
           "ticker": "NOC",
-          "price": 589.14,
-          "change1d": 3.321641529287959,
+          "price": 586.39,
+          "change1d": -0.46678208914689207,
           "change5d": 2.3363289530809928,
-          "volume": 631148,
+          "volume": 184411,
           "avgVolume20d": 580700,
-          "relativeVolume": 1.0868744618563801,
-          "marketCap": 83695009792,
+          "relativeVolume": 0.31756672980885137,
+          "marketCap": 83304341504,
           "newsCount48h": 2,
           "newsPrev48h": 2
         },
         {
           "ticker": "FRO",
-          "price": 43.5,
-          "change1d": 3.129445234708393,
+          "price": 44.49,
+          "change1d": 2.275862068965522,
           "change5d": 14.05348897778514,
-          "volume": 2024953,
+          "volume": 1267099,
           "avgVolume20d": 1865610,
-          "relativeVolume": 1.0854106699685357,
-          "marketCap": 9684096000,
+          "relativeVolume": 0.6791875043551439,
+          "marketCap": 9904492544,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "STNG",
-          "price": 79.34,
-          "change1d": -1.2324162828333063,
+          "price": 80.37,
+          "change1d": 1.2982102344340825,
           "change5d": 6.941627883826712,
-          "volume": 488761,
+          "volume": 145583,
           "avgVolume20d": 820000,
-          "relativeVolume": 0.59605,
-          "marketCap": 3973454336,
+          "relativeVolume": 0.17754024390243903,
+          "marketCap": 4025038336,
           "newsCount48h": 0,
           "newsPrev48h": 0
         }
@@ -256,13 +358,13 @@
         {
           "label": "WTI 원유 현재가 ($/bbl)",
           "ticker": "CL=F",
-          "value": 85.18,
+          "value": 85.43,
           "format": "price_usd"
         },
         {
           "label": "WTI 1일 변동",
           "ticker": "CL=F",
-          "value": 1.3323816321675048,
+          "value": 1.629788246490607,
           "format": "change_pct"
         },
         {
@@ -271,108 +373,6 @@
           "value": 0.119569995,
           "format": "financial_pct",
           "period": "TTM"
-        }
-      ]
-    },
-    {
-      "id": "inflation-rates",
-      "name": "인플레이션/금리",
-      "description": "연준 통화정책, 국채 금리 변동, 은행주 수익성. 금·채권·금융주 복합 내러티브.",
-      "tickers": [
-        "TLT",
-        "GLD",
-        "XLF",
-        "JPM",
-        "KRE"
-      ],
-      "newsScore": 75,
-      "volumeScore": 41.7,
-      "priceScore": 66.7,
-      "totalScore": 61.3,
-      "prevTotalScore": 2,
-      "scoreDelta": 59.3,
-      "deltaDirection": "▲",
-      "tickerData": [
-        {
-          "ticker": "TLT",
-          "price": 81.66,
-          "change1d": 0.38106945298094935,
-          "change5d": -0.6448458006491901,
-          "volume": 24995926,
-          "avgVolume20d": 34948850,
-          "relativeVolume": 0.7152145492627082,
-          "marketCap": 0,
-          "newsCount48h": 18,
-          "newsPrev48h": 12
-        },
-        {
-          "ticker": "GLD",
-          "price": 398.55,
-          "change1d": -1.7115095316777227,
-          "change5d": -0.6010583882355708,
-          "volume": 9169700,
-          "avgVolume20d": 10358400,
-          "relativeVolume": 0.8852428946555453,
-          "marketCap": 0,
-          "newsCount48h": 13,
-          "newsPrev48h": 12
-        },
-        {
-          "ticker": "XLF",
-          "price": 57.84,
-          "change1d": 0.4515456755818081,
-          "change5d": 0.0692057371199682,
-          "volume": 23558713,
-          "avgVolume20d": 26933680,
-          "relativeVolume": 0.8746934321637444,
-          "marketCap": 0,
-          "newsCount48h": 4,
-          "newsPrev48h": 1
-        },
-        {
-          "ticker": "JPM",
-          "price": 363.25,
-          "change1d": 0.6344193262411405,
-          "change5d": 0.3342148454645143,
-          "volume": 4077302,
-          "avgVolume20d": 5089130,
-          "relativeVolume": 0.8011785904466971,
-          "marketCap": 965586124800,
-          "newsCount48h": 9,
-          "newsPrev48h": 10
-        },
-        {
-          "ticker": "KRE",
-          "price": 76.85,
-          "change1d": -0.6977645690657788,
-          "change5d": 0.05207774612520908,
-          "volume": 12307314,
-          "avgVolume20d": 9598420,
-          "relativeVolume": 1.282222907520196,
-          "marketCap": 0,
-          "newsCount48h": 0,
-          "newsPrev48h": 1
-        }
-      ],
-      "headlines": [],
-      "customKpis": [
-        {
-          "label": "미국 10Y 국채금리",
-          "ticker": "^TNX",
-          "value": 4.7060003,
-          "format": "price_rate"
-        },
-        {
-          "label": "미국 3M 국채금리",
-          "ticker": "^IRX",
-          "value": 3.705,
-          "format": "price_rate"
-        },
-        {
-          "label": "금 현물가 ($/oz)",
-          "ticker": "GC=F",
-          "value": 4410.4,
-          "format": "price_usd"
         }
       ]
     },
@@ -387,72 +387,72 @@
         "NOW",
         "CRM"
       ],
-      "newsScore": 83.3,
+      "newsScore": 75,
       "volumeScore": 16.7,
       "priceScore": 33.3,
-      "totalScore": 47.5,
-      "prevTotalScore": 2,
-      "scoreDelta": 45.5,
-      "deltaDirection": "▲",
+      "totalScore": 44.2,
+      "prevTotalScore": 47.5,
+      "scoreDelta": -3.3,
+      "deltaDirection": "▼",
       "tickerData": [
         {
           "ticker": "MSFT",
-          "price": 481.63,
-          "change1d": 0.26647236390131623,
+          "price": 484.39,
+          "change1d": 0.5730540041110377,
           "change5d": -4.402451873377461,
-          "volume": 23714829,
+          "volume": 6046877,
           "avgVolume20d": 27488610,
-          "relativeVolume": 0.862714738940965,
-          "marketCap": 3576365580288,
+          "relativeVolume": 0.21997754706403852,
+          "marketCap": 3596860260352,
           "newsCount48h": 44,
           "newsPrev48h": 34
         },
         {
           "ticker": "GOOGL",
-          "price": 344.2,
-          "change1d": 0.05813953488371762,
+          "price": 345.215,
+          "change1d": 0.29488669378268056,
           "change5d": 0.11635381857645347,
-          "volume": 19171000,
+          "volume": 6980278,
           "avgVolume20d": 23827390,
-          "relativeVolume": 0.8045782605648374,
-          "marketCap": 4209543741440,
-          "newsCount48h": 52,
+          "relativeVolume": 0.292951850790204,
+          "marketCap": 4221957046272,
+          "newsCount48h": 57,
           "newsPrev48h": 38
         },
         {
           "ticker": "PLTR",
-          "price": 171.54,
-          "change1d": -0.5853375833091968,
+          "price": 175.195,
+          "change1d": 2.130698379386733,
           "change5d": -1.943528700025155,
-          "volume": 27979382,
+          "volume": 14730223,
           "avgVolume20d": 43181900,
-          "relativeVolume": 0.6479423554776422,
-          "marketCap": 412220620800,
-          "newsCount48h": 9,
+          "relativeVolume": 0.3411203073509966,
+          "marketCap": 421003853824,
+          "newsCount48h": 10,
           "newsPrev48h": 3
         },
         {
           "ticker": "NOW",
-          "price": 119.49,
-          "change1d": 1.520815632965159,
+          "price": 127.965,
+          "change1d": 7.092643735877487,
           "change5d": -6.311747682273825,
-          "volume": 14496259,
+          "volume": 8613545,
           "avgVolume20d": 17756990,
-          "relativeVolume": 0.8163691594127158,
-          "marketCap": 123536171008,
-          "newsCount48h": 5,
+          "relativeVolume": 0.48507911532303616,
+          "marketCap": 132298145792,
+          "newsCount48h": 6,
           "newsPrev48h": 3
         },
         {
           "ticker": "CRM",
-          "price": 196.14,
-          "change1d": 2.7072315023302025,
+          "price": 205.68,
+          "change1d": 4.8638727439584075,
           "change5d": -0.6735209514523706,
-          "volume": 13719014,
+          "volume": 7702663,
           "avgVolume20d": 12020840,
-          "relativeVolume": 1.1412691625543638,
+          "relativeVolume": 0.6407757694137848,
           "marketCap": 0,
-          "newsCount48h": 6,
+          "newsCount48h": 8,
           "newsPrev48h": 2
         }
       ],
@@ -482,6 +482,390 @@
       ]
     },
     {
+      "id": "glp1",
+      "name": "비만치료제 (GLP-1)",
+      "description": "세마글루타이드·티르제파타이드 등 GLP-1 계열 비만·당뇨 치료제 시장 급성장. 차세대 파이프라인 경쟁.",
+      "tickers": [
+        "LLY",
+        "NVO",
+        "VKTX",
+        "AMGN"
+      ],
+      "newsScore": 5,
+      "volumeScore": 75,
+      "priceScore": 58.3,
+      "totalScore": 42.8,
+      "prevTotalScore": 16.6,
+      "scoreDelta": 26.2,
+      "deltaDirection": "▲",
+      "tickerData": [
+        {
+          "ticker": "LLY",
+          "price": 1265.63,
+          "change1d": 3.255203021872687,
+          "change5d": 0.8814637426000489,
+          "volume": 2077862,
+          "avgVolume20d": 2834860,
+          "relativeVolume": 0.732968118355051,
+          "marketCap": 1128614592512,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "NVO",
+          "price": 46.47,
+          "change1d": 1.6626558739881818,
+          "change5d": -3.0951857984888718,
+          "volume": 7759958,
+          "avgVolume20d": 12280900,
+          "relativeVolume": 0.6318720940647672,
+          "marketCap": 205493829632,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "VKTX",
+          "price": 34.3,
+          "change1d": 2.78693437219059,
+          "change5d": -1.2721902807154521,
+          "volume": 509050,
+          "avgVolume20d": 1637550,
+          "relativeVolume": 0.3108607370767305,
+          "marketCap": 4001195520,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "AMGN",
+          "price": 438.96,
+          "change1d": 3.216704288939054,
+          "change5d": 2.6502561694051954,
+          "volume": 821614,
+          "avgVolume20d": 2652270,
+          "relativeVolume": 0.30977766215355146,
+          "marketCap": 237477347328,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "LLY 분기 매출 (SEC)",
+          "ticker": "LLY",
+          "value": 22974000000,
+          "format": "price_billions",
+          "period": "2026 Q2"
+        },
+        {
+          "label": "LLY 매출 성장 YoY",
+          "ticker": "LLY",
+          "value": 0.477,
+          "format": "financial_pct",
+          "period": "TTM"
+        },
+        {
+          "label": "NVO 매출 성장 YoY",
+          "ticker": "NVO",
+          "value": 0.021,
+          "format": "financial_pct",
+          "period": "TTM"
+        }
+      ]
+    },
+    {
+      "id": "crypto",
+      "name": "비트코인/디지털자산",
+      "description": "비트코인 기관 채택, ETF 승인 효과, 규제 환경 변화. 채굴사 및 거래소 상장사.",
+      "tickers": [
+        "MSTR",
+        "COIN",
+        "MARA",
+        "RIOT"
+      ],
+      "newsScore": 5,
+      "volumeScore": 91.7,
+      "priceScore": 16.7,
+      "totalScore": 38.3,
+      "prevTotalScore": 23.7,
+      "scoreDelta": 14.6,
+      "deltaDirection": "▲",
+      "tickerData": [
+        {
+          "ticker": "MSTR",
+          "price": 104.75,
+          "change1d": 13.21876351059231,
+          "change5d": -3.715266761246073,
+          "volume": 20071568,
+          "avgVolume20d": 16619340,
+          "relativeVolume": 1.2077235317407309,
+          "marketCap": 41615253504,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "COIN",
+          "price": 162.16,
+          "change1d": 10.893797442385289,
+          "change5d": -1.5816436092037054,
+          "volume": 6450419,
+          "avgVolume20d": 6711900,
+          "relativeVolume": 0.9610421788167285,
+          "marketCap": 42783797248,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "MARA",
+          "price": 9.5814,
+          "change1d": 6.935267857142851,
+          "change5d": -7.438019052993552,
+          "volume": 19916331,
+          "avgVolume20d": 40878820,
+          "relativeVolume": 0.48720415608865425,
+          "marketCap": 3701287936,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "RIOT",
+          "price": 19.55,
+          "change1d": 3.3844526705446882,
+          "change5d": -6.571145942422006,
+          "volume": 10230044,
+          "avgVolume20d": 26528090,
+          "relativeVolume": 0.38563062776098844,
+          "marketCap": 7336312320,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": [
+        {
+          "ticker": "MARA",
+          "headline": "Riot’s Relative Strength Stands Out in a Brutal Bitcoin Mining Earnings Season",
+          "source": "ChartMill",
+          "url": "https://finnhub.io/api/news?id=edface3b6732d619938ec72cf12d28ef0a7155a58fd78c94d78e047acdf4186a",
+          "datetime": 1787143050
+        },
+        {
+          "ticker": "COIN",
+          "headline": "Bitcoin, Ethereum, XRP Investors Aren't Keeping Pace With the Market, Bitwise's Matt Hougan Says: Beware These 3 Mistakes",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=7f640c8d6e18e91ccd14b7dcda23cb4d9b20bbbca7ba24fb90999fa0991ea6f2",
+          "datetime": 1787131521
+        },
+        {
+          "ticker": "MSTR",
+          "headline": "Bitcoin Is Under Pressure, But This Strategy ETF Is Suddenly the Fund to Watch",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=11ba4f4a844f231420576b5b45d42a5855013df707528c9796bc39c50b120fb2",
+          "datetime": 1787071205
+        },
+        {
+          "ticker": "MSTR",
+          "headline": "Michael Saylor Would Welcome $10B Short Bet Against STRC: 'That's Good For Us'",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=c29675c188fe0bf571086bd46e01b17e94f75cb5392accaee3b5c96ef74185f4",
+          "datetime": 1787069593
+        },
+        {
+          "ticker": "COIN",
+          "headline": "Anthony Scaramucci Says Bitcoin Will Move 'Back Up Over $100,000 Again'",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=d1d2b5d190a6352b358c04e6bd681cfb59807830ae74df52ca3c313f407d300d",
+          "datetime": 1787068870
+        },
+        {
+          "ticker": "MSTR",
+          "headline": "Bitcoin's Investment Case Hasn't Changed, BlackRock Says, Backs up to 2% Portfolio Allocation",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=70e57381eadcd2b3e720e92c3971299462ac430db9a1bd9e7381426c02f7eeea",
+          "datetime": 1787067235
+        },
+        {
+          "ticker": "MSTR",
+          "headline": "10 Information Technology Stocks Whale Activity In Today’s Session",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=31ad81883ebe797247c7a1c76b5ab82ce051946b1e5581893021da51a3ed1c95",
+          "datetime": 1787060120
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Watching Keel Infrastructure; Hearing Zacks Technical Analysis & Zacks Rank Buys Stock",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=cd5a2acfb4e54e9fcb4761bf7665f58777e08de04627c582464ebe8efa4ffba6",
+          "datetime": 1787059635
+        },
+        {
+          "ticker": "MSTR",
+          "headline": "Bitcoin Needs to Stay Above $63,000 for Fresh Upside: 10x Research",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=991728922a58d8f8ca52fb0a3c74985823501b70c1d05d25e6de0873d9d34f42",
+          "datetime": 1787050943
+        },
+        {
+          "ticker": "MSTR",
+          "headline": "CLARITY Act 'Far From Dead,' Analyst Argues Ahead of Trump-Attended Crypto Meeting",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=414a030243c7533b07f302707d1e5fc403106089f42485c4493c52ceeda87c44",
+          "datetime": 1787049473
+        },
+        {
+          "ticker": "COIN",
+          "headline": "A fintech app built by crypto exchange Kraken just launched a cash back debit card in bid for consumer wallets",
+          "source": "CNBC",
+          "url": "https://finnhub.io/api/news?id=0a3c7e46fd00abc20cabf7e3c3f94c943de8311300c81834dcade95aa06c2d9b",
+          "datetime": 1787043601
+        },
+        {
+          "ticker": "MSTR",
+          "headline": "Michael Saylor Says Don't Invest in Bitcoin Unless You’ll Hold It for Over 4 Years— MSTR Chair Offers No 'Useful Wisdom' for Short-Term Traders (UPDATED)",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=c27b42c0420d918c539d177989c61d7a203c2c778631909a0c6b719f9c94f3ab",
+          "datetime": 1787042065
+        },
+        {
+          "ticker": "MSTR",
+          "headline": "MSTR CEO Calls MSCI’s Index Proposal ‘Ill-Advised,’ Says Bitcoin Is an Operating Asset",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=8b6d8c439329ce0274c4094a914aa322efe4a8cc830286da898fa32657f062f6",
+          "datetime": 1787033945
+        },
+        {
+          "ticker": "MSTR",
+          "headline": "Jane Street's Q2 Filing Reveals Nearly $1 Billion Bet on These Bitcoin ETFs — and a Major Stake in Michael Saylor's MSTR",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=65c6fa135e2073e002879df07a9c5b027962508dbd24cd2d34994456704593ce",
+          "datetime": 1787024427
+        },
+        {
+          "ticker": "MSTR",
+          "headline": "Elon Musk to Merge SpaceX and Tesla? Prediction Markets Are Betting on This Date",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=81b87487ae19452429390ea279fffc954ffe28d5f6ef372662b64c411e0e129a",
+          "datetime": 1787009104
+        },
+        {
+          "ticker": "MARA",
+          "headline": "BitMine Immersion Technologies Discloses ETH Holdings Of 4.976M Tokens, With Total Crypto And Cash Holdings Valued At $12.9B",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=a948dac5505f84d97efeaafeabc42f3bd62128cf6e9e4fb82a20cbb2f9920c79",
+          "datetime": 1786966346
+        }
+      ],
+      "customKpis": [
+        {
+          "label": "비트코인 현재가 (USD)",
+          "ticker": "BTC-USD",
+          "value": 68136.25,
+          "format": "price_usd"
+        },
+        {
+          "label": "BTC 1일 변동",
+          "ticker": "BTC-USD",
+          "value": 5.341627755320631,
+          "format": "change_pct"
+        },
+        {
+          "label": "이더리움 현재가 (USD)",
+          "ticker": "ETH-USD",
+          "value": 2067.36,
+          "format": "price_usd"
+        }
+      ]
+    },
+    {
+      "id": "quantum",
+      "name": "양자컴퓨팅",
+      "description": "양자 우위 달성 기대감과 정부·빅테크 투자 확대. 소형 순수 플레이 종목 중심의 투기적 테마.",
+      "tickers": [
+        "IONQ",
+        "RGTI",
+        "QBTS",
+        "QUBT"
+      ],
+      "newsScore": 5,
+      "volumeScore": 50,
+      "priceScore": 41.7,
+      "totalScore": 29.9,
+      "prevTotalScore": 15.3,
+      "scoreDelta": 14.6,
+      "deltaDirection": "▲",
+      "tickerData": [
+        {
+          "ticker": "IONQ",
+          "price": 43.82,
+          "change1d": -0.679963735267446,
+          "change5d": 1.5653782842379849,
+          "volume": 7922221,
+          "avgVolume20d": 20965540,
+          "relativeVolume": 0.3778686835636001,
+          "marketCap": 17753044992,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "RGTI",
+          "price": 17.315,
+          "change1d": -2.2303783173348366,
+          "change5d": -2.1006139574900597,
+          "volume": 9087756,
+          "avgVolume20d": 18388680,
+          "relativeVolume": 0.494203825396929,
+          "marketCap": 5779205632,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "QBTS",
+          "price": 19.48,
+          "change1d": -0.25601638504864677,
+          "change5d": -3.4602020337635597,
+          "volume": 6717614,
+          "avgVolume20d": 14164050,
+          "relativeVolume": 0.47427211849718126,
+          "marketCap": 7255129600,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "QUBT",
+          "price": 8.4505,
+          "change1d": -0.8157276995305126,
+          "change5d": -4.804462130337979,
+          "volume": 3013837,
+          "avgVolume20d": 7893960,
+          "relativeVolume": 0.3817902548277417,
+          "marketCap": 1912744064,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "양자컴퓨팅 ETF (QTUM)",
+          "ticker": "QTUM",
+          "value": 150.6125,
+          "format": "price_usd"
+        },
+        {
+          "label": "QTUM 1일 변동",
+          "ticker": "QTUM",
+          "value": -1.0170215562565623,
+          "format": "change_pct"
+        },
+        {
+          "label": "IONQ 매출 성장 YoY",
+          "ticker": "IONQ",
+          "value": 2.868,
+          "format": "financial_pct",
+          "period": "TTM"
+        }
+      ]
+    },
+    {
       "id": "semicap",
       "name": "반도체 장비",
       "description": "첨단 노드 팹 투자 싸이클. EUV 리소그래피, 식각·증착 장비. 온쇼어링 및 중국 수출 규제 영향.",
@@ -492,58 +876,58 @@
         "KLAC"
       ],
       "newsScore": 5,
-      "volumeScore": 75,
+      "volumeScore": 25,
       "priceScore": 75,
-      "totalScore": 47,
-      "prevTotalScore": 2,
-      "scoreDelta": 45,
-      "deltaDirection": "▲",
+      "totalScore": 29.5,
+      "prevTotalScore": 47,
+      "scoreDelta": -17.5,
+      "deltaDirection": "▼",
       "tickerData": [
         {
           "ticker": "ASML",
-          "price": 1802.98,
-          "change1d": -4.255703300904875,
+          "price": 1759.69,
+          "change1d": -2.401024969772264,
           "change5d": 0.20006755527840567,
-          "volume": 1462114,
+          "volume": 617309,
           "avgVolume20d": 1229380,
-          "relativeVolume": 1.1893100587287901,
-          "marketCap": 692524613632,
+          "relativeVolume": 0.5021303421236721,
+          "marketCap": 675896885248,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "AMAT",
-          "price": 514.33,
-          "change1d": -3.9192243746613937,
+          "price": 493.33,
+          "change1d": -4.082981743238787,
           "change5d": -2.146071911889947,
-          "volume": 8548513,
+          "volume": 2469900,
           "avgVolume20d": 7987790,
-          "relativeVolume": 1.0701975139556748,
-          "marketCap": 408357175296,
+          "relativeVolume": 0.3092094308939018,
+          "marketCap": 391683997696,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "LRCX",
-          "price": 327.92,
-          "change1d": -4.630060493252664,
+          "price": 309.73,
+          "change1d": -5.547084654793851,
           "change5d": 5.301695376343443,
-          "volume": 10196112,
+          "volume": 3366863,
           "avgVolume20d": 8124470,
-          "relativeVolume": 1.2549879561374464,
-          "marketCap": 410333184000,
+          "relativeVolume": 0.4144101707557539,
+          "marketCap": 387571646464,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "KLAC",
-          "price": 194.79,
-          "change1d": -5.331454121306376,
+          "price": 187.685,
+          "change1d": -3.6475178397248267,
           "change5d": -2.8333455878603155,
-          "volume": 11922697,
+          "volume": 3648175,
           "avgVolume20d": 10152230,
-          "relativeVolume": 1.1743919316248745,
-          "marketCap": 254502240256,
+          "relativeVolume": 0.3593471582105606,
+          "marketCap": 245219229696,
           "newsCount48h": 0,
           "newsPrev48h": 0
         }
@@ -574,6 +958,109 @@
       ]
     },
     {
+      "id": "power-datacenter",
+      "name": "전력/데이터센터",
+      "description": "AI 데이터센터의 폭발적 전력 소비 증가. 전력망 인프라, 변압기, IPP(독립발전사업자) 수혜.",
+      "tickers": [
+        "GEV",
+        "ETN",
+        "PWR",
+        "NRG",
+        "TLN"
+      ],
+      "newsScore": 5,
+      "volumeScore": 58.3,
+      "priceScore": 25,
+      "totalScore": 28.7,
+      "prevTotalScore": 37.4,
+      "scoreDelta": -8.7,
+      "deltaDirection": "▼",
+      "tickerData": [
+        {
+          "ticker": "GEV",
+          "price": 981.35,
+          "change1d": -2.307546812937389,
+          "change5d": -0.7263682996472208,
+          "volume": 852166,
+          "avgVolume20d": 1877200,
+          "relativeVolume": 0.4539558917536757,
+          "marketCap": 261366448128,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "ETN",
+          "price": 422.38,
+          "change1d": -2.074977395497644,
+          "change5d": -6.087661706649461,
+          "volume": 643791,
+          "avgVolume20d": 1724180,
+          "relativeVolume": 0.3733896692920693,
+          "marketCap": 164052385792,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "PWR",
+          "price": 669.215,
+          "change1d": -3.8691373985491557,
+          "change5d": 3.813117998234788,
+          "volume": 379495,
+          "avgVolume20d": 951260,
+          "relativeVolume": 0.39893930155793367,
+          "marketCap": 100612055040,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "NRG",
+          "price": 117.27,
+          "change1d": 1.4797507788161939,
+          "change5d": -3.531182339598175,
+          "volume": 428782,
+          "avgVolume20d": 2684530,
+          "relativeVolume": 0.15972330352054176,
+          "marketCap": 24651382784,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "TLN",
+          "price": 325.62,
+          "change1d": 2.505823836806642,
+          "change5d": -11.238404122038931,
+          "volume": 716179,
+          "avgVolume20d": 883390,
+          "relativeVolume": 0.810716671006011,
+          "marketCap": 15601841152,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "천연가스 현재가 ($/MMBtu)",
+          "ticker": "NG=F",
+          "value": 2.84,
+          "format": "price_usd"
+        },
+        {
+          "label": "천연가스 1일 변동",
+          "ticker": "NG=F",
+          "value": 2.305475504322769,
+          "format": "change_pct"
+        },
+        {
+          "label": "GEV 매출 성장 YoY",
+          "ticker": "GEV",
+          "value": 0.219,
+          "format": "financial_pct",
+          "period": "TTM"
+        }
+      ]
+    },
+    {
       "id": "nuclear-uranium",
       "name": "원자력/우라늄",
       "description": "AI 데이터센터 전력 수요 + 탈탄소 정책으로 재조명받는 원자력. SMR, 우라늄 채굴, 유틸리티.",
@@ -586,82 +1073,82 @@
         "CEG"
       ],
       "newsScore": 66.7,
-      "volumeScore": 33.3,
+      "volumeScore": 0,
       "priceScore": 0,
-      "totalScore": 38.3,
-      "prevTotalScore": 2,
-      "scoreDelta": 36.3,
-      "deltaDirection": "▲",
+      "totalScore": 26.7,
+      "prevTotalScore": 38.3,
+      "scoreDelta": -11.6,
+      "deltaDirection": "▼",
       "tickerData": [
         {
           "ticker": "CCJ",
-          "price": 96.03,
-          "change1d": -2.5867315885575137,
+          "price": 97.65,
+          "change1d": 1.6869728209934443,
           "change5d": -2.734735628313035,
-          "volume": 2328686,
+          "volume": 581481,
           "avgVolume20d": 2534920,
-          "relativeVolume": 0.9186427974058353,
-          "marketCap": 41824231424,
+          "relativeVolume": 0.2293883041673899,
+          "marketCap": 42529796096,
           "newsCount48h": 2,
           "newsPrev48h": 0
         },
         {
           "ticker": "LEU",
-          "price": 175.7,
-          "change1d": -4.573104497067139,
+          "price": 175.6406,
+          "change1d": -0.03380762663630185,
           "change5d": -7.130400824082674,
-          "volume": 447936,
+          "volume": 134586,
           "avgVolume20d": 548500,
-          "relativeVolume": 0.8166563354603464,
-          "marketCap": 3505716992,
+          "relativeVolume": 0.24537101185050136,
+          "marketCap": 3504531968,
           "newsCount48h": 3,
           "newsPrev48h": 1
         },
         {
           "ticker": "SMR",
-          "price": 8.64,
-          "change1d": -5.984766050054396,
+          "price": 8.93,
+          "change1d": 3.356481481481471,
           "change5d": -12.639028883795126,
-          "volume": 27910920,
+          "volume": 10173068,
           "avgVolume20d": 29722560,
-          "relativeVolume": 0.9390483188527502,
-          "marketCap": 3545765632,
+          "relativeVolume": 0.3422675570341182,
+          "marketCap": 3664778752,
           "newsCount48h": 2,
           "newsPrev48h": 1
         },
         {
           "ticker": "OKLO",
-          "price": 41.36,
-          "change1d": -5.742935278031001,
+          "price": 41.99,
+          "change1d": 1.5232108317214763,
           "change5d": -12.018714981731081,
-          "volume": 7692285,
+          "volume": 3088910,
           "avgVolume20d": 10326950,
-          "relativeVolume": 0.744874817831015,
-          "marketCap": 7693689856,
+          "relativeVolume": 0.2991115479400985,
+          "marketCap": 7810881536,
           "newsCount48h": 3,
           "newsPrev48h": 2
         },
         {
           "ticker": "VST",
-          "price": 140.52,
-          "change1d": -3.8258846074875112,
+          "price": 140.02,
+          "change1d": -0.3558212354113293,
           "change5d": -3.0361537069265867,
-          "volume": 3753797,
+          "volume": 1516402,
           "avgVolume20d": 4423400,
-          "relativeVolume": 0.8486225527874486,
-          "marketCap": 47163461632,
+          "relativeVolume": 0.3428136727404259,
+          "marketCap": 46995640320,
           "newsCount48h": 1,
           "newsPrev48h": 1
         },
         {
           "ticker": "CEG",
-          "price": 266.83,
-          "change1d": -3.9397206716983546,
+          "price": 271.715,
+          "change1d": 1.8307536633811756,
           "change5d": -4.142117899860766,
-          "volume": 3223988,
+          "volume": 771338,
           "avgVolume20d": 2843450,
-          "relativeVolume": 1.133829678735339,
-          "marketCap": 94539833344,
+          "relativeVolume": 0.271268353584554,
+          "marketCap": 96270630912,
           "newsCount48h": 0,
           "newsPrev48h": 0
         }
@@ -671,13 +1158,13 @@
         {
           "label": "우라늄 ETF (URA) 가격",
           "ticker": "URA",
-          "value": 43.62,
+          "value": 44.6,
           "format": "price_usd"
         },
         {
           "label": "URA 1일 변동",
           "ticker": "URA",
-          "value": -3.6022099447513867,
+          "value": 2.2466758367721322,
           "format": "change_pct"
         },
         {
@@ -690,81 +1177,81 @@
       ]
     },
     {
-      "id": "power-datacenter",
-      "name": "전력/데이터센터",
-      "description": "AI 데이터센터의 폭발적 전력 소비 증가. 전력망 인프라, 변압기, IPP(독립발전사업자) 수혜.",
+      "id": "cybersecurity",
+      "name": "사이버보안",
+      "description": "AI 기반 위협 증가로 보안 지출 확대. 제로트러스트, SASE, 클라우드 네이티브 보안 플랫폼.",
       "tickers": [
-        "GEV",
-        "ETN",
-        "PWR",
-        "NRG",
-        "TLN"
+        "CRWD",
+        "PANW",
+        "ZS",
+        "FTNT",
+        "S"
       ],
       "newsScore": 5,
-      "volumeScore": 83.3,
-      "priceScore": 25,
-      "totalScore": 37.4,
-      "prevTotalScore": 2,
-      "scoreDelta": 35.4,
+      "volumeScore": 33.3,
+      "priceScore": 50,
+      "totalScore": 26.2,
+      "prevTotalScore": 23.3,
+      "scoreDelta": 2.9,
       "deltaDirection": "▲",
       "tickerData": [
         {
-          "ticker": "GEV",
-          "price": 1004.53,
-          "change1d": -6.901760889712699,
-          "change5d": -0.7263682996472208,
-          "volume": 2322731,
-          "avgVolume20d": 1877200,
-          "relativeVolume": 1.237338056680162,
-          "marketCap": 267540086784,
+          "ticker": "CRWD",
+          "price": 200.615,
+          "change1d": -5.779165883900046,
+          "change5d": -4.046866144452533,
+          "volume": 4826672,
+          "avgVolume20d": 6742060,
+          "relativeVolume": 0.7159046344885688,
+          "marketCap": 204278087680,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
-          "ticker": "ETN",
-          "price": 431.33,
-          "change1d": -5.285463328941589,
-          "change5d": -6.087661706649461,
-          "volume": 2098009,
-          "avgVolume20d": 1724180,
-          "relativeVolume": 1.2168155297010752,
-          "marketCap": 167528562688,
+          "ticker": "PANW",
+          "price": 359.13,
+          "change1d": -4.011867215480834,
+          "change5d": -2.5169289869133813,
+          "volume": 1901057,
+          "avgVolume20d": 5244260,
+          "relativeVolume": 0.36250243122957293,
+          "marketCap": 292690952192,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
-          "ticker": "PWR",
-          "price": 696.15,
-          "change1d": -3.6217136686464215,
-          "change5d": 3.813117998234788,
-          "volume": 1298795,
-          "avgVolume20d": 951260,
-          "relativeVolume": 1.3653417572482813,
-          "marketCap": 104661557248,
+          "ticker": "ZS",
+          "price": 185.07,
+          "change1d": -0.3392568659127601,
+          "change5d": 4.004477050841464,
+          "volume": 541044,
+          "avgVolume20d": 2287970,
+          "relativeVolume": 0.2364733803327841,
+          "marketCap": 29927581696,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
-          "ticker": "NRG",
-          "price": 115.56,
-          "change1d": -5.5650894827163535,
-          "change5d": -3.531182339598175,
-          "volume": 2586764,
-          "avgVolume20d": 2684530,
-          "relativeVolume": 0.963581707039966,
-          "marketCap": 24291921920,
+          "ticker": "FTNT",
+          "price": 153.38,
+          "change1d": -2.9301942915005355,
+          "change5d": -2.3966921350551287,
+          "volume": 1194265,
+          "avgVolume20d": 4314770,
+          "relativeVolume": 0.2767853211179275,
+          "marketCap": 112537001984,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
-          "ticker": "TLN",
-          "price": 317.66,
-          "change1d": -10.999663790205085,
-          "change5d": -11.238404122038931,
-          "volume": 2166650,
-          "avgVolume20d": 883390,
-          "relativeVolume": 2.4526539806880314,
-          "marketCap": 15220444160,
+          "ticker": "S",
+          "price": 21.63,
+          "change1d": -3.8239217429968853,
+          "change5d": 0.13357385515767134,
+          "volume": 2811906,
+          "avgVolume20d": 6858220,
+          "relativeVolume": 0.4100052200133562,
+          "marketCap": 7414843904,
           "newsCount48h": 0,
           "newsPrev48h": 0
         }
@@ -772,21 +1259,23 @@
       "headlines": [],
       "customKpis": [
         {
-          "label": "천연가스 현재가 ($/MMBtu)",
-          "ticker": "NG=F",
-          "value": 2.788,
-          "format": "price_usd"
+          "label": "CRWD 매출 성장 YoY",
+          "ticker": "CRWD",
+          "value": 0.256,
+          "format": "financial_pct",
+          "period": "TTM"
         },
         {
-          "label": "천연가스 1일 변동",
-          "ticker": "NG=F",
-          "value": 0.4322766570605191,
-          "format": "change_pct"
+          "label": "CRWD 영업이익률",
+          "ticker": "CRWD",
+          "value": -0.022079999,
+          "format": "financial_pct",
+          "period": "TTM"
         },
         {
-          "label": "GEV 매출 성장 YoY",
-          "ticker": "GEV",
-          "value": 0.219,
+          "label": "PANW 매출 성장 YoY",
+          "ticker": "PANW",
+          "value": 0.311,
           "format": "financial_pct",
           "period": "TTM"
         }
@@ -803,58 +1292,58 @@
         "BIDU"
       ],
       "newsScore": 5,
-      "volumeScore": 91.7,
+      "volumeScore": 41.7,
       "priceScore": 8.3,
-      "totalScore": 36.2,
-      "prevTotalScore": 2,
-      "scoreDelta": 34.2,
-      "deltaDirection": "▲",
+      "totalScore": 18.7,
+      "prevTotalScore": 36.2,
+      "scoreDelta": -17.5,
+      "deltaDirection": "▼",
       "tickerData": [
         {
           "ticker": "BABA",
-          "price": 128.15,
-          "change1d": 2.7583994868094077,
+          "price": 128.7499,
+          "change1d": 0.4681232930159898,
           "change5d": 0.23464640277176477,
-          "volume": 11488292,
+          "volume": 3476952,
           "avgVolume20d": 8746950,
-          "relativeVolume": 1.3134054727647924,
-          "marketCap": 307159367680,
+          "relativeVolume": 0.3975045015691184,
+          "marketCap": 308597227520,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "PDD",
-          "price": 87.27,
-          "change1d": 0.37957211870255153,
+          "price": 89.24,
+          "change1d": 2.257362209235704,
           "change5d": -3.5690644827995515,
-          "volume": 5313733,
+          "volume": 2028021,
           "avgVolume20d": 5477730,
-          "relativeVolume": 0.9700611384642909,
-          "marketCap": 124219809792,
+          "relativeVolume": 0.37023018659189116,
+          "marketCap": 127023898624,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "JD",
-          "price": 28.82,
-          "change1d": 1.1228070175438607,
+          "price": 29.125,
+          "change1d": 1.058292852185981,
           "change5d": -9.71178062048943,
-          "volume": 7932830,
+          "volume": 2968627,
           "avgVolume20d": 11172440,
-          "relativeVolume": 0.710035587570844,
+          "relativeVolume": 0.26570981808808103,
           "marketCap": 0,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "BIDU",
-          "price": 90.87,
-          "change1d": -12.725701114099117,
+          "price": 92.2629,
+          "change1d": 1.5328491251238003,
           "change5d": -14.225032421685283,
-          "volume": 16110614,
+          "volume": 2471779,
           "avgVolume20d": 3559290,
-          "relativeVolume": 4.526356099109654,
-          "marketCap": 30821879808,
+          "relativeVolume": 0.6944584453641035,
+          "marketCap": 31294332928,
           "newsCount48h": 0,
           "newsPrev48h": 0
         }
@@ -1012,7 +1501,7 @@
         {
           "label": "USD/CNY 환율",
           "ticker": "CNY=X",
-          "value": 6.7376,
+          "value": 6.718,
           "format": "price_number"
         },
         {
@@ -1025,382 +1514,6 @@
           "label": "BABA 매출 성장 YoY",
           "ticker": "BABA",
           "value": 0.029,
-          "format": "financial_pct",
-          "period": "TTM"
-        }
-      ]
-    },
-    {
-      "id": "crypto",
-      "name": "비트코인/디지털자산",
-      "description": "비트코인 기관 채택, ETF 승인 효과, 규제 환경 변화. 채굴사 및 거래소 상장사.",
-      "tickers": [
-        "MSTR",
-        "COIN",
-        "MARA",
-        "RIOT"
-      ],
-      "newsScore": 5,
-      "volumeScore": 50,
-      "priceScore": 16.7,
-      "totalScore": 23.7,
-      "prevTotalScore": 2,
-      "scoreDelta": 21.7,
-      "deltaDirection": "▲",
-      "tickerData": [
-        {
-          "ticker": "MSTR",
-          "price": 92.52,
-          "change1d": -5.282555282555293,
-          "change5d": -3.715266761246073,
-          "volume": 16622588,
-          "avgVolume20d": 16619340,
-          "relativeVolume": 1.0001954349571043,
-          "marketCap": 36756496384,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "COIN",
-          "price": 146.23,
-          "change1d": -2.869478578545348,
-          "change5d": -1.5816436092037054,
-          "volume": 6605965,
-          "avgVolume20d": 6711900,
-          "relativeVolume": 0.9842168387490875,
-          "marketCap": 38580871168,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "MARA",
-          "price": 8.96,
-          "change1d": -7.771487390633032,
-          "change5d": -7.438019052993552,
-          "volume": 44380652,
-          "avgVolume20d": 40878820,
-          "relativeVolume": 1.085663725127095,
-          "marketCap": 3461241600,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "RIOT",
-          "price": 18.91,
-          "change1d": -5.638722554890214,
-          "change5d": -6.571145942422006,
-          "volume": 16446357,
-          "avgVolume20d": 26528090,
-          "relativeVolume": 0.6199600875901733,
-          "marketCap": 7096146432,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        }
-      ],
-      "headlines": [],
-      "customKpis": [
-        {
-          "label": "비트코인 현재가 (USD)",
-          "ticker": "BTC-USD",
-          "value": 64363.04,
-          "format": "price_usd"
-        },
-        {
-          "label": "BTC 1일 변동",
-          "ticker": "BTC-USD",
-          "value": -0.49192022042874306,
-          "format": "change_pct"
-        },
-        {
-          "label": "이더리움 현재가 (USD)",
-          "ticker": "ETH-USD",
-          "value": 1921.69,
-          "format": "price_usd"
-        }
-      ]
-    },
-    {
-      "id": "cybersecurity",
-      "name": "사이버보안",
-      "description": "AI 기반 위협 증가로 보안 지출 확대. 제로트러스트, SASE, 클라우드 네이티브 보안 플랫폼.",
-      "tickers": [
-        "CRWD",
-        "PANW",
-        "ZS",
-        "FTNT",
-        "S"
-      ],
-      "newsScore": 5,
-      "volumeScore": 25,
-      "priceScore": 50,
-      "totalScore": 23.3,
-      "prevTotalScore": 2,
-      "scoreDelta": 21.3,
-      "deltaDirection": "▲",
-      "tickerData": [
-        {
-          "ticker": "CRWD",
-          "price": 212.92,
-          "change1d": -0.45815801776531945,
-          "change5d": -4.046866144452533,
-          "volume": 6773269,
-          "avgVolume20d": 6742060,
-          "relativeVolume": 1.0046290006318543,
-          "marketCap": 216807768064,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "PANW",
-          "price": 374.14,
-          "change1d": -0.4311262507983832,
-          "change5d": -2.5169289869133813,
-          "volume": 4469131,
-          "avgVolume20d": 5244260,
-          "relativeVolume": 0.8521947805791474,
-          "marketCap": 304924098560,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "ZS",
-          "price": 185.7,
-          "change1d": 0.68314899154196,
-          "change5d": 4.004477050841464,
-          "volume": 2136768,
-          "avgVolume20d": 2287970,
-          "relativeVolume": 0.9339143432824731,
-          "marketCap": 30029457408,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "FTNT",
-          "price": 158.01,
-          "change1d": 1.3859480269489874,
-          "change5d": -2.3966921350551287,
-          "volume": 3667836,
-          "avgVolume20d": 4314770,
-          "relativeVolume": 0.8500652410209583,
-          "marketCap": 115934093312,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "S",
-          "price": 22.49,
-          "change1d": 3.0705774518790014,
-          "change5d": 0.13357385515767134,
-          "volume": 5226834,
-          "avgVolume20d": 6858220,
-          "relativeVolume": 0.7621269075649367,
-          "marketCap": 7709655552,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        }
-      ],
-      "headlines": [],
-      "customKpis": [
-        {
-          "label": "CRWD 매출 성장 YoY",
-          "ticker": "CRWD",
-          "value": 0.256,
-          "format": "financial_pct",
-          "period": "TTM"
-        },
-        {
-          "label": "CRWD 영업이익률",
-          "ticker": "CRWD",
-          "value": -0.022079999,
-          "format": "financial_pct",
-          "period": "TTM"
-        },
-        {
-          "label": "PANW 매출 성장 YoY",
-          "ticker": "PANW",
-          "value": 0.311,
-          "format": "financial_pct",
-          "period": "TTM"
-        }
-      ]
-    },
-    {
-      "id": "glp1",
-      "name": "비만치료제 (GLP-1)",
-      "description": "세마글루타이드·티르제파타이드 등 GLP-1 계열 비만·당뇨 치료제 시장 급성장. 차세대 파이프라인 경쟁.",
-      "tickers": [
-        "LLY",
-        "NVO",
-        "VKTX",
-        "AMGN"
-      ],
-      "newsScore": 5,
-      "volumeScore": 0,
-      "priceScore": 58.3,
-      "totalScore": 16.6,
-      "prevTotalScore": 2,
-      "scoreDelta": 14.6,
-      "deltaDirection": "▲",
-      "tickerData": [
-        {
-          "ticker": "LLY",
-          "price": 1225.73,
-          "change1d": 3.5979918185198905,
-          "change5d": 0.8814637426000489,
-          "volume": 1811731,
-          "avgVolume20d": 2834860,
-          "relativeVolume": 0.6390901137975068,
-          "marketCap": 1093034115072,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "NVO",
-          "price": 45.71,
-          "change1d": 1.8493761140819927,
-          "change5d": -3.0951857984888718,
-          "volume": 10982658,
-          "avgVolume20d": 12280900,
-          "relativeVolume": 0.8942877150697425,
-          "marketCap": 202133045248,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "VKTX",
-          "price": 33.37,
-          "change1d": -0.7731192387749185,
-          "change5d": -1.2721902807154521,
-          "volume": 1192330,
-          "avgVolume20d": 1637550,
-          "relativeVolume": 0.7281182253976978,
-          "marketCap": 3892708352,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "AMGN",
-          "price": 425.28,
-          "change1d": 1.4068386666030754,
-          "change5d": 2.6502561694051954,
-          "volume": 2467498,
-          "avgVolume20d": 2652270,
-          "relativeVolume": 0.930334392803146,
-          "marketCap": 230076481536,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        }
-      ],
-      "headlines": [],
-      "customKpis": [
-        {
-          "label": "LLY 분기 매출 (SEC)",
-          "ticker": "LLY",
-          "value": 22974000000,
-          "format": "price_billions",
-          "period": "2026 Q2"
-        },
-        {
-          "label": "LLY 매출 성장 YoY",
-          "ticker": "LLY",
-          "value": 0.477,
-          "format": "financial_pct",
-          "period": "TTM"
-        },
-        {
-          "label": "NVO 매출 성장 YoY",
-          "ticker": "NVO",
-          "value": 0.021,
-          "format": "financial_pct",
-          "period": "TTM"
-        }
-      ]
-    },
-    {
-      "id": "quantum",
-      "name": "양자컴퓨팅",
-      "description": "양자 우위 달성 기대감과 정부·빅테크 투자 확대. 소형 순수 플레이 종목 중심의 투기적 테마.",
-      "tickers": [
-        "IONQ",
-        "RGTI",
-        "QBTS",
-        "QUBT"
-      ],
-      "newsScore": 5,
-      "volumeScore": 8.3,
-      "priceScore": 41.7,
-      "totalScore": 15.3,
-      "prevTotalScore": 2,
-      "scoreDelta": 13.3,
-      "deltaDirection": "▲",
-      "tickerData": [
-        {
-          "ticker": "IONQ",
-          "price": 44.12,
-          "change1d": -5.807002561912907,
-          "change5d": 1.5653782842379849,
-          "volume": 14307758,
-          "avgVolume20d": 20965540,
-          "relativeVolume": 0.6824416637968781,
-          "marketCap": 17874583552,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "RGTI",
-          "price": 17.71,
-          "change1d": -5.141938939475097,
-          "change5d": -2.1006139574900597,
-          "volume": 13103160,
-          "avgVolume20d": 18388680,
-          "relativeVolume": 0.7125666442615783,
-          "marketCap": 5911044096,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "QBTS",
-          "price": 19.53,
-          "change1d": 14.21052631578947,
-          "change5d": -3.4602020337635597,
-          "volume": 12866821,
-          "avgVolume20d": 14164050,
-          "relativeVolume": 0.908413977640576,
-          "marketCap": 7273752064,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "QUBT",
-          "price": 8.52,
-          "change1d": -5.856353591160233,
-          "change5d": -4.804462130337979,
-          "volume": 7236400,
-          "avgVolume20d": 7893960,
-          "relativeVolume": 0.9167008700322778,
-          "marketCap": 1928475392,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        }
-      ],
-      "headlines": [],
-      "customKpis": [
-        {
-          "label": "양자컴퓨팅 ETF (QTUM)",
-          "ticker": "QTUM",
-          "value": 152.16,
-          "format": "price_usd"
-        },
-        {
-          "label": "QTUM 1일 변동",
-          "ticker": "QTUM",
-          "value": -3.8301099734546846,
-          "format": "change_pct"
-        },
-        {
-          "label": "IONQ 매출 성장 YoY",
-          "ticker": "IONQ",
-          "value": 2.868,
           "format": "financial_pct",
           "period": "TTM"
         }
