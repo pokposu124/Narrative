@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-23T09:57:44.848Z",
+  "timestamp": "2026-08-23T15:22:55.106Z",
   "themes": [
     {
       "id": "inflation-rates",
@@ -29,7 +29,7 @@
           "avgVolume20d": 31144880,
           "relativeVolume": 0.7604239926434136,
           "marketCap": 0,
-          "newsCount48h": 19,
+          "newsCount48h": 21,
           "newsPrev48h": 43
         },
         {
@@ -131,7 +131,7 @@
           "avgVolume20d": 23870930,
           "relativeVolume": 0.9156151854996852,
           "marketCap": 3588320657408,
-          "newsCount48h": 33,
+          "newsCount48h": 34,
           "newsPrev48h": 49
         },
         {
@@ -179,7 +179,7 @@
           "avgVolume20d": 12486000,
           "relativeVolume": 0.6686304661220567,
           "marketCap": 0,
-          "newsCount48h": 19,
+          "newsCount48h": 20,
           "newsPrev48h": 30
         }
       ],
@@ -332,13 +332,13 @@
         {
           "label": "WTI 원유 현재가 ($/bbl)",
           "ticker": "CL=F",
-          "value": 87.06,
+          "value": null,
           "format": "price_usd"
         },
         {
           "label": "WTI 1일 변동",
           "ticker": "CL=F",
-          "value": 0.264885408269036,
+          "value": null,
           "format": "change_pct"
         },
         {
@@ -417,24 +417,95 @@
           "newsPrev48h": 0
         }
       ],
-      "headlines": [],
+      "headlines": [
+        {
+          "ticker": "MARA",
+          "headline": "Friday's session: most active stocks",
+          "source": "ChartMill",
+          "url": "https://finnhub.io/api/news?id=b62b5a1624ff2850df9325358f0ff808fb927cb74bae610bd929dc9712420e38",
+          "datetime": 1787335200
+        },
+        {
+          "ticker": "MARA",
+          "headline": "CleanSpark Sinks 6% Even as Bitcoin Jumps 7%, MARA Holds Flat as Traders Weigh Tensions Among AI Miners",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=cfb3be8fe3e3f232bf7c853e95e76fc6c951a783d921af1720ead311e0c205f7",
+          "datetime": 1787328876
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Strategy Rallies 8%, MARA Holdings Climbs 6%, Coinbase Jumps 5% as Bitcoin Breaks Out of Its 2026 Range",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=41e1f0fda3c25d1c424a00d5efb8e71614ae369448f17e27ad82516632bbfdd4",
+          "datetime": 1787318723
+        },
+        {
+          "ticker": "MARA",
+          "headline": "MARA Holdings, Coinbase Global, Ternium And Other Big Stocks Moving Higher On Friday",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=56e29be6ca6e87d3fa59efd1ea850109ec37dead66406b6fb56e45c0e983fa3b",
+          "datetime": 1787307510
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Crypto stocks extend rally as Bitcoin jumps on US regulatory momentum",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=477b3b6e8f3a7ccb679ed332e97c853ba28aa0763cb42e49ac5a747868bccd60",
+          "datetime": 1787306193
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Crypto stocks continue rallying as Bitcoin extends gains on regulation push",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=5127d50c2863715111d8495a6f4e5bd08a857374a0b9fb75640bebf8c8ee8cab",
+          "datetime": 1787305050
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Why Is MARA Stock Surging Friday?",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=5c8b3c1da90ae37fc70fecfe94159eae330608bd9310c3f8871ae1bb6f231361",
+          "datetime": 1787296818
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Dow, S&P 500, Nasdaq Futures Climb After Sharp Selloff On Rising Treasury Yields: MSTR, MARA, COIN, WMT Stocks In Focus",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=9594f8233010ef4fd19cabd887527adb602293832257627650ab62aa582a27c6",
+          "datetime": 1787279934
+        },
+        {
+          "ticker": "MARA",
+          "headline": "MARA Holdings (MARA) Soars Double Digits — Here’s The Catalyst to Watch Now",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=d410a5b2616af0d28143a87d1b8d7f5fb1d9894265d408c11a53a28b5b30a910",
+          "datetime": 1787273082
+        },
+        {
+          "ticker": "MARA",
+          "headline": "Top stocks today, Aug. 20: 5 biggest gainers as Bitcoin climbs",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=11ae8514ab7bc0abb4d35d272a4d3a9d75992ba36ac0d24566e3cb4bebf77d14",
+          "datetime": 1787271967
+        }
+      ],
       "customKpis": [
         {
           "label": "비트코인 현재가 (USD)",
           "ticker": "BTC-USD",
-          "value": 76577.86,
+          "value": 77188.24,
           "format": "price_usd"
         },
         {
           "label": "BTC 1일 변동",
           "ticker": "BTC-USD",
-          "value": -0.6463745033152928,
+          "value": 0.14554454392194874,
           "format": "change_pct"
         },
         {
           "label": "이더리움 현재가 (USD)",
           "ticker": "ETH-USD",
-          "value": 2413.15,
+          "value": 2435.14,
           "format": "price_usd"
         }
       ]
@@ -585,7 +656,7 @@
           "avgVolume20d": 98505820,
           "relativeVolume": 0.9298040663993254,
           "marketCap": 5200733011968,
-          "newsCount48h": 67,
+          "newsCount48h": 70,
           "newsPrev48h": 96
         },
         {
@@ -597,7 +668,7 @@
           "avgVolume20d": 19314960,
           "relativeVolume": 0.7349701474918923,
           "marketCap": 772568776704,
-          "newsCount48h": 27,
+          "newsCount48h": 29,
           "newsPrev48h": 40
         },
         {
@@ -621,7 +692,7 @@
           "avgVolume20d": 30323980,
           "relativeVolume": 0.6922041565783911,
           "marketCap": 0,
-          "newsCount48h": 30,
+          "newsCount48h": 31,
           "newsPrev48h": 53
         },
         {
@@ -756,6 +827,13 @@
       "headlines": [
         {
           "ticker": "PDD",
+          "headline": "Wall Street Week Ahead",
+          "source": "SeekingAlpha",
+          "url": "https://finnhub.io/api/news?id=b2d3954f42ad4308cb6ececb4c1f27e3744121249232ae5fd9158ac623138f63",
+          "datetime": 1787469186
+        },
+        {
+          "ticker": "PDD",
           "headline": "Nvidia Earnings Report To Keep Next Week Busy",
           "source": "SeekingAlpha",
           "url": "https://finnhub.io/api/news?id=942876dc175ea29c858a82fdcbd974cd778b10d64012ed7a210d252cbf8b1602",
@@ -767,6 +845,76 @@
           "source": "Yahoo",
           "url": "https://finnhub.io/api/news?id=04f5856f7890fca7ad156a1fe0aa948d00d15af9df9388fdb7ffbf9bfc4ec51f",
           "datetime": 1787330627
+        },
+        {
+          "ticker": "BABA",
+          "headline": "These Analysts Revise Their Forecasts On Alibaba After Q1 Earnings",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=15e1ac9ad5076e3d9cf42c8fd8ea3dbfe6b28b7e9ee92c92447e4e2e8ff7b930",
+          "datetime": 1787325947
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Alibaba: Pay 13x FWD Earnings For 45% AI Cloud Growth",
+          "source": "SeekingAlpha",
+          "url": "https://finnhub.io/api/news?id=a97364334360664ddb484267fb8fc016dfb08dad9e3cd9071a36f57687cc511d",
+          "datetime": 1787317225
+        },
+        {
+          "ticker": "BABA",
+          "headline": "JP Morgan Maintains Overweight on Alibaba Gr Hldgs, Raises Price Target to $210",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=419dab2e60124746b17c839964e14ca0c16a66f975526212ceca1b6b37b26bad",
+          "datetime": 1787313593
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Alibaba Stock Falls 7% on Profit Miss, but Analyst Stays Bullish on AI Cloud",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=09f6b4a6f19aa183284890905233e5131a31c212f57ba75cb61cb22d9fc7cf1a",
+          "datetime": 1787313379
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Alibaba Q1 Earnings: Back To Cash Flow Basics",
+          "source": "SeekingAlpha",
+          "url": "https://finnhub.io/api/news?id=4334a6d6258d8a26254120d4c2b1bdaa633d2ddd4e6cb717ed329703bd5c1102",
+          "datetime": 1787313194
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Barclays Maintains Overweight on Alibaba Gr Hldgs, Raises Price Target to $200",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=deab44cfae5d0fb2b6db4be5ce38a69e00d9e5aac67b8c419450d44c7db94a5a",
+          "datetime": 1787309898
+        },
+        {
+          "ticker": "BABA",
+          "headline": "China’s AI Agents Race To Become Digital Employees",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=fb36ac7e88b5837727869bdb16762dac8789acddc5dda4add3c9c48ebc176c38",
+          "datetime": 1787303029
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Alibaba: AI Transformation Offsets E-Commerce Drag, Reiterate Buy",
+          "source": "SeekingAlpha",
+          "url": "https://finnhub.io/api/news?id=3454823f4fe481c700f2f6cd408f97f5c8092b4e8e486ac896c622289e30213a",
+          "datetime": 1787301924
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Walmart's Guide-Down Sinks the Dow as Trump Readies an \"Economic D-Day\" for Iran",
+          "source": "ChartMill",
+          "url": "https://finnhub.io/api/news?id=6ce35ac37bb20f3f0877546c5a59b6279b06bd0bba9d04f6c33f383c18cea0c3",
+          "datetime": 1787301595
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Baird Maintains Outperform on Alibaba Gr Hldgs, Lowers Price Target to $160",
+          "source": "Benzinga",
+          "url": "https://finnhub.io/api/news?id=704602f442b0b1029adae48395429bc4b2e9b821ea039b7149843bd6155ded38",
+          "datetime": 1787300745
         },
         {
           "ticker": "PDD",
