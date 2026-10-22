@@ -1,322 +1,6 @@
 {
-  "timestamp": "2026-10-21T15:44:27.070Z",
+  "timestamp": "2026-10-22T09:41:19.828Z",
   "themes": [
-    {
-      "id": "ai-software",
-      "name": "AI 소프트웨어",
-      "description": "AI 모델 개발 및 기업용 AI 솔루션. 클라우드 AI 서비스, 에이전트형 AI, 데이터 분석 플랫폼.",
-      "tickers": [
-        "MSFT",
-        "GOOGL",
-        "PLTR",
-        "NOW",
-        "CRM"
-      ],
-      "newsScore": 83.3,
-      "volumeScore": 66.7,
-      "priceScore": 66.7,
-      "totalScore": 73.3,
-      "prevTotalScore": 68,
-      "scoreDelta": 5.3,
-      "deltaDirection": "▲",
-      "tickerData": [
-        {
-          "ticker": "MSFT",
-          "price": 531.66,
-          "change1d": -0.03948333239326083,
-          "change5d": -2.130833900033525,
-          "volume": 4716577,
-          "avgVolume20d": 20150620,
-          "relativeVolume": 0.23406609821434773,
-          "marketCap": 3947865571328,
-          "newsCount48h": 209,
-          "newsPrev48h": 106
-        },
-        {
-          "ticker": "GOOGL",
-          "price": 333.64,
-          "change1d": -1.9498934685181077,
-          "change5d": -3.815930817621456,
-          "volume": 14291481,
-          "avgVolume20d": 22000060,
-          "relativeVolume": 0.6496110010609062,
-          "marketCap": 4080395616256,
-          "newsCount48h": 243,
-          "newsPrev48h": 125
-        },
-        {
-          "ticker": "PLTR",
-          "price": 199.41,
-          "change1d": 3.535825545171341,
-          "change5d": -7.701151198754961,
-          "volume": 7934892,
-          "avgVolume20d": 25942810,
-          "relativeVolume": 0.3058609302538931,
-          "marketCap": 479193890816,
-          "newsCount48h": 46,
-          "newsPrev48h": 47
-        },
-        {
-          "ticker": "NOW",
-          "price": 152.7,
-          "change1d": 2.1131469840845236,
-          "change5d": 7.885428632604007,
-          "volume": 5084928,
-          "avgVolume20d": 11586980,
-          "relativeVolume": 0.4388484316016771,
-          "marketCap": 157870718976,
-          "newsCount48h": 23,
-          "newsPrev48h": 5
-        },
-        {
-          "ticker": "CRM",
-          "price": 242.95,
-          "change1d": 0.214494905745981,
-          "change5d": 1.8570641027506787,
-          "volume": 1492335,
-          "avgVolume20d": 7240090,
-          "relativeVolume": 0.20612105650620366,
-          "marketCap": 199947845632,
-          "newsCount48h": 66,
-          "newsPrev48h": 11
-        }
-      ],
-      "headlines": [
-        {
-          "ticker": "MSFT",
-          "headline": "Why SpaceX has the potential to be the world's largest hyperscaler",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9b1f73ab26e2e1e724258c537d287fc40ab8fcd0f6bcca94357ecd1d7920756d",
-          "datetime": 1792590905
-        },
-        {
-          "ticker": "GOOGL",
-          "headline": "Why SpaceX has the potential to be the world's largest hyperscaler",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9b1f73ab26e2e1e724258c537d287fc40ab8fcd0f6bcca94357ecd1d7920756d",
-          "datetime": 1792590905
-        },
-        {
-          "ticker": "GOOGL",
-          "headline": "SpaceX’s AI Business Is Now Bigger Than Starlink",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=163c07286f2e4244eacef2e891b4697acde7ccceebadb75441f14233c0578264",
-          "datetime": 1792590047
-        },
-        {
-          "ticker": "MSFT",
-          "headline": "CoreWeave's business model explained: Why investors are worried",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4c7b6c69dcc60b06dbe5ac1521dfc238ab66d6a00bcb7d9050e81b0f566acdc5",
-          "datetime": 1792589753
-        },
-        {
-          "ticker": "GOOGL",
-          "headline": "Meta Heads Into Earnings With 29% Upside on Our Model",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=8107f09cc051fd56f64764da33b136b6eae7bc65195a0a1216514c98a5a3f2cb",
-          "datetime": 1792589443
-        },
-        {
-          "ticker": "MSFT",
-          "headline": "Jim Cramer and Ken Fisher’s AI Pick: Microsoft (MSFT)",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9c56ab81a39561430e3f3b249cd6c746ef2fc0f782bff4b655be35740fd57c3a",
-          "datetime": 1792589034
-        },
-        {
-          "ticker": "MSFT",
-          "headline": "What Did It Take To Hold Microsoft Stock?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4311d812195e6200b7b858f341d4eed5cd9c7870cc015ddb7751e65073f28d69",
-          "datetime": 1792588881
-        },
-        {
-          "ticker": "GOOGL",
-          "headline": "What Did It Take To Hold Microsoft Stock?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4311d812195e6200b7b858f341d4eed5cd9c7870cc015ddb7751e65073f28d69",
-          "datetime": 1792588881
-        },
-        {
-          "ticker": "MSFT",
-          "headline": "FinTurk Introduces FinBox and Unlimited AI Usage to Streamline Email Management for Financial Advisors",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=d162d1304c3db88836805d8f5d052f6a98c747f0d07b6ac688cf6e0552291767",
-          "datetime": 1792588080
-        },
-        {
-          "ticker": "MSFT",
-          "headline": "Making sense of Anthropic's $750 billion compute bet",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=25e1a6ebcf432eee9a4728ce1bb740c0f7806c03bb23858ca4bbdb54f8649e50",
-          "datetime": 1792587879
-        },
-        {
-          "ticker": "GOOGL",
-          "headline": "Making sense of Anthropic's $750 billion compute bet",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=25e1a6ebcf432eee9a4728ce1bb740c0f7806c03bb23858ca4bbdb54f8649e50",
-          "datetime": 1792587879
-        },
-        {
-          "ticker": "MSFT",
-          "headline": "How Has Zoom's Story Changed?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=6c1f8a412e7ad116dd44e43b3f8ab998c6a4b4db0a99a321ceb535dc1c7398d3",
-          "datetime": 1792587605
-        },
-        {
-          "ticker": "GOOGL",
-          "headline": "How Has Zoom's Story Changed?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=6c1f8a412e7ad116dd44e43b3f8ab998c6a4b4db0a99a321ceb535dc1c7398d3",
-          "datetime": 1792587605
-        },
-        {
-          "ticker": "MSFT",
-          "headline": "Hoxhunt launches Secure Behavior Detection and Response to turn human risk signals into lasting behavior change",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=b54e2987f16dd8a0d52cd6dca9672da790eb39f5ae1abbbc45b89025a561d859",
-          "datetime": 1792587600
-        },
-        {
-          "ticker": "GOOGL",
-          "headline": "OpenAI expands Google Cloud access as AI rivals deepen ties",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=7da3a9df191eb978bd360f682e3d4e1657895f5ff47d09072ce9d36a20badb13",
-          "datetime": 1792587179
-        },
-        {
-          "ticker": "GOOGL",
-          "headline": "Is IonQ Stock A Buy Today, Down By Half In A Year?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5591e4a453f59e1510af0bd7c24bf7f4d1197f4b6fe283e61f4b4a76314a1749",
-          "datetime": 1792586882
-        },
-        {
-          "ticker": "MSFT",
-          "headline": "Market Re-Rating Aligns Microsoft Corporation’s (MSFT) Valuation with Core AI Fundamentals",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e035b347bfaef9f6c8fc077e3034ac9a3c2c980df4b9ec6562bb11e03f1e1a47",
-          "datetime": 1792586799
-        },
-        {
-          "ticker": "MSFT",
-          "headline": "IREN Limted Crashed 40% This Month: Three Wall Street Analysts Agree It’s Going to Quadruple",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=67767b6ef15010ba76b168a3e87512b79ce2e0360184743b4f352ed06f9927d9",
-          "datetime": 1792586757
-        },
-        {
-          "ticker": "GOOGL",
-          "headline": "Should You Be Worried About Apple Stock?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=000d09cac5e6b9a7bd0c6554a92c2d21a4c3a4091238e5d57ef806473d066dd4",
-          "datetime": 1792585655
-        },
-        {
-          "ticker": "GOOGL",
-          "headline": "What Could Surprise Palantir Stock Investors On The Upside?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=62dff5932122913ae5c89c298d61b5312530e2587b41b0f6332586cf7204e603",
-          "datetime": 1792585652
-        },
-        {
-          "ticker": "PLTR",
-          "headline": "What Could Surprise Palantir Stock Investors On The Upside?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=62dff5932122913ae5c89c298d61b5312530e2587b41b0f6332586cf7204e603",
-          "datetime": 1792585652
-        },
-        {
-          "ticker": "PLTR",
-          "headline": "The Zacks Analyst Blog Highlights Microsoft, Palantir Technologies, Micron Technology, Lam Research and IonQ",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=cf57766ee69e8528d9a62b71b0d7325d2db32f59edacaf60141bda5efa03f667",
-          "datetime": 1792584960
-        },
-        {
-          "ticker": "PLTR",
-          "headline": "Palantir (NASDAQ:PLTR): High Growth Momentum Meets a Breakout Setup",
-          "source": "ChartMill",
-          "url": "https://finnhub.io/api/news?id=14453b8df51869aa2464a124a5218ab3f758c9bfaf3696a58f3343c621c86b4c",
-          "datetime": 1792572071
-        },
-        {
-          "ticker": "PLTR",
-          "headline": "Will Federal Cloud Partnership Change Palantir Stock Narrative",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=6609ad07a119dbe75c27d4276330b3cfc0b4c33d63c0446a3b547d95767df9e0",
-          "datetime": 1792556701
-        },
-        {
-          "ticker": "PLTR",
-          "headline": "Palantir Technologies (PLTR) Signs Knox Partnership, Is The Stock Fully Priced?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4f4d49c9f26a81da3c76ad11024ad47d7fc60da283b010ce88561eac2f0643e0",
-          "datetime": 1792552818
-        },
-        {
-          "ticker": "PLTR",
-          "headline": "AI Is Splitting Software Into Winners and Losers, Citi’s Tyler Radke Says",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a5c5f927a2b11da48f92570c378320a6207c530dd1a1b109601a2174f99bc729",
-          "datetime": 1792549320
-        },
-        {
-          "ticker": "PLTR",
-          "headline": "Cathie Wood Sells $5.4 Million Worth of Palantir Stock as Ark Continues to Dump PLTR, Analyst Warns Valuation Prices In ‘Years of Exceptional Execution’",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=a1a70964bb175413eeff79c305a1eab8ecd3b747fee0ca891a578ec19ea028d6",
-          "datetime": 1792534295
-        },
-        {
-          "ticker": "PLTR",
-          "headline": "Mural, a startup founded by former Palantir engineers, raises $15 million bid to connect banks to the emerging bot economy",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4fb5604d8a4c8dd091a7807985d801111e02d9c53928d999a37003380da3c22f",
-          "datetime": 1792504800
-        },
-        {
-          "ticker": "PLTR",
-          "headline": "Palantir: Wall Street Expects Shrinking Margins, I See The Opposite",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=25dd8e131aad34cc77be28135566b08422b16fe845d55c997f7699a0cd09f2f5",
-          "datetime": 1792499180
-        },
-        {
-          "ticker": "PLTR",
-          "headline": "Michael Burry Sees a 2000-Style Rotation Out of the Market's Winners",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=9816a337539e91246653d279418c78070a6d2da9291aee91cba35942342af5ac",
-          "datetime": 1792496726
-        }
-      ],
-      "customKpis": [
-        {
-          "label": "MSFT 매출 성장 YoY",
-          "ticker": "MSFT",
-          "value": 0.177,
-          "format": "financial_pct",
-          "period": "TTM"
-        },
-        {
-          "label": "MSFT 영업이익률",
-          "ticker": "MSFT",
-          "value": 0.45111,
-          "format": "financial_pct",
-          "period": "TTM"
-        },
-        {
-          "label": "GOOGL 매출 성장 YoY",
-          "ticker": "GOOGL",
-          "value": 0.242,
-          "format": "financial_pct",
-          "period": "TTM"
-        }
-      ]
-    },
     {
       "id": "ai-infra",
       "name": "AI 인프라",
@@ -332,309 +16,98 @@
       ],
       "newsScore": 91.7,
       "volumeScore": 83.3,
-      "priceScore": 16.7,
-      "totalScore": 70,
-      "prevTotalScore": 55,
-      "scoreDelta": 15,
+      "priceScore": 41.7,
+      "totalScore": 76.3,
+      "prevTotalScore": 70,
+      "scoreDelta": 6.3,
       "deltaDirection": "▲",
       "tickerData": [
         {
           "ticker": "NVDA",
-          "price": 220.43,
-          "change1d": 1.8293527971543437,
-          "change5d": -5.273062675681897,
-          "volume": 36894443,
-          "avgVolume20d": 98456570,
-          "relativeVolume": 0.3747280958497742,
-          "marketCap": 5322722770944,
+          "price": 221.97,
+          "change1d": 2.5407677738254724,
+          "change5d": 0.3027556076393785,
+          "volume": 86111324,
+          "avgVolume20d": 99005490,
+          "relativeVolume": 0.8697631212168133,
+          "marketCap": 5359909470208,
           "newsCount48h": 249,
           "newsPrev48h": 250
         },
         {
           "ticker": "AMD",
-          "price": 548.75,
-          "change1d": 2.619964842727305,
-          "change5d": -11.690590992605184,
-          "volume": 7499946,
-          "avgVolume20d": 19806820,
-          "relativeVolume": 0.3786547259984187,
-          "marketCap": 895820627968,
-          "newsCount48h": 93,
-          "newsPrev48h": 72
+          "price": 552.72,
+          "change1d": 3.3623817182182028,
+          "change5d": -3.17088335882613,
+          "volume": 17756841,
+          "avgVolume20d": 19751870,
+          "relativeVolume": 0.8989954368877479,
+          "marketCap": 902301548544,
+          "newsCount48h": 56,
+          "newsPrev48h": 91
         },
         {
           "ticker": "AVGO",
-          "price": 337.39,
-          "change1d": 0.9031910757543983,
-          "change5d": -6.420196075718374,
-          "volume": 5234278,
-          "avgVolume20d": 21036460,
-          "relativeVolume": 0.24881933557262012,
-          "marketCap": 1610575118336,
-          "newsCount48h": 76,
-          "newsPrev48h": 61
+          "price": 337.8,
+          "change1d": 1.0258097317343082,
+          "change5d": -2.44043673849278,
+          "volume": 16959641,
+          "avgVolume20d": 20949620,
+          "relativeVolume": 0.8095440871958537,
+          "marketCap": 1612532154368,
+          "newsCount48h": 51,
+          "newsPrev48h": 78
         },
         {
           "ticker": "MU",
-          "price": 912.325,
-          "change1d": 1.814032385862711,
-          "change5d": -5.992508835687115,
-          "volume": 10477863,
-          "avgVolume20d": 27716240,
-          "relativeVolume": 0.3780405639437384,
-          "marketCap": 1032225685504,
-          "newsCount48h": 135,
-          "newsPrev48h": 93
+          "price": 913.67,
+          "change1d": 1.9641322664523873,
+          "change5d": -0.050323473707136746,
+          "volume": 20724431,
+          "avgVolume20d": 26737350,
+          "relativeVolume": 0.7751116322298208,
+          "marketCap": 1033747431424,
+          "newsCount48h": 96,
+          "newsPrev48h": 128
         },
         {
           "ticker": "SMCI",
-          "price": 35.76,
-          "change1d": 10.132429935324913,
-          "change5d": -16.89275281718373,
-          "volume": 47350135,
-          "avgVolume20d": 34298720,
-          "relativeVolume": 1.380521926182668,
-          "marketCap": 23493081088,
-          "newsCount48h": 76,
-          "newsPrev48h": 16
+          "price": 35.57,
+          "change1d": 9.547274407145062,
+          "change5d": -0.5869175283319644,
+          "volume": 81909879,
+          "avgVolume20d": 38681900,
+          "relativeVolume": 2.117524707938338,
+          "marketCap": 23368257536,
+          "newsCount48h": 101,
+          "newsPrev48h": 33
         },
         {
           "ticker": "VRT",
-          "price": 212.23,
-          "change1d": 4.259186480644521,
-          "change5d": -14.214672629227234,
-          "volume": 2718390,
-          "avgVolume20d": 6151030,
-          "relativeVolume": 0.44194061807534674,
-          "marketCap": 81706033152,
-          "newsCount48h": 24,
-          "newsPrev48h": 12
+          "price": 212.15,
+          "change1d": 4.219886028689332,
+          "change5d": -4.792894963339669,
+          "volume": 6380329,
+          "avgVolume20d": 6244390,
+          "relativeVolume": 1.021769780555026,
+          "marketCap": 81675239424,
+          "newsCount48h": 25,
+          "newsPrev48h": 16
         },
         {
           "ticker": "DELL",
-          "price": 483.31,
-          "change1d": 4.7122800935956315,
-          "change5d": -19.373937292869396,
-          "volume": 3658197,
-          "avgVolume20d": 7411850,
-          "relativeVolume": 0.49356058204092096,
-          "marketCap": 307294666752,
-          "newsCount48h": 46,
-          "newsPrev48h": 23
+          "price": 485.88,
+          "change1d": 5.269087442586011,
+          "change5d": -4.34114703028446,
+          "volume": 6821140,
+          "avgVolume20d": 7705370,
+          "relativeVolume": 0.8852449655240436,
+          "marketCap": 308928708608,
+          "newsCount48h": 50,
+          "newsPrev48h": 32
         }
       ],
-      "headlines": [
-        {
-          "ticker": "NVDA",
-          "headline": "SpaceX Stock to $500? Strong Earnings Are Lifting Tech Stocks.",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=c92285f7cc8ce1ba5c4b45a4eb3a5a3f80eb5dbb955b9d0dae14f4fe075f73bf",
-          "datetime": 1792590780
-        },
-        {
-          "ticker": "NVDA",
-          "headline": "Advantech Advances Autonomous Industrial AI with AI Factory Brain and Physical AI at NVIDIA GTC Berlin 2026",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=850e0c10b7d81e9a71704b4d5ad2de5f4f67ff10375889484b87bd0cbdec8db1",
-          "datetime": 1792590480
-        },
-        {
-          "ticker": "NVDA",
-          "headline": "Tech stocks lead market higher as SpaceX shares surge: AlphaCheck",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=08db3da7d8db015ed2adb3c2e537d37f5edaf2f54026f27461e62ff9af68d99b",
-          "datetime": 1792590443
-        },
-        {
-          "ticker": "AMD",
-          "headline": "Tech stocks lead market higher as SpaceX shares surge: AlphaCheck",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=08db3da7d8db015ed2adb3c2e537d37f5edaf2f54026f27461e62ff9af68d99b",
-          "datetime": 1792590443
-        },
-        {
-          "ticker": "NVDA",
-          "headline": "NVIDIA (NVDA) Leverages AI Growth to Expand Its Autonomous Driving Opportunity",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=0f5ee793a02032a4aa2efc26054ea0944f1f6479237bc77cd50b8e6436acab42",
-          "datetime": 1792590434
-        },
-        {
-          "ticker": "NVDA",
-          "headline": "Musk confirms merger exploration, takeaways from Nvidia's Huang at GTC Berlin event",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=1213b2373144243fd17e1b0926d69b3457c0d800d43f334e9f33667f6e5cf95d",
-          "datetime": 1792590304
-        },
-        {
-          "ticker": "NVDA",
-          "headline": "ByteDance, Alibaba and Tencent Just Ordered $35 Billion of Nvidia Chips",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a53a57f2ed99bace088fea303654ad51519e0b93671541fa01273596252cb64f",
-          "datetime": 1792590303
-        },
-        {
-          "ticker": "NVDA",
-          "headline": "Nvidia CEO Jensen Huang says data center builders have to be 'good neighbors'",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=10c7aa20afec8fc7a0d5e5b300c236e53c454fb17acf8753bb421fabaec81495",
-          "datetime": 1792589225
-        },
-        {
-          "ticker": "NVDA",
-          "headline": "Nvidia Launches Containerized DSX Pod System To Accelerate AI Factory Deployments",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=1ccbe8978f7960acd6a0954ce80d21baed0434104e1610bab300ffd9d510359e",
-          "datetime": 1792589218
-        },
-        {
-          "ticker": "NVDA",
-          "headline": "Should You Forget VOO and Buy This Overlooked ETF Instead?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=1da48e66261ac3bd93a6927b0b750f21e809aa20626c562447ec13d9b2b1a0ea",
-          "datetime": 1792588920
-        },
-        {
-          "ticker": "NVDA",
-          "headline": "SpaceX and Tesla Form Merger Exploration Committee That Excludes Elon Musk",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=ab293b200bbad72d43de9cfe75f22567a863140a0030780a1807d1551f252969",
-          "datetime": 1792588854
-        },
-        {
-          "ticker": "AVGO",
-          "headline": "Making sense of Anthropic's $750 billion compute bet",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=25e1a6ebcf432eee9a4728ce1bb740c0f7806c03bb23858ca4bbdb54f8649e50",
-          "datetime": 1792587879
-        },
-        {
-          "ticker": "AVGO",
-          "headline": "Broadcom Launches Arcot Scam Defense to Block Social Engineering Fraud",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=1fd446e27304772a8a7e59705ec97201e15aadea02a7fba6e09a28d137d1a3ab",
-          "datetime": 1792587600
-        },
-        {
-          "ticker": "AVGO",
-          "headline": "Apple vs. Broadcom: Which Tech Stock Is a Better Buy in 2026?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=289575aff4f1af4bc127de6d96ba6be4e28486061b9b98d8e450a596b9bfd508",
-          "datetime": 1792587122
-        },
-        {
-          "ticker": "AVGO",
-          "headline": "JEPI vs. VYM: The High-Yield ETF Delivered the Income but Lost the Race",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=04923f9ce2e8fdcc8865a3f41e21b8ef1f24ed8508680a99867808a5d05f7dcc",
-          "datetime": 1792587048
-        },
-        {
-          "ticker": "AMD",
-          "headline": "Can Netlist's New LIGHTNING ULL DDR5 Boost Its AI Market Reach?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=1a605ec1071901f2979dbf36ba5caa8a8fbc249f5df5557a46f5bb1cc805844f",
-          "datetime": 1792585800
-        },
-        {
-          "ticker": "AMD",
-          "headline": "Supermicro stock jumps as server maker lifts revenue forecast",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=3f6068ef034f675a29f68915bc423803fd48de7362ff87be31f5dd97a1c38988",
-          "datetime": 1792585448
-        },
-        {
-          "ticker": "AVGO",
-          "headline": "Anthropic Has Committed $450 Billion to Cloud Computing, Its Draft IPO Filing Shows",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=d760d0138ea8431769866f6894b52c11e096586c1765fd16ff1b6769a84df188",
-          "datetime": 1792585439
-        },
-        {
-          "ticker": "AMD",
-          "headline": "MindWalk Screens 890,634 Antibody Sequences for Immune Risk in Under Five Hours",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5bf4600a44de49dc1770488aba9e6710f47272532e96e4af9c4c0cc1c95cddca",
-          "datetime": 1792584060
-        },
-        {
-          "ticker": "AVGO",
-          "headline": "This Week In AI Chips - Advancing AI Network Management Through Enhanced GigaSMART Technology",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=cc6089198c834d28c241ed7e69e6a1136396c39960fd1e6fc35dcf37c2e41308",
-          "datetime": 1792582667
-        },
-        {
-          "ticker": "AMD",
-          "headline": "Ken Griffin Calls AI a Bubble After Citadel Bought the Dip",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=7cd7316bfcc814be6299a2683e418b66a6fa68b8c6829635f2cb895498b798d0",
-          "datetime": 1792580152
-        },
-        {
-          "ticker": "AMD",
-          "headline": "Advanced Micro Devices (AMD) Stock Plummeted 13% Last Week. Should You Buy the Dip Before Nov. 3?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=ade3ccef8a3fbb2a8ddf970c45ec08b4483585ba1a8f6244086f390dc792a486",
-          "datetime": 1792578240
-        },
-        {
-          "ticker": "AMD",
-          "headline": "Generative Bionics to build Europe's largest Physical AI Data Factory and advance European humanoid sovereignty with AMD AI infrastructure",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=01917d6d37f4e4f844cea5ba6a83758bbd77abd2f58700885c63bbfabac39bac",
-          "datetime": 1792576800
-        },
-        {
-          "ticker": "AVGO",
-          "headline": "Meta Earnings Prediction Market Preview: What Will Mark Zuckerberg Say?",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=15ea7fabb31850dea706dd4453da92b55ac65d73936db758f683258438bb9e55",
-          "datetime": 1792575413
-        },
-        {
-          "ticker": "AVGO",
-          "headline": "Broadcom: Upgrading To Buy, Even After I Cut Management's Numbers",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=39a891477b96c80e73b73d7b379b70c27e79221f2f04c7d0a8a3c6dadc8b3eed",
-          "datetime": 1792574924
-        },
-        {
-          "ticker": "AMD",
-          "headline": "Susquehanna Maintains Positive on Advanced Micro Devices, Raises Price Target to $620",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=87acc256ec16e2dcf17a443eac82e8550c7c3704a6eba84f0a6b0691bd26c186",
-          "datetime": 1792572091
-        },
-        {
-          "ticker": "AMD",
-          "headline": "Cathie Wood's Ark Invest Grew Its Portfolio to $15.4 Billion Last Quarter, With Tesla, AMD, and a New SpaceX Stake Making Up About 18% of ARKK Assets. Is Her Concentrated Bet Paying Off?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=bc2a190a66617284b7b837954a09524416c000a2e85c2af8031adb67f4ca0bee",
-          "datetime": 1792563600
-        },
-        {
-          "ticker": "AMD",
-          "headline": "Vultr and AMD Expand Global Collaboration with New AI Infrastructure in India",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9991b0e9c9d311ef39fe1fd7f53f2c1cd6af535cbf5ff0343333d7699f6ce7fe",
-          "datetime": 1792560600
-        },
-        {
-          "ticker": "AVGO",
-          "headline": "Top 3 Growth Stocks To Watch In October 2026",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=bc62bcf883b00e92761fcedd5d9f4de98567200097da58a4871d27493b21bd19",
-          "datetime": 1792559751
-        },
-        {
-          "ticker": "AVGO",
-          "headline": "Broadcom fought AT&T over VMware: Now a telecom giant is all in",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5e3d12ead082ff22f46c14758e72de1796e9ecd69185bbf80464338587ab6dd4",
-          "datetime": 1792548180
-        }
-      ],
+      "headlines": [],
       "customKpis": [
         {
           "label": "NVDA 분기 매출 (SEC)",
@@ -674,339 +147,233 @@
         "STNG"
       ],
       "newsScore": 75,
-      "volumeScore": 33.3,
-      "priceScore": 75,
-      "totalScore": 60.4,
-      "prevTotalScore": 80.8,
-      "scoreDelta": -20.4,
-      "deltaDirection": "▼",
+      "volumeScore": 66.7,
+      "priceScore": 58.3,
+      "totalScore": 67.9,
+      "prevTotalScore": 60.4,
+      "scoreDelta": 7.5,
+      "deltaDirection": "▲",
       "tickerData": [
         {
           "ticker": "XOM",
-          "price": 177.6,
-          "change1d": -0.14618239064433786,
-          "change5d": 2.171414717105402,
-          "volume": 2926602,
-          "avgVolume20d": 11386330,
-          "relativeVolume": 0.25702768143905896,
-          "marketCap": 730275577856,
-          "newsCount48h": 33,
-          "newsPrev48h": 22
+          "price": 178.09,
+          "change1d": 0.12931519172382197,
+          "change5d": 0.6101360739904317,
+          "volume": 11172827,
+          "avgVolume20d": 11556110,
+          "relativeVolume": 0.9668328702305533,
+          "marketCap": 732290351104,
+          "newsCount48h": 24,
+          "newsPrev48h": 31
         },
         {
           "ticker": "CVX",
-          "price": 226.195,
-          "change1d": 0.2148774976739999,
-          "change5d": 3.665094907875751,
-          "volume": 1703286,
-          "avgVolume20d": 7823780,
-          "relativeVolume": 0.2177062749719445,
-          "marketCap": 443704868864,
-          "newsCount48h": 38,
-          "newsPrev48h": 28
+          "price": 226.78,
+          "change1d": 0.4740596340436813,
+          "change5d": 2.13475303390765,
+          "volume": 7913530,
+          "avgVolume20d": 8070650,
+          "relativeVolume": 0.9805319274160074,
+          "marketCap": 444852404224,
+          "newsCount48h": 25,
+          "newsPrev48h": 36
         },
         {
           "ticker": "OXY",
-          "price": 62.8,
-          "change1d": -0.19071837253656157,
-          "change5d": 2.0600107244657537,
-          "volume": 2623104,
-          "avgVolume20d": 8680700,
-          "relativeVolume": 0.302176552582165,
-          "marketCap": 62777225216,
-          "newsCount48h": 11,
-          "newsPrev48h": 6
+          "price": 62.7,
+          "change1d": -0.3496503496503478,
+          "change5d": 2.1006365717841735,
+          "volume": 7769281,
+          "avgVolume20d": 8746400,
+          "relativeVolume": 0.8882832936979786,
+          "marketCap": 62677262336,
+          "newsCount48h": 7,
+          "newsPrev48h": 9
         },
         {
           "ticker": "LMT",
-          "price": 549.1301,
-          "change1d": 0.07656138944067611,
-          "change5d": 8.866718370920033,
-          "volume": 307369,
-          "avgVolume20d": 1206950,
-          "relativeVolume": 0.25466589336757944,
-          "marketCap": 126734155776,
-          "newsCount48h": 41,
-          "newsPrev48h": 28
+          "price": 551.51,
+          "change1d": 0.5102877658508054,
+          "change5d": 5.606730825869754,
+          "volume": 1462355,
+          "avgVolume20d": 1246150,
+          "relativeVolume": 1.1734983749949845,
+          "marketCap": 127283412992,
+          "newsCount48h": 29,
+          "newsPrev48h": 38
         },
         {
           "ticker": "RTX",
-          "price": 191.47,
-          "change1d": -0.9672080273094054,
-          "change5d": 5.638723540879372,
-          "volume": 1949210,
-          "avgVolume20d": 5364540,
-          "relativeVolume": 0.3633508185231166,
-          "marketCap": 258055241728,
-          "newsCount48h": 74,
-          "newsPrev48h": 18
+          "price": 191.6,
+          "change1d": -0.8999689665873637,
+          "change5d": 2.7511153800769823,
+          "volume": 7064010,
+          "avgVolume20d": 5652900,
+          "relativeVolume": 1.249625855755453,
+          "marketCap": 258230452224,
+          "newsCount48h": 65,
+          "newsPrev48h": 65
         },
         {
           "ticker": "NOC",
-          "price": 537.715,
-          "change1d": 0.6956928838951371,
-          "change5d": 10.931072039437398,
-          "volume": 379266,
-          "avgVolume20d": 1079150,
-          "relativeVolume": 0.3514488254644859,
-          "marketCap": 76389425152,
-          "newsCount48h": 66,
-          "newsPrev48h": 11
+          "price": 539.31,
+          "change1d": 0.9943820224719,
+          "change5d": 8.799853719531828,
+          "volume": 1161918,
+          "avgVolume20d": 1126160,
+          "relativeVolume": 1.0317521488953612,
+          "marketCap": 76616007680,
+          "newsCount48h": 64,
+          "newsPrev48h": 49
         },
         {
           "ticker": "FRO",
-          "price": 51.33,
-          "change1d": 2.007154213036562,
-          "change5d": -14.769649535032089,
-          "volume": 1827304,
-          "avgVolume20d": 4965120,
-          "relativeVolume": 0.3680281644753802,
-          "marketCap": 11427233792,
+          "price": 51.29,
+          "change1d": 1.9276629570747197,
+          "change5d": -8.850185714809655,
+          "volume": 3700125,
+          "avgVolume20d": 5037170,
+          "relativeVolume": 0.734564249370182,
+          "marketCap": 11418328064,
           "newsCount48h": 0,
-          "newsPrev48h": 2
+          "newsPrev48h": 0
         },
         {
           "ticker": "STNG",
-          "price": 82.73,
-          "change1d": 2.401287288030694,
-          "change5d": -8.969013052926938,
-          "volume": 150943,
-          "avgVolume20d": 1190740,
-          "relativeVolume": 0.1267640290911534,
-          "marketCap": 4143230464,
-          "newsCount48h": 2,
-          "newsPrev48h": 1
+          "price": 83.02,
+          "change1d": 2.7602426042826953,
+          "change5d": -3.4426687581985154,
+          "volume": 1175138,
+          "avgVolume20d": 1200950,
+          "relativeVolume": 0.9785070152795703,
+          "marketCap": 4157753600,
+          "newsCount48h": 1,
+          "newsPrev48h": 2
         }
       ],
-      "headlines": [
-        {
-          "ticker": "CVX",
-          "headline": "Chevron’s new CFO among 4 exec changes",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=766e2f4150c57fa29b81f9926c29e54c1e9be7ebbea113ec41e5793a0dbc48ec",
-          "datetime": 1792590031
-        },
-        {
-          "ticker": "CVX",
-          "headline": "Hess Midstream Is Down Nearly 23% in a Month. Here’s What Chevron Changed",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=1c013066ca9b1ee891987cef533e12bbea7ddb9586d6571ecc4c53857343484e",
-          "datetime": 1792586728
-        },
-        {
-          "ticker": "OXY",
-          "headline": "Is HF Sinclair (DINO) Stock Outpacing Its Oils-Energy Peers This Year?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=b7a9509e3b838e3d11e21476cdace4e542440de8543269c0fe7312dca8f0a056",
-          "datetime": 1792586402
-        },
-        {
-          "ticker": "XOM",
-          "headline": "Can ExxonMobil Strengthen Its Long-Term Upstream Production Capacity?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=22108e61a71c9c2f5bfd482bb97cb449ccc15cdce368d9ae782129eaa100d19d",
-          "datetime": 1792585800
-        },
-        {
-          "ticker": "CVX",
-          "headline": "Can ExxonMobil Strengthen Its Long-Term Upstream Production Capacity?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=22108e61a71c9c2f5bfd482bb97cb449ccc15cdce368d9ae782129eaa100d19d",
-          "datetime": 1792585800
-        },
-        {
-          "ticker": "CVX",
-          "headline": "SO's Alabama Power Completes Hurricane Isaias Restoration Efforts",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a7c66fc426e011b57abfefe7064d72faf248a1c15b8f720b15b4db0ae7c24781",
-          "datetime": 1792585200
-        },
-        {
-          "ticker": "OXY",
-          "headline": "10 S&P 500 Stocks Seeing The Biggest Estimate Hikes Ahead Of Earnings",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=f08741ee7143a3f80f0f50166c5189df2074240c7c982f450f312ed3947a7410",
-          "datetime": 1792582787
-        },
-        {
-          "ticker": "XOM",
-          "headline": "Eni SpA Q3 Earnings Ahead: What's in Store for the Stock?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=67d398b66ed0adc0f469eba5bceaafc17ef6e0b0698536de6951635767c3a6e5",
-          "datetime": 1792581300
-        },
-        {
-          "ticker": "XOM",
-          "headline": "The massive risk hiding inside your S&P 500 index fund",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=917a8b7559ed671bc269c4026f0411980c8de8f45d8d2dc9ed87ca3443dd097b",
-          "datetime": 1792576800
-        },
-        {
-          "ticker": "CVX",
-          "headline": "The massive risk hiding inside your S&P 500 index fund",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=917a8b7559ed671bc269c4026f0411980c8de8f45d8d2dc9ed87ca3443dd097b",
-          "datetime": 1792576800
-        },
-        {
-          "ticker": "XOM",
-          "headline": "Two Tactical ETFs For Collecting High Income From High Oil And Commodity Prices",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=aa7b29e9a31cbe7d583a4641b916f8ce105e6bccbe776774f488c9108bc51630",
-          "datetime": 1792573700
-        },
-        {
-          "ticker": "CVX",
-          "headline": "Two Tactical ETFs For Collecting High Income From High Oil And Commodity Prices",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=aa7b29e9a31cbe7d583a4641b916f8ce105e6bccbe776774f488c9108bc51630",
-          "datetime": 1792573700
-        },
-        {
-          "ticker": "XOM",
-          "headline": "The way we consume energy is changing. Abu Dhabi’s integrated system has already embraced that change",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=0c9e3c031ae77e63c73dc0a3db11121a60af1cc59c40d0d7f0332067567b4e5d",
-          "datetime": 1792558800
-        },
-        {
-          "ticker": "XOM",
-          "headline": "Which Dates Could Move Exxon Mobil Stock Most?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4ae2254de94fd25815d6c142dd7956eec333c5467974dad67221878ea03c0ac3",
-          "datetime": 1792546661
-        },
-        {
-          "ticker": "CVX",
-          "headline": "Which Dates Could Move Exxon Mobil Stock Most?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4ae2254de94fd25815d6c142dd7956eec333c5467974dad67221878ea03c0ac3",
-          "datetime": 1792546661
-        },
-        {
-          "ticker": "OXY",
-          "headline": "Which Dates Could Move Exxon Mobil Stock Most?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4ae2254de94fd25815d6c142dd7956eec333c5467974dad67221878ea03c0ac3",
-          "datetime": 1792546661
-        },
-        {
-          "ticker": "CVX",
-          "headline": "A 67-Year-Old Swapped JEPQ for SCHD in a $1.32 Million Portfolio. Here’s What Happened to His $8,750 Monthly Paycheck",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=d030071b7ab04276edb3551b0d3e0dd5f2a27fbf140033622eea06d37c79b104",
-          "datetime": 1792531948
-        },
-        {
-          "ticker": "CVX",
-          "headline": "Chevron Is Pouring Billions Into Venezuela. Here's the 1 Number Investors Should Watch.",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=c4e17a7b1c4aa344c38af84517ce29f73fdd1c32b0d0588ca54e943370afbf28",
-          "datetime": 1792527900
-        },
-        {
-          "ticker": "XOM",
-          "headline": "Energy ETFs: How to Play the Sector's Surge",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a8d7a4c055739d326f8b98cb9a3071aaff8dd906deb77e48123a72344b7e24fa",
-          "datetime": 1792519740
-        },
-        {
-          "ticker": "CVX",
-          "headline": "Energy ETFs: How to Play the Sector's Surge",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a8d7a4c055739d326f8b98cb9a3071aaff8dd906deb77e48123a72344b7e24fa",
-          "datetime": 1792519740
-        },
-        {
-          "ticker": "XOM",
-          "headline": "TotalEnergies (ENXTPA:TTE) Takes Center Stage In Mozambique’s $250 Million Gas Plan",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=d3c5b2aaf42ad01f2e9fb32d047e00373a47ace41bc363d39ef06e51e6e2f881",
-          "datetime": 1792516558
-        },
-        {
-          "ticker": "XOM",
-          "headline": "Shell's Latest LNG Move Has Me Rethinking My Oil Major Pecking Order. Here's Where I'd Rank Exxon and Chevron Now.",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=c08ab60cbb8deaefae5f1cf64fae4e0d15607347e29d7529aecbca4228030fb6",
-          "datetime": 1792510500
-        },
-        {
-          "ticker": "XOM",
-          "headline": "ExxonMobil Hits a New All-Time High. Is It Too Late to Buy the Stock?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e8b391680e64f59497f882578431e6d1c237f8704dbf19c74fcc9372ef7c53cb",
-          "datetime": 1792507802
-        },
-        {
-          "ticker": "OXY",
-          "headline": "Occidental Petroleum Corporation (OXY) is Attracting Investor Attention: Here is What You Should Know",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a3f0ccc5b2ac0e850ac45a664f8efb31aeb08bc172167e7de3162db4dfe798da",
-          "datetime": 1792497603
-        },
-        {
-          "ticker": "OXY",
-          "headline": "Occidental Petroleum To Rally Over 18%? Here Are 10 Top Analyst Forecasts For Tuesday",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=99d063196428f6c2f2e3856ac7cfac93d97b89dca2d195b9c5166b4d06a1c3b0",
-          "datetime": 1792486344
-        },
-        {
-          "ticker": "OXY",
-          "headline": "Susquehanna Maintains Positive on Occidental Petroleum, Raises Price Target to $77",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=55a60c09af510adda27a96bbc3a967714b5a9154cb7ab69d00ba22bb6ac07adb",
-          "datetime": 1792482559
-        },
-        {
-          "ticker": "OXY",
-          "headline": "Inflation-Resistant Income Growth Machines Getting Too Cheap",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=d14407ec98cced3ca3a408621b60321f1f4fc573ff12b58c02a21a8f856d78ea",
-          "datetime": 1792435365
-        },
-        {
-          "ticker": "OXY",
-          "headline": "What Is The Market Seeing In Texas Pacific Land Stock?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=f87edb412789836df67dbd86a97a02936f2ed69bc04e00d50b9341a0325dc100",
-          "datetime": 1792425628
-        },
-        {
-          "ticker": "OXY",
-          "headline": "Surging Earnings Estimates Signal Upside for Occidental (OXY) Stock",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e22203ecc87f6240406116b068ee24c2e72bfb37049c020e02b93f8dd032a2ce",
-          "datetime": 1792423202
-        },
-        {
-          "ticker": "OXY",
-          "headline": "Goldman Sachs' Neil Mehta on top energy ideas and stocks to watch",
-          "source": "CNBC",
-          "url": "https://finnhub.io/api/news?id=a8a0321bf5cb446e135731ad8c63ed131ad906e36dbc2fb1982890648de63e85",
-          "datetime": 1792422407
-        }
-      ],
+      "headlines": [],
       "customKpis": [
         {
           "label": "WTI 원유 현재가 ($/bbl)",
           "ticker": "CL=F",
-          "value": 96.75,
+          "value": 99.44,
           "format": "price_usd"
         },
         {
           "label": "WTI 1일 변동",
           "ticker": "CL=F",
-          "value": -1.0938458392966606,
+          "value": 2.3571796191456427,
           "format": "change_pct"
         },
         {
           "label": "LMT 영업이익률",
           "ticker": "LMT",
           "value": 0.119569995,
+          "format": "financial_pct",
+          "period": "TTM"
+        }
+      ]
+    },
+    {
+      "id": "ai-software",
+      "name": "AI 소프트웨어",
+      "description": "AI 모델 개발 및 기업용 AI 솔루션. 클라우드 AI 서비스, 에이전트형 AI, 데이터 분석 플랫폼.",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "PLTR",
+        "NOW",
+        "CRM"
+      ],
+      "newsScore": 83.3,
+      "volumeScore": 33.3,
+      "priceScore": 75,
+      "totalScore": 63.7,
+      "prevTotalScore": 73.3,
+      "scoreDelta": -9.6,
+      "deltaDirection": "▼",
+      "tickerData": [
+        {
+          "ticker": "MSFT",
+          "price": 532.95,
+          "change1d": 0.2030571380224568,
+          "change5d": -0.13865544248343747,
+          "volume": 13826924,
+          "avgVolume20d": 19869820,
+          "relativeVolume": 0.6958756546360259,
+          "marketCap": 3957444575232,
+          "newsCount48h": 161,
+          "newsPrev48h": 175
+        },
+        {
+          "ticker": "GOOGL",
+          "price": 334.76,
+          "change1d": -1.6207479244728489,
+          "change5d": -3.7049834139024047,
+          "volume": 28525256,
+          "avgVolume20d": 22827170,
+          "relativeVolume": 1.249618590477926,
+          "marketCap": 4094093164544,
+          "newsCount48h": 197,
+          "newsPrev48h": 209
+        },
+        {
+          "ticker": "PLTR",
+          "price": 201.72,
+          "change1d": 4.73520249221184,
+          "change5d": 0.3731900260956649,
+          "volume": 21192659,
+          "avgVolume20d": 26505080,
+          "relativeVolume": 0.7995697051282245,
+          "marketCap": 484744953856,
+          "newsCount48h": 18,
+          "newsPrev48h": 45
+        },
+        {
+          "ticker": "NOW",
+          "price": 153.12,
+          "change1d": 2.394008292095769,
+          "change5d": 9.3870551440968,
+          "volume": 13012456,
+          "avgVolume20d": 12090040,
+          "relativeVolume": 1.0762955292124756,
+          "marketCap": 158304944128,
+          "newsCount48h": 26,
+          "newsPrev48h": 17
+        },
+        {
+          "ticker": "CRM",
+          "price": 241.78,
+          "change1d": -0.268118632182488,
+          "change5d": 2.470863278855457,
+          "volume": 5425611,
+          "avgVolume20d": 7264330,
+          "relativeVolume": 0.7468838833037597,
+          "marketCap": 198984941568,
+          "newsCount48h": 69,
+          "newsPrev48h": 53
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "MSFT 매출 성장 YoY",
+          "ticker": "MSFT",
+          "value": 0.177,
+          "format": "financial_pct",
+          "period": "TTM"
+        },
+        {
+          "label": "MSFT 영업이익률",
+          "ticker": "MSFT",
+          "value": 0.45111,
+          "format": "financial_pct",
+          "period": "TTM"
+        },
+        {
+          "label": "GOOGL 매출 성장 YoY",
+          "ticker": "GOOGL",
+          "value": 0.242,
           "format": "financial_pct",
           "period": "TTM"
         }
@@ -1023,298 +390,210 @@
         "JPM",
         "KRE"
       ],
-      "newsScore": 66.7,
+      "newsScore": 58.3,
       "volumeScore": 25,
-      "priceScore": 83.3,
-      "totalScore": 56.3,
-      "prevTotalScore": 59.2,
-      "scoreDelta": -2.9,
+      "priceScore": 66.7,
+      "totalScore": 48.7,
+      "prevTotalScore": 56.3,
+      "scoreDelta": -7.6,
       "deltaDirection": "▼",
       "tickerData": [
         {
           "ticker": "TLT",
-          "price": 80.175,
-          "change1d": 0.056158742044180344,
-          "change5d": 2.2457502171169654,
-          "volume": 10075813,
-          "avgVolume20d": 40160930,
-          "relativeVolume": 0.2508859481092694,
+          "price": 80.24,
+          "change1d": 0.13727692499687938,
+          "change5d": 1.7112415826666032,
+          "volume": 35949645,
+          "avgVolume20d": 39757500,
+          "relativeVolume": 0.9042229767968308,
           "marketCap": 0,
-          "newsCount48h": 23,
-          "newsPrev48h": 15
+          "newsCount48h": 12,
+          "newsPrev48h": 21
         },
         {
           "ticker": "GLD",
-          "price": 378.851,
-          "change1d": 0.31801933006752864,
-          "change5d": -1.0532709905990958,
-          "volume": 2476923,
-          "avgVolume20d": 7429120,
-          "relativeVolume": 0.3334073214593384,
+          "price": 378.95,
+          "change1d": 0.34423407917384125,
+          "change5d": 0.7872608445802262,
+          "volume": 6836525,
+          "avgVolume20d": 7395990,
+          "relativeVolume": 0.92435563055115,
           "marketCap": 0,
-          "newsCount48h": 9,
-          "newsPrev48h": 6
+          "newsCount48h": 8,
+          "newsPrev48h": 7
         },
         {
           "ticker": "XLF",
           "price": 56.04,
           "change1d": 0.5743000717875095,
-          "change5d": 1.6417393850585504,
-          "volume": 9413913,
-          "avgVolume20d": 36668990,
-          "relativeVolume": 0.25672681467365205,
+          "change5d": 2.7879685344852616,
+          "volume": 27704785,
+          "avgVolume20d": 35816760,
+          "relativeVolume": 0.773514550171484,
           "marketCap": 0,
-          "newsCount48h": 11,
-          "newsPrev48h": 8
+          "newsCount48h": 8,
+          "newsPrev48h": 13
         },
         {
           "ticker": "JPM",
-          "price": 333.7354,
-          "change1d": -0.45475153612120867,
-          "change5d": 1.1556036491816337,
-          "volume": 1425181,
-          "avgVolume20d": 7998230,
-          "relativeVolume": 0.1781870488845657,
-          "marketCap": 886267772928,
-          "newsCount48h": 79,
-          "newsPrev48h": 56
+          "price": 335.19,
+          "change1d": -0.02087931754459022,
+          "change5d": -0.026842143348332105,
+          "volume": 5763431,
+          "avgVolume20d": 7874990,
+          "relativeVolume": 0.7318651833208677,
+          "marketCap": 890130595840,
+          "newsCount48h": 41,
+          "newsPrev48h": 77
         },
         {
           "ticker": "KRE",
-          "price": 70.49,
-          "change1d": -0.1840838289436557,
-          "change5d": 2.2589128918875203,
-          "volume": 5223105,
-          "avgVolume20d": 15647320,
-          "relativeVolume": 0.33380189067520827,
+          "price": 70.62,
+          "change1d": 0,
+          "change5d": 3.0347268795899227,
+          "volume": 15441943,
+          "avgVolume20d": 15156400,
+          "relativeVolume": 1.018839764060067,
           "marketCap": 0,
           "newsCount48h": 1,
-          "newsPrev48h": 0
+          "newsPrev48h": 1
         }
       ],
-      "headlines": [
-        {
-          "ticker": "TLT",
-          "headline": "Market's Uneven Response To Higher Rates",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=29fedab3c535668051edc1d298ef2c63f5cada64a294130d8bf61add146ca69e",
-          "datetime": 1792564200
-        },
-        {
-          "ticker": "GLD",
-          "headline": "India Gold Market Update: Seasonal Demand Shows Early Strength",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=e9bd4cb28c9a7cf90825fdf5f5f9f566392fc8a48455a0bb4133c97acf05ad26",
-          "datetime": 1792562400
-        },
-        {
-          "ticker": "TLT",
-          "headline": "TLT: The Refunding Could Break The Bond Bear, Again",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=2267dae1234e241ac29ef9e3d3a441bb4bbc335c830a9a01b7818935787ee0d4",
-          "datetime": 1792557990
-        },
-        {
-          "ticker": "GLD",
-          "headline": "Jim Cramer Prefers Gold to Bitcoin for Portfolio Insurance, but Backs 2 ‘Vetted’ Cryptos",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=aca111395d9031b6be484250424dc53f7188d4d33c232b72a4ab8616efc7d743",
-          "datetime": 1792545581
-        },
-        {
-          "ticker": "XLF",
-          "headline": "Sector Update: Financial Stocks Higher Late Afternoon",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=60ad628f80f4c68e9d4adfe92b194dade0b324d055736700bc607511084e80fd",
-          "datetime": 1792526295
-        },
-        {
-          "ticker": "TLT",
-          "headline": "Choppy Trading Leaves Dow Higher And Nasdaq Flat",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=75f43f3fa0765253b630db98a765d149c37a05c0670952d060ea25fa8fd63ea3",
-          "datetime": 1792525500
-        },
-        {
-          "ticker": "XLF",
-          "headline": "Sector Update: Financial Stocks Advance Tuesday Afternoon",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=35a7876d49bb7c3b337c5c4779a820b84dc1ccb5c3792ad549e46ee4320d6f05",
-          "datetime": 1792519255
-        },
-        {
-          "ticker": "XLF",
-          "headline": "Exchange-Traded Funds Gain as US Equities Advance After Midday",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4abf32ce1ac380d486ae63cad7e84634be357610c60f4b99ccaab776d43c0036",
-          "datetime": 1792516284
-        },
-        {
-          "ticker": "TLT",
-          "headline": "The Surprising Case For Investing When The Fed's Raising Rates",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=87f69d7f02b1cf75b95ec2c20504991fd57f028de612816b8b492ec74e1175cb",
-          "datetime": 1792506000
-        },
-        {
-          "ticker": "TLT",
-          "headline": "Fiera Capital Global Asset Allocation - October 2026 Market Update",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=761b296fb507995f1ec56105cc9744da962583ab4d64e3355e0e856b8f4f733a",
-          "datetime": 1792505400
-        },
-        {
-          "ticker": "TLT",
-          "headline": "BofA Is Sticking With an October Rate Hike Even as Markets Bet Against It",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=48fb3e72b8d6e300558e852e7038ce1fe07774e72b1bb709528976d93c897104",
-          "datetime": 1792501948
-        },
-        {
-          "ticker": "XLF",
-          "headline": "Health Care Stocks Hit Record Highs, GM Drops Nearly 8%: Stock Market Today",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=3482c1924b89e162572ba246e9d18ef4c7056d94d57c36f352953a973a66610a",
-          "datetime": 1792501134
-        },
-        {
-          "ticker": "GLD",
-          "headline": "408x Oversubscribed AI IPO Crashes 32%—Democratic Sweep Prospects Trigger Selling in Data Center Stocks",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=ae0c675183ba8565cd0e7f7aebcba9ab485f07a9166b359cbfdc01a377c7ead4",
-          "datetime": 1792498871
-        },
-        {
-          "ticker": "XLF",
-          "headline": "Energy Only Sector Lower In Tuesday Trading As Defensives Lead",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=653bd2ec6cdd09f9dd7ba34a88d063c00d1c396070a4812e6a9791322299b0fa",
-          "datetime": 1792494042
-        },
-        {
-          "ticker": "GLD",
-          "headline": "Dividend Growth Is Broken In A 5% World - 2 Picks To Fix It",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=ee979e13ac5ae2aa270d69508d528e7508933c0cded1415768142a85580229ba",
-          "datetime": 1792487700
-        },
-        {
-          "ticker": "TLT",
-          "headline": "If Rates Keep Rising, So Will These 5 ETFs. Introducing My Bond Hedge Roster",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=f2bcd46f701b827f93710a289ffa92430f13bf657a7a9f701de9da7a8a460208",
-          "datetime": 1792482502
-        },
-        {
-          "ticker": "TLT",
-          "headline": "AI Bubble Or Not, Investors Should Manage The Risk Now",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=20a01a5552827718f7886ca9208249d00be3c3613cb265d8daa9e83373302daa",
-          "datetime": 1792481700
-        },
-        {
-          "ticker": "TLT",
-          "headline": "Top Economist Warns US Is ‘Wildly Irresponsible’ With $1.99 Trillion Deficit as Interest Costs Top Defense Spending",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=ae11ca256c854bfc49f1f856415ddf9fbf5de0ff4e237bd8aa86f06dd3a306e1",
-          "datetime": 1792477387
-        },
-        {
-          "ticker": "TLT",
-          "headline": "Cumberland's Monday Memo",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=d606464401c9139bd7cb2c1b1684da84689d38a10449271f3fdb08edd8ebcce2",
-          "datetime": 1792470600
-        },
-        {
-          "ticker": "GLD",
-          "headline": "Gold Technical And Macro Outlook: October 2026",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=2a943abf74ca7d92304da923b64c0ae6b40000bba0c1b32ec9753fcb44d3ae7c",
-          "datetime": 1792454700
-        },
-        {
-          "ticker": "GLD",
-          "headline": "Forget GLD. Investors Sent $500 Million to the Cheaper SPDR Gold Fund",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=787dfe4c0811155e49d472042a7aa81975d2578b7c623c666cf7b8e07f0d39fb",
-          "datetime": 1792450052
-        },
-        {
-          "ticker": "XLF",
-          "headline": "Sector Update: Financial Stocks Lower in Late Afternoon Trading",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=542675ed6d94737d9b589b84858b1319e686d71891724dafaebb9a0f640303a8",
-          "datetime": 1792440071
-        },
-        {
-          "ticker": "XLF",
-          "headline": "Sector Update: Financial Stocks Lower in Afternoon Trading",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=fa1682a05d51bff2c1c57accee489e92b5a12aff06a9c2dec2ee0d9cac93bd52",
-          "datetime": 1792432233
-        },
-        {
-          "ticker": "XLF",
-          "headline": "Exchange-Traded Funds Higher as US Equities Rise After Midday",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=663ccb68adb1662f21de3df6cc2ade757a94e00fbc61e351c9324f0a0aeb862e",
-          "datetime": 1792430742
-        },
-        {
-          "ticker": "XLF",
-          "headline": "ValuEngine Weekly Market Commentary",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=65f6955d7e37181274569549bd08ac674281fe8c8e15222005245f3364c8ead6",
-          "datetime": 1792426200
-        },
-        {
-          "ticker": "GLD",
-          "headline": "Inflation Heats Up, Silver Sinks - What Is The Market Telling Us?",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=58715e761673522bd245110c0916acce171723afd8287dbabdc2754db5151833",
-          "datetime": 1792417560
-        },
-        {
-          "ticker": "XLF",
-          "headline": "Stock Market Today: Nasdaq 100 Rises as AI Chip Rout Reverses, SanDisk Jumps 7%",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=f6b57f4b5bdeed64354447674353d7e4568ac6cb312e07adac5ad57d66116b4e",
-          "datetime": 1792414702
-        },
-        {
-          "ticker": "GLD",
-          "headline": "China's Treasury Pile Is Shrinking on Paper. The Custody Data Tell a Different Story",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e46853a1cc5696809a443dc53458d26ed60ed3d5507790793556defa0dc86b29",
-          "datetime": 1792412100
-        },
-        {
-          "ticker": "GLD",
-          "headline": "India Gold Market Flips To Premium As Demand Improves And Supplies Tighten",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=4a9ee68544a6cc09e1e5e6047e2043eb0454279f0f16961b273a1e0884728127",
-          "datetime": 1792410600
-        }
-      ],
+      "headlines": [],
       "customKpis": [
         {
           "label": "미국 10Y 국채금리",
           "ticker": "^TNX",
-          "value": 5.106,
+          "value": 5.146,
           "format": "price_rate"
         },
         {
           "label": "미국 3M 국채금리",
           "ticker": "^IRX",
-          "value": 4.06,
+          "value": 4.063,
           "format": "price_rate"
         },
         {
           "label": "금 현물가 ($/oz)",
           "ticker": "GC=F",
-          "value": 4157.1,
+          "value": 4100.8,
           "format": "price_usd"
+        }
+      ]
+    },
+    {
+      "id": "nuclear-uranium",
+      "name": "원자력/우라늄",
+      "description": "AI 데이터센터 전력 수요 + 탈탄소 정책으로 재조명받는 원자력. SMR, 우라늄 채굴, 유틸리티.",
+      "tickers": [
+        "CCJ",
+        "LEU",
+        "SMR",
+        "OKLO",
+        "VST",
+        "CEG"
+      ],
+      "newsScore": 66.7,
+      "volumeScore": 16.7,
+      "priceScore": 16.7,
+      "totalScore": 36.7,
+      "prevTotalScore": 26.2,
+      "scoreDelta": 10.5,
+      "deltaDirection": "▲",
+      "tickerData": [
+        {
+          "ticker": "CCJ",
+          "price": 82.02,
+          "change1d": 1.8755434107564164,
+          "change5d": 0.6750894981250063,
+          "volume": 2739402,
+          "avgVolume20d": 3091060,
+          "relativeVolume": 0.8862338485826868,
+          "marketCap": 35722416128,
+          "newsCount48h": 3,
+          "newsPrev48h": 5
+        },
+        {
+          "ticker": "LEU",
+          "price": 108.91,
+          "change1d": -0.8827812158718593,
+          "change5d": -9.2038295681629,
+          "volume": 807113,
+          "avgVolume20d": 992200,
+          "relativeVolume": 0.8134579721830276,
+          "marketCap": 2227548160,
+          "newsCount48h": 7,
+          "newsPrev48h": 11
+        },
+        {
+          "ticker": "SMR",
+          "price": 5.5,
+          "change1d": -1.4336917562724028,
+          "change5d": -5.660376123920736,
+          "volume": 27185374,
+          "avgVolume20d": 32245310,
+          "relativeVolume": 0.8430799393772304,
+          "marketCap": 2257142528,
+          "newsCount48h": 16,
+          "newsPrev48h": 14
+        },
+        {
+          "ticker": "OKLO",
+          "price": 27.73,
+          "change1d": 0.9097525473071324,
+          "change5d": -4.511023870493659,
+          "volume": 5985181,
+          "avgVolume20d": 9934370,
+          "relativeVolume": 0.6024721245534442,
+          "marketCap": 5158269440,
+          "newsCount48h": 10,
+          "newsPrev48h": 10
+        },
+        {
+          "ticker": "VST",
+          "price": 156.14,
+          "change1d": 3.8717402873869036,
+          "change5d": 2.8658055839791854,
+          "volume": 5073361,
+          "avgVolume20d": 6277260,
+          "relativeVolume": 0.8082126596636112,
+          "marketCap": 52406079488,
+          "newsCount48h": 11,
+          "newsPrev48h": 11
+        },
+        {
+          "ticker": "CEG",
+          "price": 270.74,
+          "change1d": 4.597434708700368,
+          "change5d": -3.1480353586426673,
+          "volume": 2785585,
+          "avgVolume20d": 3727630,
+          "relativeVolume": 0.7472804436062592,
+          "marketCap": 95925182464,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "우라늄 ETF (URA) 가격",
+          "ticker": "URA",
+          "value": 35.55,
+          "format": "price_usd"
+        },
+        {
+          "label": "URA 1일 변동",
+          "ticker": "URA",
+          "value": 1.0517339397384804,
+          "format": "change_pct"
+        },
+        {
+          "label": "CCJ 매출 성장 YoY",
+          "ticker": "CCJ",
+          "value": -0.072,
+          "format": "financial_pct",
+          "period": "TTM"
         }
       ]
     },
@@ -1330,62 +609,146 @@
       ],
       "newsScore": 5,
       "volumeScore": 91.7,
-      "priceScore": 58.3,
-      "totalScore": 48.7,
-      "prevTotalScore": 16.6,
-      "scoreDelta": 32.1,
-      "deltaDirection": "▲",
+      "priceScore": 8.3,
+      "totalScore": 36.2,
+      "prevTotalScore": 48.7,
+      "scoreDelta": -12.5,
+      "deltaDirection": "▼",
       "tickerData": [
         {
           "ticker": "BABA",
-          "price": 104.7999,
-          "change1d": -3.508056348402546,
-          "change5d": -2.0207468602649357,
-          "volume": 5821290,
-          "avgVolume20d": 8112310,
-          "relativeVolume": 0.7175872223817876,
-          "marketCap": 260715413504,
+          "price": 104.41,
+          "change1d": -3.8670472332197803,
+          "change5d": -6.080772347016465,
+          "volume": 11802071,
+          "avgVolume20d": 8577480,
+          "relativeVolume": 1.3759368719017706,
+          "marketCap": 259745464320,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "PDD",
-          "price": 78.91,
-          "change1d": -3.3321082935195383,
-          "change5d": -0.4026376704989574,
-          "volume": 3508247,
-          "avgVolume20d": 5522830,
-          "relativeVolume": 0.6352263241852456,
-          "marketCap": 112320225280,
+          "price": 78.72,
+          "change1d": -3.5648658581403856,
+          "change5d": -3.351744419676102,
+          "volume": 6528894,
+          "avgVolume20d": 5746270,
+          "relativeVolume": 1.1361968720578741,
+          "marketCap": 112049774592,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "JD",
-          "price": 25.83,
-          "change1d": -3.475336322869967,
-          "change5d": -0.07468430638855653,
-          "volume": 13202306,
-          "avgVolume20d": 7510740,
-          "relativeVolume": 1.7577903109413986,
-          "marketCap": 34883416064,
+          "price": 25.79,
+          "change1d": -3.624813153961145,
+          "change5d": -3.3358297581270353,
+          "volume": 27547043,
+          "avgVolume20d": 9559510,
+          "relativeVolume": 2.88163755255238,
+          "marketCap": 34829393920,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "BIDU",
-          "price": 78.86,
-          "change1d": -2.0372670807453424,
-          "change5d": -3.86911624841506,
-          "volume": 1019555,
-          "avgVolume20d": 2154490,
-          "relativeVolume": 0.473223361445168,
-          "marketCap": 26845804544,
+          "price": 78.82,
+          "change1d": -2.086956521739139,
+          "change5d": -3.7136585546799057,
+          "volume": 2160769,
+          "avgVolume20d": 2173040,
+          "relativeVolume": 0.994353072193793,
+          "marketCap": 26832187392,
           "newsCount48h": 0,
           "newsPrev48h": 0
         }
       ],
       "headlines": [
+        {
+          "ticker": "PDD",
+          "headline": "PDD Holdings (PDD) Faces A Texas Privacy Settlement As Undervalued Narrative Holds",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=e431f063c2ee3f4e62845c80940b8e635431e6205f45739742bb793eccb0d6f7",
+          "datetime": 1792653278
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Better Retail Stock for 2026: Alibaba vs. Walmart",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=3030abbba0230046641545a84e8b433199c12228b3a7c23e02a83f4d355f41ea",
+          "datetime": 1792625601
+        },
+        {
+          "ticker": "PDD",
+          "headline": "PDD Holdings Inc. Sponsored ADR (PDD) Stock Sinks As Market Gains: What You Should Know",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=4e7a3513d7e9fc1101562119cd7dc6a65f63312b47e2fdb5c99a2433bf94cdec",
+          "datetime": 1792615504
+        },
+        {
+          "ticker": "JD",
+          "headline": "JD.com, Inc. (JD) Stock Falls Amid Market Uptick: What Investors Need to Know",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=57707dc52329f884a931395856ab77f1fbfea17d3ea9d8b47ebb77ae20609bbc",
+          "datetime": 1792615503
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Chinese Stocks BABA, JD, PDD Slide After Hong Kong Tech Index Falls Below 4,000, Even As US Market Edges Higher",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=a06b1ebab910b3c425f82e8c99ec99d87ec6b4e9551d6707ccf6e0ba20b1e6e6",
+          "datetime": 1792606041
+        },
+        {
+          "ticker": "JD",
+          "headline": "Chinese Stocks BABA, JD, PDD Slide After Hong Kong Tech Index Falls Below 4,000, Even As US Market Edges Higher",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=a06b1ebab910b3c425f82e8c99ec99d87ec6b4e9551d6707ccf6e0ba20b1e6e6",
+          "datetime": 1792606041
+        },
+        {
+          "ticker": "BABA",
+          "headline": "China Tech Stocks Slide While U.S. Market Rises: Alibaba Sinks 5%, JD.com and PDD Drop 4%",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=b920fe6ac4dc94498cd999ad5699a53d5c55b3bd472d99af512409f4ed26fb42",
+          "datetime": 1792597969
+        },
+        {
+          "ticker": "PDD",
+          "headline": "China Tech Stocks Slide While U.S. Market Rises: Alibaba Sinks 5%, JD.com and PDD Drop 4%",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=b920fe6ac4dc94498cd999ad5699a53d5c55b3bd472d99af512409f4ed26fb42",
+          "datetime": 1792597969
+        },
+        {
+          "ticker": "JD",
+          "headline": "China Tech Stocks Slide While U.S. Market Rises: Alibaba Sinks 5%, JD.com and PDD Drop 4%",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=b920fe6ac4dc94498cd999ad5699a53d5c55b3bd472d99af512409f4ed26fb42",
+          "datetime": 1792597969
+        },
+        {
+          "ticker": "BABA",
+          "headline": "Asian Equities Traded in the US as American Depositary Receipts Decline in Wednesday Trading",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=b623ff4e496a6789127b5f5a107adc7648dd6a0d6d2d35d88ed392dc2a333a9a",
+          "datetime": 1792593957
+        },
+        {
+          "ticker": "JD",
+          "headline": "Asian Equities Traded in the US as American Depositary Receipts Decline in Wednesday Trading",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=b623ff4e496a6789127b5f5a107adc7648dd6a0d6d2d35d88ed392dc2a333a9a",
+          "datetime": 1792593957
+        },
+        {
+          "ticker": "BABA",
+          "headline": "ByteDance, Alibaba and Tencent Just Ordered $35 Billion of Nvidia Chips",
+          "source": "Yahoo",
+          "url": "https://finnhub.io/api/news?id=a53a57f2ed99bace088fea303654ad51519e0b93671541fa01273596252cb64f",
+          "datetime": 1792590303
+        },
         {
           "ticker": "BABA",
           "headline": "Alibaba Just Raised Its AI Ambition by a Third. The Shares Are Down 44%.",
@@ -1422,41 +785,6 @@
           "datetime": 1792508762
         },
         {
-          "ticker": "BABA",
-          "headline": "Nvidia Reportedly Sees Alibaba, ByteDance, Tencent Order $35B In RTX PRO 5500 Chips Amid US Export Curbs",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=7981ccc7be95aa1efcf290a84a38e9ecda4797aadfe2d322a1e2d356a08bb82f",
-          "datetime": 1792493306
-        },
-        {
-          "ticker": "BABA",
-          "headline": "ByteDance, Alibaba and Tencent order $35 billion of Nvidia chips: Reuters",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e635b2c80b7b918201b06b5652e7a3f1273bc3376d3334b012fd636f43896a66",
-          "datetime": 1792490012
-        },
-        {
-          "ticker": "BABA",
-          "headline": "Market Chatter: Nvidia Receives Over $35 Billion in Chip Orders From ByteDance, Tencent, Alibaba",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=3b136bfdc1c99e74e38b3e24c84a1a9136428a9d96144a8d01194d24eafff65b",
-          "datetime": 1792489600
-        },
-        {
-          "ticker": "BABA",
-          "headline": "ByteDance, Alibaba, Tencent Place Massive $35 Billion NVIDIA Order",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=361dfab13680ebe6a1888d742d8d6c5ace8ed86311ca176ccb38b51dca0ae961",
-          "datetime": 1792480383
-        },
-        {
-          "ticker": "BABA",
-          "headline": "'ByteDance, Alibaba, Tencent Place Over $35 Billion Worth of Nvidia Chip Orders' - Reuters Exclusive",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=fe2caa56d1de53261820f0b4bf57c2f27205c9b3b155d5a26e69f368e12e85b8",
-          "datetime": 1792475322
-        },
-        {
           "ticker": "JD",
           "headline": "JD.com, Inc. (JD) is Attracting Investor Attention: Here is What You Should Know",
           "source": "Yahoo",
@@ -1475,13 +803,13 @@
         {
           "label": "USD/CNY 환율",
           "ticker": "CNY=X",
-          "value": 6.6753,
+          "value": 6.6718,
           "format": "price_number"
         },
         {
           "label": "항셍지수 1일 변동",
           "ticker": "^HSI",
-          "value": -2.2116609059487002,
+          "value": -3.9091324258307267,
           "format": "change_pct"
         },
         {
@@ -1494,303 +822,103 @@
       ]
     },
     {
-      "id": "glp1",
-      "name": "비만치료제 (GLP-1)",
-      "description": "세마글루타이드·티르제파타이드 등 GLP-1 계열 비만·당뇨 치료제 시장 급성장. 차세대 파이프라인 경쟁.",
+      "id": "power-datacenter",
+      "name": "전력/데이터센터",
+      "description": "AI 데이터센터의 폭발적 전력 소비 증가. 전력망 인프라, 변압기, IPP(독립발전사업자) 수혜.",
       "tickers": [
-        "LLY",
-        "NVO",
-        "VKTX",
-        "AMGN"
+        "GEV",
+        "ETN",
+        "PWR",
+        "NRG",
+        "TLN"
       ],
       "newsScore": 5,
-      "volumeScore": 16.7,
-      "priceScore": 91.7,
-      "totalScore": 30.8,
-      "prevTotalScore": 51.2,
-      "scoreDelta": -20.4,
-      "deltaDirection": "▼",
+      "volumeScore": 75,
+      "priceScore": 25,
+      "totalScore": 34.5,
+      "prevTotalScore": 24.9,
+      "scoreDelta": 9.6,
+      "deltaDirection": "▲",
       "tickerData": [
         {
-          "ticker": "LLY",
-          "price": 1266.17,
-          "change1d": -1.362510322047895,
-          "change5d": 10.042779181774897,
-          "volume": 671478,
-          "avgVolume20d": 2413480,
-          "relativeVolume": 0.27821983194391503,
-          "marketCap": 1129096282112,
+          "ticker": "GEV",
+          "price": 925.92,
+          "change1d": 3.9973942246133363,
+          "change5d": -1.684049979118768,
+          "volume": 2996235,
+          "avgVolume20d": 2424240,
+          "relativeVolume": 1.2359481734481734,
+          "marketCap": 246603579392,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
-          "ticker": "NVO",
-          "price": 39.21,
-          "change1d": -0.3557814485387562,
-          "change5d": 3.38937744162917,
-          "volume": 2727113,
-          "avgVolume20d": 10487060,
-          "relativeVolume": 0.2600455227680589,
-          "marketCap": 173038043136,
+          "ticker": "ETN",
+          "price": 393.94,
+          "change1d": 3.1310539818838627,
+          "change5d": -3.6468150763178295,
+          "volume": 2340543,
+          "avgVolume20d": 2653250,
+          "relativeVolume": 0.8821419014416282,
+          "marketCap": 153006292992,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
-          "ticker": "VKTX",
-          "price": 26.6,
-          "change1d": -0.4118307749906381,
-          "change5d": 0.22513871219969547,
-          "volume": 1287991,
-          "avgVolume20d": 5454130,
-          "relativeVolume": 0.23614967006653673,
-          "marketCap": 3382595584,
+          "ticker": "PWR",
+          "price": 601.14,
+          "change1d": 0.862416107382548,
+          "change5d": -8.991266409440513,
+          "volume": 1637559,
+          "avgVolume20d": 1102770,
+          "relativeVolume": 1.484950624336897,
+          "marketCap": 90377428992,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
-          "ticker": "AMGN",
-          "price": 435.27,
-          "change1d": -0.8361051624367831,
-          "change5d": 6.322063350217154,
-          "volume": 535878,
-          "avgVolume20d": 2637710,
-          "relativeVolume": 0.20316031709323618,
-          "marketCap": 235320885248,
+          "ticker": "NRG",
+          "price": 99.8,
+          "change1d": 2.0032706459525693,
+          "change5d": -1.0411456998015904,
+          "volume": 2157613,
+          "avgVolume20d": 2863470,
+          "relativeVolume": 0.753495933255805,
+          "marketCap": 20979007488,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "TLN",
+          "price": 359.49,
+          "change1d": 2.8789743296225287,
+          "change5d": 0.2985259657818624,
+          "volume": 963972,
+          "avgVolume20d": 1111850,
+          "relativeVolume": 0.8669982461662994,
+          "marketCap": 17003876352,
           "newsCount48h": 0,
           "newsPrev48h": 0
         }
       ],
-      "headlines": [
-        {
-          "ticker": "LLY",
-          "headline": "Obesity ETFs to Gain as Novo's CagriSema Shows 25% Weight Loss",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5aa6c03a04564feb99ddc2d569289f0385b5c39518e52a1ceac8d353d7e32c80",
-          "datetime": 1792585800
-        },
-        {
-          "ticker": "LLY",
-          "headline": "Investors Heavily Search Eli Lilly and Company (LLY): Here is What You Need to Know",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9e88fe87a7d9423596a101139c1d707b8a47d59da4394ed72f8eaf606c927efb",
-          "datetime": 1792584006
-        },
-        {
-          "ticker": "LLY",
-          "headline": "Bet on This New GLP-1 ETF to Gain Exposure to a Booming Market",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5c391d659b25ffd6b711ccadf5ad58a9dc0b8c96354337b9dcecaafc75fa8bd3",
-          "datetime": 1792580400
-        },
-        {
-          "ticker": "LLY",
-          "headline": "Dow Jones Futures: SpaceX, Supermicro Revive AI Stocks; Tesla, Meta On Deck",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=6316d8bc1a53650272335393d996493ed9509ba2608de169bf4dcca5da84481b",
-          "datetime": 1792557613
-        },
-        {
-          "ticker": "LLY",
-          "headline": "What Happens To Merck Stock If Keytruda Sales Stop Growing?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=ec360a4c13d51252fc8575917923e9f0301ecea05f1edc0f73085e8b26ff8f30",
-          "datetime": 1792549234
-        },
-        {
-          "ticker": "NVO",
-          "headline": "Omeros: The Trade After European Rejection",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=fd5ba99fd80c2f63d5ba2736deadddec116ab1f52109c506b1d683ac9b2233b5",
-          "datetime": 1792545898
-        },
-        {
-          "ticker": "LLY",
-          "headline": "How Investors May Respond To Novo Nordisk (CPSE:NOVO B) Obesity Drug Competition",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=d9af9314bc8f4747fa8f0c7657a135bb6eb3ceee823a926114ea043faffb5601",
-          "datetime": 1792545103
-        },
-        {
-          "ticker": "NVO",
-          "headline": "How Investors May Respond To Novo Nordisk (CPSE:NOVO B) Obesity Drug Competition",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=d9af9314bc8f4747fa8f0c7657a135bb6eb3ceee823a926114ea043faffb5601",
-          "datetime": 1792545103
-        },
-        {
-          "ticker": "VKTX",
-          "headline": "How Investors May Respond To Novo Nordisk (CPSE:NOVO B) Obesity Drug Competition",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=d9af9314bc8f4747fa8f0c7657a135bb6eb3ceee823a926114ea043faffb5601",
-          "datetime": 1792545103
-        },
-        {
-          "ticker": "LLY",
-          "headline": "Dow Jones Futures: AI Stocks Jump On SpaceX, Supermicro; Tesla, Meta On Deck",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e5dcaac51376a427519b38ac6784fef55dc5059d5c609b9b7a171102a3aacba7",
-          "datetime": 1792537721
-        },
-        {
-          "ticker": "LLY",
-          "headline": "Stephen K. Brannan, MD, and John D. Young Appointed to Slate Medicines Board of Directors",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=ab1fb432b4e0d266055f3bcc014d0cb49576b503726c50cd73c6dba0592ae40b",
-          "datetime": 1792533805
-        },
-        {
-          "ticker": "LLY",
-          "headline": "Dow Jones Futures Rise As SpaceX Crushes Views, Eyes Tesla Merger; Meta Looms",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=514e5ced8a575e9d239671a711d97708460e8f3944db5d2aee88c6e36b85e8c6",
-          "datetime": 1792532086
-        },
-        {
-          "ticker": "NVO",
-          "headline": "OpenAI acquires startup Orchestra Bio⁠ to beef up its biotech business",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=48a2cbbf1adbc6051988163a49e8a13292fcdfc3889377530faed9172a32a040",
-          "datetime": 1792528510
-        },
-        {
-          "ticker": "VKTX",
-          "headline": "Viking Therapeutics (VKTX) Stock Looks Overvalued Next To Its Book Value",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5c09b4717a799b8b7a0f26c7591e3290cf81d5111f9048c44e33637b3b0ed5cc",
-          "datetime": 1792526798
-        },
-        {
-          "ticker": "LLY",
-          "headline": "Stock Market Today: Dow Pops, Oil Falls On U.S.-Iran Hopes; Hasbro Rockets, Toys With An Entry (Live Coverage)",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=10fb269e33b023d8073c62e1faebefa902225f99bb0b26c309d18defaf3718a0",
-          "datetime": 1792525598
-        },
-        {
-          "ticker": "NVO",
-          "headline": "OpenAI acquires Orchestra Bio to boost drug development AI, Axios reports",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=c73fde257ce933701e64d302334df56883dce8baee224a95a5f24da1e2b346cc",
-          "datetime": 1792521344
-        },
-        {
-          "ticker": "VKTX",
-          "headline": "Viking Therapeutics Stock What SUNRISE Phase 3 Start Means For VK2735",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9653739dea15419755f03490e89aa366296b9a9c332893e5357a37ec9a197cd0",
-          "datetime": 1792519854
-        },
-        {
-          "ticker": "NVO",
-          "headline": "Prothena's Partnership Strategy: Growth Driver or Limitation?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=fdd9074677ed78006a9d69e256cc0a55f818b266fbf26d101ab83665e4d12ded",
-          "datetime": 1792510440
-        },
-        {
-          "ticker": "NVO",
-          "headline": "If Eli Lilly Grows At 10% a Year, Here’s What $1,000 Becomes By 2030",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a77e70b3d0d3beddb3322899f25625a5e5ab23225fe1ae07ebfcb2cf4f435ca3",
-          "datetime": 1792510239
-        },
-        {
-          "ticker": "VKTX",
-          "headline": "Prediction: $1,000 Invested in Viking Therapeutics Today Will Be Worth This Much in 5 Years",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=bba4aac5f8846c09eeff44550bbfbd035d988f5272a5584e9e6734a0ab3575db",
-          "datetime": 1792506000
-        },
-        {
-          "ticker": "VKTX",
-          "headline": "4 Biotech Stocks With Promising Late-Stage Drug Pipelines to Watch Now",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=f479ad2df5936d859f53f8c84a798333a56d9d576d6101676e3408d578046dc5",
-          "datetime": 1792503000
-        },
-        {
-          "ticker": "VKTX",
-          "headline": "Viking Therapeutics Initiates Pivotal Phase 3 Trial: Here's Why Investors Have Reason for Optimism After a Disappointing Phase 2",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=6bf0e45776a9b049bca51d68578b98cc232c32b6461a9c27ba8df6cbaaff4965",
-          "datetime": 1792502520
-        },
-        {
-          "ticker": "NVO",
-          "headline": "Can Viking Therapeutics Carve Out a Place in the Obesity Market?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=6d3876894cd0c042db64e25d208e9e3f50951b8318026ba676e4a686aecd08bc",
-          "datetime": 1792498500
-        },
-        {
-          "ticker": "VKTX",
-          "headline": "Can Viking Therapeutics Carve Out a Place in the Obesity Market?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=6d3876894cd0c042db64e25d208e9e3f50951b8318026ba676e4a686aecd08bc",
-          "datetime": 1792498500
-        },
-        {
-          "ticker": "VKTX",
-          "headline": "Canaccord Genuity Maintains Buy on Viking Therapeutics, Lowers Price Target to $106",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=553ae20752f68600f49c808685591ea0802f98f6404ae18f7a179e25956725d5",
-          "datetime": 1792496039
-        },
-        {
-          "ticker": "NVO",
-          "headline": "Oracle Joins Forces With AstraZeneca to Put AI to Work in Drug Research",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=41869e49b4ef93ec8fbcd03b69f6608eb5f6304daa53023c73805a3e769da0b9",
-          "datetime": 1792474170
-        },
-        {
-          "ticker": "NVO",
-          "headline": "Novo Nordisk (NVO) Stock Sinks As Market Gains: Here's Why",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=33c8f42aa5edf7906da1731f6c99e7fbb7c5744630d1a6ec144d682e7ec6e188",
-          "datetime": 1792442702
-        },
-        {
-          "ticker": "NVO",
-          "headline": "Eli Lilly, IBD Stock Of The Day, Rides Foundayo, Medicare Bridge To Buy Point",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=3e9d37872a7aa363f9632ab62ad8ad3e1fc6d6daffd18987063fbff581360671",
-          "datetime": 1792434205
-        },
-        {
-          "ticker": "VKTX",
-          "headline": "How Will Eli Lilly's GLP-1 Portfolio Sales Aid Upcoming Q3 Results?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=7688e7615e2be0e63ebd24484495ec690d44d087316025b66280fc3384eddd8a",
-          "datetime": 1792415700
-        },
-        {
-          "ticker": "VKTX",
-          "headline": "Viking Therapeutics Just Raised $575 Million. Here's What It Means for the Obesity Stock's Next Chapter.",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a22867852d6c8ee2105cceb6005f37d1300d097320f051adf2d4b1c839b41daa",
-          "datetime": 1792363800
-        }
-      ],
+      "headlines": [],
       "customKpis": [
         {
-          "label": "LLY 분기 매출 (SEC)",
-          "ticker": "LLY",
-          "value": 22974000000,
-          "format": "price_billions",
-          "period": "2026 Q2"
+          "label": "천연가스 현재가 ($/MMBtu)",
+          "ticker": "NG=F",
+          "value": 2.766,
+          "format": "price_usd"
         },
         {
-          "label": "LLY 매출 성장 YoY",
-          "ticker": "LLY",
-          "value": 0.477,
-          "format": "financial_pct",
-          "period": "TTM"
+          "label": "천연가스 1일 변동",
+          "ticker": "NG=F",
+          "value": -0.8602150537634415,
+          "format": "change_pct"
         },
         {
-          "label": "NVO 매출 성장 YoY",
-          "ticker": "NVO",
-          "value": 0.021,
+          "label": "GEV 매출 성장 YoY",
+          "ticker": "GEV",
+          "value": 0.219,
           "format": "financial_pct",
           "period": "TTM"
         }
@@ -1807,291 +935,80 @@
         "RIOT"
       ],
       "newsScore": 5,
-      "volumeScore": 75,
-      "priceScore": 8.3,
-      "totalScore": 30.3,
-      "prevTotalScore": 24.5,
-      "scoreDelta": 5.8,
-      "deltaDirection": "▲",
+      "volumeScore": 41.7,
+      "priceScore": 50,
+      "totalScore": 29.1,
+      "prevTotalScore": 30.3,
+      "scoreDelta": -1.2,
+      "deltaDirection": "▼",
       "tickerData": [
         {
           "ticker": "MSTR",
-          "price": 153.82,
-          "change1d": 7.777466367713,
-          "change5d": -6.216317459833627,
-          "volume": 9701751,
-          "avgVolume20d": 19242580,
-          "relativeVolume": 0.5041814039489507,
-          "marketCap": 65134632960,
+          "price": 153.48,
+          "change1d": 7.539237668161429,
+          "change5d": 7.148834014016908,
+          "volume": 22318473,
+          "avgVolume20d": 19324310,
+          "relativeVolume": 1.1549428155520172,
+          "marketCap": 64990654464,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "COIN",
-          "price": 178.865,
-          "change1d": 4.691249634182039,
-          "change5d": -6.017925951181442,
-          "volume": 2966917,
-          "avgVolume20d": 8361110,
-          "relativeVolume": 0.3548472631026263,
-          "marketCap": 47191191552,
+          "price": 177.08,
+          "change1d": 3.646473514779057,
+          "change5d": 2.4235076963376523,
+          "volume": 6677840,
+          "avgVolume20d": 8320100,
+          "relativeVolume": 0.8026153531808512,
+          "marketCap": 46720241664,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "MARA",
-          "price": 7.8099,
-          "change1d": 4.410427807486623,
-          "change5d": -17.892422601893717,
-          "volume": 14980447,
-          "avgVolume20d": 36349160,
-          "relativeVolume": 0.41212636000391756,
-          "marketCap": 3016958720,
+          "price": 7.79,
+          "change1d": 4.144385026737963,
+          "change5d": -5.34628924491702,
+          "volume": 34596078,
+          "avgVolume20d": 36148640,
+          "relativeVolume": 0.9570506110326695,
+          "marketCap": 3009271552,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "RIOT",
-          "price": 13.985,
-          "change1d": 1.561365286855482,
-          "change5d": -17.39651832788112,
-          "volume": 6476254,
-          "avgVolume20d": 17479000,
-          "relativeVolume": 0.370516276674867,
-          "marketCap": 5247996416,
+          "price": 14.02,
+          "change1d": 1.815541031227306,
+          "change5d": -7.152317194848543,
+          "volume": 16759114,
+          "avgVolume20d": 17534610,
+          "relativeVolume": 0.9557734104151732,
+          "marketCap": 5261130752,
           "newsCount48h": 0,
           "newsPrev48h": 0
         }
       ],
-      "headlines": [
-        {
-          "ticker": "MSTR",
-          "headline": "Before the Next Payout: The High-Yield Dividend Bundle to Buy Before November",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=0f75b551f555493c7ab65eb8ad6cd6aa9c7d3d4b90cf2abe9ab2d024b17f3cb0",
-          "datetime": 1792588677
-        },
-        {
-          "ticker": "COIN",
-          "headline": "10 S&P 500 Stocks Seeing The Biggest Estimate Hikes Ahead Of Earnings",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=f08741ee7143a3f80f0f50166c5189df2074240c7c982f450f312ed3947a7410",
-          "datetime": 1792582787
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Ethereum Will Benefit Most From $3 Trillion Stablecoin Boom, Spark CEO Predicts",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=f38e53a687a611647241f435179c172d49540af319bd787bb0ec316a5dac557d",
-          "datetime": 1792577193
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Pearl Crypto Price Explodes: Coinbase Buzz Fuels Mystery Rally",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9750e75ff6248ba1d756b56b465a354dd4db412e9e5946c67f89d9dbac5b83f7",
-          "datetime": 1792577193
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Reported Earlier, U.S. OCC Finalizes Information Collection To Include Weekly And Quarterly Reporting Forms By Permitted Payment Stablecoin Issuers And Foreign Payment Stablecoin Issuers Under The Stablecoins (GENIUS) Act",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=ada38a69666c2b4e48633a0c98720911193327d1dc217665dded6aedb37191b2",
-          "datetime": 1792570929
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Crypto and Beyond? Here's Why Robinhood is a Better Buy Than Coinbase Today",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=7061e038a556e4d7e75c5b9eb4150e923569d74741eed8ae03be7c2d89f7891f",
-          "datetime": 1792570802
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Robinhood To Rally Over 28%? Here Are 10 Top Analyst Forecasts For Wednesday",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=59442fd083f4d1440418a620b9703cd6b0351761227f20a3b638ced638ee25fc",
-          "datetime": 1792569127
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Needham Maintains Buy on Coinbase Global, Raises Price Target to $205",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=00bef3b267f0ebdec2510f1c1c570639bac4509e0fa85382168bebb2f7e336c4",
-          "datetime": 1792565519
-        },
-        {
-          "ticker": "COIN",
-          "headline": "SpaceX Becoming a Bitcoin Hodler? Elon Musk-Led  Rocket Company Keeps All BTC, Now Worth $1.57 Billion",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=ea1096b01d430fef50663462dc6607b895cd177f6e37167c7cf072e686fb4f50",
-          "datetime": 1792553578
-        },
-        {
-          "ticker": "COIN",
-          "headline": "What Could Coinbase Global (COIN) New Crypto Rules Mean For Stock Investors?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=923b5439904191e96cb2d01d1d5092e751de7f99a4ca387e289de4509edd0679",
-          "datetime": 1792552781
-        },
-        {
-          "ticker": "COIN",
-          "headline": "Stablecoin Transfers Hit $891 Billion in Third Quarter: Report",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=937549c1d97511558db87983fd6cb90bfd860f92dbc613946eae9c96d9df1a12",
-          "datetime": 1792536660
-        },
-        {
-          "ticker": "MSTR",
-          "headline": "Bitcoin, Ethereum, XRP, Dogecoin Gain as Oil Prices and Treasury Yields Cool: Analyst Says BTC 'Building Bottom,' but Spot Demand 'Still Weak'",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=9db38867226b91a96c813409b1b9a1c0ee73d7e583f221d2768d2dc0158dd0e3",
-          "datetime": 1792532829
-        },
-        {
-          "ticker": "MARA",
-          "headline": "What Are MARA Stock Bears Missing?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=90b9043584ffc37f5af68311895c8746ce113fb16381bd822eaff003f9a949c6",
-          "datetime": 1792530611
-        },
-        {
-          "ticker": "MARA",
-          "headline": "MARA Has Lost 64% in a Year: Piper Sandler Sees 53% Upside",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=3641a9d4c09a0e4af2c9d82e0fe51e31a2caf7da2ce4d0ba50cdf7df4718be59",
-          "datetime": 1792518300
-        },
-        {
-          "ticker": "MARA",
-          "headline": "Cryptocurrency Stocks Rise Despite Piper Sandler Price Target Cuts: MARA and Hut 8 Gain 4%, Riot Holds Flat",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=1618a249a7fc4afcdff8aa0a317a86c885ab1a8ac5696e7d17870eec4849851d",
-          "datetime": 1792515915
-        },
-        {
-          "ticker": "MSTR",
-          "headline": "Michael Saylor Says Bitcoin's Next Bull Run Has Begun, Sees It Back In 'Six Figures' Within A Year",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4ec602bf053277f226de561110a782031f20fc14d041ae5579c1a2dac9278916",
-          "datetime": 1792512259
-        },
-        {
-          "ticker": "MSTR",
-          "headline": "Stock Market Today: Dow Wavers As Oil Prices Surge; Netflix, SpaceX Mixed Ahead Of Earnings (Live Coverage)",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=330472cc71f8433d714365f94ca2fbe69ef31315a465c9f13558b35669b289c2",
-          "datetime": 1792511152
-        },
-        {
-          "ticker": "MARA",
-          "headline": "Piper Sandler cuts price targets on MARA, Riot, Galaxy and Hut 8, keeps Overweight ratings",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=60ce3bfd882f86e2ca23fa452da3bb895f39ff2bd103b6cdf79f6d056abf0a62",
-          "datetime": 1792509403
-        },
-        {
-          "ticker": "MSTR",
-          "headline": "Super League Holders Approve Metaplanet’s 2100 Bitcoin Deal, Clearing Way for U.S. BTC Treasury",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=461751377472717c7fd754a35d7b8597552cf441089596557c061be467008ecd",
-          "datetime": 1792504020
-        },
-        {
-          "ticker": "MARA",
-          "headline": "MARA, RIOT, HUT, GLXY See Price Cuts From Piper Sandler Amid AI Trade Reversal, Hotter Inflation, Pricier Debt",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=c2c4b0a819173b14df3bfd7e8dccf8bed5acd3bca1dae1b5fa2c5253596c6ef7",
-          "datetime": 1792503410
-        },
-        {
-          "ticker": "MSTR",
-          "headline": "Michael Saylor Says Bitcoin's Next Bull Run Has Begun",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=0d933da600829b779a8e16c7adaf856d75eb6526c6cad6e21ad6dbc6ee4320a5",
-          "datetime": 1792500371
-        },
-        {
-          "ticker": "MSTR",
-          "headline": "Strategy Spent 3 Times More on Stock Buybacks Than Bitcoin in 5 Weeks. So Who Is Buying BTC?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=d798bd56cf1fa51876c52721ac4864d0613e0d4344f0b74cd57d034ab1451a26",
-          "datetime": 1792499429
-        },
-        {
-          "ticker": "MSTR",
-          "headline": "Bitcoin Stocks’ Narrow Strength Leaves Miners Behind",
-          "source": "ChartMill",
-          "url": "https://finnhub.io/api/news?id=9eaf32ae46e200a1cdbd5b4b1d51460882e1c710492b967e4d76f14a452251f7",
-          "datetime": 1792497982
-        },
-        {
-          "ticker": "MARA",
-          "headline": "Bitcoin Stocks’ Narrow Strength Leaves Miners Behind",
-          "source": "ChartMill",
-          "url": "https://finnhub.io/api/news?id=9eaf32ae46e200a1cdbd5b4b1d51460882e1c710492b967e4d76f14a452251f7",
-          "datetime": 1792497982
-        },
-        {
-          "ticker": "MSTR",
-          "headline": "Strategy (MSTR) Stock Pops: What's Going On?",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=ce0cb59f9e2b9abb5b140359d06456e9c9f857baebb135294cb2c934bfc9e3bb",
-          "datetime": 1792495665
-        },
-        {
-          "ticker": "MSTR",
-          "headline": "What Capital Group Core Balanced ETF (CGBL) Bought: JNJ Leads on Oct. 16",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=ad76cdcb6c9d7a852b61ccd0f3f0f3a9c3f8b2c05258a16d1260f4ebd29a3cdb",
-          "datetime": 1792494339
-        },
-        {
-          "ticker": "MARA",
-          "headline": "Piper Sandler Maintains Overweight on MARA Holdings, Lowers Price Target to $11",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=c29ccbf4c150b2d8294fca3e6f481bfdcb7311e1ee545342bbbcda7ae19c6c0c",
-          "datetime": 1792487887
-        },
-        {
-          "ticker": "MARA",
-          "headline": "MARA Holdings (MARA) Mined More Bitcoin, but Revenue Fell 27%",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=17524453f538450efdb57ed27046d91b12920b6b55710e7f8eb3f515079980a8",
-          "datetime": 1792438875
-        },
-        {
-          "ticker": "MARA",
-          "headline": "Michael Saylor Calls Bitcoin Bull Market Return, While MARA Moves 1,000 BTC to Exchanges",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=32d41b83ffbadbece06b10a5e97c8c3efd6fd5fce0f0f2dae420384b7a3fbd88",
-          "datetime": 1792406535
-        },
-        {
-          "ticker": "MARA",
-          "headline": "MARA Selling Bitcoin? Exchange Deposits Put 1,000 BTC Under Watch",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=ec94f42ab06a50bc39062720a79874c894bb0c8495a52500c64cd0fdca3c1ba1",
-          "datetime": 1792403662
-        }
-      ],
+      "headlines": [],
       "customKpis": [
         {
           "label": "비트코인 현재가 (USD)",
           "ticker": "BTC-USD",
-          "value": 84442.46,
+          "value": 81682.65,
           "format": "price_usd"
         },
         {
           "label": "BTC 1일 변동",
           "ticker": "BTC-USD",
-          "value": 1.8113304366257483,
+          "value": -2.787034343817118,
           "format": "change_pct"
         },
         {
           "label": "이더리움 현재가 (USD)",
           "ticker": "ETH-USD",
-          "value": 2507.09,
+          "value": 2396.76,
           "format": "price_usd"
         }
       ]
@@ -2109,285 +1026,74 @@
       ],
       "newsScore": 5,
       "volumeScore": 50,
-      "priceScore": 41.7,
-      "totalScore": 29.9,
-      "prevTotalScore": 18.3,
-      "scoreDelta": 11.6,
-      "deltaDirection": "▲",
+      "priceScore": 33.3,
+      "totalScore": 27.8,
+      "prevTotalScore": 29.9,
+      "scoreDelta": -2.1,
+      "deltaDirection": "▼",
       "tickerData": [
         {
           "ticker": "CRWD",
-          "price": 236.075,
-          "change1d": 3.82856137573118,
-          "change5d": -12.955092624667191,
-          "volume": 3230027,
-          "avgVolume20d": 8899970,
-          "relativeVolume": 0.3629256053672091,
-          "marketCap": 241725423616,
+          "price": 239.34,
+          "change1d": 5.264546773980736,
+          "change5d": -3.9913342758293835,
+          "volume": 9332356,
+          "avgVolume20d": 8957770,
+          "relativeVolume": 1.0418168807638508,
+          "marketCap": 245068562432,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "PANW",
-          "price": 348.495,
-          "change1d": 2.4141883155048878,
-          "change5d": -14.293630248213685,
-          "volume": 1334140,
-          "avgVolume20d": 5080530,
-          "relativeVolume": 0.2625985871552771,
-          "marketCap": 285068918784,
+          "price": 347.25,
+          "change1d": 2.048313153873289,
+          "change5d": -7.409878389439408,
+          "volume": 5138227,
+          "avgVolume20d": 5207840,
+          "relativeVolume": 0.9866330378813482,
+          "marketCap": 284050489344,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "ZS",
-          "price": 225.985,
-          "change1d": 5.349400960328201,
-          "change5d": -6.188230966786342,
-          "volume": 884344,
-          "avgVolume20d": 2704900,
-          "relativeVolume": 0.3269414765795408,
-          "marketCap": 36847919104,
+          "price": 231.33,
+          "change1d": 7.84112628781876,
+          "change5d": 4.773770943170668,
+          "volume": 2762432,
+          "avgVolume20d": 2712840,
+          "relativeVolume": 1.0182804735996225,
+          "marketCap": 37719445504,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "FTNT",
-          "price": 172.7,
-          "change1d": 1.0355116129409594,
-          "change5d": -10.395262320236686,
-          "volume": 1254944,
-          "avgVolume20d": 3830750,
-          "relativeVolume": 0.3275974678587744,
-          "marketCap": 126712348672,
+          "price": 174.05,
+          "change1d": 1.8253086058620513,
+          "change5d": -5.43330607671212,
+          "volume": 3064033,
+          "avgVolume20d": 3753440,
+          "relativeVolume": 0.8163266230444606,
+          "marketCap": 127702867968,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "S",
-          "price": 22.79,
-          "change1d": 3.590909090909087,
-          "change5d": -8.371512743527546,
-          "volume": 3055181,
-          "avgVolume20d": 13650310,
-          "relativeVolume": 0.22381770084342406,
-          "marketCap": 7932039680,
+          "price": 22.77,
+          "change1d": 3.4999999999999982,
+          "change5d": -0.2191027069640459,
+          "volume": 14398130,
+          "avgVolume20d": 14286720,
+          "relativeVolume": 1.0077981510101688,
+          "marketCap": 7925078528,
           "newsCount48h": 0,
           "newsPrev48h": 0
         }
       ],
-      "headlines": [
-        {
-          "ticker": "CRWD",
-          "headline": "CrowdStrike stock rises on expanded NVIDIA AI security partnership",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=7586d173ba394cb37e2720b4e2df8e3bb8043bcd2cc9553186c3d5cb62a354f8",
-          "datetime": 1792584777
-        },
-        {
-          "ticker": "CRWD",
-          "headline": "CrowdStrike and NVIDIA Expand AI Agent Security from Software to Silicon",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=ce15c66231695ebd11062dd64f33c69ce2e4a3009143e53dadc3d6630d1868d0",
-          "datetime": 1792582200
-        },
-        {
-          "ticker": "CRWD",
-          "headline": "Will AI Agent Growth Boost CrowdStrike's Endpoint Demand?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=f7ee90e2ddf9ccc73b0937be77046abc708681a0ebca96b83d9dd41b1a5b7b3b",
-          "datetime": 1792580700
-        },
-        {
-          "ticker": "PANW",
-          "headline": "Will AI Agent Growth Boost CrowdStrike's Endpoint Demand?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=f7ee90e2ddf9ccc73b0937be77046abc708681a0ebca96b83d9dd41b1a5b7b3b",
-          "datetime": 1792580700
-        },
-        {
-          "ticker": "CRWD",
-          "headline": "NVIDIA Launches OpenShell Reference Architecture for Safe AI Agents",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=0e48e2dac20dbfbbc3e64457ed97d4186684e75f30a76031052bd6887d464073",
-          "datetime": 1792576080
-        },
-        {
-          "ticker": "ZS",
-          "headline": "This Equinix Analyst Begins Coverage On A Bullish Note; Here Are Top 5 Initiations For Wednesday",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=2d1e65830ef9d6f941d93d2ef56a09d6955554d2651864a6ab843a57e7ebb6ad",
-          "datetime": 1792574624
-        },
-        {
-          "ticker": "ZS",
-          "headline": "DA Davidson Initiates Coverage On Zscaler with Neutral Rating, Announces Price Target of $215",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=4c85067f6ff52d5f6132f3d0be051479200fe74467281d8aee67bc11cfd847fe",
-          "datetime": 1792570602
-        },
-        {
-          "ticker": "ZS",
-          "headline": "Zscaler Supports Nvidia OpenShell Reference Architecture For Safe AI Agents",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=8f185e447e8cea8444dc8783c7663f50bd133491a7a5f1266d7bc4113f8186d1",
-          "datetime": 1792568728
-        },
-        {
-          "ticker": "CRWD",
-          "headline": "Hesai Says Co Selected By NVIDIA As Lidar Partner For NVIDIA DRIVE Hyperion 10",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=188b4d8ee71a8e52b66809d406cc7c293d8b00b7f1c9f28a4df221dd0b53d09c",
-          "datetime": 1792567955
-        },
-        {
-          "ticker": "CRWD",
-          "headline": "The Ithaka Group Q3 2026 Portfolio Review",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=7ed8143d513c7418fe4ccdd8805188eb848aa008fce727befa4a2db4a3caed9c",
-          "datetime": 1792555560
-        },
-        {
-          "ticker": "PANW",
-          "headline": "Are You Sure You Understand Cloudflare Stock's Risk?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=c6aefa83dd6239faedd4aad50043d91380fa43a94aaf949d37374c14ed2c0f61",
-          "datetime": 1792544661
-        },
-        {
-          "ticker": "ZS",
-          "headline": "Are You Sure You Understand Cloudflare Stock's Risk?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=c6aefa83dd6239faedd4aad50043d91380fa43a94aaf949d37374c14ed2c0f61",
-          "datetime": 1792544661
-        },
-        {
-          "ticker": "PANW",
-          "headline": "What Does GoDaddy Offer That Akamai Does Not?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9e98c633669b6abc9396a18c88400adc8ff4ada3955bf36f91d6ff2dce9ee05a",
-          "datetime": 1792529258
-        },
-        {
-          "ticker": "PANW",
-          "headline": "Palo Alto Networks (PANW) Stock Dips While Market Gains: Key Facts",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=45da2146fd378308047efaa0263e92ac6c35a07710f652e0ea4fddb4805787e1",
-          "datetime": 1792529104
-        },
-        {
-          "ticker": "PANW",
-          "headline": "Small caps pops as market rally broadens beyond Big Tech",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=01d44bae4113a6f983cb1fa1539024539ab713f271a6ee4d6cadae9e501d1b5a",
-          "datetime": 1792527636
-        },
-        {
-          "ticker": "ZS",
-          "headline": "The Conference Board Honors Six CEOs at 2026 Distinguished Leadership Awards Celebration",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=961b64ba469d3d392a81246f421daf0af85c5f8a884f7e44150bc9b3204b6979",
-          "datetime": 1792525200
-        },
-        {
-          "ticker": "CRWD",
-          "headline": "Cloudflare Just Dropped 15% in a Week: Is It Time to Sell, or Load Up?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a55c76791267cc7d793b3e426d937b3758725414f70835abede6a9d8bebebd37",
-          "datetime": 1792522635
-        },
-        {
-          "ticker": "PANW",
-          "headline": "Cloudflare Just Dropped 15% in a Week: Is It Time to Sell, or Load Up?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a55c76791267cc7d793b3e426d937b3758725414f70835abede6a9d8bebebd37",
-          "datetime": 1792522635
-        },
-        {
-          "ticker": "CRWD",
-          "headline": "CrowdStrike vs. Docusign: Which Technology Stock Is a Better Buy in 2026?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=1bdd2df814494e4e5ac7bf6e6337e85a7e1d252bb7516a938a70d64bc2ac8f94",
-          "datetime": 1792522535
-        },
-        {
-          "ticker": "CRWD",
-          "headline": "Another CrowdStrike Stock Bull Signal Now Flashing",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9ab5dc7fb80f59ded93ca37e6f1a0144740bd11721f32fc879729df0c061df27",
-          "datetime": 1792518961
-        },
-        {
-          "ticker": "PANW",
-          "headline": "Palo Alto Networks (PANW) Pays a Large Part of Its Wage Bill in Stock. What Does That Do to Profit?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=42fb440bc2c86e84f87aba2b0c2d6c875a4e3d0001fdd8621a71f9725e636d61",
-          "datetime": 1792507779
-        },
-        {
-          "ticker": "CRWD",
-          "headline": "Is CrowdStrike (CRWD) Still Priced for Perfection After the October Selloff?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5e3cf8eef1945e947af0412ed54c2fe1e7e94bd5d48f72aa6c2827eb17bd5479",
-          "datetime": 1792507473
-        },
-        {
-          "ticker": "PANW",
-          "headline": "Can Fortinet's SASE Momentum Propel the Stock to New Highs?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=314cf0976d16ddb0d611768244f08df4c8aadade7ae4d6bef18cc05cedab4ce2",
-          "datetime": 1792500420
-        },
-        {
-          "ticker": "ZS",
-          "headline": "Can Fortinet's SASE Momentum Propel the Stock to New Highs?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=314cf0976d16ddb0d611768244f08df4c8aadade7ae4d6bef18cc05cedab4ce2",
-          "datetime": 1792500420
-        },
-        {
-          "ticker": "PANW",
-          "headline": "4 Stocks With Demand So Sticky That the AI Sell-Off Barely Touched Them at All",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=b4f3cc7772bf4e063f1a4777c633f985fbd6e9c834c1f93f027205b24fdd1bae",
-          "datetime": 1792495500
-        },
-        {
-          "ticker": "PANW",
-          "headline": "How Much Of Cisco Stock's Rise Did The Business Earn?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=87175ad3735639b2db4ec1a9f59ed652058d37a0806504344e7cda2eb253c6aa",
-          "datetime": 1792494157
-        },
-        {
-          "ticker": "ZS",
-          "headline": "3 Secure AI Stocks Worth Watching After The DeepSeek Ban",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=45f30a428b9529aadb97918a40b157c7efb599e19ae00acf86007105de2a2d6c",
-          "datetime": 1792483973
-        },
-        {
-          "ticker": "ZS",
-          "headline": "Zscaler Stock Has Rebounded 85% Since April. Here’s Where It Could Go by 2031",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=60122a26ad3870fe347432809c3f3f646a67b5189b5599daa6d9f55e42c5bec6",
-          "datetime": 1792468092
-        },
-        {
-          "ticker": "ZS",
-          "headline": "What Needs To Be True To Buy Cloudflare Stock?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=88aec58154004a1f184575706f5ab0a033c3399c1e6e81c86da4128cccd7c363",
-          "datetime": 1792447179
-        },
-        {
-          "ticker": "ZS",
-          "headline": "Dan Ives Sees Cybersecurity Spending Doubling: 5 Stocks That Could Benefit",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=61135c3bfb4d6d20f81b82b948697b410d4d633164052aed94a87a0ee5e44d52",
-          "datetime": 1792427006
-        }
-      ],
+      "headlines": [],
       "customKpis": [
         {
           "label": "CRWD 매출 성장 YoY",
@@ -2413,6 +1119,188 @@
       ]
     },
     {
+      "id": "glp1",
+      "name": "비만치료제 (GLP-1)",
+      "description": "세마글루타이드·티르제파타이드 등 GLP-1 계열 비만·당뇨 치료제 시장 급성장. 차세대 파이프라인 경쟁.",
+      "tickers": [
+        "LLY",
+        "NVO",
+        "VKTX",
+        "AMGN"
+      ],
+      "newsScore": 5,
+      "volumeScore": 8.3,
+      "priceScore": 83.3,
+      "totalScore": 25.7,
+      "prevTotalScore": 30.8,
+      "scoreDelta": -5.1,
+      "deltaDirection": "▼",
+      "tickerData": [
+        {
+          "ticker": "LLY",
+          "price": 1270.75,
+          "change1d": -1.0057180250222084,
+          "change5d": 5.1301363623785825,
+          "volume": 1874070,
+          "avgVolume20d": 2370710,
+          "relativeVolume": 0.7905100159867718,
+          "marketCap": 1133180354560,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "NVO",
+          "price": 39.06,
+          "change1d": -0.7369758576874184,
+          "change5d": 2.4659036404641723,
+          "volume": 6721708,
+          "avgVolume20d": 9803370,
+          "relativeVolume": 0.6856527908260118,
+          "marketCap": 172376096768,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "VKTX",
+          "price": 26.38,
+          "change1d": -1.2354923249719274,
+          "change5d": 3.572830278542552,
+          "volume": 3272419,
+          "avgVolume20d": 5243300,
+          "relativeVolume": 0.6241143936070795,
+          "marketCap": 3354619136,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "AMGN",
+          "price": 438.34,
+          "change1d": -0.13669294208776206,
+          "change5d": 2.87015357695449,
+          "volume": 2263159,
+          "avgVolume20d": 2675110,
+          "relativeVolume": 0.8460059586334767,
+          "marketCap": 236980633600,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "LLY 분기 매출 (SEC)",
+          "ticker": "LLY",
+          "value": 22974000000,
+          "format": "price_billions",
+          "period": "2026 Q2"
+        },
+        {
+          "label": "LLY 매출 성장 YoY",
+          "ticker": "LLY",
+          "value": 0.477,
+          "format": "financial_pct",
+          "period": "TTM"
+        },
+        {
+          "label": "NVO 매출 성장 YoY",
+          "ticker": "NVO",
+          "value": 0.021,
+          "format": "financial_pct",
+          "period": "TTM"
+        }
+      ]
+    },
+    {
+      "id": "quantum",
+      "name": "양자컴퓨팅",
+      "description": "양자 우위 달성 기대감과 정부·빅테크 투자 확대. 소형 순수 플레이 종목 중심의 투기적 테마.",
+      "tickers": [
+        "IONQ",
+        "RGTI",
+        "QBTS",
+        "QUBT"
+      ],
+      "newsScore": 5,
+      "volumeScore": 0,
+      "priceScore": 91.7,
+      "totalScore": 24.9,
+      "prevTotalScore": 14.5,
+      "scoreDelta": 10.4,
+      "deltaDirection": "▲",
+      "tickerData": [
+        {
+          "ticker": "IONQ",
+          "price": 32.28,
+          "change1d": 3.2629558541266777,
+          "change5d": 2.7371059863611826,
+          "volume": 16657792,
+          "avgVolume20d": 27310320,
+          "relativeVolume": 0.6099449585358209,
+          "marketCap": 13077778432,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "RGTI",
+          "price": 12.05,
+          "change1d": 3.3447684391080665,
+          "change5d": 3.167807156607036,
+          "volume": 10136350,
+          "avgVolume20d": 15665640,
+          "relativeVolume": 0.6470434658271222,
+          "marketCap": 4021913344,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "QBTS",
+          "price": 12.1,
+          "change1d": 2.716468590831921,
+          "change5d": 0.5818840403352716,
+          "volume": 11238358,
+          "avgVolume20d": 15637070,
+          "relativeVolume": 0.718699730831927,
+          "marketCap": 4593482240,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        },
+        {
+          "ticker": "QUBT",
+          "price": 6.82,
+          "change1d": 4.923076923076927,
+          "change5d": 8.082412575382401,
+          "volume": 5146505,
+          "avgVolume20d": 7487700,
+          "relativeVolume": 0.6873278843970779,
+          "marketCap": 1543685632,
+          "newsCount48h": 0,
+          "newsPrev48h": 0
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "양자컴퓨팅 ETF (QTUM)",
+          "ticker": "QTUM",
+          "value": 141.79,
+          "format": "price_usd"
+        },
+        {
+          "label": "QTUM 1일 변동",
+          "ticker": "QTUM",
+          "value": 1.7071946058388892,
+          "format": "change_pct"
+        },
+        {
+          "label": "IONQ 매출 성장 YoY",
+          "ticker": "IONQ",
+          "value": 2.868,
+          "format": "financial_pct",
+          "period": "TTM"
+        }
+      ]
+    },
+    {
       "id": "semicap",
       "name": "반도체 장비",
       "description": "첨단 노드 팹 투자 싸이클. EUV 리소그래피, 식각·증착 장비. 온쇼어링 및 중국 수출 규제 영향.",
@@ -2424,273 +1312,62 @@
       ],
       "newsScore": 5,
       "volumeScore": 58.3,
-      "priceScore": 25,
-      "totalScore": 28.7,
-      "prevTotalScore": 31.6,
-      "scoreDelta": -2.9,
+      "priceScore": 0,
+      "totalScore": 22.4,
+      "prevTotalScore": 28.7,
+      "scoreDelta": -6.3,
       "deltaDirection": "▼",
       "tickerData": [
         {
           "ticker": "ASML",
-          "price": 1677.0975,
-          "change1d": 2.8364217213215377,
-          "change5d": -5.060080770955429,
-          "volume": 697156,
-          "avgVolume20d": 1607650,
-          "relativeVolume": 0.4336491151681025,
-          "marketCap": 646383140864,
+          "price": 1676.69,
+          "change1d": 2.811434598121222,
+          "change5d": 1.6175722064393938,
+          "volume": 1239652,
+          "avgVolume20d": 1607300,
+          "relativeVolume": 0.771263609780377,
+          "marketCap": 646226051072,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "AMAT",
-          "price": 411.11,
-          "change1d": 1.513654995308409,
-          "change5d": -12.764944962653699,
-          "volume": 1660630,
-          "avgVolume20d": 7174450,
-          "relativeVolume": 0.23146443281366516,
-          "marketCap": 326255837184,
+          "price": 408.94,
+          "change1d": 0.9778260654847102,
+          "change5d": -8.4387528892725,
+          "volume": 6233155,
+          "avgVolume20d": 7426910,
+          "relativeVolume": 0.8392662628199345,
+          "marketCap": 324533747712,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "LRCX",
-          "price": 266.51,
-          "change1d": 1.161510723097363,
-          "change5d": -12.507048911234598,
-          "volume": 3656798,
-          "avgVolume20d": 8780740,
-          "relativeVolume": 0.41645669954924075,
-          "marketCap": 333517127680,
+          "price": 260.81,
+          "change1d": -1.0020876826722287,
+          "change5d": -9.100102693155934,
+          "volume": 15261196,
+          "avgVolume20d": 9729180,
+          "relativeVolume": 1.5686004370358035,
+          "marketCap": 326383992832,
           "newsCount48h": 0,
           "newsPrev48h": 0
         },
         {
           "ticker": "KLAC",
-          "price": 164.4,
-          "change1d": 1.6446148138988477,
-          "change5d": -12.09782310154127,
-          "volume": 2004179,
-          "avgVolume20d": 10640330,
-          "relativeVolume": 0.1883568460752627,
-          "marketCap": 214543056896,
+          "price": 163.43,
+          "change1d": 1.0448868554470123,
+          "change5d": -8.601311499807313,
+          "volume": 8935229,
+          "avgVolume20d": 10891790,
+          "relativeVolume": 0.820363686776921,
+          "marketCap": 213277196288,
           "newsCount48h": 0,
           "newsPrev48h": 0
         }
       ],
-      "headlines": [
-        {
-          "ticker": "ASML",
-          "headline": "ASML vs. Dell Technologies: Which Tech Stock Is a Better Buy in 2026?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=b656bf7c38b27b7821ec20fad5f1992d730ca33302cb921cc8321d67b5fb446e",
-          "datetime": 1792587902
-        },
-        {
-          "ticker": "ASML",
-          "headline": "Zacks Investment Ideas feature highlights: Taiwan Semiconductor Manufacturing, ASML and BWX Technologies",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=15707185a21230d63d4127b9e760898f2b2db7ab34cb6510f3bf54d0ba2e8d62",
-          "datetime": 1792585560
-        },
-        {
-          "ticker": "LRCX",
-          "headline": "The Zacks Analyst Blog Highlights Microsoft, Palantir Technologies, Micron Technology, Lam Research and IonQ",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=cf57766ee69e8528d9a62b71b0d7325d2db32f59edacaf60141bda5efa03f667",
-          "datetime": 1792584960
-        },
-        {
-          "ticker": "LRCX",
-          "headline": "Chip Equipment Stocks Face Earnings Test as Strong Fundamentals Meet Weak Momentum",
-          "source": "ChartMill",
-          "url": "https://finnhub.io/api/news?id=15fd6acc1faf6e64f9a332d67c6c8eb230b5328a9da8ce6103316ce164cfd3b1",
-          "datetime": 1792584389
-        },
-        {
-          "ticker": "ASML",
-          "headline": "Investors Heavily Search ASML Holding N.V. (ASML): Here is What You Need to Know",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=c18bec3462e882f287945413482fbc372b24837808dbd5ef4637af7e259e5b51",
-          "datetime": 1792584005
-        },
-        {
-          "ticker": "LRCX",
-          "headline": "Meta, Tesla On Deck Wednesday As AI Spending, Auto Demand Face Test",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=0525866144638cbf100085dcc0a4ee68a96516d61352555e3f65b08a322853ae",
-          "datetime": 1792580028
-        },
-        {
-          "ticker": "AMAT",
-          "headline": "Applied Materials Slides After Targeting $12 Billion in Services by 2030",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=360fedd8c9bd18938e1cd45cba424ba9086f86db4414811d6f1642331a537d91",
-          "datetime": 1792578498
-        },
-        {
-          "ticker": "ASML",
-          "headline": "$1000 Invested In ASML Holding 15 Years Ago Would Be Worth This Much Today",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=cfcaf0a19b6cbfdfda037c9a78f78100f202a96ed2c13c2f8a9e94ddc223bdb3",
-          "datetime": 1792577719
-        },
-        {
-          "ticker": "ASML",
-          "headline": "ASML Climbs After Record Q3 as CFO Fights China Curbs: “Common Sense Will Prevail”",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=b80fbecc9d6c7e486e34a72c594428ee7da3c1b7b76f5c71024a2dffb7a5cad9",
-          "datetime": 1792577522
-        },
-        {
-          "ticker": "ASML",
-          "headline": "The massive risk hiding inside your S&P 500 index fund",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=917a8b7559ed671bc269c4026f0411980c8de8f45d8d2dc9ed87ca3443dd097b",
-          "datetime": 1792576800
-        },
-        {
-          "ticker": "ASML",
-          "headline": "ASML: New Pricing Power Makes The 28x Multiple A Bargain",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=df4d7adf1649fc99c7e1d9995894e733861ea5a087f1462aaffac448f75ad0b5",
-          "datetime": 1792572256
-        },
-        {
-          "ticker": "LRCX",
-          "headline": "Stock Market Today: S&P 500, Nasdaq 100, Dow Jones Futures Gains as Iran Prolongs US Talks Ahead of Midterms— NFLX, SPCX, SMCI in Focus (UPDATED)",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=a4f8886dfc8371b367c365ad6a0f71941832631b0a0949c68ebfdbec6e2536bd",
-          "datetime": 1792571244
-        },
-        {
-          "ticker": "LRCX",
-          "headline": "Lam Research Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=4e2ed73dd1f7c26cad8b7c1dd00b71988ae5d1c765cba3c48132cca4dcfccecc",
-          "datetime": 1792571227
-        },
-        {
-          "ticker": "LRCX",
-          "headline": "The Ithaka Group Q3 2026 Portfolio Review",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=7ed8143d513c7418fe4ccdd8805188eb848aa008fce727befa4a2db4a3caed9c",
-          "datetime": 1792555560
-        },
-        {
-          "ticker": "LRCX",
-          "headline": "Stock Market: Will S&P 500 Open Up or Down Today?",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=61ea5c06df4ddd9672563c3195bfe4c4dc81483d84bb3a7c0ba5c62f69d6dd0e",
-          "datetime": 1792552644
-        },
-        {
-          "ticker": "ASML",
-          "headline": "Asian chip stocks rally as Super Micro forecast revives AI demand optimism",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=f3d227929911ef6cf3f96be8e92ea5764f1f723b1ea91e837a5677fbdbb05c2d",
-          "datetime": 1792550334
-        },
-        {
-          "ticker": "AMAT",
-          "headline": "Asian chip stocks rally as Super Micro forecast revives AI demand optimism",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=f3d227929911ef6cf3f96be8e92ea5764f1f723b1ea91e837a5677fbdbb05c2d",
-          "datetime": 1792550334
-        },
-        {
-          "ticker": "LRCX",
-          "headline": "Asian chip stocks rally as Super Micro forecast revives AI demand optimism",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=f3d227929911ef6cf3f96be8e92ea5764f1f723b1ea91e837a5677fbdbb05c2d",
-          "datetime": 1792550334
-        },
-        {
-          "ticker": "ASML",
-          "headline": "CRWV, NBIS, NVDA Jump Overnight: Musk Says SpaceX Could Rent Compute ‘Several Times Over,’ Analyst Dismisses Glut Fears",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=8714a697c5e92c2f036fbcda9ef6255bf1aa83e90a23e16abc6e04423346e028",
-          "datetime": 1792550240
-        },
-        {
-          "ticker": "ASML",
-          "headline": "ASML Just Announced Fantastic News for Investors in AI Stocks",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=65ac30a4f1d2621054a16ce8d522fcaa91da121242ae9e192baabd062408f419",
-          "datetime": 1792535402
-        },
-        {
-          "ticker": "AMAT",
-          "headline": "Applied Materials (AMAT) Stock Sinks As Market Gains: What You Should Know",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=ec992877da1c7afee5f231e20d5bb596a3347731454bf9c0aa2b25431df16a4c",
-          "datetime": 1792529103
-        },
-        {
-          "ticker": "LRCX",
-          "headline": "S&P 500 Top Movers: EFX and HAS Lead Today's Gainers, GM and DVA Fall",
-          "source": "ChartMill",
-          "url": "https://finnhub.io/api/news?id=9767c866ea027121f6e583a1c9d55c71caf1930dcf32f3011cf51a1089f09880",
-          "datetime": 1792523164
-        },
-        {
-          "ticker": "LRCX",
-          "headline": "S&P 500 Top Movers: Gainers and Losers From Today's US Session",
-          "source": "ChartMill",
-          "url": "https://finnhub.io/api/news?id=e11728fc8f5fa19627c71da56097d365124708caa38ac808ec39585063e67696",
-          "datetime": 1792514161
-        },
-        {
-          "ticker": "AMAT",
-          "headline": "ASML’s Dividend Is the Most Overlooked Part of the AI Chip Trade",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=319dfb4f300107e0c59bd2e8a39e74f95a53f5cf7bd8cb4c9f3c502169bc2f58",
-          "datetime": 1792512904
-        },
-        {
-          "ticker": "AMAT",
-          "headline": "Chip stocks shrug off a scary morning, but history says the shakeout isn't over",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=58c482c636690ebebc39a19436992b3c7a8b8b3a07d109fcd0c9ac58fc94fb03",
-          "datetime": 1792510942
-        },
-        {
-          "ticker": "AMAT",
-          "headline": "How Do You Invest For A Crash And A Rally?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=433fccfc541bb2e69c68c28c29f19b5a5e76c37a3e0e7720d168d73657a91229",
-          "datetime": 1792496959
-        },
-        {
-          "ticker": "AMAT",
-          "headline": "E-Beam Wafer Inspection Systems Market Forecasts Growth from $1.3 Billion (2024) to $3.6 Billion by 2030, Profiling KLA, Applied Materials, ASML, Hitachi High-Technologies & 14 Other Key Players",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=1515c91d1d6a396f26b3785313819bb1206e2357b1b0ea846ed18bd227f9a44c",
-          "datetime": 1792485240
-        },
-        {
-          "ticker": "AMAT",
-          "headline": "Flexible Electronics - Global Strategic Business Report: Foldable Phones and Wearables Push Flexible Electronics Toward an $89 Billion Market",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=7530e5e057dcd8188871ff6ac8276ce0817c4b7781cbeb19684fbf3b79eeeb67",
-          "datetime": 1792484760
-        },
-        {
-          "ticker": "AMAT",
-          "headline": "Global chip stocks tumble on AI investment worries",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e7e4b9896048a671b81af074030d78fff862e4c6a571bd4bbbffbeffdcc2b5f7",
-          "datetime": 1792483519
-        },
-        {
-          "ticker": "AMAT",
-          "headline": "How EPIC Center Launch Will Impact Applied Materials Stock",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=54f7c9d0fbfb6ab429fd66346f41cd75d10d2fc4351fbef897f30e010dc60438",
-          "datetime": 1792448056
-        }
-      ],
+      "headlines": [],
       "customKpis": [
         {
           "label": "ASML 매출 성장 YoY",
@@ -2710,892 +1387,6 @@
           "label": "AMAT 매출 성장 YoY",
           "ticker": "AMAT",
           "value": 0.248,
-          "format": "financial_pct",
-          "period": "TTM"
-        }
-      ]
-    },
-    {
-      "id": "nuclear-uranium",
-      "name": "원자력/우라늄",
-      "description": "AI 데이터센터 전력 수요 + 탈탄소 정책으로 재조명받는 원자력. SMR, 우라늄 채굴, 유틸리티.",
-      "tickers": [
-        "CCJ",
-        "LEU",
-        "SMR",
-        "OKLO",
-        "VST",
-        "CEG"
-      ],
-      "newsScore": 58.3,
-      "volumeScore": 8.3,
-      "priceScore": 0,
-      "totalScore": 26.2,
-      "prevTotalScore": 32.1,
-      "scoreDelta": -5.9,
-      "deltaDirection": "▼",
-      "tickerData": [
-        {
-          "ticker": "CCJ",
-          "price": 82.38,
-          "change1d": 2.3226928331884116,
-          "change5d": -6.546720011321437,
-          "volume": 879174,
-          "avgVolume20d": 3195450,
-          "relativeVolume": 0.27513307984790875,
-          "marketCap": 35879206912,
-          "newsCount48h": 5,
-          "newsPrev48h": 5
-        },
-        {
-          "ticker": "LEU",
-          "price": 110.63,
-          "change1d": 0.6825627957772115,
-          "change5d": -18.170987300932914,
-          "volume": 254870,
-          "avgVolume20d": 998400,
-          "relativeVolume": 0.25527844551282053,
-          "marketCap": 2262727168,
-          "newsCount48h": 9,
-          "newsPrev48h": 7
-        },
-        {
-          "ticker": "SMR",
-          "price": 5.58,
-          "change1d": 0,
-          "change5d": -14.021569792063726,
-          "volume": 7621254,
-          "avgVolume20d": 33379590,
-          "relativeVolume": 0.22832077925462835,
-          "marketCap": 2289973504,
-          "newsCount48h": 16,
-          "newsPrev48h": 4
-        },
-        {
-          "ticker": "OKLO",
-          "price": 28.03,
-          "change1d": 2.001455604075694,
-          "change5d": -13.530525649787393,
-          "volume": 2093827,
-          "avgVolume20d": 10470820,
-          "relativeVolume": 0.19996781531914407,
-          "marketCap": 5214074880,
-          "newsCount48h": 11,
-          "newsPrev48h": 4
-        },
-        {
-          "ticker": "VST",
-          "price": 155.8,
-          "change1d": 3.645556146886654,
-          "change5d": -7.415615447691234,
-          "volume": 1734458,
-          "avgVolume20d": 6966880,
-          "relativeVolume": 0.24895763957467332,
-          "marketCap": 52291964928,
-          "newsCount48h": 13,
-          "newsPrev48h": 7
-        },
-        {
-          "ticker": "CEG",
-          "price": 266.75,
-          "change1d": 3.0559418946067165,
-          "change5d": -12.491974420907331,
-          "volume": 874902,
-          "avgVolume20d": 4186390,
-          "relativeVolume": 0.2089872181043811,
-          "marketCap": 94511497216,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        }
-      ],
-      "headlines": [
-        {
-          "ticker": "LEU",
-          "headline": "HC Wainwright & Co. Reiterates Buy on Centrus Energy, Maintains $300 Price Target",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=4b8f488c29add80229a4c1c9a614054bc45b894e316168f8c5e09873086e5b85",
-          "datetime": 1792570289
-        },
-        {
-          "ticker": "SMR",
-          "headline": "Why Did CRWV, SMR, FRMI Stocks Plunge To 52-Week Lows Today?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=76b4a4110f426aef66b6b8d3a43c1703775f0bc8310493c520179f1cc7798f54",
-          "datetime": 1792558071
-        },
-        {
-          "ticker": "SMR",
-          "headline": "BE Stock Leads Energy Rally After SpaceX CEO Elon Musk Says AI’s Real Constraint Is Power And Cooling, Not Chips",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=b2dae608d19f7468857e723c7cb48b098105a7e402e363e493d2330a93b099f4",
-          "datetime": 1792545801
-        },
-        {
-          "ticker": "LEU",
-          "headline": "This Nuclear Stock Could Be Your Ticket to Millionaire Status -- and It Didn't Even Need to Build a Reactor First",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=53351a9280ce49ea2ad0eb0ccce048b65ae5060e3f51679734e8aa854d736490",
-          "datetime": 1792535100
-        },
-        {
-          "ticker": "SMR",
-          "headline": "This Nuclear Stock Could Be Your Ticket to Millionaire Status -- and It Didn't Even Need to Build a Reactor First",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=53351a9280ce49ea2ad0eb0ccce048b65ae5060e3f51679734e8aa854d736490",
-          "datetime": 1792535100
-        },
-        {
-          "ticker": "SMR",
-          "headline": "Barclays Downgrades NuScale Power to Underweight from Equal-Weight",
-          "source": "Fintel",
-          "url": "https://finnhub.io/api/news?id=5be1418dadaaca766f3431016cf27bf261e07744c7bfda9f249c2cc79f1082e0",
-          "datetime": 1792533854
-        },
-        {
-          "ticker": "SMR",
-          "headline": "Oklo and NuScale Sink 15% in a Week: Is the Nuclear Selling Overdone?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=23aadcf9ae975cb1bfb8631c674cd5b7b06e46d3c97a9f5536010aeb94290f96",
-          "datetime": 1792519528
-        },
-        {
-          "ticker": "SMR",
-          "headline": "NuScale Stock Closed at Its Lowest Level Since May 2024. Is It Finally a Buy?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4a613a536f5e0b5d00c04f820ed5e0aaa6722a2e579fa450d94860e99fbea851",
-          "datetime": 1792517041
-        },
-        {
-          "ticker": "SMR",
-          "headline": "Barclays Downgrades NuScale Power to Underweight, Lowers Price Target to $5",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=5abed7d0ede8edda08e94c08298ecc4ff692adf5c328b42c216d7152b97884ed",
-          "datetime": 1792507273
-        },
-        {
-          "ticker": "SMR",
-          "headline": "Apple downgraded, Akamai upgraded: Wall Street's top analyst calls",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4bfb8d37828d880b69512fa556a6e88025420ce344389cf75c07778d1668b3de",
-          "datetime": 1792503315
-        },
-        {
-          "ticker": "LEU",
-          "headline": "NuScale Power Sinks 7% to New 52-Week Low as Barclays Cuts to Underweight; Oklo Falls 5%, Centrus Energy Drops 3%",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=233ca8c69ecdd292d0a233cfef43b1344002efe4c17698f42b5e65d9b8ad712f",
-          "datetime": 1792500627
-        },
-        {
-          "ticker": "SMR",
-          "headline": "NuScale Power Sinks 7% to New 52-Week Low as Barclays Cuts to Underweight; Oklo Falls 5%, Centrus Energy Drops 3%",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=233ca8c69ecdd292d0a233cfef43b1344002efe4c17698f42b5e65d9b8ad712f",
-          "datetime": 1792500627
-        },
-        {
-          "ticker": "SMR",
-          "headline": "OKLO Advances Regulatory Milestones to Support Nuclear Growth",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=66f6ff0584290340b9bb11a0435ddd0e9d42932bb70a88f4f00257f182774df0",
-          "datetime": 1792499940
-        },
-        {
-          "ticker": "LEU",
-          "headline": "Needham Maintains Buy on Centrus Energy, Lowers Price Target to $206",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=290146567854da3ad4f70210f0bf81f4f2b9bee24f8aeb48100ad502730728e6",
-          "datetime": 1792480672
-        },
-        {
-          "ticker": "CCJ",
-          "headline": "Top 3 Canadian Nuclear Stocks To Watch In October 2026",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a4f9799cc784129f9b6843b892e2cc0c7b6036718c368a6dcd291ef5769540cc",
-          "datetime": 1792476744
-        },
-        {
-          "ticker": "CCJ",
-          "headline": "Cameco Stock Is Nearly 40% Below Its Peak. Here’s What One AP1000 Reactor Pair Could Be Worth to Westinghouse",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5ebe79fbbd6c1afd49e4723b6f1bf8bc19fbb17026fa14bf8e7460d565994638",
-          "datetime": 1792470008
-        },
-        {
-          "ticker": "CCJ",
-          "headline": "Barclays Maintains Equal-Weight on Cameco, Lowers Price Target to $95",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=73c627f555add905b5a7b2b724be64322b2556cf6f808d417ea1ba92364f6025",
-          "datetime": 1792421663
-        },
-        {
-          "ticker": "LEU",
-          "headline": "Centrus Energy Acquires Westerman Holdings for $116 Million to Expand Manufacturing Capacity",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5a55793831ff0c23edead0af754fb5a986c8cd19c1f631a6b376d5099b71fff8",
-          "datetime": 1792414568
-        },
-        {
-          "ticker": "CCJ",
-          "headline": "Cosa Announces Partner-Funded Drilling Results from the Aurora Uranium Project, Athabasca Basin, Saskatchewan",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4afd882cff30056cde30752ef9919ce336448beb2053772bd6d6e30032924295",
-          "datetime": 1792411200
-        },
-        {
-          "ticker": "LEU",
-          "headline": "1 Russell 2000 Stock for Long-Term Investors and 2 We Question",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=75e760c16e7ef878eca2ed45f282ea6781679b0870bbd7908d30ec0df90f3faf",
-          "datetime": 1792409335
-        },
-        {
-          "ticker": "LEU",
-          "headline": "Centrus Acquires Westerman Holdings, LLC, Bringing a Key Supplier In-House and Diversifying Its Manufacturing Capacity",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=ee58ed83a9184e0b6b25bec6e57cc4d852a4f7a3cac608764d53f6c79152ba73",
-          "datetime": 1792408680
-        },
-        {
-          "ticker": "CCJ",
-          "headline": "Global Nuclear Energy Renaissance and Small Modular Reactor (SMR) Market Strategic Outlook, 2026-2031 | AI Data Center Demand Drives 9.5% CAGR and USD 206.9 Billion by 2031",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=70af1876972539d63f02463bc8576f7bba77adf75e2c718c25b316cc87462600",
-          "datetime": 1792402920
-        },
-        {
-          "ticker": "LEU",
-          "headline": "Centrus Energy Acquires Westerman Holdings For ~$116M, Funded Through Combination Of ~$95M Cash On Hand And $21M Of Equity",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=334014589117a0ff0562406c84b11eb5e43183be1ba36714d02b02561751344c",
-          "datetime": 1792394524
-        },
-        {
-          "ticker": "LEU",
-          "headline": "Top 3 Energy Stocks That May Explode In October",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=afbe0b7cb79d5dc5aa6d633a4b9d8b90dd64e978701d922e6f5ccc2bace60293",
-          "datetime": 1792390988
-        },
-        {
-          "ticker": "LEU",
-          "headline": "Centrus Energy Is Down 58% Even Though Sales Rose",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=4402f8b7742d0865442bdc35b67f7658740f4999b641703e668597a6fc02c16f",
-          "datetime": 1792321826
-        }
-      ],
-      "customKpis": [
-        {
-          "label": "우라늄 ETF (URA) 가격",
-          "ticker": "URA",
-          "value": 35.63,
-          "format": "price_usd"
-        },
-        {
-          "label": "URA 1일 변동",
-          "ticker": "URA",
-          "value": 1.2791358726549256,
-          "format": "change_pct"
-        },
-        {
-          "label": "CCJ 매출 성장 YoY",
-          "ticker": "CCJ",
-          "value": -0.072,
-          "format": "financial_pct",
-          "period": "TTM"
-        }
-      ]
-    },
-    {
-      "id": "power-datacenter",
-      "name": "전력/데이터센터",
-      "description": "AI 데이터센터의 폭발적 전력 소비 증가. 전력망 인프라, 변압기, IPP(독립발전사업자) 수혜.",
-      "tickers": [
-        "GEV",
-        "ETN",
-        "PWR",
-        "NRG",
-        "TLN"
-      ],
-      "newsScore": 5,
-      "volumeScore": 41.7,
-      "priceScore": 33.3,
-      "totalScore": 24.9,
-      "prevTotalScore": 39.5,
-      "scoreDelta": -14.6,
-      "deltaDirection": "▼",
-      "tickerData": [
-        {
-          "ticker": "GEV",
-          "price": 927.395,
-          "change1d": 4.163063133894167,
-          "change5d": -11.32524236344733,
-          "volume": 1235128,
-          "avgVolume20d": 2326200,
-          "relativeVolume": 0.5309638036282349,
-          "marketCap": 246996434944,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "ETN",
-          "price": 391.12,
-          "change1d": 2.392795434315929,
-          "change5d": -10.81692858825402,
-          "volume": 628941,
-          "avgVolume20d": 2592120,
-          "relativeVolume": 0.24263575760381464,
-          "marketCap": 151911006208,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "PWR",
-          "price": 603.825,
-          "change1d": 1.312919463087256,
-          "change5d": -13.482755229426727,
-          "volume": 332839,
-          "avgVolume20d": 1044730,
-          "relativeVolume": 0.3185885348367521,
-          "marketCap": 90781097984,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "NRG",
-          "price": 99.585,
-          "change1d": 1.7835241210138904,
-          "change5d": -8.714316048414979,
-          "volume": 672168,
-          "avgVolume20d": 3186110,
-          "relativeVolume": 0.21096823399066572,
-          "marketCap": 20933810176,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "TLN",
-          "price": 362.615,
-          "change1d": 3.773287926050998,
-          "change5d": -8.55969558768896,
-          "volume": 222626,
-          "avgVolume20d": 1169990,
-          "relativeVolume": 0.19028025880563082,
-          "marketCap": 17151688704,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        }
-      ],
-      "headlines": [
-        {
-          "ticker": "GEV",
-          "headline": "GE Vernova Highlights Spain's Path to Reliable, Net-Zero Electricity",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a852b3bf3fd8951a049c0737119b0fe919f73b77ba7e9de347abf1006f8dd1af",
-          "datetime": 1792587000
-        },
-        {
-          "ticker": "GEV",
-          "headline": "VG Inks Power Agreements With GEV, BKR to Support LNG Growth",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=62c0d7b9aec82e38345815f57ef3ab1dae29bf5bbf7ff707736b7068de1c2b3e",
-          "datetime": 1792586700
-        },
-        {
-          "ticker": "PWR",
-          "headline": "Can Argan's ValCor Deal Put Teledata on a Faster Growth Path Ahead?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9f1eb6d6f751049a7db4a050efa90b30e51da7ecefae3daaab507418a14c9fdb",
-          "datetime": 1792584900
-        },
-        {
-          "ticker": "PWR",
-          "headline": "Here's How Much $100 Invested In Quanta Services 5 Years Ago Would Be Worth Today",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=dce2c6d14c91fc46667915a7d52de72c630d4ffff4235b743142976be80adc44",
-          "datetime": 1792578617
-        },
-        {
-          "ticker": "GEV",
-          "headline": "GE Vernova's $176 Billion Backlog, Explained",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=d811057d36492f9a6f387d3789c817f50d40e11c1dd75faa47cfb9ff4a97e952",
-          "datetime": 1792573800
-        },
-        {
-          "ticker": "ETN",
-          "headline": "Eaton's Backlog Just Grew 43%. The Margin Dip Is Now the Easy Comparison.",
-          "source": "Fintel",
-          "url": "https://finnhub.io/api/news?id=514ea875624c9027ed7c6285689366eafb51effa2282b491d27579e9b002a208",
-          "datetime": 1792562923
-        },
-        {
-          "ticker": "GEV",
-          "headline": "GE Vernova (GEV) Stock Drops Despite Market Gains: Important Facts to Note",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=7556412fc31dee8b7db896b61c0756f7da41594d16012530b0b347e8a3cc58fe",
-          "datetime": 1792530004
-        },
-        {
-          "ticker": "PWR",
-          "headline": "S&P 500 Top Movers: EFX and HAS Lead Today's Gainers, GM and DVA Fall",
-          "source": "ChartMill",
-          "url": "https://finnhub.io/api/news?id=9767c866ea027121f6e583a1c9d55c71caf1930dcf32f3011cf51a1089f09880",
-          "datetime": 1792523164
-        },
-        {
-          "ticker": "ETN",
-          "headline": "Is Honeywell Stock A Real Bargain?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=ef16edf5ae26bd73c51b71de318723fa6cbaf831343c639fb1946ddd38d9adb5",
-          "datetime": 1792515983
-        },
-        {
-          "ticker": "ETN",
-          "headline": "Eaton (ETN): Will Its Electrical Backlog Translate Into Lasting Earnings Power?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=bfd025a6ba2358fcbd8ed1e2ad399ddc258a62b1f3b29a4801510b5d26e83747",
-          "datetime": 1792514557
-        },
-        {
-          "ticker": "PWR",
-          "headline": "S&P 500 Top Movers: Gainers and Losers From Today's US Session",
-          "source": "ChartMill",
-          "url": "https://finnhub.io/api/news?id=e11728fc8f5fa19627c71da56097d365124708caa38ac808ec39585063e67696",
-          "datetime": 1792514161
-        },
-        {
-          "ticker": "GEV",
-          "headline": "The Nuclear Renaissance On The U.S. Grid",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=5cf8943c13061875d7ba460416ef3ce62a24d0b18f1c2b62390d4542a4cb6e79",
-          "datetime": 1792509600
-        },
-        {
-          "ticker": "PWR",
-          "headline": "AI’s Most Watched Cooling Stock Has Fallen for 11 Straight Days: Analysts Now See a 50% Upside",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=cd6d416355ff6f143322dc242ff81cb168cfc16db88e5839c88ac5921c0704ee",
-          "datetime": 1792509383
-        },
-        {
-          "ticker": "GEV",
-          "headline": "GE Vernova Q3 Preview: Analyst Projects Orders Growth Of 44%",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=9bbd83884b42b6364f6778561bff3f4508ebc054559dfc43c05301f24a3a29ed",
-          "datetime": 1792508603
-        },
-        {
-          "ticker": "ETN",
-          "headline": "S&P 500 Gap-Down Stocks Fall in October 20, 2026 Session",
-          "source": "ChartMill",
-          "url": "https://finnhub.io/api/news?id=afb978364f89b76c680dd6a45797d67155ae5c53d43dfa793189d0076e3794bd",
-          "datetime": 1792506955
-        },
-        {
-          "ticker": "PWR",
-          "headline": "S&P 500 Gap-Down Stocks Fall in October 20, 2026 Session",
-          "source": "ChartMill",
-          "url": "https://finnhub.io/api/news?id=afb978364f89b76c680dd6a45797d67155ae5c53d43dfa793189d0076e3794bd",
-          "datetime": 1792506955
-        },
-        {
-          "ticker": "ETN",
-          "headline": "Q3 Preview: Mizuho Picks Top Electrical Equipment & Multi-Industry Stocks",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=b6b7f87f2dcc0db7336ef5ec6554f99c71536d1e6464c8b176bbc712c142c77f",
-          "datetime": 1792503976
-        },
-        {
-          "ticker": "GEV",
-          "headline": "2 Mega-Cap Stocks on Our Buy List and 1 We Brush Off",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=2acc20303e63f3e2750fed4fea23eb6efa77fe99a2f05374cf9c0318edce2bd9",
-          "datetime": 1792503230
-        },
-        {
-          "ticker": "PWR",
-          "headline": "Can EMCOR's Execution Excellence Continue Defying Construction Cycles?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=6f141320b3a58846b5cd1ad1905cf9f3af94b406d4a3d406da39829269a72229",
-          "datetime": 1792502400
-        },
-        {
-          "ticker": "PWR",
-          "headline": "Can MasTec's Fiber Expansion Strategy Revive Growth in 2027?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=72b94cb93ed084ac090217b255bb88cac20f5f704959c93481fdc0b28821753d",
-          "datetime": 1792498800
-        },
-        {
-          "ticker": "ETN",
-          "headline": "What Could Eaton Stock Be Worth In Three Years?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9f22432ba872dfba595715e619779698148f0377ac9a9a85e993f1257e066730",
-          "datetime": 1792496881
-        },
-        {
-          "ticker": "ETN",
-          "headline": "Forgent vs. Eaton: Which Data Center Power Stock Is the Better Buy?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=3685e1fdf50bf7b2cdee33a16efbdbfff894709b321c826ed4bea18e4e433bed",
-          "datetime": 1792496820
-        },
-        {
-          "ticker": "GEV",
-          "headline": "Energy Transition Update - Rising Solar Storage Market Spurs Global Clean Energy Shift",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e06392fe41d484172a8693f361d9dff4cef562d23c8d8809d25a59b8176933ed",
-          "datetime": 1792496222
-        },
-        {
-          "ticker": "GEV",
-          "headline": "What Capital Group Core Balanced ETF (CGBL) Bought: JNJ Leads on Oct. 16",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=ad76cdcb6c9d7a852b61ccd0f3f0f3a9c3f8b2c05258a16d1260f4ebd29a3cdb",
-          "datetime": 1792494339
-        },
-        {
-          "ticker": "ETN",
-          "headline": "Eaton to announce third quarter 2026 earnings on November 3, 2026",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=d707fd2218fae11c580a5984318d4cdb913790e49f2ad6f071114ca5dcd79e23",
-          "datetime": 1792493100
-        },
-        {
-          "ticker": "GEV",
-          "headline": "Flue Gas Desulfurization (FGD) System Market: Global Forecast to 2031 | Tougher Sulfur Rules Keep Flue-Gas Scrubbers in Demand as Energy Transition Looms",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=d26c539c99e508ad1fed7c6e8ba81bddb2f46ba9411ea15721cde4d4463939d6",
-          "datetime": 1792486800
-        },
-        {
-          "ticker": "ETN",
-          "headline": "What Could Vertiv Stock Be Worth In Three Years?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a64c0bf5ec311d652a647e458573f59f437856c2193b36b2cbd16e095f4a7706",
-          "datetime": 1792429007
-        },
-        {
-          "ticker": "PWR",
-          "headline": "Goldman Sachs' Neil Mehta on top energy ideas and stocks to watch",
-          "source": "CNBC",
-          "url": "https://finnhub.io/api/news?id=a8a0321bf5cb446e135731ad8c63ed131ad906e36dbc2fb1982890648de63e85",
-          "datetime": 1792422407
-        },
-        {
-          "ticker": "ETN",
-          "headline": "10 Industrials Stocks Whale Activity In Today’s Session",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=cc6485e058ac3b17751b17eace49a490bab5f29464a5dbd861bcad1f670556a0",
-          "datetime": 1792416912
-        },
-        {
-          "ticker": "PWR",
-          "headline": "Can Quanta Overcome Macro Headwinds With Record Project Demand?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=965ecfd470ff95f1aa25e2f9e3da4a74d45df952828aa6c306d6eaabc85ec575",
-          "datetime": 1792415400
-        }
-      ],
-      "customKpis": [
-        {
-          "label": "천연가스 현재가 ($/MMBtu)",
-          "ticker": "NG=F",
-          "value": 2.818,
-          "format": "price_usd"
-        },
-        {
-          "label": "천연가스 1일 변동",
-          "ticker": "NG=F",
-          "value": -4.893688828889639,
-          "format": "change_pct"
-        },
-        {
-          "label": "GEV 매출 성장 YoY",
-          "ticker": "GEV",
-          "value": 0.219,
-          "format": "financial_pct",
-          "period": "TTM"
-        }
-      ]
-    },
-    {
-      "id": "quantum",
-      "name": "양자컴퓨팅",
-      "description": "양자 우위 달성 기대감과 정부·빅테크 투자 확대. 소형 순수 플레이 종목 중심의 투기적 테마.",
-      "tickers": [
-        "IONQ",
-        "RGTI",
-        "QBTS",
-        "QUBT"
-      ],
-      "newsScore": 5,
-      "volumeScore": 0,
-      "priceScore": 50,
-      "totalScore": 14.5,
-      "prevTotalScore": 17.4,
-      "scoreDelta": -2.9,
-      "deltaDirection": "▼",
-      "tickerData": [
-        {
-          "ticker": "IONQ",
-          "price": 32.15,
-          "change1d": 2.847088931541897,
-          "change5d": -9.991360089522917,
-          "volume": 6642539,
-          "avgVolume20d": 27536010,
-          "relativeVolume": 0.2412309917086753,
-          "marketCap": 13025112064,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "RGTI",
-          "price": 11.965,
-          "change1d": 2.6157804459691225,
-          "change5d": -8.763692558377667,
-          "volume": 3877158,
-          "avgVolume20d": 16020250,
-          "relativeVolume": 0.24201607340709413,
-          "marketCap": 3993542912,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "QBTS",
-          "price": 12.025,
-          "change1d": 2.079796264855696,
-          "change5d": -11.958149236059123,
-          "volume": 4085030,
-          "avgVolume20d": 15941670,
-          "relativeVolume": 0.25624856116078176,
-          "marketCap": 4565009920,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        },
-        {
-          "ticker": "QUBT",
-          "price": 6.685,
-          "change1d": 2.8461538461538405,
-          "change5d": -5.385733503967466,
-          "volume": 1514831,
-          "avgVolume20d": 7699800,
-          "relativeVolume": 0.1967364087378893,
-          "marketCap": 1513128832,
-          "newsCount48h": 0,
-          "newsPrev48h": 0
-        }
-      ],
-      "headlines": [
-        {
-          "ticker": "IONQ",
-          "headline": "D-Wave Quantum Vs. IonQ: Tech Differences Dictate Investment Strategy",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5dbad13043dcee2aaea2c36206e5e154f34b5811904db3f9e55b0d1ca49c7ca8",
-          "datetime": 1792581307
-        },
-        {
-          "ticker": "QBTS",
-          "headline": "D-Wave Quantum Vs. IonQ: Tech Differences Dictate Investment Strategy",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=5dbad13043dcee2aaea2c36206e5e154f34b5811904db3f9e55b0d1ca49c7ca8",
-          "datetime": 1792581307
-        },
-        {
-          "ticker": "IONQ",
-          "headline": "What Needs To Be True To Buy QBTS Stock Now?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=22dd9e66d202f050dd02cad846a929a1e6a79ce05c835f98b5bf4a62b7ed5a99",
-          "datetime": 1792545395
-        },
-        {
-          "ticker": "RGTI",
-          "headline": "What Needs To Be True To Buy QBTS Stock Now?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=22dd9e66d202f050dd02cad846a929a1e6a79ce05c835f98b5bf4a62b7ed5a99",
-          "datetime": 1792545395
-        },
-        {
-          "ticker": "QBTS",
-          "headline": "What Needs To Be True To Buy QBTS Stock Now?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=22dd9e66d202f050dd02cad846a929a1e6a79ce05c835f98b5bf4a62b7ed5a99",
-          "datetime": 1792545395
-        },
-        {
-          "ticker": "IONQ",
-          "headline": "IonQ (IONQ) Gets Native Open Source Programming Support On Its Quantum Computers",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=521fa613c35a20146b421b43a6425e210196a791a7dedd2624d7cc581e7f3d4a",
-          "datetime": 1792538400
-        },
-        {
-          "ticker": "QBTS",
-          "headline": "Is Italy System Deployment Altering The Investment Case For D Wave Quantum (QBTS)?",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=a44fbc2c0b6d6739051ee413f1423d86d1583297ce8f39ad91fc2cb5101e46ce",
-          "datetime": 1792530667
-        },
-        {
-          "ticker": "IONQ",
-          "headline": "IonQ, Inc. (IONQ) Outperforms Broader Market: What You Need to Know",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=04db73c9c6879c600a18b7395e0464c333f51a9d74401d108b883f13fbf6ddb1",
-          "datetime": 1792529404
-        },
-        {
-          "ticker": "IONQ",
-          "headline": "Not IonQ. Not Rigetti Computing. This Quantum Computing Stock Is the One I'd Buy and Hold Through 2030.",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9117cedfd7f4d8ad64b960302ed68eb88a5c7c227fc3725fa754dd99ce524b9c",
-          "datetime": 1792520400
-        },
-        {
-          "ticker": "RGTI",
-          "headline": "Not IonQ. Not Rigetti Computing. This Quantum Computing Stock Is the One I'd Buy and Hold Through 2030.",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=9117cedfd7f4d8ad64b960302ed68eb88a5c7c227fc3725fa754dd99ce524b9c",
-          "datetime": 1792520400
-        },
-        {
-          "ticker": "QBTS",
-          "headline": "Quantum Computing Stocks Face a 2028 Reality Check",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=cb8fca8291ea805a562b4686e155d422b32c7ca8036fa0edf46d41b909aa4ea5",
-          "datetime": 1792507800
-        },
-        {
-          "ticker": "RGTI",
-          "headline": "10 Information Technology Stocks With Whale Alerts In Today’s Session",
-          "source": "Benzinga",
-          "url": "https://finnhub.io/api/news?id=04205d51ca35cc091d9ae5f59f00ab34c9f4a4aa1a8bf945d3223ca9d5cf1e25",
-          "datetime": 1792503310
-        },
-        {
-          "ticker": "IONQ",
-          "headline": "Here's How QBTS' Liquidity Supports Expansion Despite Rising Cash Burn",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=588c27defae7615a319d71050a7ee5d037fdb8de909e8343f118c9bbe98d954d",
-          "datetime": 1792501200
-        },
-        {
-          "ticker": "QBTS",
-          "headline": "Here's How QBTS' Liquidity Supports Expansion Despite Rising Cash Burn",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=588c27defae7615a319d71050a7ee5d037fdb8de909e8343f118c9bbe98d954d",
-          "datetime": 1792501200
-        },
-        {
-          "ticker": "IONQ",
-          "headline": "Quantum Computing Stocks Face a 2028 Reality Check",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=cb8fca8291ea805a562b4686e155d422b32c7ca8036fa0edf46d41b909aa4ea5",
-          "datetime": 1792500000
-        },
-        {
-          "ticker": "RGTI",
-          "headline": "Quantum Computing Stocks Face a 2028 Reality Check",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=cb8fca8291ea805a562b4686e155d422b32c7ca8036fa0edf46d41b909aa4ea5",
-          "datetime": 1792500000
-        },
-        {
-          "ticker": "IONQ",
-          "headline": "IonQ, Rigetti Computing, D-Wave Quantum, and Quantum Computing Inc. Are Shaking Wall Street to Its Core With This $1 Billion Warning",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e0c12386dd530d2b09e616b7218bec56e80239da2ae39ae07bbd66ca12d0db25",
-          "datetime": 1792488362
-        },
-        {
-          "ticker": "RGTI",
-          "headline": "IonQ, Rigetti Computing, D-Wave Quantum, and Quantum Computing Inc. Are Shaking Wall Street to Its Core With This $1 Billion Warning",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e0c12386dd530d2b09e616b7218bec56e80239da2ae39ae07bbd66ca12d0db25",
-          "datetime": 1792488362
-        },
-        {
-          "ticker": "QBTS",
-          "headline": "IonQ, Rigetti Computing, D-Wave Quantum, and Quantum Computing Inc. Are Shaking Wall Street to Its Core With This $1 Billion Warning",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=e0c12386dd530d2b09e616b7218bec56e80239da2ae39ae07bbd66ca12d0db25",
-          "datetime": 1792488362
-        },
-        {
-          "ticker": "QBTS",
-          "headline": "D-Wave Says Most of Its 2026 Revenue Will Come in Q4. Here’s What the Stock Needs to See",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=f01882c75118b31b364357bd83fb8a990daa086dbedc6237e7bd2d9515bd1671",
-          "datetime": 1792471846
-        },
-        {
-          "ticker": "IONQ",
-          "headline": "If I Could Only Buy 1 Quantum Computing Stock With $1,000, It Would Be This One.",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=65d9a2da95f377610ad73a4c6fdcd14f166bb8e2f24eb98bb31f75ca07b964e0",
-          "datetime": 1792470000
-        },
-        {
-          "ticker": "IONQ",
-          "headline": "IonQ, Inc. (IONQ) Stock Dips While Market Gains: Key Facts",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=1573690d984664695b05ea8c68bb13972b4779b9ac5cb5ac2d5749907421f598",
-          "datetime": 1792443604
-        },
-        {
-          "ticker": "RGTI",
-          "headline": "Martin Shkreli Warns on Quantum Stocks: “They’ll Never Beat an NVIDIA Machine”",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=554144d3a65f3dd5601607a0ca20b835742989609602add336836a4546bce015",
-          "datetime": 1792428708
-        },
-        {
-          "ticker": "QBTS",
-          "headline": "Martin Shkreli Warns on Quantum Stocks: “They’ll Never Beat an NVIDIA Machine”",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=554144d3a65f3dd5601607a0ca20b835742989609602add336836a4546bce015",
-          "datetime": 1792428708
-        },
-        {
-          "ticker": "RGTI",
-          "headline": "Rigetti's Quantum Growth Faces Revenue Swings and Rising Costs",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=05d26b3492bd7e9be82ce10e81b92ede96344a78c4af505e604d9fc54e12b868",
-          "datetime": 1792415700
-        },
-        {
-          "ticker": "QBTS",
-          "headline": "Rigetti's Quantum Growth Faces Revenue Swings and Rising Costs",
-          "source": "Yahoo",
-          "url": "https://finnhub.io/api/news?id=05d26b3492bd7e9be82ce10e81b92ede96344a78c4af505e604d9fc54e12b868",
-          "datetime": 1792415700
-        },
-        {
-          "ticker": "QBTS",
-          "headline": "D-Wave Bought Time, Not Growth",
-          "source": "SeekingAlpha",
-          "url": "https://finnhub.io/api/news?id=e632d37cff3d2f3d373a656491415ada702e0ffcb5c6a88f194474db2aa36b21",
-          "datetime": 1792413803
-        }
-      ],
-      "customKpis": [
-        {
-          "label": "양자컴퓨팅 ETF (QTUM)",
-          "ticker": "QTUM",
-          "value": 141.345,
-          "format": "price_usd"
-        },
-        {
-          "label": "QTUM 1일 변동",
-          "ticker": "QTUM",
-          "value": 1.387992253066496,
-          "format": "change_pct"
-        },
-        {
-          "label": "IONQ 매출 성장 YoY",
-          "ticker": "IONQ",
-          "value": 2.868,
           "format": "financial_pct",
           "period": "TTM"
         }
