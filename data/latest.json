@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-01T09:41:18.896Z",
+  "timestamp": "2026-11-01T15:44:01.421Z",
   "themes": [
     {
       "id": "ai-infra",
@@ -14,13 +14,13 @@
         "VRT",
         "DELL"
       ],
-      "newsScore": 91.7,
+      "newsScore": 83.3,
       "volumeScore": 66.7,
       "priceScore": 58.3,
-      "totalScore": 74.6,
-      "prevTotalScore": 71.2,
-      "scoreDelta": 3.4,
-      "deltaDirection": "▲",
+      "totalScore": 71.2,
+      "prevTotalScore": 74.6,
+      "scoreDelta": -3.4,
+      "deltaDirection": "▼",
       "tickerData": [
         {
           "ticker": "NVDA",
@@ -43,7 +43,7 @@
           "avgVolume20d": 20927900,
           "relativeVolume": 1.8887231877063633,
           "marketCap": 824073388032,
-          "newsCount48h": 68,
+          "newsCount48h": 74,
           "newsPrev48h": 132
         },
         {
@@ -55,7 +55,7 @@
           "avgVolume20d": 21503620,
           "relativeVolume": 1.6932978261334604,
           "marketCap": 1556585250816,
-          "newsCount48h": 47,
+          "newsCount48h": 51,
           "newsPrev48h": 120
         },
         {
@@ -67,7 +67,7 @@
           "avgVolume20d": 25041330,
           "relativeVolume": 1.2189097783544245,
           "marketCap": 1001015410688,
-          "newsCount48h": 46,
+          "newsCount48h": 51,
           "newsPrev48h": 167
         },
         {
@@ -91,7 +91,7 @@
           "avgVolume20d": 8476160,
           "relativeVolume": 0.900611597704621,
           "marketCap": 89526550528,
-          "newsCount48h": 9,
+          "newsCount48h": 10,
           "newsPrev48h": 97
         },
         {
@@ -127,6 +127,111 @@
           "label": "NVDA 영업이익률",
           "ticker": "NVDA",
           "value": 0.66236997,
+          "format": "financial_pct",
+          "period": "TTM"
+        }
+      ]
+    },
+    {
+      "id": "ai-software",
+      "name": "AI 소프트웨어",
+      "description": "AI 모델 개발 및 기업용 AI 솔루션. 클라우드 AI 서비스, 에이전트형 AI, 데이터 분석 플랫폼.",
+      "tickers": [
+        "MSFT",
+        "GOOGL",
+        "PLTR",
+        "NOW",
+        "CRM"
+      ],
+      "newsScore": 91.7,
+      "volumeScore": 58.3,
+      "priceScore": 0,
+      "totalScore": 57.1,
+      "prevTotalScore": 53.7,
+      "scoreDelta": 3.4,
+      "deltaDirection": "▲",
+      "tickerData": [
+        {
+          "ticker": "MSFT",
+          "price": 521.91,
+          "change1d": -1.5524201154412076,
+          "change5d": -0.4957077220043074,
+          "volume": 35585367,
+          "avgVolume20d": 22354810,
+          "relativeVolume": 1.59184385821217,
+          "marketCap": 3875804807168,
+          "newsCount48h": 136,
+          "newsPrev48h": 247
+        },
+        {
+          "ticker": "GOOGL",
+          "price": 279.84,
+          "change1d": -1.402297230639144,
+          "change5d": -12.607350237180516,
+          "volume": 65326584,
+          "avgVolume20d": 43360110,
+          "relativeVolume": 1.506605587485825,
+          "marketCap": 3440352690176,
+          "newsCount48h": 231,
+          "newsPrev48h": 248
+        },
+        {
+          "ticker": "PLTR",
+          "price": 184.11,
+          "change1d": -6.267182567966589,
+          "change5d": -6.4243961319687095,
+          "volume": 26955616,
+          "avgVolume20d": 20524960,
+          "relativeVolume": 1.3133090636961047,
+          "marketCap": 442427080704,
+          "newsCount48h": 32,
+          "newsPrev48h": 57
+        },
+        {
+          "ticker": "NOW",
+          "price": 105.12,
+          "change1d": -4.148810066563324,
+          "change5d": -33.87015707932046,
+          "volume": 34909917,
+          "avgVolume20d": 23053480,
+          "relativeVolume": 1.5143013983138338,
+          "marketCap": 109105840128,
+          "newsCount48h": 41,
+          "newsPrev48h": 161
+        },
+        {
+          "ticker": "CRM",
+          "price": 229.17,
+          "change1d": -0.7492420961455254,
+          "change5d": -7.804646008626983,
+          "volume": 7886465,
+          "avgVolume20d": 7164330,
+          "relativeVolume": 1.1007958874032882,
+          "marketCap": 188606906368,
+          "newsCount48h": 19,
+          "newsPrev48h": 63
+        }
+      ],
+      "headlines": [],
+      "customKpis": [
+        {
+          "label": "MSFT 매출 성장 YoY",
+          "ticker": "MSFT",
+          "value": 0.188,
+          "format": "financial_pct",
+          "period": "TTM"
+        },
+        {
+          "label": "MSFT 영업이익률",
+          "ticker": "MSFT",
+          "value": 0.49757,
+          "format": "financial_pct",
+          "period": "TTM"
+        },
+        {
+          "label": "GOOGL 매출 성장 YoY",
+          "ticker": "GOOGL",
+          "value": 0.247,
           "format": "financial_pct",
           "period": "TTM"
         }
@@ -225,111 +330,6 @@
       ]
     },
     {
-      "id": "ai-software",
-      "name": "AI 소프트웨어",
-      "description": "AI 모델 개발 및 기업용 AI 솔루션. 클라우드 AI 서비스, 에이전트형 AI, 데이터 분석 플랫폼.",
-      "tickers": [
-        "MSFT",
-        "GOOGL",
-        "PLTR",
-        "NOW",
-        "CRM"
-      ],
-      "newsScore": 83.3,
-      "volumeScore": 58.3,
-      "priceScore": 0,
-      "totalScore": 53.7,
-      "prevTotalScore": 57.1,
-      "scoreDelta": -3.4,
-      "deltaDirection": "▼",
-      "tickerData": [
-        {
-          "ticker": "MSFT",
-          "price": 521.91,
-          "change1d": -1.5524201154412076,
-          "change5d": -0.4957077220043074,
-          "volume": 35585367,
-          "avgVolume20d": 22354810,
-          "relativeVolume": 1.59184385821217,
-          "marketCap": 3875804807168,
-          "newsCount48h": 125,
-          "newsPrev48h": 247
-        },
-        {
-          "ticker": "GOOGL",
-          "price": 279.84,
-          "change1d": -1.402297230639144,
-          "change5d": -12.607350237180516,
-          "volume": 65326584,
-          "avgVolume20d": 43360110,
-          "relativeVolume": 1.506605587485825,
-          "marketCap": 3440352690176,
-          "newsCount48h": 212,
-          "newsPrev48h": 248
-        },
-        {
-          "ticker": "PLTR",
-          "price": 184.11,
-          "change1d": -6.267182567966589,
-          "change5d": -6.4243961319687095,
-          "volume": 26955616,
-          "avgVolume20d": 20524960,
-          "relativeVolume": 1.3133090636961047,
-          "marketCap": 442427080704,
-          "newsCount48h": 22,
-          "newsPrev48h": 57
-        },
-        {
-          "ticker": "NOW",
-          "price": 105.12,
-          "change1d": -4.148810066563324,
-          "change5d": -33.87015707932046,
-          "volume": 34909917,
-          "avgVolume20d": 23053480,
-          "relativeVolume": 1.5143013983138338,
-          "marketCap": 109105840128,
-          "newsCount48h": 41,
-          "newsPrev48h": 161
-        },
-        {
-          "ticker": "CRM",
-          "price": 229.17,
-          "change1d": -0.7492420961455254,
-          "change5d": -7.804646008626983,
-          "volume": 7886465,
-          "avgVolume20d": 7164330,
-          "relativeVolume": 1.1007958874032882,
-          "marketCap": 188606906368,
-          "newsCount48h": 19,
-          "newsPrev48h": 63
-        }
-      ],
-      "headlines": [],
-      "customKpis": [
-        {
-          "label": "MSFT 매출 성장 YoY",
-          "ticker": "MSFT",
-          "value": 0.188,
-          "format": "financial_pct",
-          "period": "TTM"
-        },
-        {
-          "label": "MSFT 영업이익률",
-          "ticker": "MSFT",
-          "value": 0.49757,
-          "format": "financial_pct",
-          "period": "TTM"
-        },
-        {
-          "label": "GOOGL 매출 성장 YoY",
-          "ticker": "GOOGL",
-          "value": 0.247,
-          "format": "financial_pct",
-          "period": "TTM"
-        }
-      ]
-    },
-    {
       "id": "nuclear-uranium",
       "name": "원자력/우라늄",
       "description": "AI 데이터센터 전력 수요 + 탈탄소 정책으로 재조명받는 원자력. SMR, 우라늄 채굴, 유틸리티.",
@@ -406,7 +406,7 @@
           "avgVolume20d": 5618070,
           "relativeVolume": 0.9370783916896728,
           "marketCap": 46441840640,
-          "newsCount48h": 6,
+          "newsCount48h": 7,
           "newsPrev48h": 21
         },
         {
@@ -439,7 +439,7 @@
         {
           "label": "CCJ 매출 성장 YoY",
           "ticker": "CCJ",
-          "value": -0.072,
+          "value": 0.007,
           "format": "financial_pct",
           "period": "TTM"
         }
@@ -476,7 +476,7 @@
           "avgVolume20d": 12950240,
           "relativeVolume": 1.6341611429595126,
           "marketCap": 763792785408,
-          "newsCount48h": 89,
+          "newsCount48h": 91,
           "newsPrev48h": 114
         },
         {
@@ -512,7 +512,7 @@
           "avgVolume20d": 1956420,
           "relativeVolume": 0.9564127334621401,
           "marketCap": 147138412544,
-          "newsCount48h": 24,
+          "newsCount48h": 26,
           "newsPrev48h": 48
         },
         {
@@ -524,7 +524,7 @@
           "avgVolume20d": 6793490,
           "relativeVolume": 0.9423477476230921,
           "marketCap": 269618216960,
-          "newsCount48h": 9,
+          "newsCount48h": 10,
           "newsPrev48h": 37
         },
         {
@@ -536,7 +536,7 @@
           "avgVolume20d": 1064910,
           "relativeVolume": 0.9273769614333606,
           "marketCap": 79206637568,
-          "newsCount48h": 6,
+          "newsCount48h": 7,
           "newsPrev48h": 20
         },
         {
@@ -627,7 +627,7 @@
           "avgVolume20d": 9200870,
           "relativeVolume": 1.760737734583795,
           "marketCap": 0,
-          "newsCount48h": 7,
+          "newsCount48h": 8,
           "newsPrev48h": 9
         },
         {
@@ -651,7 +651,7 @@
           "avgVolume20d": 5970300,
           "relativeVolume": 1.3114580506842202,
           "marketCap": 895043502080,
-          "newsCount48h": 15,
+          "newsCount48h": 17,
           "newsPrev48h": 51
         },
         {
@@ -853,19 +853,19 @@
         {
           "label": "비트코인 현재가 (USD)",
           "ticker": "BTC-USD",
-          "value": 77909.98,
+          "value": 77938.89,
           "format": "price_usd"
         },
         {
           "label": "BTC 1일 변동",
           "ticker": "BTC-USD",
-          "value": 0.6056874575240806,
+          "value": 0.6430191372960092,
           "format": "change_pct"
         },
         {
           "label": "이더리움 현재가 (USD)",
           "ticker": "ETH-USD",
-          "value": 2267.42,
+          "value": 2266.95,
           "format": "price_usd"
         }
       ]
@@ -1269,7 +1269,7 @@
         {
           "label": "USD/CNY 환율",
           "ticker": "CNY=X",
-          "value": 6.654,
+          "value": 6.6533,
           "format": "price_number"
         },
         {
